@@ -10,15 +10,23 @@ import os
 import pandas as pd
 
 # --- Constants ---
+# Find the project root by going up from the current script's directory.
+# This makes the script runnable from anywhere within the project.
 try:
-    SCRIPT_DIR = Path(__file__).parent
-    # This path is fixed as per the project specification.
-    DATA_DIR = Path("D:/RED")
+    # SCRIPT_DIR is .../packages/parser_engine/
+    SCRIPT_DIR = Path(__file__).parent.resolve()
+    # PROJECT_ROOT is .../HeroDB_Project/
+    PROJECT_ROOT = SCRIPT_DIR.parent.parent
 except NameError:
-    # Fallback for environments where __file__ is not defined (e.g., interactive notebooks)
+    # Fallback for interactive environments
     SCRIPT_DIR = Path.cwd()
-    DATA_DIR = Path("D:/RED")
+    PROJECT_ROOT = SCRIPT_DIR
     print(f"Warning: '__file__' not found. Assuming script dir is {SCRIPT_DIR}")
+
+# Define data and output directories based on the project root.
+DATA_DIR = PROJECT_ROOT / "data"
+OUTPUT_DIR = DATA_DIR / "output"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True) # Ensure output dir exists
 
 # --- File Paths ---
 HERO_STATS_CSV_PATTERN = "_private_heroes_*.csv"
@@ -31,11 +39,7 @@ BATTLE_PATH = DATA_DIR / "battle.json"
 
 
 def load_rules_from_csvs(script_dir: Path) -> dict:
-    """
-    Loads override rules from two CSV files:
-    - exception_lang_rules.csv: For overriding lang_ids.
-    - exception_hero_rules.csv: For resolving placeholders.
-    """
+    # (This function's logic remains the same, as it reads from the script's local dir)
     print("--- Loading Exception Rules from CSVs ---")
     rules = {
         "lang_overrides": {"specific": {}, "common": {}},
@@ -167,30 +171,21 @@ def load_game_data() -> dict:
     
     game_data['passive_skills'] = {ps['id']: ps for ps in battle_config.get('passiveSkills', [])}
 
-    # --- NEW: Load and consolidate keys that have extra descriptions (tooltips) ---
     extra_desc_keys = set()
     key_groups = [
-        "statusEffectsWithExtraDescription",
-        "specialPropertiesWithExtraDescription",
-        "familiarEffectsWithExtraDescription",
-        "familiarTypesWithExtraDescription"
+        "statusEffectsWithExtraDescription", "specialPropertiesWithExtraDescription",
+        "familiarEffectsWithExtraDescription", "familiarTypesWithExtraDescription"
     ]
     for key_group in key_groups:
-        # Lowercase all keys for case-insensitive matching later
         keys = [k.lower() for k in battle_config.get(key_group, [])]
         extra_desc_keys.update(keys)
-    
     game_data['extra_description_keys'] = extra_desc_keys
     print(f" -> Found {len(extra_desc_keys)} unique keys with extra descriptions (tooltips).")
-    # ---
 
     game_data['master_db'] = {
-        **game_data['character_specials'],
-        **game_data['special_properties'],
-        **game_data['status_effects'],
-        **game_data['familiars'],
-        **game_data['familiar_effects'],
-        **game_data['passive_skills']
+        **game_data['character_specials'], **game_data['special_properties'],
+        **game_data['status_effects'], **game_data['familiars'],
+        **game_data['familiar_effects'], **game_data['passive_skills']
     }
 
     print(f" -> Loaded {len(game_data['heroes'])} heroes and created a master_db with {len(game_data['master_db'])} items.")

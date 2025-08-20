@@ -12,9 +12,10 @@ import re
 from pprint import pformat
 
 # --- Import custom modules ---
+# Import the new directory constants from the data loader
 from hero_data_loader import (
     load_rules_from_csvs, load_languages, load_game_data, load_hero_stats_from_csv,
-    DATA_DIR, SCRIPT_DIR as LOADER_SCRIPT_DIR, HERO_STATS_CSV_PATTERN
+    DATA_DIR, OUTPUT_DIR, SCRIPT_DIR as LOADER_SCRIPT_DIR, HERO_STATS_CSV_PATTERN
 )
 from hero_parser import (
     get_full_hero_data, get_hero_final_stats,
@@ -23,11 +24,11 @@ from hero_parser import (
 )
 
 # --- Constants & Paths ---
-SCRIPT_DIR = Path(__file__).parent
-FINAL_CSV_PATH = SCRIPT_DIR / "hero_skill_output.csv"
-DEBUG_CSV_PATH = SCRIPT_DIR / "hero_skill_output_debug.csv"
-DEBUG_JSON_PATH = SCRIPT_DIR / "debug_hero_data.json"
-FAMILIAR_LOG_PATH = SCRIPT_DIR / "familiar_debug_log.txt"
+# All output paths are now relative to the central OUTPUT_DIR
+FINAL_CSV_PATH = OUTPUT_DIR / "hero_skill_output.csv"
+DEBUG_CSV_PATH = OUTPUT_DIR / "hero_skill_output_debug.csv"
+DEBUG_JSON_PATH = OUTPUT_DIR / "debug_hero_data.json"
+FAMILIAR_LOG_PATH = OUTPUT_DIR / "familiar_debug_log.txt"
 
 # --- Formatting & Output Functions ---
 
@@ -37,7 +38,7 @@ def _format_final_description(skill_descriptions: dict, lang: str, skill_types_t
     Returns a tuple: (main_description_string, list_of_tooltip_strings)
     """
     output_lines = []
-    tooltip_lines = [] # New list to collect tooltips
+    tooltip_lines = []
     
     local_skill_types_to_include = list(skill_types_to_include)
 
@@ -53,7 +54,6 @@ def _format_final_description(skill_descriptions: dict, lang: str, skill_types_t
         if not items:
             return
             
-        # Passive skills are displayed in reverse order of definition.
         processed_items = reversed(items) if is_passive else items
 
         for item in processed_items:
@@ -66,17 +66,14 @@ def _format_final_description(skill_descriptions: dict, lang: str, skill_types_t
                     output_lines.append(f"\n- {title} -")
 
             description = item.get(lang, "").strip()
-            # Fallback for older passive skill format
             if not description: description = item.get(f'description_{lang}', "").strip()
 
             if item.get("id") == "heading":
                 output_lines.append(f"\n{description}")
             elif description:
-                # Add bullet point, but not for passive descriptions that follow a title.
                 prefix = "" if is_passive and 'title' in locals() and title else "・"
                 output_lines.append(f"{prefix}{description}")
 
-            # --- NEW: Check for and collect tooltips ---
             if 'extra' in item and isinstance(item['extra'], dict):
                 tooltip_text = item['extra'].get(lang, "").strip()
                 if tooltip_text:
@@ -117,58 +114,42 @@ def write_final_csv(processed_data: list, output_path: Path):
     for hero in processed_data:
         skills = hero.get('skillDescriptions', {})
         special_context = hero.get('_special_data_context', {})
-
         passive_en_main, passive_en_tooltips = _format_final_description(skills, 'en', ['passiveSkills'], special_context)
         passive_ja_main, passive_ja_tooltips = _format_final_description(skills, 'ja', ['passiveSkills'], special_context)
         ss_en_main, ss_en_tooltips = _format_final_description(skills, 'en', ss_skill_types, special_context)
         ss_ja_main, ss_ja_tooltips = _format_final_description(skills, 'ja', ss_skill_types, special_context)
-        
         row = {
-            "hero_id": hero.get('id'),
-            "hero_name": hero.get('name', 'N/A'),
-            "passive_en": passive_en_main,
-            "passive_ja": passive_ja_main,
-            "ss_en": ss_en_main,
-            "ss_ja": ss_ja_main,
+            "hero_id": hero.get('id'), "hero_name": hero.get('name', 'N/A'),
+            "passive_en": passive_en_main, "passive_ja": passive_ja_main,
+            "ss_en": ss_en_main, "ss_ja": ss_ja_main,
         }
-
         all_tooltips_en = passive_en_tooltips + ss_en_tooltips
         all_tooltips_ja = passive_ja_tooltips + ss_ja_tooltips
-        
         for i in range(2):
             row[f'extra_en_{i+1}'] = all_tooltips_en[i] if i < len(all_tooltips_en) else ""
             row[f'extra_ja_{i+1}'] = all_tooltips_ja[i] if i < len(all_tooltips_ja) else ""
-
         output_rows.append(row)
         
     try:
         df = pd.DataFrame(output_rows)
         column_order = [
-            "hero_id", "hero_name", 
-            "passive_en", "passive_ja", "ss_en", "ss_ja",
+            "hero_id", "hero_name", "passive_en", "passive_ja", "ss_en", "ss_ja",
             "extra_en_1", "extra_ja_1", "extra_en_2", "extra_ja_2"
         ]
         df = df[column_order]
-
-        # --- NEW: File Splitting Logic ---
         chunk_size = 600
         num_chunks = (len(df) - 1) // chunk_size + 1
-
         if num_chunks <= 1:
-            # If there's only one chunk, save it with the original filename
             df.to_csv(output_path, index=False, encoding='utf-8-sig', quoting=csv.QUOTE_ALL, lineterminator='\n')
             print(f"Successfully saved {len(df)} rows to {output_path.name}.")
         else:
-            # If there are multiple chunks, save them with numbered suffixes
             print(f"Data is large. Splitting into {num_chunks} files of ~{chunk_size} rows each.")
-            base_name = output_path.stem
-            suffix = output_path.suffix
+            base_name = output_path.stem; suffix = output_path.suffix
             for i in range(num_chunks):
                 chunk_df = df.iloc[i*chunk_size:(i+1)*chunk_size]
                 chunk_path = output_path.parent / f"{base_name}_{i+1}{suffix}"
                 chunk_df.to_csv(chunk_path, index=False, encoding='utf-8-sig', quoting=csv.QUOTE_ALL, lineterminator='\n')
                 print(f" -> Successfully saved chunk {i+1} ({len(chunk_df)} rows) to {chunk_path.name}.")
-
     except Exception as e:
         print(f"FATAL: Failed to write final CSV: {e}")
 
@@ -179,60 +160,39 @@ def write_debug_csv(processed_data: list, output_path: Path):
     if not processed_data:
         print("Warning: No data to write.")
         return
-    
     all_rows = []
     for hero in processed_data:
         row = {'hero_id': hero.get('id'), 'hero_name': hero.get('name', 'N/A')}
         skills = hero.get('skillDescriptions', {})
-        # Define keys to extract from skill/extra dictionaries
         keys_to_keep = ['id', 'lang_id', 'params', 'collection_name']
         extra_keys_to_keep = ['lang_id', 'params']
-
-        # Helper function to flatten and add data to the row
         def update_row_with_item(item, prefix):
             row.update({f'{prefix}_{k}': v for k, v in item.items() if k != 'nested_effects' and k in keys_to_keep})
-            # --- NEW: Check for and add 'extra' (tooltip) data ---
             if 'extra' in item and isinstance(item['extra'], dict):
                 row.update({f'{prefix}_extra_{k}': v for k, v in item['extra'].items() if k in extra_keys_to_keep})
-
-        if de := skills.get('directEffect'):
-            update_row_with_item(de, 'de')
-        if cb := skills.get('clear_buffs'):
-            update_row_with_item(cb, 'cb')
-        
+        if de := skills.get('directEffect'): update_row_with_item(de, 'de')
+        if cb := skills.get('clear_buffs'): update_row_with_item(cb, 'cb')
         props = skills.get('properties', [])
         for i, p in enumerate(props[:3]):
             update_row_with_item(p, f'prop_{i+1}')
-            # Handle nested effects within properties
             if nested_effects := p.get('nested_effects', []):
                 for j, ne in enumerate(nested_effects[:2]):
-                    if isinstance(ne, dict):
-                         update_row_with_item(ne, f'prop_{i+1}_nested_{j+1}')
-
+                    if isinstance(ne, dict): update_row_with_item(ne, f'prop_{i+1}_nested_{j+1}')
         effects = skills.get('statusEffects', [])
         for i, e in enumerate(effects[:5]):
             update_row_with_item(e, f'se_{i+1}')
-            # Handle nested effects within status effects
             if nested_effects := e.get('nested_effects', []):
                 for j, ne in enumerate(nested_effects[:2]):
-                    if isinstance(ne, dict):
-                        update_row_with_item(ne, f'se_{i+1}_nested_{j+1}')
-        
+                    if isinstance(ne, dict): update_row_with_item(ne, f'se_{i+1}_nested_{j+1}')
         familiars = skills.get('familiars', [])
         for i, f in enumerate(familiars[:2]):
             update_row_with_item(f, f'fam_{i+1}')
-            # (Note: Familiars will be updated later to also output extra info for their effects)
-
         passives = skills.get('passiveSkills', [])
         for i, ps in enumerate(passives[:3]):
-            # Passives do not have extra info, so no change here
             row.update({f'passive_{i+1}_{k}': v for k, v in ps.items() if k in keys_to_keep})
-
         all_rows.append(row)
-        
     try:
         df = pd.DataFrame(all_rows)
-        # Sort columns alphabetically for consistency, hero_id and hero_name first
         cols = sorted([col for col in df.columns if col not in ['hero_id', 'hero_name']])
         df = df[['hero_id', 'hero_name'] + cols]
         df.to_csv(output_path, index=False, encoding='utf-8-sig', quoting=csv.QUOTE_ALL, lineterminator='\n')
@@ -251,7 +211,7 @@ def write_debug_json(debug_data: dict, output_path: Path):
     except Exception as e:
         print(f"FATAL: Failed to write debug JSON: {e}")
 
-# --- NEW: Two-Phase Processing Functions ---
+# --- Two-Phase Processing Functions ---
 
 def phase_one_integrate_data(game_db: dict, output_path: Path):
     """
@@ -278,68 +238,46 @@ def phase_two_parse_skills(debug_data: dict, lang_db: dict, game_db: dict, hero_
     print("\n--- Phase 2: Parsing skills from unified data ---")
     processed_heroes_data = []
     
-    # Initialize the final warning collectors
-    parsers['warnings_list'] = []
-    parsers['unique_warnings_set'] = set()
-    parsers['familiar_debug_log'] = []
-    parsers['familiar_parameter_log'] = []
+    parsers['warnings_list'] = []; parsers['unique_warnings_set'] = set()
+    parsers['familiar_debug_log'] = []; parsers['familiar_parameter_log'] = []
+
+    def collect_warnings(new_warnings):
+        if not new_warnings: return
+        for w in new_warnings:
+            if w not in parsers['unique_warnings_set']:
+                parsers['unique_warnings_set'].add(w); parsers['warnings_list'].append(w)
 
     total_heroes = len(debug_data)
     for i, (hero_id, full_hero_data) in enumerate(debug_data.items()):
         print(f"\r[{i+1}/{total_heroes}] Parsing skills for: {hero_id.ljust(40)}", end="")
-        
         hero_final_stats = get_hero_final_stats(hero_id, hero_stats_db)
         processed_hero = full_hero_data.copy()
         processed_hero['name'] = hero_final_stats.get('name')
-        
-        skill_descriptions = {}
-        special_data_for_hero = None
-        
-        # --- MODIFIED: Unpack tuples returned from parsers and collect warnings ---
-        def collect_warnings(new_warnings):
-            if not new_warnings: return
-            for w in new_warnings:
-                if w not in parsers['unique_warnings_set']:
-                    parsers['unique_warnings_set'].add(w)
-                    parsers['warnings_list'].append(w)
+        skill_descriptions = {}; special_data_for_hero = None
 
         if special_data := full_hero_data.get("specialId_details"):
             special_data_for_hero = special_data
             parsers["hero_mana_speed_id"] = full_hero_data.get("manaSpeedId")
             
-            # Note: parse_direct_effect was not modified as it doesn't generate warnings
             skill_descriptions['directEffect'] = parsers['direct_effect'](special_data, hero_final_stats, lang_db, game_db, hero_id, rules, parsers)
-            
             parsed_clear_buffs, new_warnings = parsers['clear_buffs'](special_data, lang_db, parsers)
-            skill_descriptions['clear_buffs'] = parsed_clear_buffs
-            collect_warnings(new_warnings)
-
-            prop_list = special_data.get("properties", [])
-            parsed_properties, new_warnings = parsers['properties'](prop_list, special_data, hero_final_stats, lang_db, game_db, hero_id, rules, parsers)
-            skill_descriptions['properties'] = parsed_properties
-            collect_warnings(new_warnings)
-            
-            se_list = special_data.get("statusEffects", [])
-            parsed_status_effects, new_warnings = parsers['status_effects'](se_list, special_data, hero_final_stats, lang_db, game_db, hero_id, rules, parsers)
-            skill_descriptions['statusEffects'] = parsed_status_effects
-            collect_warnings(new_warnings)
-
-            familiar_list = special_data.get("summonedFamiliars", [])
-            parsed_familiars, new_warnings = parsers['familiars'](familiar_list, special_data, hero_final_stats, lang_db, game_db, hero_id, rules, parsers)
-            skill_descriptions['familiars'] = parsed_familiars
-            collect_warnings(new_warnings)
+            skill_descriptions['clear_buffs'] = parsed_clear_buffs; collect_warnings(new_warnings)
+            parsed_properties, new_warnings = parsers['properties'](special_data.get("properties",[]), special_data, hero_final_stats, lang_db, game_db, hero_id, rules, parsers)
+            skill_descriptions['properties'] = parsed_properties; collect_warnings(new_warnings)
+            parsed_status_effects, new_warnings = parsers['status_effects'](special_data.get("statusEffects",[]), special_data, hero_final_stats, lang_db, game_db, hero_id, rules, parsers)
+            skill_descriptions['statusEffects'] = parsed_status_effects; collect_warnings(new_warnings)
+            parsed_familiars, new_warnings = parsers['familiars'](special_data.get("summonedFamiliars",[]), special_data, hero_final_stats, lang_db, game_db, hero_id, rules, parsers)
+            skill_descriptions['familiars'] = parsed_familiars; collect_warnings(new_warnings)
 
         passive_list = full_hero_data.get('passiveSkills', [])
         costume_passive_list = []
         if costume_bonuses := full_hero_data.get('costumeBonusesId_details'):
             if isinstance(costume_bonuses, dict):
                  costume_passive_list = costume_bonuses.get('passiveSkills', [])
-
         all_passives = passive_list + costume_passive_list
         if all_passives:
             parsed_passives, new_warnings = parsers['passive_skills'](all_passives, hero_final_stats, lang_db, game_db, hero_id, rules, parsers)
-            skill_descriptions['passiveSkills'] = parsed_passives
-            collect_warnings(new_warnings)
+            skill_descriptions['passiveSkills'] = parsed_passives; collect_warnings(new_warnings)
         
         processed_hero['_special_data_context'] = special_data_for_hero
         processed_hero['skillDescriptions'] = {k: v for k, v in skill_descriptions.items() if v}
@@ -360,8 +298,7 @@ def analyze_unresolved_placeholders(final_hero_data: list):
             elif isinstance(skill_data, dict): items_to_check.append(skill_data)
         idx = 0
         while idx < len(items_to_check):
-            item = items_to_check[idx]
-            idx += 1
+            item = items_to_check[idx]; idx += 1
             if not isinstance(item, dict): continue
             if 'nested_effects' in item and isinstance(item['nested_effects'], list):
                 items_to_check.extend(item['nested_effects'])
@@ -369,16 +306,13 @@ def analyze_unresolved_placeholders(final_hero_data: list):
                 if isinstance(text, str) and ('description' in key or 'tooltip' in key or key in ['en', 'ja']):
                     found = re.findall(r'(\{\w+\})', text)
                     if found: unresolved_counter.update(found)
-    
     if not unresolved_counter:
         print("✅ All placeholders resolved successfully!")
     else:
-        print(f"{'Placeholder':<30} | {'Count':<10}")
-        print("-" * 43)
+        print(f"{'Placeholder':<30} | {'Count':<10}"); print("-" * 43)
         for placeholder, count in unresolved_counter.most_common():
             print(f"{placeholder:<30} | {count:<10}")
-        print("-" * 43)
-        print(f"Total Unique Unresolved Placeholders: {len(unresolved_counter)}")
+        print("-" * 43); print(f"Total Unique Unresolved Placeholders: {len(unresolved_counter)}")
 
 # --- Main Execution Block ---
 def main():
@@ -401,7 +335,6 @@ def main():
             'familiars': parse_familiars, 'passive_skills': parse_passive_skills,
             'se_lang_subset': [key for key in language_db if key.startswith("specials.v2.statuseffect.")],
             'prop_lang_subset': [key for key in language_db if key.startswith("specials.v2.property.")],
-            # --- NEW: Pre-filter all lang_ids that contain '.extra' for efficient searching ---
             'extra_lang_ids': [key for key in language_db if '.extra' in key]
         }
         
@@ -412,7 +345,7 @@ def main():
         
         param_log = parsers.get('familiar_parameter_log', [])
         if param_log:
-            param_log_path = SCRIPT_DIR / "familiar_parameter_log.csv"
+            param_log_path = OUTPUT_DIR / "familiar_parameter_log.csv"
             print(f"\n--- 📝 Writing familiar parameter log... ---")
             try:
                 param_df = pd.DataFrame(param_log)
