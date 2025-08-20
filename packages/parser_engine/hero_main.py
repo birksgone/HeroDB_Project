@@ -24,10 +24,18 @@ from hero_parser import (
 )
 
 # --- Constants & Paths ---
-# All output paths are now relative to the central OUTPUT_DIR
-FINAL_CSV_PATH = OUTPUT_DIR / "hero_skill_output.csv"
-DEBUG_CSV_PATH = OUTPUT_DIR / "hero_skill_output_debug.csv"
+# Get the directory where this script (hero_main.py) is located.
+SCRIPT_DIR = Path(__file__).parent
+
+# Git-managed outputs are saved relative to this script.
+FINAL_CSV_PATH = SCRIPT_DIR / "hero_skill_output.csv"
+DEBUG_CSV_PATH = SCRIPT_DIR / "hero_skill_output_debug.csv"
+# The familiar parameter log is also useful in Git.
+PARAM_LOG_PATH = SCRIPT_DIR / "familiar_parameter_log.csv" 
+
+# Git-ignored, large intermediate files are saved in the central output directory.
 DEBUG_JSON_PATH = OUTPUT_DIR / "debug_hero_data.json"
+# The familiar debug log can be large and is not essential for Git.
 FAMILIAR_LOG_PATH = OUTPUT_DIR / "familiar_debug_log.txt"
 
 # --- Formatting & Output Functions ---
@@ -345,12 +353,12 @@ def main():
         
         param_log = parsers.get('familiar_parameter_log', [])
         if param_log:
-            param_log_path = OUTPUT_DIR / "familiar_parameter_log.csv"
+            # The path is now defined at the top of the file as PARAM_LOG_PATH
             print(f"\n--- 📝 Writing familiar parameter log... ---")
             try:
                 param_df = pd.DataFrame(param_log)
-                param_df.to_csv(param_log_path, index=False, encoding='utf-8-sig')
-                print(f"Details saved to {param_log_path.name}")
+                param_df.to_csv(PARAM_LOG_PATH, index=False, encoding='utf-8-sig')
+                print(f"Details saved to {PARAM_LOG_PATH.name}")
             except Exception as e:
                 print(f"Warning: Could not write familiar parameter log. Error: {e}")
         
