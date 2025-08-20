@@ -1,0 +1,23 @@
+{
+  "EXCEPTION_RULES": {
+    "REALLOCATIONCOUNT": {
+      "key": "reallocationCount",
+      "calc": "direct"
+    },
+    "MAXSTACK": {
+      "key": "fixed_value",
+      "value": 10,
+      "calc": "fixed"
+    },
+     "INSANITYTOADD": {
+      "key": "insanityToAdd",
+      "calc": "direct"
+    }
+  },
+  "ADDITIONAL_SKILLS": {
+  "buffToRemove": {
+    "prefix": "specials.v2.clearbuffs",
+    "keywords": ["buffToRemove", "buffToRemoveSideAffected"]
+  }
+}
+}
