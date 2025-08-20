@@ -39,20 +39,20 @@
 確率で次の効果を発揮できる：","・Special Skill needs consecutive uses to reach full power, in the following order:
 
 1st:
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 2 turns. This effect can't be dispelled.
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 2 turns.
 ・Deals 20% - 20% damage to all enemies after 2 turns, based on the damage the caster had taken while this effect was active.
 
 2nd:
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns. This effect can't be dispelled.
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns. This effect can't be dispelled.","・最大パワーに到達するには、次の順で特殊スキルを使用する必要がある：
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns.
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns.","・最大パワーに到達するには、次の順で特殊スキルを使用する必要がある：
 
 第1:
-・2ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
+・2ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
 ・この効果が発動中に術者が受けたダメージに基づいて、2ターン後に、20%-20%のダメージを敵全員に与える。
 
 第2:
-・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
-・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。","Maximum effect is achieved upon taking 0% of max health in damage.","この効果は、最大HPの0%のダメージを受けた時点で最大になる。","",""
+・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
+・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。","Maximum effect is achieved upon taking 0% of max health in damage.","この効果は、最大HPの0%のダメージを受けた時点で最大になる。","",""
 "magic_milena_costume_ice","Milena C","--- Passives ---
 
 - Mana on Special -
@@ -93,9 +93,9 @@ When this character casts their Special Skill, they have a [#!]60%[#] chance to 
 [#!]100%[#]になる。","・Special Skill has a different effect when charged with 100%/200% mana:
 
 x1 Mana Charge:
-・All enemies get -27% attack for 3 turns.
-・All enemies get -27% defense for 3 turns.
-・All enemies receive 342 Poison damage over 3 turns. This effect can't be cleansed.
+・All enemies get -27% attack for 3 turns. This effect can't be cleansed.
+・All enemies get -27% defense for 3 turns. This effect can't be dispelled.
+・All enemies receive 342 Poison damage over 3 turns.
 
 x2 Mana Charge:
 ・All allies receive 64 Burn damage over 6 turns.
@@ -103,9 +103,9 @@ x2 Mana Charge:
 ・All allies receive 64 Burn damage over 6 turns.","・マナチャージが100%/200%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
 
 x1マナチャージ:
-・3ターンの間、敵全員の攻撃力が-27%になる。
-・3ターンの間、敵全員の防御力が-27%になる。
-・敵全員に342の毒ダメージを与える(3ターン)。この効果は浄化不可。
+・3ターンの間、敵全員の攻撃力が-27%になる。この効果は浄化不可。
+・3ターンの間、敵全員の防御力が-27%になる。この効果は解除できない。
+・3ターンの間、敵全員に342の毒ダメージを与える。
 
 x2マナチャージ:
 ・6ターンの間、仲間全員に64の燃焼ダメージを与える。
@@ -148,10 +148,10 @@ x2マナチャージ:
 lang_id resolution failed.","--- Passives ---","・Cleanses status ailments from all allies.
 ・Recovers 28% health for all allies.
 [*]Recovers additional 4% health per each [##elementred]Fire[#] shield on the board, up to 28% health in total.
-・All allies get 55% attack for 4 turns. This effect can't be dispelled.","・仲間全員のステータス異常を浄化する。
+・All allies get 55% attack for 4 turns.","・仲間全員のステータス異常を浄化する。
 ・仲間全員のHPを28%回復する。
 [*]さらに、ボード上の[##elementred]炎属性[#]の盾の数に応じてHPが4%回復する。ただし、回復の上限は28%まで。
-・4ターンの間、仲間全員の攻撃力が55%になる。この効果は解除できない。","","","",""
+・4ターンの間、仲間全員の攻撃力が55%になる。","","","",""
 "elemental_jequn_costume_gilded","Jequn C","--- Passives ---
 
 - FAILED: strong_troop_damage_modifier_costume -
@@ -229,7 +229,7 @@ lang_id resolution failed.","--- Passives ---
 [#!]100%[#]になる。","・Special Skill has a different effect when charged with 100%/200% mana:
 
 x1 Mana Charge:
-・All enemies receive 645 Burn damage over 3 turns.
+・All enemies receive 645 Burn damage over 3 turns. This effect can't be cleansed.
 ・All enemies get -36% defense against [##elementred]Fire[#] for 3 turns.
 
 x2 Mana Charge:
@@ -237,7 +237,7 @@ x2 Mana Charge:
 ・All allies receive 64 Burn damage over 5 turns.","・マナチャージが100%/200%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
 
 x1マナチャージ:
-・3ターンの間、敵全員に645の燃焼ダメージを与える。
+・3ターンの間、敵全員に645の燃焼ダメージを与える。この効果は浄化できない。
 ・3ターンの間、敵全員の[##elementred]炎属性[#]に対する防御力が-36%になる。
 
 x2マナチャージ:
@@ -261,20 +261,20 @@ lang_id resolution failed.","--- Passives ---
 [#!]100%[#]になる。","・Special Skill has a different effect when charged with 100%/200% mana:
 
 x1 Mana Charge:
-・All allies regenerate 1368 HP over 3 turns.
-・All allies get 33% attack for 3 turns. This effect can't be dispelled.
+・All allies regenerate 1368 HP over 3 turns. This effect can't be dispelled.
+・All allies get 33% attack for 3 turns.
 
 x2 Mana Charge:
-・All enemies receive 64 Burn damage over 5 turns.
-・All enemies receive 64 Burn damage over 5 turns.","・マナチャージが100%/200%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
+・All enemies receive 64 Burn damage over 5 turns. This effect can't be cleansed.
+・All enemies receive 64 Burn damage over 5 turns. This effect can't be cleansed.","・マナチャージが100%/200%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
 
 x1マナチャージ:
-・3ターンに渡って、仲間全員のHPが1368回復する。
-・3ターンの間、仲間全員の攻撃力が33%になる。この効果は解除できない。
+・仲間全員のHPが1368回復(3ターン)。この効果は解除不可
+・3ターンの間、仲間全員の攻撃力が33%になる。
 
 x2マナチャージ:
-・5ターンの間、敵全員に64の燃焼ダメージを与える。
-・5ターンの間、敵全員に64の燃焼ダメージを与える。","","","",""
+・5ターンの間、敵全員に64の燃焼ダメージを与える。この効果は浄化できない。
+・5ターンの間、敵全員に64の燃焼ダメージを与える。この効果は浄化できない。","","","",""
 "kalevala_louhi_costume_mistress","Louhi C","・Dispels buffs from all enemies.
 
 --- Passives ---
@@ -288,10 +288,10 @@ When this character starts a turn with low health for the first time during a ba
 このキャラクターがバトル中にライフが低い状態で初めてターンを開始した場合、このキャラクターのライフが[#!]15%[#]回復し、マナが[#!]8%[#]増加する。","・Dispels buffs from all enemies.
 ・Deals 280% damage to all enemies.
 ・[#!]Growth:[#] All allies get -98.4 attack.
-・All enemies get -30% defense for 4 turns.","・敵全員のバフを解除する。
+・All enemies get -30% defense for 4 turns. This effect can't be dispelled.","・敵全員のバフを解除する。
 ・敵全員に280%のダメージを与える。
 ・[#!]成長：[#]仲間全員の攻撃力が-98.4増加する。
-・4ターンの間、敵全員の防御力が-30%になる。","","","",""
+・4ターンの間、敵全員の防御力が-30%になる。この効果は解除できない。","","","",""
 "kalevala_ilmarinen_costume_gold","Ilmarinen C","--- Passives ---
 
 - Power of Sisu -
@@ -302,11 +302,11 @@ When this character starts a turn with low health for the first time during a ba
 [*] For each hit [##elementblue]Ice[#] enemy, the boosted health is -98.4% of damage dealt to them.
 ・Reduces the mana of all [##elementblue]Ice[#] enemies by -50%. Reduces the mana of all other enemies by -50%.
 ・All enemies become [#!]Soul Connected[#] for 4 turns. Soul Connected enemies share received damage.
-・All enemies get -60% defense for 4 turns.","・術者と近くにいる仲間のライフを、個々の敵に与えたダメージの-98.4%ブーストする。
+・All enemies get -60% defense for 4 turns. This effect can't be dispelled.","・術者と近くにいる仲間のライフを、個々の敵に与えたダメージの-98.4%ブーストする。
 [*] [##elementblue]氷属性[#]の敵に攻撃を当てるたびに、ブーストされるライフは、その敵に与えたダメージの-98.4%になる。
 ・[##elementblue]氷属性[#]の敵全員のマナが-50%減少し、その他の属性の敵全員のマナが-50%減少する。
 ・4ターンの間、敵全員に[#!]ソウル・コネクト[#]が発動する。ソウル・コネクトによって魂が繋がった敵同士は被ダメージを共有する。
-・4ターンの間、敵全員の防御力が-60%になる。","This has no effect on other [#!]Griffex[#] characters.","この効果は他の[#!]グリフェックス[#]のキャラクターには影響しない。","",""
+・4ターンの間、敵全員の防御力が-60%になる。この効果は解除できない。","This has no effect on other [#!]Griffex[#] characters.","この効果は他の[#!]グリフェックス[#]のキャラクターには影響しない。","",""
 "kalevala_lemminkainen_costume_swan","Lemminkäinen C","--- Passives ---
 
 - Power of Sisu -
@@ -359,10 +359,10 @@ lang_id resolution failed.","--- Passives ---","・Deals 200% damage to all enem
 lang_id resolution failed.","--- Passives ---","・Deals 480% damage to the target and all [##elementblue]Ice[#] enemies.
 ・All active status ailments are uncleansable for all enemies for the remaining turns of the status ailment.
 ・Automatically does 0 damage to the target and all [##elementblue]Ice[#] enemies when their mana gets full and reduces their mana by 50% for 4 turns.
-・Alters the power of all [##elementgreen]Nature[#] shields on the board. When an attacking Hero casts the special, the shields become enhanced and give 64% more mana. When a defending Hero casts the special, the shields become weakened and give 64% less mana.","・ターゲットと全ての[##elementblue]氷属性[#]の敵に480%のダメージを与える。
+・Enhances all [##elementgreen]Nature[#] shields on the board. Enhanced shields give 64% less mana to Heroes.","・ターゲットと全ての[##elementblue]氷属性[#]の敵に480%のダメージを与える。
 ・ステータス異常の残り有効ターン中、敵全員に対して発動中のすべてのステータス異常が浄化不可になる。
 ・4ターンの間、ターゲットのマナが満タンになると、自動的にターゲットと[##elementblue]氷属性[#]の敵全員に0ダメージを与え、マナを50%減少させる。
-・ボード上にあるすべての[##elementgreen]自然属性[#]の盾を変容する。攻撃側の英雄が特殊スキルを使用すると、盾が強化され、マナが64%になる。防衛側の英雄が特殊スキルを使用すると、盾が弱体化され、マナが64%になる。","","","",""
+・ボード上にあるすべての[##elementgreen]自然属性[#]の盾が「強化」される。盾が「強化」されると英雄のマナが64%減少する。","","","",""
 "elemental_anzia_costume_jailer","N/A","--- Passives ---
 
 - FAILED: strong_troop_damage_modifier_costume -
@@ -372,17 +372,7 @@ lang_id resolution failed.","--- Passives ---","・All allies counterattack with
 "elemental_aconia_costume_courier","N/A","--- Passives ---
 
 - FAILED: strong_troop_damage_modifier_costume -
-lang_id resolution failed.","--- Passives ---","・Summons a Dagger Fiend for the target and [##elementyellow]Holy[#] enemies. The Fiend damages its target with 200% attack every turn.
-
-・The Dagger Fiend absorbs healing. It disappears after absorbing a healing amount equal to 30% of its target's max health.
-・When the Dagger Fiend disappears after it has absorbed enough healing, the owner receives 27 Bleed damage over 1 turns.
-・Summons a Dagger Fiend for the target and [##elementyellow]Holy[#] enemies. The Fiend damages its target with 200% attack every turn.
-[*]The Dagger Fiend absorbs healing. It disappears after absorbing a healing amount equal to 28% of its target's max health.","・ターゲットと[##elementyellow]聖属性[#]の敵全員に短剣のフィエンドをサモンする。フィエンドは、ターン毎に200%の攻撃力で敵にダメージを与える。
-
-・短剣のフィエンドは回復を吸収し、ターゲットの最大HPの30%に等しいライフを吸収すると消滅する。
-・短剣のフィエンドは十分なHPを吸収すると消え、1ターンにわたって所有者が27の出血ダメージを受ける。
-・ターゲットと[##elementyellow]聖属性[#]の敵全員に短剣のフィエンドをサモンする。フィエンドは、ターン毎に200%の攻撃力で敵にダメージを与える。
-[*]短剣のフィエンドは回復を吸収し、ターゲットの最大HPの28%に等しいライフを吸収すると消滅する。","","","",""
+lang_id resolution failed.","--- Passives ---","・Failed for familiar dagger_parasite_costume","","","","",""
 "tales1_domiventus","Domiventus","--- Passives ---
 
 - Effects on Special Skill -
@@ -444,16 +434,16 @@ lang_id resolution failed.","--- Passives ---","・Summons a Dagger Fiend for th
 ・The caster steals 3% of generated mana from all enemies over 4 turns. This effect can't be cleansed, but it gets removed if the caster is defeated.
 
 2nd:
-・All enemies receive 64 Burn damage over 4 turns.
-・All enemies receive 64 Burn damage over 4 turns.","・最大パワーに到達するには、次の順で特殊スキルを使用する必要がある：
+・All enemies receive 64 Burn damage over 4 turns. This effect can't be cleansed.
+・All enemies receive 64 Burn damage over 4 turns. This effect can't be cleansed.","・最大パワーに到達するには、次の順で特殊スキルを使用する必要がある：
 
 第1:
 ・4ターンの間、敵全員に腐食性フロストを与える。腐食性フロストは、ターン毎に0.5のフロストダメージを与え、ターゲットの攻撃力が-100%になる。
 ・4ターンにわたって、術者が敵全員のマナ生成の3%を奪う。この効果は浄化できないが術者が倒されると解除される。
 
 第2:
-・4ターンの間、敵全員に64の燃焼ダメージを与える。
-・4ターンの間、敵全員に64の燃焼ダメージを与える。","","","",""
+・4ターンの間、敵全員に64の燃焼ダメージを与える。この効果は浄化できない。
+・4ターンの間、敵全員に64の燃焼ダメージを与える。この効果は浄化できない。","","","",""
 "tales1_medea","Medea","--- Passives ---
 
 - Effects on Special Skill -
@@ -494,20 +484,20 @@ lang_id resolution failed.","--- Passives ---","・Summons a Dagger Fiend for th
 確率で次の効果を発揮できる：","・Special Skill needs consecutive uses to reach full power, in the following order:
 
 1st:
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 2 turns. This effect can't be dispelled.
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 2 turns.
 ・Deals 20% - 20% damage to all enemies after 2 turns, based on the damage the caster had taken while this effect was active.
 
 2nd:
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns. This effect can't be dispelled.
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns. This effect can't be dispelled.","・最大パワーに到達するには、次の順で特殊スキルを使用する必要がある：
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns.
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns.","・最大パワーに到達するには、次の順で特殊スキルを使用する必要がある：
 
 第1:
-・2ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
+・2ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
 ・この効果が発動中に術者が受けたダメージに基づいて、2ターン後に、20%-20%のダメージを敵全員に与える。
 
 第2:
-・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
-・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。","Maximum effect is achieved upon taking 0% of max health in damage.","この効果は、最大HPの0%のダメージを受けた時点で最大になる。","",""
+・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
+・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。","Maximum effect is achieved upon taking 0% of max health in damage.","この効果は、最大HPの0%のダメージを受けた時点で最大になる。","",""
 "wonderland_tweedles","Tweedles","--- Passives ---
 
 - Resist Damage from Status Effects -
@@ -524,7 +514,7 @@ lang_id resolution failed.","--- Passives ---","・Recovers 25% health for all a
 [*]Recovers additional 2% health per each [##elementred]Fire[#] shield on the board, up to 25% health in total.
 ・Cleanses status ailments from all allies.","・仲間全員のHPを25%回復する。
 [*]さらに、ボード上の[##elementred]炎属性[#]の盾の数に応じてHPが2%回復する。ただし、回復の上限は25%まで。
-・仲間全員のステータス異常を浄化する。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","",""
+・仲間全員のステータス異常を浄化する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "elemental_lexi","Lexi","--- Passives ---
 
 - FAILED: strong_troop_damage_modifier -
@@ -556,10 +546,10 @@ This character recovers [#!]5%[#] health when they receive a buff or a positive 
 バフまたはプラスの累積状態の間、このキャラクターのライフが[#!]5%[#]回復する","・Deals 200% damage to the target and nearby enemies.
 ・The duration of dispellable status ailments is reset for the target.
 ・The target receives 80% damage for all the damage their allies receive for 3 turns.
-・The target gets -44% defense for 3 turns. This effect can't be cleansed.","・ターゲットと近くにいる敵に200%のダメージを与える。
+・The target gets -44% defense for 3 turns.","・ターゲットと近くにいる敵に200%のダメージを与える。
 ・ターゲットが解除可能なステータス異常の影響を受ける時間がリセットされる。
 ・3ターンの間、仲間が受けたダメージの80%をターゲットに与える。
-・3ターンの間、ターゲットの防御力が-44%になる。この効果は浄化できない。","","","",""
+・3ターンの間、ターゲットの防御力が-44%になる。","","","",""
 "castle_bear_teddy","Teddy","--- Passives ---
 
 - Health Recovery on Buff Received -
@@ -568,15 +558,15 @@ This character recovers [#!]5%[#] health when they receive a buff or a positive 
 - バフを受けるごとのライフ回復 -
 バフまたはプラスの累積状態の間、このキャラクターのライフが[#!]5%[#]回復する","・Deals 180% damage to all enemies.
 ・All enemies fall [#!]asleep[#] and receives 170% increased damage while sleeping.
-・All allies regenerate 1896 HP over 4 turns.","・敵全員に180%のダメージを与える。
+・All allies regenerate 1896 HP over 4 turns. This effect can't be dispelled.","・敵全員に180%のダメージを与える。
 ・敵全員が[#!]睡眠状態[#]となる。眠っている間は被ダメージが170%増加する。
-・4ターンに渡って、仲間全員のHPが1896回復する。","A sleeping character cannot gain mana or attack.
+・仲間全員のHPが1896回復(4ターン)。この効果は解除不可","The character in Deep Sleep cannot gain mana or attack.
 
-・ The sleeping target is woken once it takes damage. This excludes damage from Minions, Fiends, Mega Minions and Mega Fiends.
+・ The character in Deep Sleep is woken once it takes 170 damage.
 
-・ This effect is uncleansable.","睡眠状態のキャラクターは、マナの獲得や攻撃ができない。
+・ This effect is uncleansable.","深い睡眠状態にあるキャラクターはマナを獲得したり攻撃したりすることができない。
 
-・眠っているターゲットは、ミニオン、フィエンド、メガミニオン、メガフィエンド以外からのダメージを受けると目を覚ます。
+・深い睡眠状態にあるこのキャラクターは合計170ダメージを受けると目を覚ます。
 
 ・この効果は浄化できない。","",""
 "castle_stag_xiamara","Xiamara","--- Passives ---
@@ -610,9 +600,9 @@ This character recovers [#!]5%[#] health when they receive a buff or a positive 
 - バフを受けるごとのライフ回復 -
 バフまたはプラスの累積状態の間、このキャラクターのライフが[#!]5%[#]回復する","・Each defeated ally has a 60% chance to get revived with 20% HP.
 ・All allies get 50% attack for 5 turns. The attack increases by -95% each turn, up to 50%.
-・All allies regenerate 1472 HP over 5 turns.","・60%の確率で、倒れた仲間が最大HPの20%を有した状態で復活する。
+・All allies regenerate 1472 HP over 5 turns. This effect can't be dispelled.","・60%の確率で、倒れた仲間が最大HPの20%を有した状態で復活する。
 ・5ターンの間、仲間全員の攻撃力が50%になる。攻撃力はターン毎に-95%増加し、最大50%まで増加する。
-・5ターンに渡って、仲間全員のHPが1472回復する。","","","",""
+・仲間全員のHPが1472回復(5ターン)。この効果は解除不可","","","",""
 "goblin_fizzcoil","Fizzcoil","--- Passives ---
 
 - Effects on Special Skill -
@@ -692,12 +682,7 @@ This character recovers [#!]5%[#] health when they receive a buff or a positive 
 このキャラクターが特殊
 スキルを使用すると、[#!]60%[#]の
 確率で次の効果を発揮できる：","・[#!]Growth:[#] All allies get 0 attack.
-・Summons a Spotted Boar Mega Minion with 65% HP and 225% attack inherited from the caster.
-・When summoned, the Spotted Boar Mega Minion gives its owner immunity to status effect dispels for as long as the owner has a Spotted Boar Mega Minion. This effect can't be dispelled.
-・When summoned, the Spotted Boar Mega Minion gives its owner immunity to status effect dispels for as long as the owner has a Spotted Boar Mega Minion. This effect can't be dispelled.","・[#!]成長：[#]仲間全員の攻撃力が0増加する。
-・術者のHPの65%と攻撃力の225%を持つマダラボアのメガミニオンをサモンする。
-・マダラボアのメガミニオンがサモンされた場合、自らの所有者がステータス効果解除に耐性を持つ。（所有者がマダラボアのメガミニオンを所有する限り有効）。この効果は解除できない。
-・マダラボアのメガミニオンがサモンされた場合、自らの所有者がステータス効果解除に耐性を持つ。（所有者がマダラボアのメガミニオンを所有する限り有効）。この効果は解除できない。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
+・Failed for familiar spotted_boar_mega_minion","・[#!]成長：[#]仲間全員の攻撃力が0増加する。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
 
 ・Additional Wither and Growth effects modify the Ability Scores further.
 
@@ -799,18 +784,7 @@ This character recovers [#!]5%[#] health when they receive a buff or a positive 
 このキャラクターが特殊
 スキルを使用すると、[#!]60%[#]の
 確率で次の効果を発揮できる：","・[#!]Wither:[#] The target gets -2080 defense.
-・Summons a Goblin Explosive Fiend for the target and nearby enemies. The Fiend damages the enemy with 195% attack every turn.
-
-・The Goblin Explosive Fiend absorbs healing and disappears when it has absorbed health equal to 20% of its owner's max health.
-・When the Goblin Explosive Fiend disappears after it has absorbed enough healing, the owner receives 39.5 Burn damage over 1.5 turns.
-・Summons a Goblin Explosive Fiend for the target and nearby enemies. The Fiend damages the enemy with 195% attack every turn.
-[*]The Goblin Explosive Fiend absorbs healing and disappears when it has absorbed health equal to 13% of its owner's max health.","・[#!]弱化：[#]ターゲットの防御力が-2080減少する。
-・ターゲットと近くにいる敵に怒れるゴブリンのフィエンドをサモンし、ターン毎に195%の攻撃力で敵にダメージを与える。
-
-・怒れるゴブリンのフィエンドは回復を吸収し、所有者の最大HPの20%に等しいライフを吸収すると消滅する。
-・怒れるゴブリンのフィエンドは十分なHPを吸収すると消え、1.5ターンにわたって所有者が39.5の出血ダメージを受ける。
-・ターゲットと近くにいる敵に怒れるゴブリンのフィエンドをサモンし、ターン毎に195%の攻撃力で敵にダメージを与える。
-[*]怒れるゴブリンのフィエンドは回復を吸収し、所有者の最大HPの13%に等しいライフを吸収すると消滅する。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
+・Failed for familiar goblin_explosive_parasite","・[#!]弱化：[#]ターゲットの防御力が-2080減少する。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
 
 ・Additional Wither and Growth effects modify the Ability Scores further.
 
@@ -843,13 +817,8 @@ This character recovers [#!]5%[#] health when they receive a buff or a positive 
 スキルを使用すると、[#!]60%[#]の
 確率で次の効果を発揮できる：","・Deals 365% damage to all enemies.
 ・[#!]Wither:[#] All enemies get -2360 attack.
-・Summons a White Boar Mega Minion with 65% HP and 215% attack inherited from the caster.
-・When summoned, the White Boar Mega Minion gives its owner the ability to counterattack with 50% of the damage received for as long as the owner has a White Boar Mega Minion. This effect can't be dispelled.
-・When summoned, the White Boar Mega Minion gives its owner the ability to counterattack with 50% of the damage received for as long as the owner has a White Boar Mega Minion. This effect can't be dispelled.","・敵全員に365%のダメージを与える。
-・[#!]弱化：[#]敵全員の攻撃力が-2360減少する。
-・術者のHPの65%と攻撃力の215%を持つホワイトボアのメガミニオンをサモンする。
-・ホワイトボアのメガミニオンがサモンされた場合は、所有者がホワイトボアのメガミニオンを所有する限り、所有者が受けたダメージの50%で敵に反撃する。この効果は浄化できない。
-・ホワイトボアのメガミニオンがサモンされた場合は、所有者がホワイトボアのメガミニオンを所有する限り、所有者が受けたダメージの50%で敵に反撃する。この効果は浄化できない。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
+・Failed for familiar white_boar_mega_minion","・敵全員に365%のダメージを与える。
+・[#!]弱化：[#]敵全員の攻撃力が-2360減少する。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
 
 ・Additional Wither and Growth effects modify the Ability Scores further.
 
@@ -1013,10 +982,10 @@ This character recovers [#!]5%[#] health when they receive a buff or a positive 
 This character recovers [#!]5%[#] health when they receive a buff or a positive stack.","--- Passives ---
 
 - バフを受けるごとのライフ回復 -
-バフまたはプラスの累積状態の間、このキャラクターのライフが[#!]5%[#]回復する","・Lifts all cleansable status ailments from all allies and randomly distributes them on enemies.
+バフまたはプラスの累積状態の間、このキャラクターのライフが[#!]5%[#]回復する","・Steals all dispellable buffs from all enemies and randomly distributes them on allies.
 ・The duration of status ailments is reset for all enemies.
 ・Deals 5% damage to all enemies.
-・All enemies reflect status effect buffs to a random character on the opposing team for 4 turns.","・仲間全員の浄化可能なステータス異常を浄化し、敵にランダムに分配する。
+・All enemies reflect status effect buffs to a random character on the opposing team for 4 turns.","・敵全員から、解除可能なバフをすべて盗み、仲間全員にランダムに分配する。
 ・敵全員のステータス異常の持続時間がリセットされる。
 ・敵全員に5%のダメージを与える。
 ・4ターンにわたり、敵全員がステータス効果バフを跳ね返し、そのバフを相手チームのランダムなキャラクター1体に付与する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","Only dispellable buffs are reflected.","解除可能なバフのみを跳ね返す。"
@@ -1028,9 +997,9 @@ This character recovers [#!]5%[#] health when they receive a buff or a positive 
 - バフを受けるごとのライフ回復 -
 バフまたはプラスの累積状態の間、このキャラクターのライフが[#!]5%[#]回復する","・Boosts health of all allies by 500. Boosted health can exceed max HP.
 ・All allies get 30% attack for 5 turns. The attack increases by -95% each turn, up to 30%.
-・All allies get 24% mana generation for 5 turns.","・仲間全員のHPを500回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
+・All allies get 24% mana generation for 5 turns. This effect can't be dispelled.","・仲間全員のHPを500回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
 ・5ターンの間、仲間全員の攻撃力が30%になる。攻撃力はターン毎に-95%増加し、最大30%まで増加する。
-・5ターンの間、仲間全員のマナ生成が24%になる。","","","",""
+・すべての仲間がマナ生成24%を得る(5ターン)。この効果は解除不可","","","",""
 "castle_stag_fawn","Fawn","--- Passives ---
 
 - Health Recovery on Buff Received -
@@ -1055,10 +1024,10 @@ This character has innate resistance against [#!]Sand[#] damage.
 このキャラクターが受けたダメージの[#!]20%[#]を他の仲間全員で共有する。","・Deals 200% damage to all enemies.
 ・Deals 2480 extra damage if the target has boosted health.
 ・This Special Skill never misses its targets.
-・All enemies get -35% defense for 3 turns.","・敵全員に200%のダメージを与える。
+・All enemies get -35% defense for 3 turns. This effect can't be dispelled.","・敵全員に200%のダメージを与える。
 ・ターゲットがライフブースト状態の場合、2480の追加ダメージを与える。
 ・この特殊スキルはターゲットに必ず命中する。
-・3ターンの間、敵全員の防御力が-35%になる。","","","",""
+・3ターンの間、敵全員の防御力が-35%になる。この効果は解除できない。","","","",""
 "astral_sparklight","Sparklight","--- Passives ---
 
 - Resist Sand Damage -
@@ -1092,11 +1061,8 @@ This character recovers [#!]8[#] health when a Minion owned by them is destroyed
 - 倒れたミニオンによるライフ -
 所有するミニオンが倒されるたびに、このキャラクターのライフが[#!]8[#]回復する","・All allies' Special Skill deal an additional -75% damage for 4 turns.
 ・[#70e92f]Element Link[#] gives all [#70e92f]Nature[#] allies 10% additional Special Skill damage for 4 turns. This effect can't be dispelled.
-・Summons a Spirit of Spring Minion for all allies with 30% HP inherited from the caster.
-・When summoned, the Spirit of Spring Minion boosts 8 health for its owner at the end of each turn for as long as the owner has a Spirit of Spring Minion. This effect can't be dispelled.","・4ターンの間、仲間全員が特殊スキル使用時に-75%の追加ダメージを与える。
-・4ターンの間、[#70e92f]属性リンク[#]によって、[#70e92f]自然属性[#]の仲間全員が特殊スキルを使用した際に、10%の追加ダメージを与える。この効果は解除できない。
-・術者のHPの30%を持つ春の精のミニオンを仲間全員にサモンする。
-・春のミニオンの精霊は、サモンされると各ターン終了時に所有者のライフを8ブーストする。その効果は所有者が春のミニオンの精霊を所持している間継続する。この効果は解除できない。","","","",""
+・Failed for familiar leadria_spring_minion","・4ターンの間、仲間全員が特殊スキル使用時に-75%の追加ダメージを与える。
+・4ターンの間、[#70e92f]属性リンク[#]によって、[#70e92f]自然属性[#]の仲間全員が特殊スキルを使用した際に、10%の追加ダメージを与える。この効果は解除できない。","","","",""
 "pirate_boatswain","Black Caesar","--- Passives ---
 
 - Resist Damage from Status Effects -
@@ -1104,20 +1070,7 @@ This character has innate resistance against incoming damage from status effects
 
 - ステータス効果によるダメージ耐性 -
 このキャラクターは、ステータス効果によるダメージへの耐性を最初から持つ。","・Deals 335% damage to all enemies.
-・Summons a Pirate Skeleton Fiend for all enemies. The Fiend damages the enemy with 100% attack every turn.
-
-・The Pirate Skeleton Fiend absorbs healing. It disappears after absorbing a healing amount equal to 45% of its target's max health.
-・Summons a Pirate Skeleton Fiend for all enemies. The Fiend damages the enemy with 100% attack every turn.
-[*]The Pirate Skeleton Fiend absorbs healing. It disappears after absorbing a healing amount equal to 13% of its target's max health.
-・Summons a Pirate Skeleton Fiend for all enemies. The Fiend damages the enemy with 100% attack every turn.
-[*]The Pirate Skeleton Fiend absorbs healing. It disappears after absorbing a healing amount equal to 13% of its target's max health.","・敵全員に335%のダメージを与える。
-・敵全員に海賊のドクロのフィエンドをサモンする。フィエンドは、ターン毎に100%の攻撃力で敵にダメージを与える。
-
-・海賊のドクロのフィエンドは回復を吸収し、ターゲットの最大HPの45%に等しいライフを吸収すると消滅する。
-・敵全員に海賊のドクロのフィエンドをサモンする。フィエンドは、ターン毎に100%の攻撃力で敵にダメージを与える。
-[*]海賊のドクロのフィエンドは回復を吸収し、ターゲットの最大HPの13%に等しいライフを吸収すると消滅する。
-・敵全員に海賊のドクロのフィエンドをサモンする。フィエンドは、ターン毎に100%の攻撃力で敵にダメージを与える。
-[*]海賊のドクロのフィエンドは回復を吸収し、ターゲットの最大HPの13%に等しいライフを吸収すると消滅する。","","","",""
+・Failed for familiar pirate_fiend","・敵全員に335%のダメージを与える。","","","",""
 "fire_god_neema","Neema","--- Passives ---
 
 - FAILED: bypass_taunt_effects -
@@ -1129,17 +1082,8 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals 250% damage to all enemies.
 ・[#ff9f81]Element Link[#] gives all [#ff9f81]Fire[#] allies 10% additional Special Skill damage for 4 turns. This effect can't be dispelled.
-・Summons a Fire Tiger Fiend for all enemies. The Fiend damages its target with 45% attack every turn.
-
-・The Fiend absorbs healing. It disappears after absorbing a healing amount equal to 45% of its target's max health.
-・When summoned, the Fire Tiger Fiend's target cannot cast any new Taunt status effects for as long as the target has Fire Tiger Fiends. This effect can't be cleansed.
-・When summoned, the Fire Tiger Fiend's target cannot cast any new Taunt status effects for as long as the target has Fire Tiger Fiends. This effect can't be cleansed.","・敵全員に250%のダメージを与える。
-・4ターンの間、[#ff9f81]属性リンク[#]によって、[#ff9f81]炎属性[#]の仲間全員が特殊スキルを使用した際に、10%の追加ダメージを与える。この効果は解除できない。
-・敵全員に対してファイヤータイガーのフィエンドをサモンする。フィエンドは、ターン毎に45%の攻撃力でターゲットにダメージを与える。
-
-・このフィエンドは回復を吸収し、ターゲットの最大HPの45%に等しいライフを吸収すると消滅する。
-・サモンしたファイヤータイガーのフィエンドの標的が、ファイヤータイガーのフィエンドを所持している場合、その標的は新たな挑発のステータス効果を付与できなくなる。この効果は浄化できない。
-・サモンしたファイヤータイガーのフィエンドの標的が、ファイヤータイガーのフィエンドを所持している場合、その標的は新たな挑発のステータス効果を付与できなくなる。この効果は浄化できない。","","","",""
+・Failed for familiar neema_fire_tiger","・敵全員に250%のダメージを与える。
+・4ターンの間、[#ff9f81]属性リンク[#]によって、[#ff9f81]炎属性[#]の仲間全員が特殊スキルを使用した際に、10%の追加ダメージを与える。この効果は解除できない。","","","",""
 "elemental_ironmaw","Ironmaw","--- Passives ---
 
 - FAILED: strong_troop_damage_modifier -
@@ -1165,42 +1109,27 @@ lang_id resolution failed.","--- Passives ---","・Deals 480% damage to the enem
 "christmas_ginger","Ginger","","","・The caster gets [#!]Sticky Surface[#] for 3 turns. This effect can't be dispelled.
 [*][#!]Sticky Surface[#]: Steals 100 random dispellable buff or Growth effect from an attacking enemy.
 ・All allies' except the caster's Special Skill deal an additional -80% damage for 3 turns.
-・Summons an Elf Minion for each ally with 10% HP and 10% attack inherited from the caster.
-・Summons an Elf Minion for each ally with 5% HP and 10% attack inherited from the caster.","・3ターンの間、術者が[#!]粘着層[#]を獲得する。この効果は解除できない。
+・Failed for familiar christmas_elf","・3ターンの間、術者が[#!]粘着層[#]を獲得する。この効果は解除できない。
 [*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで100個の解除可能なバフまたは成長効果を奪う。
-・3ターンの間、術者以外の仲間全員が特殊スキル使用時に-80%の追加ダメージを与える。
-・仲間全員にエルフミニオンをサモンする。エルフミニオンは、術者のHPの10%と攻撃力の10%を持つ。
-・仲間全員にエルフミニオンをサモンする。エルフミニオンは、術者のHPの5%と攻撃力の10%を持つ。","Each character can trigger this effect once per turn.","各キャラクターは、1ターンに1回のみこの効果を発動させられる。","",""
+・3ターンの間、術者以外の仲間全員が特殊スキル使用時に-80%の追加ダメージを与える。","Each character can trigger this effect once per turn.","各キャラクターは、1ターンに1回のみこの効果を発動させられる。","",""
 "christmas_zappa","Zappa","","","・Deals 350% damage to the target.
 ・The target receives 531 Frost damage over 3 turns.
-・Summons an Elf Minion with 10% HP and 10% attack inherited from the caster.
-・Summons an Elf Minion with 5% HP and 10% attack inherited from the caster.","・ターゲットに350%のダメージを与える。
-・3ターンの間、ターゲットに531のフロストダメージを与える。
-・術者のHPの10%と攻撃力の10%を持つエルフミニオンをサモンする。
-・術者のHPの5%と攻撃力の10%を持つエルフミニオンをサモンする。","","","",""
+・Failed for familiar christmas_elf","・ターゲットに350%のダメージを与える。
+・3ターンの間、ターゲットに531のフロストダメージを与える。","","","",""
 "christmas_cookie","Cookie","","","・Reduces the mana of all enemies by 2%.
 ・All enemies receive a Mystery Potion. After 3 turns the Mystery Potion explodes and deals 3320 damage to the target. After the explosion the target can't gain mana for 24 turns.
-・Summons an Elf Minion for each ally with 10% HP and 10% attack inherited from the caster.
-・Summons an Elf Minion for each ally with 5% HP and 10% attack inherited from the caster.","・敵全員のマナが2%減少する。
-・敵全員に「謎のポーション」が付与される。「謎のポーション」は3ターン後に爆発し、ターゲットに3320ダメージを与える。爆発後の24ターンは、ターゲットのマナが回復しなくなる。
-・仲間全員にエルフミニオンをサモンする。エルフミニオンは、術者のHPの10%と攻撃力の10%を持つ。
-・仲間全員にエルフミニオンをサモンする。エルフミニオンは、術者のHPの5%と攻撃力の10%を持つ。","","","",""
+・Failed for familiar christmas_elf","・敵全員のマナが2%減少する。
+・敵全員に「謎のポーション」が付与される。「謎のポーション」は3ターン後に爆発し、ターゲットに3320ダメージを与える。爆発後の24ターンは、ターゲットのマナが回復しなくなる。","","","",""
 "christmas_dizzy","Dizzy","","","・Deals 250% damage to the target and nearby enemies.
 ・The caster and nearby allies reflect all status effects and 100% damage back to the attacker and block all other negative effects from enemies' [#f2e33a]Holy[#] Special Skills for 4 turns.
-・Summons an Elf Minion for the caster and nearby allies with 10% HP and 10% attack inherited from the caster.
-・Summons an Elf Minion for the caster and nearby allies with 5% HP and 10% attack inherited from the caster.","・ターゲットと近くにいる敵に250%のダメージを与える。
-・4ターンの間、術者と近くにいる仲間が、すべてのステータス効果を跳ね返し、ダメージの100%を攻撃者に跳ね返す。さらに、[#f2e33a]聖属性[#]の敵の特殊スキルによって発生した、その他のマイナスの影響を無効にする。
-・術者のHPの10%と攻撃力の10%を持つエルフミニオンを、術者と近くにいる仲間にサモンする。
-・術者のHPの5%と攻撃力の10%を持つエルフミニオンを、術者と近くにいる仲間にサモンする。","Status effects cast by characters, Minions and Fiends on the same side cannot be reflected.","同じチームのキャラクター、ミニオン、フィエンドが特殊スキルを使用して敵にステータス効果を付与した場合、敵はこれらの効果を跳ね返すことができない。","",""
+・Failed for familiar christmas_elf","・ターゲットと近くにいる敵に250%のダメージを与える。
+・4ターンの間、術者と近くにいる仲間が、すべてのステータス効果を跳ね返し、ダメージの100%を攻撃者に跳ね返す。さらに、[#f2e33a]聖属性[#]の敵の特殊スキルによって発生した、その他のマイナスの影響を無効にする。","Status effects cast by characters, Minions and Fiends on the same side cannot be reflected.","同じチームのキャラクター、ミニオン、フィエンドが特殊スキルを使用して敵にステータス効果を付与した場合、敵はこれらの効果を跳ね返すことができない。","",""
 "christmas_jolly","Jolly","","","・Boosts health of all allies by 475. Boosted health can exceed max HP.
 ・All allies reduce all received damage by -102% for 6 turns.
-・All allies get 35% mana generation for 6 turns.
-・Summons an Elf Minion for each ally with 10% HP and 10% attack inherited from the caster.
-・Summons an Elf Minion for each ally with 5% HP and 10% attack inherited from the caster.","・仲間全員のHPを475回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
+・All allies get 35% mana generation for 6 turns. This effect can't be dispelled.
+・Failed for familiar christmas_elf","・仲間全員のHPを475回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
 ・6ターンの間、仲間全員の受けるダメージが-102%になる。
-・6ターンの間、仲間全員のマナ生成が35%になる。
-・仲間全員にエルフミニオンをサモンする。エルフミニオンは、術者のHPの10%と攻撃力の10%を持つ。
-・仲間全員にエルフミニオンをサモンする。エルフミニオンは、術者のHPの5%と攻撃力の10%を持つ。","","","",""
+・すべての仲間がマナ生成35%を得る(6ターン)。この効果は解除不可","","","",""
 "shadow_salvatore","Salvatore","","","・Casts [#!]Full Removal[#] on the caster.
 ・The caster shifts into Deranged Dire Ghost form for 5 turns.
 [*] While in Deranged Dire Ghost form, the caster automatically deals 350% damage and inflicts 240 [#!]Insanity[#] on a random enemy each turn.
@@ -1248,9 +1177,9 @@ lang_id resolution failed.","--- Passives ---","・Deals 480% damage to the enem
 ・ステータス効果やパッシブスキル、ミニオンなどの付随効果による回復では、[#!]狂気[#]は低下しない。
 
 ・[#!]狂気[#]は敵味方が入れ替わった特殊スキルが使用されると完全に消去される。"
-"shadow_hysteria","Hysteria","","","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns. This effect can't be dispelled.
+"shadow_hysteria","Hysteria","","","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns.
 ・For the next 4 turns, the caster inflicts 8 [#!]Insanity[#] on all enemies each time the caster is hit. The effect is triggered when the enemy deals damage through Special Skills. Tiles and normal attacks are limited to once per turn.
-・Inflicts 440 [#!]Insanity[#] on the caster.","・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
+・Inflicts 440 [#!]Insanity[#] on the caster.","・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
 ・次の4ターンの間、術者は自身が攻撃を受けるたびに敵全員に対して8[#!]狂気[#]を付与する。この効果は、敵が特殊スキルによりダメージを与えると発動する。タイルと通常攻撃は1ターン1回に限定される。
 ・術者に440[#!]狂気[#]を付与する。","[#!]Insanity[#] adds a chance of reversing the targeting of a Special Skill.
 
@@ -1368,13 +1297,8 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 - 古の者の刻印 -
 このキャラクターに付与された0.5[#!]狂気[#]ごとに、全被ダメージが0.5%軽減される（最大0.5%）。","・Deals 500% damage to the target.
 ・Inflicts 400 [#!]Insanity[#] on the caster.
-・The Ominous Tentacle Fiend generates a clone of itself to nearby enemies after every turn.
-・The Ominous Tentacle Fiend generates a clone of itself to nearby enemies after every turn.
-・The Ominous Tentacle Fiend generates a clone of itself to nearby enemies after every turn.","・ターゲットに500%のダメージを与える。
-・術者に400[#!]狂気[#]を付与する。
-・不吉なテンタクルのフィエンドは、毎ターン後に自らのクローンを近くにいる敵に生成する。
-・不吉なテンタクルのフィエンドは、毎ターン後に自らのクローンを近くにいる敵に生成する。
-・不吉なテンタクルのフィエンドは、毎ターン後に自らのクローンを近くにいる敵に生成する。","[#!]Insanity[#] adds a chance of reversing the targeting of a Special Skill.
+・Failed for familiar ominous_tentacle","・ターゲットに500%のダメージを与える。
+・術者に400[#!]狂気[#]を付与する。","[#!]Insanity[#] adds a chance of reversing the targeting of a Special Skill.
 
 ・ When [#!]Insanity[#] activates, Special Skills that target enemies instead will target allies, and vice versa. 
 
@@ -1406,7 +1330,7 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 
 ・ステータス効果やパッシブスキル、ミニオンなどの付随効果による回復では、[#!]狂気[#]は低下しない。
 
-・[#!]狂気[#]は敵味方が入れ替わった特殊スキルが使用されると完全に消去される。","Cloned Fiends absorb the same amount of healing and deal the same amount of damage as the original Fiend. The Fiend will only clone if the target does not already have the maximum number of Fiends or Minions.","クローンのフィエンドはオリジナルのフィエンドと同量の回復を吸収し、同量のダメージを与える。フィエンドは、ターゲットが所有するミニオンやフィエンドの数が上限に達していない場合にのみクローンを生成する。"
+・[#!]狂気[#]は敵味方が入れ替わった特殊スキルが使用されると完全に消去される。","",""
 "shadow_abigail","Abigail","--- Passives ---
 
 - Marked by the Old Ones -
@@ -1415,25 +1339,8 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 - 古の者の刻印 -
 このキャラクターに付与された0.5[#!]狂気[#]ごとに、全被ダメージが0.5%軽減される（最大0.5%）。","・Deals 260% damage to all enemies.
 ・Inflicts 440 [#!]Insanity[#] on the caster.
-・Summons a Xulu Minion for each ally with 15% HP and 20% attack inherited from the caster.
-
-Each hit from a Xulu Minion gives the target the following status ailment:
-・Summons a Xulu Minion for each ally with 5% HP and 20% attack inherited from the caster.
-
-Each hit from a Xulu Minion gives the target the following status ailment:
-・Summons a Xulu Minion for each ally with 5% HP and 20% attack inherited from the caster.
-
-Each hit from a Xulu Minion gives the target the following status ailment:","・敵全員に260%のダメージを与える。
-・術者に440[#!]狂気[#]を付与する。
-・仲間全員にスールーミニオンをサモンする。スールーミニオンは、術者のHPの15%と攻撃力の20%を持つ。
-
-スールーミニオンの各攻撃は、ターゲットに以下のステータス異常を与える：
-・仲間全員にスールーミニオンをサモンする。スールーミニオンは、術者のHPの5%と攻撃力の20%を持つ。
-
-スールーミニオンの各攻撃は、ターゲットに以下のステータス異常を与える：
-・仲間全員にスールーミニオンをサモンする。スールーミニオンは、術者のHPの5%と攻撃力の20%を持つ。
-
-スールーミニオンの各攻撃は、ターゲットに以下のステータス異常を与える：","[#!]Insanity[#] adds a chance of reversing the targeting of a Special Skill.
+・Failed for familiar xulu_minion","・敵全員に260%のダメージを与える。
+・術者に440[#!]狂気[#]を付与する。","[#!]Insanity[#] adds a chance of reversing the targeting of a Special Skill.
 
 ・ When [#!]Insanity[#] activates, Special Skills that target enemies instead will target allies, and vice versa. 
 
@@ -1473,10 +1380,10 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 
 - 古の者の刻印 -
 このキャラクターに付与された0.5[#!]狂気[#]ごとに、全被ダメージが0.5%軽減される（最大0.5%）。","・Deals 5% damage to the enemies on the edges of the enemy formation and inflicts 200 [#!]Insanity[#] on them. If there is only one enemy, the damage and [#!]Insanity[#] are doubled.
-・The enemies on the edges of the enemy formation receive 64 Poison damage over 200 turns. This effect can't be cleansed.
+・The enemies on the edges of the enemy formation receive 64 Poison damage over 200 turns.
 ・The enemies on the edges of the enemy formation resist healing and receive 880 damage per each resisted healing for 3 turns.
 ・Inflicts 360 [#!]Insanity[#] on the caster.","・陣形の端にいる敵に5%のダメージを与え、200[#!]狂気[#]を付与する。敵が1体しかいない場合、その敵が受けるダメージと付与される[#!]狂気[#]が2倍になる。
-・200ターンの間、敵陣形の両端にいる敵に64の毒ダメージを与える。この効果は浄化できない。
+・敵陣形の両端にいる敵に64の毒ダメージを与える(200ターン)。
 ・3ターンの間、陣形の端にいる敵が回復不可となり、回復に失敗する度に880ダメージを受ける。
 ・術者に360[#!]狂気[#]を付与する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","[#!]Insanity[#] adds a chance of reversing the targeting of a Special Skill.
 
@@ -1865,13 +1772,13 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 このキャラクターに付与された0.5[#!]狂気[#]ごとに、全被ダメージが0.5%軽減される（最大0.5%）。","・Deals 530% damage to the target.
 ・This Special Skill never misses its targets.
 ・The duration of dispellable status ailments is reset for the target.
-・The target gets -25% defense for 3 turns. This effect can't be cleansed.
+・The target gets -25% defense for 3 turns.
 ・If the target is defeated by the attack, then nearby enemies are inflicted with  800 [#!]Insanity[#].
 ・Inflicts 800 [#!]Insanity[#] on all enemies.
 ・Inflicts 400 [#!]Insanity[#] on the caster.","・ターゲットに530%のダメージを与える。
 ・この特殊スキルはターゲットに必ず命中する。
 ・ターゲットが解除可能なステータス異常の影響を受ける時間がリセットされる。
-・3ターンの間、ターゲットの防御力が-25%になる。この効果は浄化できない。
+・3ターンの間、ターゲットの防御力が-25%になる。
 ・攻撃によりターゲットが倒された場合、近くにいる敵に800[#!]狂気[#]が付与される。
 ・敵全員に800[#!]狂気[#]を付与する。
 ・術者に400[#!]狂気[#]を付与する。","[#!]Insanity[#] adds a chance of reversing the targeting of a Special Skill.
@@ -2156,9 +2063,9 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 - FAILED: strong_troop_damage_modifier -
 lang_id resolution failed.","--- Passives ---","・The attack chains through all the enemies who are adjacent to any hit enemy.
 ・All enemies get -134% accuracy for 3 turns.
-・All  [##elementblue]Ice[#] allies get 60% attack for 3 turns.","・この攻撃は、攻撃した敵のすぐ隣にいる敵全員に連鎖する。
+・All [##elementblue]Ice[#][#] Heroes get 60% attack for 3 turns.","・この攻撃は、攻撃した敵のすぐ隣にいる敵全員に連鎖する。
 ・3ターンの間、敵全員の命中率が-134%になる。
-・3ターンの間、[##elementblue]氷属性[#]の仲間全員の攻撃力が60%になる。","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。","",""
+・[##elementblue]氷属性[#]の英雄全員の攻撃力が60%になる(3ターン)","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。","",""
 "journey_xie_zi_jing","Xie Zi Jing","--- Passives ---
 
 - Mana on Buff Received -
@@ -2173,9 +2080,9 @@ This character has a [#!]50%[#] chance to recover [#!]10%[#] health when they re
 - バフを受けるごとのライフ回復 -
 バフまたはプラスの累積状態の間、[#!]50%[#]の確率で、このキャラクターのライフが[#!]10%[#]回復する。","・This Special Skill has a 100% chance to ignore Dodge effects.
 ・Dispels buffs from the target and nearby enemies.
-・The target and nearby enemies receive 936 Poison damage over 3 turns.","・この特殊スキルは100%の確率で回避効果を無効化する。
+・Target and nearby enemies receive 936 Poison damage over 3 turns. This effect can't be cleansed.","・この特殊スキルは100%の確率で回避効果を無効化する。
 ・ターゲットと近くにいる敵のバフを解除する。
-・3ターンの間、ターゲットと近くにいる敵に936の毒ダメージを与える。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","",""
+・3ターンの間、ターゲットと近くにいる敵に936の毒ダメージを与える。この効果は浄化できない。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "journey_tang_sanzang","Tang Sanzang","--- Passives ---
 
 - Mana on Buff Received -
@@ -2192,7 +2099,7 @@ This character has a [#!]50%[#] chance to recover [#!]10%[#] health when they re
 ・Cleanses status ailments from all allies.
 ・All allies get 20% defense for 2 turns.","・仲間全員のHPを500回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
 ・仲間全員のステータス異常を浄化する。
-・2ターンの間、仲間全員の防御力が20%になる。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","",""
+・2ターンの間、仲間全員の防御力が20%になる。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "owl_relius","Relius","--- Passives ---
 
 - Reduce Mana gain from Special Skills -
@@ -2234,7 +2141,7 @@ This character has a [#!]50%[#] chance to recover [#!]10%[#] health when they re
 ・Attacks the target and nearby enemies with [##elementpurple]Moonrise Strike[#], dealing up to 64 damage. Deals -60% more damage if the target is of the [##elementyellow]Holy[#] element.
 ・The target and nearby enemies are immune to new status effect buffs for 3 turns.","・ターゲットと近くにいる敵のバフを解除する。
 ・ターゲットと近くにいる敵を[##elementpurple]ムーンライズストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementyellow]聖[#]属性の場合は、ダメージが-60%増加する。この攻撃は決して的を外さない。
-・3ターンの間、ターゲットと近くにいる敵に新しく追加されるステータス効果を付与するバフを無効化する。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","Base damage:  4320
+・3ターンの間、ターゲットと近くにいる敵に新しく追加されるステータス効果を付与するバフを無効化する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","Base damage:  4320
 
 ・Damage scales depending on the attacker's attack and defender's defense.
 
@@ -2421,8 +2328,8 @@ This character has a [#!]50%[#] chance to recover [#!]10%[#] health when they re
 
 - 特殊スキルによるマナ獲得量減少 -
 マナ生成が[#!]-80%[#]になる。","・Attacks the target and nearby enemies with [##elementpurple]Moonrise Strike[#], dealing up to 64 damage. Deals -70% more damage if the target is of the [##elementyellow]Holy[#] element.
-・The target and nearby enemies receive 0 Poison damage over 5 turns.","・ターゲットと近くにいる敵を[##elementpurple]ムーンライズストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementyellow]聖[#]属性の場合は、ダメージが-70%増加する。この攻撃は決して的を外さない。
-・5ターンの間、ターゲットと近くにいる敵に0の毒ダメージを与える。","Base damage:  1760
+・Target and nearby enemies receive 0 Poison damage over 5 turns. This effect can't be cleansed.","・ターゲットと近くにいる敵を[##elementpurple]ムーンライズストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementyellow]聖[#]属性の場合は、ダメージが-70%増加する。この攻撃は決して的を外さない。
+・5ターンの間、ターゲットと近くにいる敵に0の毒ダメージを与える。この効果は浄化できない。","Base damage:  1760
 
 ・Damage scales depending on the attacker's attack and defender's defense.
 
@@ -2450,18 +2357,7 @@ This character has a [#!]50%[#] chance to recover [#!]10%[#] health when they re
 
 - 特殊スキルによるマナ獲得量減少 -
 マナ生成が[#!]-80%[#]になる。","・Attacks the target and nearby enemies with [##elementpurple]Moonrise Strike[#], dealing up to 64 damage. Deals -60% more damage if the target is of the [##elementyellow]Holy[#] element.
-・Summons [#!]Owlkyrie Minion[#] for the caster and nearby allies. The Minion inherits 25% HP and 38% attack from the caster.
-・If the [#!]Owlkyrie Minion[#] is defeated, [#!]Full Removal[#] is cast on the attacker.
-・After the [#!]Full Removal[#] is cast, the attacker shifts into Owlhalla Ghost form for 0 turns.
-[*] While in Owlhalla Ghost form the target receives 0 damage each turn.
-・After the [#!]Full Removal[#] is cast, the attacker shifts into Owlhalla Ghost form for 0 turns.
-[*] While in Owlhalla Ghost form the target receives 0 damage each turn.","・ターゲットと近くにいる敵を[##elementpurple]ムーンライズストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementyellow]聖[#]属性の場合は、ダメージが-60%増加する。この攻撃は決して的を外さない。
-・術者と近くにいる仲間の元に[#!]オウルキリーミニオン[#]をサモンする。オウルキリーミニオンは、術者のHPの25%と攻撃力の38%を継承する。
-・[#!]オウルキリーのミニオン[#]が倒れると、攻撃した者に[#!]完全解除[#]がかけられる。
-・[#!]完全解除[#]がかけられると、0ターンの間、攻撃者がオウルハラゴースト形態になる。
-[*]ターゲットがオウルハラゴースト形態でいる間はターン毎に0ダメージを受ける。
-・[#!]完全解除[#]がかけられると、0ターンの間、攻撃者がオウルハラゴースト形態になる。
-[*]ターゲットがオウルハラゴースト形態でいる間はターン毎に0ダメージを受ける。","Base damage:  4800
+・Failed for familiar owlkyrie","・ターゲットと近くにいる敵を[##elementpurple]ムーンライズストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementyellow]聖[#]属性の場合は、ダメージが-60%増加する。この攻撃は決して的を外さない。","Base damage:  4800
 
 ・Damage scales depending on the attacker's attack and defender's defense.
 
@@ -2481,7 +2377,7 @@ This character has a [#!]50%[#] chance to recover [#!]10%[#] health when they re
 ・
 ・成長と弱化はダメージの威力に影響する。
 
-・攻撃力と防御力に影響するタイプのバフとステータス異常は、ダメージの威力に影響しない。","[#!]Full Removal[#] removes all status effects, stacks and [#!]Growth[#] and [#!]Wither[#] effects. Removes even status effects and stacks that are otherwise undispellable or uncleansable.","[#!]完全解除[#]はターゲットのすべてのステータス効果や累積効果、 [#!]成長[#]と[#!]弱化[#]効果を解除する。これには、解除・浄化不可のステータス効果および累積効果も含まれる。"
+・攻撃力と防御力に影響するタイプのバフとステータス異常は、ダメージの威力に影響しない。","",""
 "owl_cennius","Cennius","--- Passives ---
 
 - Reduce Mana gain from Special Skills -
@@ -2521,9 +2417,9 @@ This character has a [#!]50%[#] chance to recover [#!]10%[#] health when they re
 - 特殊スキルによるマナ獲得量減少 -
 マナ生成が[#!]-80%[#]になる。","・Attacks the target with [##elementpurple]Moonrise Strike[#], dealing up to 64 damage. Deals -60% more damage if the target is of the [##elementyellow]Holy[#] element.
 ・The target automatically casts [#!]Shifting Mindless Attack[#] on a random ally when mana is full at the start of a turn during 4 turns. When this effect is triggered, it shifts to the hit ally and the duration is refreshed.
-・All enemies get -35% defense for 4 turns.","・ターゲットを[##elementpurple]ムーンライズストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementyellow]聖[#]属性の場合は、ダメージが-60%増加する。この攻撃は決して的を外さない。
+・All enemies get -35% defense for 4 turns. This effect can't be dispelled.","・ターゲットを[##elementpurple]ムーンライズストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementyellow]聖[#]属性の場合は、ダメージが-60%増加する。この攻撃は決して的を外さない。
 ・4ターンの間、マナが満タンの場合に限り、ターン開始時にターゲットが自動的に[#!]転移マインドレスアタック[#]をランダムな仲間に放つ。この効果が発動された場合、ターゲットの攻撃対象が仲間になり、効果はターン終了時まで持続する。
-・4ターンの間、敵全員の防御力が-35%になる。","Base damage:  5920
+・4ターンの間、敵全員の防御力が-35%になる。この効果は解除できない。","Base damage:  5920
 
 ・Damage scales depending on the attacker's attack and defender's defense.
 
@@ -2580,10 +2476,10 @@ This character has a [#!]50%[#] chance to recover [#!]10%[#] health when they re
 
 - 特殊スキルによるマナ獲得量減少 -
 マナ生成が[#!]-80%[#]になる。","・All allies get a [##elementpurple]Moonrise Ward[#] for 6 turns, that reduces incoming Special Skill damage by up to --116. Reduces damage by additional -80% when the attacker is of the [##elementyellow]Holy[#] element.
-・All allies get 24% attack for 6 turns. This effect can't be dispelled.
-・All allies get 24% mana generation for 6 turns.","・6ターンの間、仲間全員に[##elementpurple]ムーンライズウォード[#]が付与され、特殊スキルによる被ダメージを最大で-116軽減する。攻撃者が[##elementyellow]聖[#]属性の場合、さらにダメージが-80%軽減される。
-・6ターンの間、仲間全員の攻撃力が24%になる。この効果は解除できない。
-・6ターンの間、仲間全員のマナ生成が24%になる。","Base damage reduction: -116
+・All allies get 24% attack for 6 turns.
+・All allies get 24% mana generation for 6 turns. This effect can't be dispelled.","・6ターンの間、仲間全員に[##elementpurple]ムーンライズウォード[#]が付与され、特殊スキルによる被ダメージを最大で-116軽減する。攻撃者が[##elementyellow]聖[#]属性の場合、さらにダメージが-80%軽減される。
+・6ターンの間、仲間全員の攻撃力が24%になる。
+・すべての仲間がマナ生成24%を得る(6ターン)。この効果は解除不可","Base damage reduction: -116
 
 ・Damage reduction scales depending on the defender's defense and attacker's attack power.
 
@@ -2649,7 +2545,7 @@ This character gains [#!]5%[#] mana when they receive a status ailment or a nega
 ・[##elementyellow]Element Link[#] gives all [##elementyellow]Holy[#] allies 10% additional Special Skill damage for 4 turns. This effect can't be dispelled.","・敵全員に330%のダメージを与える。
 ・仲間全員のステータス異常を浄化する。
 ・4ターンの間、敵全員がマナ崩壊の影響を受ける。マナ崩壊の影響に苦しむいずれかの敵が追加のマナ供給源からマナを入手するたびに、敵全員に-828ダメージが付与される。
-・4ターンの間、[##elementyellow]属性リンク[#]によって、[##elementyellow]聖属性[#]の仲間全員が特殊スキルを使用した際に、10%の追加ダメージを与える。この効果は解除できない。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","",""
+・4ターンの間、[##elementyellow]属性リンク[#]によって、[##elementyellow]聖属性[#]の仲間全員が特殊スキルを使用した際に、10%の追加ダメージを与える。この効果は解除できない。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "ice_god_callum","Gladius","--- Passives ---
 
 - Resist Sand Damage -
@@ -2781,13 +2677,13 @@ This character recovers [#!]10%[#] health when they receive a status ailment or 
 ・[##elementpurple]Element Link[#] gives all [##elementpurple]Dark[#] allies 10% additional Special Skill damage for 4 turns. This effect can't be dispelled.","・仲間全員のHPを1%回復する。
 ・ターゲットから、解除可能なバフをすべて盗み、仲間全員にランダムに分配する。
 ・ターゲットが[#!]睡眠状態[#]となる。眠っている間は被ダメージが150%増加する。
-・4ターンの間、[##elementpurple]属性リンク[#]によって、[##elementpurple]闇属性[#]の仲間全員が特殊スキルを使用した際に、10%の追加ダメージを与える。この効果は解除できない。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","A sleeping character cannot gain mana or attack.
+・4ターンの間、[##elementpurple]属性リンク[#]によって、[##elementpurple]闇属性[#]の仲間全員が特殊スキルを使用した際に、10%の追加ダメージを与える。この効果は解除できない。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","The character in Deep Sleep cannot gain mana or attack.
 
-・ The sleeping target is woken once it takes damage. This excludes damage from Minions, Fiends, Mega Minions and Mega Fiends.
+・ The character in Deep Sleep is woken once it takes 150 damage.
 
-・ This effect is uncleansable.","睡眠状態のキャラクターは、マナの獲得や攻撃ができない。
+・ This effect is uncleansable.","深い睡眠状態にあるキャラクターはマナを獲得したり攻撃したりすることができない。
 
-・眠っているターゲットは、ミニオン、フィエンド、メガミニオン、メガフィエンド以外からのダメージを受けると目を覚ます。
+・深い睡眠状態にあるこのキャラクターは合計150ダメージを受けると目を覚ます。
 
 ・この効果は浄化できない。"
 "champions_nogu","Nogu","--- Passives ---
@@ -2838,28 +2734,7 @@ When a Fiend is summoned to any enemy, this character gains [#!]5%[#] mana. This
 
 - フィエンドサモン時のマナ -
 いずれかの敵を対象にフィエンドをサモンすると、このキャラクターに[#!]5%[#]のマナが付与される。この効果はターン毎に1度だけ発動できる。","・Deals 450% damage to the target.
-・Summons three Ram Fiends for the target. The Fiend damages the enemy with 40.5% attack every turn.
-
-・The Ram Fiend absorbs healing and disappears when it has absorbed health equal to 45% of its owner's max health.
-
-・The healing absorbed is transferred to the summoner and their allies and distributed evenly.
-・Summons three Ram Fiends for the target. The Fiend damages the enemy with 40.5% attack every turn.
-[*]The Ram Fiend absorbs healing and disappears when it has absorbed health equal to -100% of its owner's max health.
-[*]The healing absorbed is transferred to the summoner and their allies and distributed evenly.
-・Summons three Ram Fiends for the target. The Fiend damages the enemy with 40.5% attack every turn.
-[*]The Ram Fiend absorbs healing and disappears when it has absorbed health equal to -100% of its owner's max health.
-[*]The healing absorbed is transferred to the summoner and their allies and distributed evenly.","・ターゲットに450%のダメージを与える。
-・ターゲットにラムフィエンド3体をサモンする。フィエンドは、ターン毎に40.5%の攻撃力で敵にダメージを与える。
-
-・ラムフィエンドは回復を吸収し、所有者の最大HPの45%に等しいライフを吸収すると消滅する。
-
-・吸収された回復は、サモン実行者とその仲間に均等に配分される。
-・ターゲットにラムフィエンド3体をサモンする。フィエンドは、ターン毎に40.5%の攻撃力で敵にダメージを与える。
-[*]ラムフィエンドは回復を吸収し、所有者の最大HPの-100%に等しいライフを吸収すると消滅する。
-[*]吸収された回復は、サモン実行者とその仲間に均等に配分される。
-・ターゲットにラムフィエンド3体をサモンする。フィエンドは、ターン毎に40.5%の攻撃力で敵にダメージを与える。
-[*]ラムフィエンドは回復を吸収し、所有者の最大HPの-100%に等しいライフを吸収すると消滅する。
-[*]吸収された回復は、サモン実行者とその仲間に均等に配分される。","Ignores heal steal, healing modifiers and Fiends.","回復量奪取、回復量変更、フィエンドの付与を無効化する。","",""
+・Failed for familiar ram_fiend","・ターゲットに450%のダメージを与える。","","","",""
 "lunar_new_year_gongniu","Gongniu","--- Passives ---
 
 - Health Recovery on Status Ailment Received -
@@ -2884,9 +2759,9 @@ Enemy Mega Minions can't attack or use abilities.","--- Passives ---
 
 - メガミニオン阻止 -
 敵のメガミニオンが攻撃できず、能力も使用できなくなる。","・Deals 160% damage to all enemies.
-・Lifts all cleansable status ailments from all allies and randomly distributes them on enemies.
+・Steals all dispellable buffs from all enemies and randomly distributes them on allies.
 ・All enemies receive Mana Corruption for 2 turns. Each time an afflicted enemy receives mana from an additional source, they receive -921 damage.","・敵全員に160%のダメージを与える。
-・仲間全員の浄化可能なステータス異常を浄化し、敵にランダムに分配する。
+・敵全員から、解除可能なバフをすべて盗み、仲間全員にランダムに分配する。
 ・2ターンの間、敵全員がマナ崩壊の影響を受ける。マナ崩壊の影響に苦しむいずれかの敵が追加のマナ供給源からマナを入手するたびに、敵全員に-921ダメージが付与される。","","","",""
 "gargoyle_garten","Garten","--- Passives ---
 
@@ -2932,13 +2807,8 @@ Every time this Gargoyle casts a Special Skill, their Stoneskin hardens. The nex
 "wonderland_king_of_hearts","N/A","","","・Deals 200% damage to the target and minor damage to nearby enemies.","・ターゲットに200%ダメージ、近くにいる敵に小ダメージを与える。","","","",""
 "wonderland_knave_of_hearts","Knave of Hearts","","","・Deals 300% damage to the target and nearby enemies.
 ・Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.
-・Summons a Tart Minion for each ally with 10% HP and 25% attack inherited from the caster. The Minion recovers 10% health for its owner when it is defeated.
-・[#!]Status Effect Generator:[#] At the start of the next 1 turns, this character gives a random ally an additional 10% Special Skill damage for 10 turns. This effect cannot be dispelled.
-・[#!]Status Effect Generator:[#] At the start of the next 1 turns, this character gives all allies 10% defense against Special Skills and 10% increase for all healing received for 10 turns. This effect cannot be dispelled.","・ターゲットと近くにいる敵に300%のダメージを与える。
-・安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。
-・仲間全員にタルトのミニオンをサモンする。タルトのミニオンは、術者のHPの10%、攻撃力の25%を持ち、倒されると所有者のライフを10%回復する。
-・[#!]ステータス効果生成：[#]次の1ターンの開始時に、10ターンの間、このキャラクターが追加でいずれかの仲間に10%の特殊スキルダメージを付与する。この効果は解除できない。
-・[#!]ステータス効果生成：[#]次の1ターンの開始時に、10ターンの間、このキャラクターが仲間全員に特殊スキルに対する防御力を10%付与し、全ての回復量を10%増加させる。この効果は解除できない。","","","",""
+・Failed for familiar tart","・ターゲットと近くにいる敵に300%のダメージを与える。
+・安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","","","",""
 "guardian_zebra","N/A","","","・Deals 200% damage to the target and minor damage to nearby enemies.","・ターゲットに200%ダメージ、近くにいる敵に小ダメージを与える。","","","",""
 "guardian_elephant","Guardian Elephant","--- Passives ---
 
@@ -2971,11 +2841,11 @@ This character has innate resistance against incoming damage from status effects
 ・All allies become [#!]Soul Connected[#] for 4 turns. Soul Connected allies share received damage.
 [*] All enemies become [#!]Soul Connected[#] for 4 turns. Soul Connected enemies share received damage.
 ・All allies get 63% defense for 4 turns.
-・All enemies get -44% defense for 4 turns.","・仲間全員のステータス異常を浄化する。
+・All enemies get -44% defense for 4 turns. This effect can't be dispelled.","・仲間全員のステータス異常を浄化する。
 ・4ターンの間、仲間全員に[#!]ソウル・コネクト[#]が発動する。ソウル・コネクトによって魂が繋がった仲間同士は被ダメージを共有する。
 [*]4ターンの間、敵全員に[#!]ソウル・コネクト[#]が発動する。ソウル・コネクトによって魂が繋がった敵同士は被ダメージを共有する。
 ・4ターンの間、仲間全員の防御力が63%になる。
-・4ターンの間、敵全員の防御力が-44%になる。","","","",""
+・4ターンの間、敵全員の防御力が-44%になる。この効果は解除できない。","","","",""
 "fables_rapunzel","N/A","","","・Deals 200% damage to the target and minor damage to nearby enemies.","・ターゲットに200%ダメージ、近くにいる敵に小ダメージを与える。","","","",""
 "pirate_bonny","N/A","","","・Deals 200% damage to the target and minor damage to nearby enemies.","・ターゲットに200%ダメージ、近くにいる敵に小ダメージを与える。","","","",""
 "champions_lazara","Lazara","--- Passives ---
@@ -3003,7 +2873,7 @@ This character receives [#!]2400%[#] mana each time a buff is dispelled from the
 ・All enemies can't get their status ailments cleansed or reallocated by Special Skills for 4 turns.","・仲間全員のステータス異常を浄化する。
 ・敵全員に5%のダメージを与える。
 ・4ターンの間、敵全員の回復量が50%になる。この効果は解除できない。
-・4ターンの間、敵全員が特殊スキルによるステータス異常の浄化または再割り当てができない。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
+・4ターンの間、敵全員が特殊スキルによるステータス異常の浄化または再割り当てができない。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
 "astral_melodymuse","Melodymuse","--- Passives ---
 
 - Resist Sand Damage -
@@ -3017,8 +2887,8 @@ This character has innate resistance against [#!]Sand[#] damage.
 
 - 被ダメージ共有 -
 このキャラクターが受けたダメージの[#!]20%[#]を他の仲間全員で共有する。","・Boosts health of all allies by 710. Boosted health can exceed max HP.
-・All allies are immune to new status ailments for 4 turns. This effect can't be dispelled.","・仲間全員のHPを710回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
-・4ターンに渡って、仲間全員が新たなステータス異常を無効化する。この効果は解除できない。","","","",""
+・All allies are immune to new status ailments for 4 turns.","・仲間全員のHPを710回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
+・4ターンの間、仲間全員が新たなステータス異常を受けない。","","","",""
 "astral_hammerclang","Hammerclang","--- Passives ---
 
 - Resist Sand Damage -
@@ -3034,10 +2904,10 @@ This character has innate resistance against [#!]Sand[#] damage.
 このキャラクターが受けたダメージの[#!]20%[#]を他の仲間全員で共有する。","・Deals 400% damage to the target and minor damage to all other enemies.
 ・This Special Skill never misses its targets.
 ・All damage all enemies receive is increased by -98% for 3 turns.
-・All enemies get -30% attack for 3 turns.","・ターゲットに400%のダメージを、それ以外の敵には小ダメージを与える。
+・All enemies get -30% attack for 3 turns. This effect can't be cleansed.","・ターゲットに400%のダメージを、それ以外の敵には小ダメージを与える。
 ・この特殊スキルはターゲットに必ず命中する。
 ・3ターンの間、敵全員が受けるダメージが-98%になる。
-・3ターンの間、敵全員の攻撃力が-30%になる。","","","",""
+・3ターンの間、敵全員の攻撃力が-30%になる。この効果は浄化不可。","","","",""
 "astral_moonbell","Moonbell","--- Passives ---
 
 - Resist Sand Damage -
@@ -3052,13 +2922,8 @@ This character has innate resistance against [#!]Sand[#] damage.
 - 被ダメージ共有 -
 このキャラクターが受けたダメージの[#!]20%[#]を他の仲間全員で共有する。","・All allies reduce all received damage by -102% for 4 turns.
 ・The caster and nearby allies have a 3% chance to drop any received damage to 1 for 4 turns. If this effect is dispelled, it dispels buffs from all enemies.
-・Summons an Astral Sphere Minion for each ally with 35% HP and 32% attack inherited from the caster.
-・When summoned, the Astral Sphere Minion gives 133% mana generation for its owner for as long as the owner has Astral Sphere Minions. This effect can't be dispelled.
-・When summoned, the Astral Sphere Minion gives 133% mana generation for its owner for as long as the owner has Astral Sphere Minions. This effect can't be dispelled.","・4ターンの間、仲間全員の受けるダメージが-102%になる。
-・4ターンの間、術者と近くにいる仲間が受けたダメージを3%の確率で1に減少させる。この効果が解除された場合、敵全員のバフを解除する。
-・仲間全員にアストラルスフィアミニオンをサモンする。アストラルスフィアミニオンは、術者のHPの35%と攻撃力の32%を持つ。
-・アストラルスフィアのミニオンがサモンされた場合は、所有者がアストラルスフィアのミニオンを所有する限り、所有者に133%のマナ生成を与える。この効果は解除できない。
-・アストラルスフィアのミニオンがサモンされた場合は、所有者がアストラルスフィアのミニオンを所有する限り、所有者に133%のマナ生成を与える。この効果は解除できない。","","","",""
+・Failed for familiar astral_sphere_minion","・4ターンの間、仲間全員の受けるダメージが-102%になる。
+・4ターンの間、術者と近くにいる仲間が受けたダメージを3%の確率で1に減少させる。この効果が解除された場合、敵全員のバフを解除する。","","","",""
 "astral_demilune","Demilune","--- Passives ---
 
 - Resist Sand Damage -
@@ -3115,10 +2980,10 @@ This character has innate resistance against [#!]Sand[#] damage.
 このキャラクターが受けたダメージの[#!]20%[#]を他の仲間全員で共有する。","・Recovers 55% health for all allies.
 ・All allies get 10% mana every time an enemy uses their Special skill during 5 turns.
 ・The caster steals 50% of any healing applied to all enemies for 5 turns.
-・All enemies get -40% attack for 5 turns.","・仲間全員のライフを55%回復する。
+・All enemies get -40% attack for 5 turns. This effect can't be cleansed.","・仲間全員のライフを55%回復する。
 ・5ターンの間、敵が特殊スキルを使用するたびに仲間全員のマナが10%増加する。
 ・5ターンの間、術者が敵全員に適用されたあらゆる種類の回復の50%を盗む。
-・5ターンの間、敵全員の攻撃力が-40%になる。","Mana is received at the end of a Special Skill. Mana will not be received if this status effect is removed during a Special Skill.","特殊スキル使用後にマナを受け取る。特殊スキル使用時にこのステータス効果が解除された場合はマナを受け取ることができない。","",""
+・5ターンの間、敵全員の攻撃力が-40%になる。この効果は浄化不可。","Mana is received at the end of a Special Skill. Mana will not be received if this status effect is removed during a Special Skill.","特殊スキル使用後にマナを受け取る。特殊スキル使用時にこのステータス効果が解除された場合はマナを受け取ることができない。","",""
 "astral_moonflower","Moonflower","--- Passives ---
 
 - Resist Sand Damage -
@@ -3133,9 +2998,9 @@ This character has innate resistance against [#!]Sand[#] damage.
 - 被ダメージ共有 -
 このキャラクターが受けたダメージの[#!]20%[#]を他の仲間全員で共有する。","・The caster gets [#!]Sticky Surface[#] for 3 turns. This effect can't be dispelled.
 [*][#!]Sticky Surface[#]: Steals 100 random dispellable buff or Growth effect from an attacking enemy.
-・All allies get 35% mana generation for 3 turns.","・3ターンの間、術者が[#!]粘着層[#]を獲得する。この効果は解除できない。
+・All allies get 35% mana generation for 3 turns. This effect can't be dispelled.","・3ターンの間、術者が[#!]粘着層[#]を獲得する。この効果は解除できない。
 [*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで100個の解除可能なバフまたは成長効果を奪う。
-・3ターンの間、仲間全員のマナ生成が35%になる。","Each enemy can trigger this effect once per turn.","各敵は、1ターンに1回のみこの効果を発動させられる。","",""
+・すべての仲間がマナ生成35%を得る(3ターン)。この効果は解除不可","Each enemy can trigger this effect once per turn.","各敵は、1ターンに1回のみこの効果を発動させられる。","",""
 "astral_dreadstar","Dreadstar","--- Passives ---
 
 - Resist Sand Damage -
@@ -3257,22 +3122,22 @@ lang_id resolution failed.","--- Passives ---","・Deals 465% damage to the targ
 ・6ターンの間、[##elementred]属性リンク[#]によって、[##elementred]炎属性[#]の仲間全員の回避力が-95%になる。この効果は解除できない。","","","",""
 "easter_timothy","Timothy","","","・Boosts health of all allies by 560. Boosted health can exceed max HP.
 ・All allies get -90% attack, and an additional -90% each time any ally casts their Special Skill, up to a maximum of 20%, for the next 3 turns.
-・The caster gets -20% defense for 3 turns.","・仲間全員のHPを560回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
+・The caster gets -20% defense for 3 turns. This effect can't be dispelled.","・仲間全員のHPを560回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
 ・次の3ターンの間、仲間全員に攻撃力-90%が付与され、いずれかの仲間が特殊スキルを使用するたびに、追加で-90%の攻撃力が付与される（最大20%）。
-・術者の防御力-20%(3ターン)","","","",""
+・術者が防御力-20%を得る(3ターン)。この効果は解除不可","","","",""
 "easter_miss_ethel","Miss Ethel","","","・Deals 20% damage to hit targets.
-・The caster gets -15% mana generation for 3 turns.","・攻撃したターゲットに20%のダメージを与える。
-・術者のマナ生成が-15%になる(3ターン)","","","",""
+・The caster gets -15% mana generation for 3 turns. This effect can't be dispelled.","・攻撃したターゲットに20%のダメージを与える。
+・3ターンの間、術者のマナ生成が-15%になる。この効果は解除できない。","","","",""
 "elemental_grilka","Grilka","--- Passives ---
 
 - FAILED: strong_troop_damage_modifier -
 lang_id resolution failed.","--- Passives ---","・If there are 64 or more [##elementyellow]Holy shields[#] on the board,  all effects cast in this Special Skill are undispellable.
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 5 turns. This effect can't be dispelled.
-・All allies regenerate 1520 HP over 5 turns.
-・All allies get 44% mana generation for 5 turns.","・ボード上に[##elementyellow]聖属性の盾[#]が64個以上存在している場合、この特殊スキルで付与されるすべての効果が解除不可になる。
-・5ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
-・5ターンに渡って、仲間全員のHPが1520回復する。
-・5ターンの間、仲間全員のマナ生成が44%になる。","","","",""
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 5 turns.
+・All allies regenerate 1520 HP over 5 turns. This effect can't be dispelled.
+・All allies get 44% mana generation for 5 turns. This effect can't be dispelled.","・ボード上に[##elementyellow]聖属性の盾[#]が64個以上存在している場合、この特殊スキルで付与されるすべての効果が解除不可になる。
+・5ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
+・仲間全員のHPが1520回復(5ターン)。この効果は解除不可
+・すべての仲間がマナ生成44%を得る(5ターン)。この効果は解除不可","","","",""
 "elemental_craum","Craum","--- Passives ---
 
 - FAILED: strong_troop_damage_modifier -
@@ -3312,8 +3177,10 @@ lang_id resolution failed.","--- Passives ---","・Deals 100% damage to the targ
 "elemental_vander","Vander","--- Passives ---
 
 - FAILED: strong_troop_damage_modifier -
-lang_id resolution failed.","--- Passives ---","・Deals 450% damage per each [##elementpurple]Dark[#] shield on the board to all enemies, up to 450% damage in total.
-・All enemies get silenced for 3 turns.","・ボード上に[##elementpurple]闇属性[#]の盾が出現する度に、敵全員に450%の追加ダメージを与える。付与ダメージの上限は合計450%まで。
+lang_id resolution failed.","--- Passives ---","・Deals 48% damage to the target.
+[*]Deals additional 450% damage per each [#ff9f81]Fire[#] shield on the board, up to 450% damage in total.
+・All enemies get silenced for 3 turns.","・ターゲットに48%のダメージを与える。
+[*]さらに、ダメージの合計が450%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に450%の追加ダメージを与える。
 ・3ターンの間、敵全員を沈黙状態にする。","","","",""
 "garrison_theodosius","Theodosius","--- Passives ---
 
@@ -3334,11 +3201,11 @@ lang_id resolution failed.","--- Passives ---
 ・[#!]Growth:[#] All allies get 0 attack.
 ・[#!]Wither:[#] All enemies get 0 attack.
 ・All allies get 35% defense for 5 turns.
-・All enemies get -35% defense for 5 turns.","・敵全員に450%のダメージを与える。
+・All enemies get -35% defense for 5 turns. This effect can't be dispelled.","・敵全員に450%のダメージを与える。
 ・[#!]成長：[#]仲間全員の攻撃力が0増加する。
 ・[#!]弱化：[#]敵全員の攻撃力が0減少する。
 ・5ターンの間、仲間全員の防御力が35%になる。
-・5ターンの間、敵全員の防御力が-35%になる。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。"
+・5ターンの間、敵全員の防御力が-35%になる。この効果は解除できない。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。"
 "garrison_iocantha","Iocantha","--- Passives ---
 
 - Resist Sand Damage -
@@ -3365,16 +3232,7 @@ lang_id resolution failed.","--- Passives ---
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・If any ally has a Mega Minion before this Special Skill is cast, deals 350% damage to all enemies instead.
-・Summons a Recruit Guard Mega Minion with  20% HP and 100% attack inherited from the caster. 
-
-・The Recruit Guard Mega Minion gains more HP and attack when there are more unique Garrison Guard heroes on the team, up to 5% HP and 5% attack.
-・Summons a Recruit Guard Mega Minion with  5% HP and 100% attack inherited from the caster. 
-[*]The Recruit Guard Mega Minion gains more HP and attack when there are more unique Garrison Guard heroes on the team, up to 5% HP and 5% attack.","・この特殊スキル使用前に仲間にメガミニオンがいた場合、敵全員に350%のダメージを与える。
-・術者の20%のライフと100%の攻撃力を持つリクルートガードのメガミニオンをサモンする。
-
-・リクルートガードのミニオンのライフと攻撃力は、チーム内にいる守備隊衛兵の英雄が多ければ多いほど増加する（増加上限は、ライフが5%、攻撃力が5%まで）。
-・術者の5%のライフと100%の攻撃力を持つリクルートガードのメガミニオンをサモンする。
-[*]リクルートガードのミニオンのライフと攻撃力は、チーム内にいる守備隊衛兵の英雄が多ければ多いほど増加する（増加上限は、ライフが5%、攻撃力が5%まで）。","","","",""
+・Failed for familiar recruit_guard_mega_minion","・この特殊スキル使用前に仲間にメガミニオンがいた場合、敵全員に350%のダメージを与える。","","","",""
 "garrison_vanya","Vanya","--- Passives ---
 
 - Mana on Status Ailment Received -
@@ -3391,12 +3249,7 @@ lang_id resolution failed.","--- Passives ---
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Recovers 54% health for all allies.
-・The Shield Guard Mega Minion safely cleanses the latest cleansable status ailment from all allies each turn.
-・The Shield Guard Mega Minion safely cleanses the latest cleansable status ailment from all allies each turn.
-・The Shield Guard Mega Minion safely cleanses the latest cleansable status ailment from all allies each turn.","・仲間全員のライフを54%回復する。
-・シールドガードのメガミニオンが、毎ターン、仲間全員に最後に付与された浄化可能なステータス異常を安全に消し去る。
-・シールドガードのメガミニオンが、毎ターン、仲間全員に最後に付与された浄化可能なステータス異常を安全に消し去る。
-・シールドガードのメガミニオンが、毎ターン、仲間全員に最後に付与された浄化可能なステータス異常を安全に消し去る。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
+・Failed for familiar shield_guard_mega_minion","・仲間全員のライフを54%回復する。","","","",""
 "garrison_shimmerscale","Shimmerscale","--- Passives ---
 
 - Resist Sand Damage -
@@ -3407,12 +3260,7 @@ lang_id resolution failed.","--- Passives ---
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals 300% damage to the target and nearby enemies.
-・Summons a Sword Guard Mega Minion with 35% HP and 230% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.","・ターゲットと近くにいる敵に300%のダメージを与える。
-・術者のHPの35%と攻撃力の230%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。","","","",""
+・Failed for familiar sword_guard_mega_minion","・ターゲットと近くにいる敵に300%のダメージを与える。","","","",""
 "garrison_greg","Greg","--- Passives ---
 
 - Resist Sand Damage -
@@ -3423,12 +3271,7 @@ lang_id resolution failed.","--- Passives ---
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals 100% damage to all enemies.
-・Summons a Sword Guard Mega Minion with 35% HP and 230% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.","・敵全員に100%のダメージを与える。
-・術者のHPの35%と攻撃力の230%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。","","","",""
+・Failed for familiar sword_guard_mega_minion","・敵全員に100%のダメージを与える。","","","",""
 "garrison_william","William","--- Passives ---
 
 - Resist Sand Damage -
@@ -3439,9 +3282,9 @@ lang_id resolution failed.","--- Passives ---
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals 210% damage to the target and nearby enemies.
-・The caster and nearby allies get 36% defense for 3 turns.
+・The caster and nearby allies get 36% defense for 3 turns. This effect can't be cleansed.
 ・The caster and nearby allies get -78% critical chance for 3 turns.","・ターゲットと近くにいる敵に210%のダメージを与える。
-・3ターンの間、術者と近くにいる仲間の防御力が36%になる。
+・3ターンの間、術者と近くにいる仲間の防御力が36%になる。この効果は浄化できない。
 ・3ターンの間、術者と近くにいる仲間がクリティカル攻撃を与える確率が-78%になる。","","","",""
 "gargoyle_uwe","Uwe","--- Passives ---
 
@@ -3450,8 +3293,8 @@ Every time this Gargoyle casts a Special Skill, their Stoneskin hardens. The nex
 
 - ガーゴイルの石膚 -
 このガーゴイルが特殊スキルを発動するたびに、彼らの石膚が強化される。次の64回に渡って、受けるダメージが1に低下する。この効果は解除できない。","・Deals 20% damage to hit targets.
-・All allies and enemies that are not [##elementpurple]Dark[#] element get 13.5% attack for 3 turns. This effect is uncleansable for all [##elementyellow]Holy [#] enemies.","・攻撃したターゲットに20%のダメージを与える。
-・3ターンの間、[##elementpurple]闇属性[#]以外の仲間全員と敵全員の攻撃力が13.5%になる。[##elementyellow]聖属性[#]の敵全員は、この効果を浄化できない。","Status effects are added at the end of a Special Skill. Status effects will not be added if this status effect is removed during a Special Skill.","特殊スキル使用後に新たなステータス効果が付与される。特殊スキル使用時にこのステータス効果が解除された場合は新たなステータス効果は付与されない。","",""
+・If hit enemies use their Special Skill in the next 3 turns, they receive 145 Poison damage over 13.5 turns. This effect can't be cleansed.","・攻撃したターゲットに20%のダメージを与える。
+・攻撃を受けた敵が次の13.5ターン以内に特殊スキルを使うと、3ターンにわたり145の毒ダメージを受ける。この効果は浄化できない。","Status effects are added at the end of a Special Skill. Status effects will not be added if this status effect is removed during a Special Skill.","特殊スキル使用後に新たなステータス効果が付与される。特殊スキル使用時にこのステータス効果が解除された場合は新たなステータス効果は付与されない。","",""
 "gargoyle_vonreine","Vonreine","--- Passives ---
 
 - Gargoyle's Stoneskin -
@@ -3460,13 +3303,8 @@ Every time this Gargoyle casts a Special Skill, their Stoneskin hardens. The nex
 - ガーゴイルの石膚 -
 このガーゴイルが特殊スキルを発動するたびに、彼らの石膚が強化される。次の64回に渡って、受けるダメージが1に低下する。この効果は解除できない。","・Deals 285% damage to the target and nearby enemies.
 ・The caster steals 2% of generated mana from all enemies over 30 turns. This effect can't be cleansed, but it gets removed if the caster is defeated.
-・Summons a Fire Wisp Fiend to the target and nearby enemies.
-
-・The Fire Wisp Fiend absorbs healing. It disappears after absorbing a healing amount equal to 35% of its target's max health.","・ターゲットと近くにいる敵に285%のダメージを与える。
-・30ターンにわたって、術者が敵全員のマナ生成の2%を奪う。この効果は浄化できないが術者が倒されると解除される。
-・ターゲットと近くにいる敵に炎のウィスプのフィエンドをサモンする。
-
-・炎のウィスプのフィエンドは回復を吸収し、ターゲットの最大HPの35%に等しいライフを吸収すると消滅する。","","","",""
+・Failed for familiar fire_wisp_parasite_vonreine","・ターゲットと近くにいる敵に285%のダメージを与える。
+・30ターンにわたって、術者が敵全員のマナ生成の2%を奪う。この効果は浄化できないが術者が倒されると解除される。","","","",""
 "gargoyle_vincent","Vincent","--- Passives ---
 
 - Gargoyle's Stoneskin -
@@ -3500,11 +3338,11 @@ Every time this Gargoyle casts a Special Skill, their Stoneskin hardens. The nex
 Every time this Gargoyle casts a Special Skill, their Stoneskin hardens. The next 64 times they receive damage, it is dropped to 1. This effect can't be dispelled.","--- Passives ---
 
 - ガーゴイルの石膚 -
-このガーゴイルが特殊スキルを発動するたびに、彼らの石膚が強化される。次の64回に渡って、受けるダメージが1に低下する。この効果は解除できない。","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns. This effect can't be dispelled.
-・The caster gets 40% mana generation for 4 turns.
+このガーゴイルが特殊スキルを発動するたびに、彼らの石膚が強化される。次の64回に渡って、受けるダメージが1に低下する。この効果は解除できない。","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns.
+・The caster gets 40% mana generation for 4 turns. This effect can't be dispelled.
 ・All allies except the caster receive [#!]Softskin[#].
-・All allies recover 5600 health after 4 turns, or immediately if the effect is removed before the duration ends.","・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
-・術者のマナ生成が40%になる(4ターン)
+・All allies recover 5600 health after 4 turns, or immediately if the effect is removed before the duration ends.","・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
+・4ターンの間、術者のマナ生成が40%になる。この効果は解除できない。
 ・術者以外の仲間全員に[#!]柔膚[#]が付与される。
 ・4ターン後に、仲間全員が5600のライフを回復する。前述のターン終了前にこの効果が消去されると、その時点でライフが付与される。","The next time they receive damage, it is reduced by 0%. They also resist all status ailments, mana reductions and Insanity. This effect can't be dispelled.","次のダメージを受けると、被ダメージが0%軽減される。さらに、あらゆるステータス異常、マナ減少、狂気を無効化する。この効果は解除できない。","",""
 "gargoyle_hilda","Hilda","--- Passives ---
@@ -3526,9 +3364,9 @@ Every time this Gargoyle casts a Special Skill, their Stoneskin hardens. The nex
 - ガーゴイルの石膚 -
 このガーゴイルが特殊スキルを発動するたびに、彼らの石膚が強化される。次の64回に渡って、受けるダメージが1に低下する。この効果は解除できない。","・Cleanses status ailments from all allies.
 ・All allies except the caster receive [#!]Softskin[#].
-・All allies regenerate 800 HP over 3 turns.","・仲間全員のステータス異常を浄化する。
+・All allies regenerate 800 HP over 3 turns. This effect can't be dispelled.","・仲間全員のステータス異常を浄化する。
 ・術者以外の仲間全員に[#!]柔膚[#]が付与される。
-・3ターンに渡って、仲間全員のHPが800回復する。","The next time they receive damage, it is reduced by 0%. They also resist all status ailments, mana reductions and Insanity. This effect can't be dispelled.","次のダメージを受けると、被ダメージが0%軽減される。さらに、あらゆるステータス異常、マナ減少、狂気を無効化する。この効果は解除できない。","",""
+・仲間全員のHPが800回復(3ターン)。この効果は解除不可","The next time they receive damage, it is reduced by 0%. They also resist all status ailments, mana reductions and Insanity. This effect can't be dispelled.","次のダメージを受けると、被ダメージが0%軽減される。さらに、あらゆるステータス異常、マナ減少、狂気を無効化する。この効果は解除できない。","",""
 "construct_rhineglow","Rhineglow","--- Passives ---
 
 - Resist Sand Damage -
@@ -3551,10 +3389,10 @@ The [#!]Destructive Core[#] activates each time this character's Special Skill i
 [#!]破壊コア[#]はこのキャラクターが特殊スキルを使用するたびに有効になる：
 
 [*][#!]破壊コア[#]のチャージが満タンになると、敵全員に300%のダメージを与える。
-[*]この際に与えるダメージはコアのチャージ量に基づいて決められる。コアが有効になると、すべてのチャージが消耗される。","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns. This effect can't be dispelled.
-・All allies regenerate 2080 HP over 3 turns.
-・Stores all damage dealt to the caster for 3 turns. When the effect ends, stored damage is dealt to all enemies, up to a maximum of 6800 damage. This effect can't be dispelled.","・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
-・3ターンに渡って、仲間全員のHPが2080回復する。
+[*]この際に与えるダメージはコアのチャージ量に基づいて決められる。コアが有効になると、すべてのチャージが消耗される。","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns.
+・All allies regenerate 2080 HP over 3 turns. This effect can't be dispelled.
+・Stores all damage dealt to the caster for 3 turns. When the effect ends, stored damage is dealt to all enemies, up to a maximum of 6800 damage. This effect can't be dispelled.","・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
+・仲間全員のHPが2080回復(3ターン)。この効果は解除不可
 ・3ターンの間、術者が受けたすべてのダメージを蓄積し、効果終了時に蓄積したダメージを敵全員に付与する。付与できるダメージは最大6800ダメージまで。この効果は解除できない。","","","",""
 "construct_carta","Carta","--- Passives ---
 
@@ -3579,10 +3417,10 @@ The [#!]Repair Core[#] activates each time this character's Special Skill is cas
 
 [*][#!]修復コア[#]がチャージが満タンになると、仲間全員のライフが250%ブーストされる。
 [*]この際にブーストされるライフはコアのチャージ量に基づいて決められる。コアが有効になると、すべてのチャージが消耗される。","・Recovers 45% health for all allies.
-・Lifts all cleansable status ailments from all allies and randomly distributes them on enemies.
-・All allies get 33% mana generation for 3 turns.","・仲間全員のライフを45%回復する。
-・仲間全員の浄化可能なステータス異常を浄化し、敵にランダムに分配する。
-・3ターンの間、仲間全員のマナ生成が33%になる。","","","",""
+・Steals all dispellable buffs from all enemies and randomly distributes them on allies.
+・All allies get 33% mana generation for 3 turns. This effect can't be dispelled.","・仲間全員のライフを45%回復する。
+・敵全員から、解除可能なバフをすべて盗み、仲間全員にランダムに分配する。
+・すべての仲間がマナ生成33%を得る(3ターン)。この効果は解除不可","","","",""
 "garrison_caelen","Caelen","--- Passives ---
 
 - Resist Sand Damage -
@@ -3593,20 +3431,15 @@ lang_id resolution failed.","--- Passives ---
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・All enemies fall [#!]asleep[#] and receives 170% increased damage while sleeping.
-・The Shield Guard Mega Minion safely cleanses the latest cleansable status ailment from all allies each turn.
-・The Shield Guard Mega Minion safely cleanses the latest cleansable status ailment from all allies each turn.
-・The Shield Guard Mega Minion safely cleanses the latest cleansable status ailment from all allies each turn.","・敵全員が[#!]睡眠状態[#]となる。眠っている間は被ダメージが170%増加する。
-・シールドガードのメガミニオンが、毎ターン、仲間全員に最後に付与された浄化可能なステータス異常を安全に消し去る。
-・シールドガードのメガミニオンが、毎ターン、仲間全員に最後に付与された浄化可能なステータス異常を安全に消し去る。
-・シールドガードのメガミニオンが、毎ターン、仲間全員に最後に付与された浄化可能なステータス異常を安全に消し去る。","A sleeping character cannot gain mana or attack.
+・Failed for familiar shield_guard_mega_minion","・敵全員が[#!]睡眠状態[#]となる。眠っている間は被ダメージが170%増加する。","The character in Deep Sleep cannot gain mana or attack.
 
-・ The sleeping target is woken once it takes damage. This excludes damage from Minions, Fiends, Mega Minions and Mega Fiends.
+・ The character in Deep Sleep is woken once it takes 170 damage.
 
-・ This effect is uncleansable.","睡眠状態のキャラクターは、マナの獲得や攻撃ができない。
+・ This effect is uncleansable.","深い睡眠状態にあるキャラクターはマナを獲得したり攻撃したりすることができない。
 
-・眠っているターゲットは、ミニオン、フィエンド、メガミニオン、メガフィエンド以外からのダメージを受けると目を覚ます。
+・深い睡眠状態にあるこのキャラクターは合計170ダメージを受けると目を覚ます。
 
-・この効果は浄化できない。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。"
+・この効果は浄化できない。","",""
 "nature_god_bo_and_runt","Bo & Runt","--- Passives ---
 
 - Resist Minion Removal -
@@ -3622,14 +3455,9 @@ When a Minion is summoned to an ally, this character gains [#!]5%[#] mana. This 
 いずれかの仲間を対象にミニオンをサモンすると、このキャラクターに[#!]5%[#]のマナが付与される。この効果はターン毎に1度だけ発動できる。","・Deals 25% damage to target.
 [*]Deals additional 25% damage for each Minion owned by the allies, up to 25% damage in total.
 ・[##elementgreen]Element Link[#] gives all [##elementgreen]Nature[#] allies -95% dodge chance for 6 turns. This effect can't be dispelled.
-・Summon a Loyal Hound Minion for the caster with 35% HP and 28% attack inherited from the caster.
-・When summoned, the Loyal Hound Minion gives 35% attack for its owner for as long as the owner has Loyal Hound Minions. This effect can't be dispelled.
-・When summoned, the Loyal Hound Minion gives 35% attack for its owner for as long as the owner has Loyal Hound Minions. This effect can't be dispelled.","・ターゲットに25%のダメージを与える。
+・Failed for familiar loyal_hound_minion","・ターゲットに25%のダメージを与える。
 [*]味方が所有するミニオン1体ごとに、25%のダメージが追加され、合計で最大25%のダメージを与える。
-・6ターンの間、[##elementgreen]属性リンク[#]によって、[##elementgreen]自然属性[#]の仲間全員の回避確率が-95%になる。この効果は解除できない。
-・術者のHPの35%と攻撃力の28%を持つロイヤルハウンドのミニオンをサモンする。
-・ロイヤルハウンドのミニオンは、所有者がロイヤルハウンドのミニオンを所有する限り、所有者に35%の攻撃力を与える。この効果は解除できない。
-・ロイヤルハウンドのミニオンは、所有者がロイヤルハウンドのミニオンを所有する限り、所有者に35%の攻撃力を与える。この効果は解除できない。","","","",""
+・6ターンの間、[##elementgreen]属性リンク[#]によって、[##elementgreen]自然属性[#]の仲間全員の回避確率が-95%になる。この効果は解除できない。","","","",""
 "garrison_violet_potts","Violet Potts","--- Passives ---
 
 - Resist Sand Damage -
@@ -3642,14 +3470,9 @@ lang_id resolution failed.","--- Passives ---
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Dispels buffs from all enemies.
 ・All active status ailments are uncleansable for all enemies for the remaining turns of the status ailment.
 ・All enemies are immune to new status effect buffs for 4 turns.
-・Summons a Sword Guard Mega Minion with 35% HP and 230% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.","・敵全員のバフを解除する。
+・Failed for familiar sword_guard_mega_minion","・敵全員のバフを解除する。
 ・ステータス異常の残り有効ターン中、敵全員に対して発動中のすべてのステータス異常が浄化不可になる。
-・4ターンの間、敵に新しく追加されるステータス効果を付与するバフを無効化する。
-・術者のHPの35%と攻撃力の230%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","",""
+・4ターンの間、敵に新しく追加されるステータス効果を付与するバフを無効化する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "construct_scoria","Scoria","--- Passives ---
 
 - Resist Sand Damage -
@@ -3711,10 +3534,10 @@ lang_id resolution failed.","--- Passives ---
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals 350% damage to all enemies.
 ・Damage bypasses target's Minions.
-・All enemies receive 258 Burn damage over 3 turns.
+・All enemies receive 258 Burn damage over 3 turns. This effect can't be cleansed.
 ・All enemies take 50% increased damage from status ailments for 3 turns.","・敵全員に350%のダメージを与える。
 ・ダメージはターゲットの持つミニオンを貫通する。
-・3ターンの間、敵全員に258の燃焼ダメージを与える。
+・3ターンの間、敵全員に258の燃焼ダメージを与える。この効果は浄化できない。
 ・3ターンの間、敵全員がステータス異常から受けるダメージが50%増加する。","","","",""
 "champions_mistra","Mistra","--- Passives ---
 
@@ -3847,9 +3670,9 @@ lang_id resolution failed.","--- Passives ---
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals 280% damage to all enemies.
-・Enhances all [##elementblue]Ice[#] shields on the board. Enhanced shields give 64% less mana to Heroes.
+・Alters the power of all [##elementblue]Ice[#] shields on the board. When an attacking Hero casts the special, the shields become enhanced and give 64% more mana. When a defending Hero casts the special, the shields become weakened and give 64% less mana.
 ・[##elementblue]Element Link[#] gives all [##elementblue]Ice[#] allies -95% dodge chance for 6 turns. This effect can't be dispelled.","・敵全員に280%のダメージを与える。
-・ボード上にあるすべての[##elementblue]氷属性[#]の盾が「強化」される。盾が「強化」されると英雄のマナが64%減少する。
+・ボード上にあるすべての[##elementblue]氷属性[#]の盾を変容する。攻撃側の英雄が特殊スキルを使用すると、盾が強化され、マナが64%になる。防衛側の英雄が特殊スキルを使用すると、盾が弱体化され、マナが64%になる。
 ・6ターンの間、[##elementblue]属性リンク[#]によって、[##elementblue]氷属性[#]の仲間全員の回避確率が-95%になる。この効果は解除できない。","","","",""
 "dark_god_sir_casmir","Sir Casmir","・Cleanses status ailments from the caster and nearby allies.
 
@@ -3915,11 +3738,11 @@ If this character loses more than [#!]25%[#] of max health at once, they summon 
 ・4ターンの間、仲間全員の防御力が30%になる。
 ・4ターンの間、仲間全員がバフ解除および再割り当てに耐性を持つ。","Stolen dispellable buff or Growth effect is chosen by random.
 
-・[#!]Sticky Surface[#] is activated when the enemy deals damage through normal attacks or Special Skills.
+・[#!]Sticky Surface[#] is activated when any damage is received from an enemy.
 
 ・Each character with [#!]Sticky Surface[#] can only steal one status effect buff or Growth effect per turn from normal attacks.","解除可能なバフや成長効果のうち、どれを奪うかはランダムに選ばれる。
 
-・[#!]粘着層[#]は、敵の通常攻撃や特殊スキルにより自身がダメージを受けた際に発動する。
+・[#!]粘着層[#]は敵からなんらかのダメージを受けた際に発動する。
 
 ・[#!]粘着層[#]を持つ各キャラクターのみが、通常攻撃から1ターンごとに1つのステータス効果バフか成長効果を奪える。","The immunity also includes this effect itself.","耐性には、この効果自体も含まれる。"
 "kalevala_otso","Otso","--- Passives ---
@@ -3965,7 +3788,7 @@ When this character casts their Special Skill, they have a [#!]100%[#] chance to
 [*]さらに、解除したステータス効果の数に応じて10%ずつ最大10%のダメージが追加される。
 ・6ターンの間、敵全員がマナ崩壊の影響を受ける。マナ崩壊の影響に苦しむいずれかの敵が追加のマナ供給源からマナを入手するたびに、敵全員に-1068ダメージが付与される。
 ・6ターンの間、敵全員がマナ崩壊の影響を受ける。マナ崩壊の影響に苦しむいずれかの敵が追加のマナ供給源からマナを入手するたびに、敵全員に-1068ダメージが付与される。
-・6ターンの間、術者のHPが1160回復する。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","",""
+・6ターンの間、術者のHPが1160回復する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "monster_hunter_sigyn","Sigyn","--- Passives ---
 
 - Special Skill Damage Reduction -
@@ -3986,23 +3809,8 @@ When this character casts their Special Skill, they have a [#!]100%[#] chance to
 された場合は、確率が
 [#!]100%[#]になる。","・Deals 500% damage to the enemies on the edges of the enemy formation. If there is only one enemy, the damage is doubled.
 ・Reduces the mana of the enemies on the edges of the enemy formation by -2%. If there is only one enemy, the mana reduction is doubled.
-・Summons a Bone Trap Fiend for the enemies on the edges of the enemy formation. If there is only one enemy, two Fiends are summoned for that enemy. 
-
-・The Fiend damages the enemy with 45% attack every turn. The damage increases by 8% each turn, up to a maximum of 45%.
-
-・The Bone Trap Fiend absorbs healing and disappears when it has absorbed health equal to 35% of its owner's max health.
-・Summons a Bone Trap Fiend for the enemies on the edges of the enemy formation. If there is only one enemy, two Fiends are summoned for that enemy. 
-[*]The Fiend damages the enemy with 45% attack every turn. The damage increases by 8% each turn, up to a maximum of 45%.
-[*]The Bone Trap Fiend absorbs healing and disappears when it has absorbed health equal to 30% of its owner's max health.","・敵陣形の両端にいる敵に500%のダメージを与える。敵が1体しかいない場合は与えるダメージが2倍になる。
-・陣形の端にいる敵のマナを-2%低下させる。敵が1体しかいない場合は、マナの低下量が2倍になる。
-・陣形の端にいる敵にボーントラップのフィエンドをサモンする。敵が1体しかいない場合は、その敵に対して2体のフィエンドがサモンされる。
-
-・フィエンドは、ターン毎に敵に攻撃力45%でダメージを与える。ダメージはターン毎に8%増加する(最大45%)。
-
-・ボーントラップのフィエンドは回復を吸収し、所有者の最大HPの35%に等しいライフを吸収すると消滅する。
-・陣形の端にいる敵にボーントラップのフィエンドをサモンする。敵が1体しかいない場合は、その敵に対して2体のフィエンドがサモンされる。
-[*]フィエンドは、ターン毎に敵に攻撃力45%でダメージを与える。ダメージはターン毎に8%増加する(最大45%)。
-[*]ボーントラップのフィエンドは回復を吸収し、所有者の最大HPの30%に等しいライフを吸収すると消滅する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・Failed for familiar bone_trap_parasite","・敵陣形の両端にいる敵に500%のダメージを与える。敵が1体しかいない場合は与えるダメージが2倍になる。
+・陣形の端にいる敵のマナを-2%低下させる。敵が1体しかいない場合は、マナの低下量が2倍になる。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
 "monster_hunter_sune","Sune","--- Passives ---
 
 - Special Skill Damage Reduction -
@@ -4027,7 +3835,7 @@ When this character casts their Special Skill, they have a [#!]100%[#] chance to
 ・Reduces the mana of the target and nearby enemies by -5%, and a further -5% decrease per each removed status effect, up to -5% in total.","・ターゲットに550%のダメージを与える。
 ・ターゲットが[##elementblue]氷属性[#]の場合、近くにいる敵に300%のダメージを与える。
 ・ターゲットと近くにいる敵のバフを解除する。
-・ターゲットと近くにいる敵のマナが-5%低下し、さらにステータス効果が消去されるごとに-5%減少する（最大-5%）。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","",""
+・ターゲットと近くにいる敵のマナが-5%低下し、さらにステータス効果が消去されるごとに-5%減少する（最大-5%）。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "slime_sludgus","Sludgus","--- Passives ---
 
 - Slime Minion upon Defeat -
@@ -4082,11 +3890,11 @@ If this character loses more than [#!]25%[#] of max health at once, they summon 
 [*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで8個の解除可能なバフまたは成長効果を奪う。
 ・4ターンの間、仲間全員の防御力が55%になる。","Stolen dispellable buff or Growth effect is chosen by random.
 
-・[#!]Sticky Surface[#] is activated when the enemy deals damage through normal attacks or Special Skills.
+・[#!]Sticky Surface[#] is activated when any damage is received from an enemy.
 
 ・Each character with [#!]Sticky Surface[#] can only steal one status effect buff or Growth effect per turn from normal attacks.","解除可能なバフや成長効果のうち、どれを奪うかはランダムに選ばれる。
 
-・[#!]粘着層[#]は、敵の通常攻撃や特殊スキルにより自身がダメージを受けた際に発動する。
+・[#!]粘着層[#]は敵からなんらかのダメージを受けた際に発動する。
 
 ・[#!]粘着層[#]を持つ各キャラクターのみが、通常攻撃から1ターンごとに1つのステータス効果バフか成長効果を奪える。","",""
 "slime_gooldron","Gooldron","--- Passives ---
@@ -4102,18 +3910,7 @@ If this character loses more than [#!]25%[#] of max health at once, they summon 
 
 - スライムミニオンの分裂 -
 このキャラクターが、1回の攻撃により最大ライフの[#!]25%[#]を失うと、自身のもとに[#!]10%[#]のHPと[#!]40%[#]の攻撃力を備えた[#!]スライムのメガミニオン[#]をサモンする。","・Deals 385% damage to the target and nearby enemies.
-・Summons a Slime Fiend for the target and nearby enemies. The Fiend damages the enemy with 50% attack every turn.
-
-・The Slime Fiend absorbs healing. It disappears after absorbing a healing amount equal to 40% of its target's max health.
-・At the end of each turn, the Slime Fiend steals one of its target's dispellable buffs or Growth effect and gives it to a random character on the opposite team.
-・Summons a Slime Fiend for the target and nearby enemies. The Fiend damages the enemy with 50% attack every turn.
-[*]The Slime Fiend absorbs healing. It disappears after absorbing a healing amount equal to 50% of its target's max health.","・ターゲットと近くにいる敵に385%のダメージを与える。
-・ターゲットと近くにいる敵にスライムのフィエンドをサモンする。ターン毎に50%の攻撃力で敵にダメージを与える。
-
-・スライムのフィエンドは回復を吸収し、ターゲットの最大HPの40%に等しいライフを吸収すると消滅する。
-・ターン終了時に、スライムのフィエンドがターゲットの解除可能なバフを1つ盗み、そのバフを相手チームのキャラクターのいずれか1人に付与する。
-・ターゲットと近くにいる敵にスライムのフィエンドをサモンする。ターン毎に50%の攻撃力で敵にダメージを与える。
-[*]スライムのフィエンドは回復を吸収し、ターゲットの最大HPの50%に等しいライフを吸収すると消滅する。","For dodged normal attacks, only one buff can be reallocated per turn, per Minion.","通常攻撃が回避された場合、1ターンにつき、またミニオン1体につきバフを1つだけ再分配できる。","",""
+・Failed for familiar slime_fiend","・ターゲットと近くにいる敵に385%のダメージを与える。","","","",""
 "slime_charmione","Charmione","--- Passives ---
 
 - Slime Minion upon Defeat -
@@ -4175,12 +3972,7 @@ If this character loses more than [#!]25%[#] of max health at once, they summon 
 
 - スライムミニオンの分裂 -
 このキャラクターが、1回の攻撃により最大ライフの[#!]25%[#]を失うと、自身のもとに[#!]10%[#]のHPと[#!]40%[#]の攻撃力を備えた[#!]スライムのメガミニオン[#]をサモンする。","・Deals 290% damage to all enemies.
-・At the end of each turn, the Slime Fiend steals one of its target's dispellable buffs or Growth effect and gives it to a random character on the opposite team.
-・At the end of each turn, the Slime Fiend steals one of its target's dispellable buffs or Growth effect and gives it to a random character on the opposite team.
-・At the end of each turn, the Slime Fiend steals one of its target's dispellable buffs or Growth effect and gives it to a random character on the opposite team.","・敵全員に290%のダメージを与える。
-・ターン終了時に、スライムのフィエンドがターゲットの解除可能なバフを1つ盗み、そのバフを相手チームのキャラクターのいずれか1人に付与する。
-・ターン終了時に、スライムのフィエンドがターゲットの解除可能なバフを1つ盗み、そのバフを相手チームのキャラクターのいずれか1人に付与する。
-・ターン終了時に、スライムのフィエンドがターゲットの解除可能なバフを1つ盗み、そのバフを相手チームのキャラクターのいずれか1人に付与する。","For dodged normal attacks, only one buff can be reallocated per turn, per Minion.","通常攻撃が回避された場合、1ターンにつき、またミニオン1体につきバフを1つだけ再分配できる。","",""
+・Failed for familiar slime_fiend_mucktus","・敵全員に290%のダメージを与える。","","","",""
 "slime_gooric","Gooric","--- Passives ---
 
 - Slime Minion upon Defeat -
@@ -4193,10 +3985,10 @@ If this character loses more than [#!]25%[#] of max health at once, they summon 
 このキャラクターが倒れると、このキャラクターの[#!]64%[#]のHPと[#!]64%[#]の攻撃力を持つスライムの[#!]メガミニオン[#]が、近くにいる仲間のもとにサモンされる。
 
 - スライムミニオンの分裂 -
-このキャラクターが、1回の攻撃により最大ライフの[#!]25%[#]を失うと、自身のもとに[#!]10%[#]のHPと[#!]40%[#]の攻撃力を備えた[#!]スライムのメガミニオン[#]をサモンする。","・All allies get 60% attack for 5 turns. This effect can't be dispelled.
-・All allies get 44% mana generation for 5 turns.
-・If any ally is defeated during the next 5 turns, they are resurrected in the beginning of their next turn with 100% health. All status effects and stacks are removed when the ally is defeated.","・5ターンの間、仲間全員の攻撃力が60%になる。この効果は解除できない。
-・5ターンの間、仲間全員のマナ生成が44%になる。
+このキャラクターが、1回の攻撃により最大ライフの[#!]25%[#]を失うと、自身のもとに[#!]10%[#]のHPと[#!]40%[#]の攻撃力を備えた[#!]スライムのメガミニオン[#]をサモンする。","・All allies get 60% attack for 5 turns.
+・All allies get 44% mana generation for 5 turns. This effect can't be dispelled.
+・If any ally is defeated during the next 5 turns, they are resurrected in the beginning of their next turn with 100% health. All status effects and stacks are removed when the ally is defeated.","・5ターンの間、仲間全員の攻撃力が60%になる。
+・すべての仲間がマナ生成44%を得る(5ターン)。この効果は解除不可
 ・5ターン以内に仲間が倒れた場合、次のターン開始時に、100%のライフを保有した状態で復活する。すべてのステータス効果と累積は、仲間が倒れた時に解除される。","","","",""
 "faun_verity","Verity","--- Passives ---
 
@@ -4270,9 +4062,9 @@ lang_id resolution failed.","--- Passives ---
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Recovers 30% health for all allies.
 ・All allies get a [##elementred]Firestorm Ward[#] for 4 turns, that reduces incoming Special Skill damage by up to --508. Reduces damage by additional -70% when the attacker is of the [##elementgreen]Nature[#] element.
-・All allies are immune to new status ailments for 4 turns. This effect can't be dispelled.","・仲間全員のライフを30%回復する。
+・All allies are immune to new status ailments for 4 turns.","・仲間全員のライフを30%回復する。
 ・4ターンの間、仲間全員に[##elementred]ファイヤーストームウォード[#]が付与され、特殊スキルによる被ダメージを最大で-508軽減する。攻撃者が[##elementgreen]自然[#]属性の場合、さらにダメージが-70%軽減される。
-・4ターンに渡って、仲間全員が新たなステータス異常を無効化する。この効果は解除できない。","Base damage reduction: -508
+・4ターンの間、仲間全員が新たなステータス異常を受けない。","Base damage reduction: -508
 
 ・Damage reduction scales depending on the defender's defense and attacker's attack power.
 
@@ -4404,10 +4196,10 @@ lang_id resolution failed.","--- Passives ---
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Attacks all enemies with [##elementred]Firestorm Strike[#], dealing up to 64 damage. Deals -60% more damage if the target is of the [##elementgreen]Nature[#] element.
 ・Damage bypasses target's Minions.
-・All enemies receive 388 Poison damage over 4 turns. This effect can't be cleansed.
+・All enemies receive 388 Poison damage over 4 turns.
 ・All enemies take 50% increased damage from status ailments for 4 turns.","・敵全員を[##elementred]ファイヤーストームストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementgreen]自然[#]属性の場合は、ダメージが-60%増加する。
 ・ダメージはターゲットの持つミニオンを貫通する。
-・敵全員に388の毒ダメージを与える(4ターン)。この効果は浄化不可。
+・4ターンの間、敵全員に388の毒ダメージを与える。
 ・4ターンの間、敵全員がステータス異常から受けるダメージが50%増加する。","Base damage:  4320
 
 ・Damage scales depending on the attacker's attack and defender's defense.
@@ -4475,10 +4267,10 @@ lang_id resolution failed.","--- Passives ---
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Destroys all Minions from all enemies and damages all Mega Minions.
 ・Destroys all Fiends from all allies.
 ・All allies get a [##elementred]Firestorm Ward[#] for 4 turns, that reduces incoming Special Skill damage by up to --508. Reduces damage by additional -70% when the attacker is of the [##elementgreen]Nature[#] element.
-・All allies get 40% mana generation for 4 turns.","・敵全員のミニオンをすべて撃破し、全メガミニオンにダメージを与える。
+・All allies get 40% mana generation for 4 turns. This effect can't be dispelled.","・敵全員のミニオンをすべて撃破し、全メガミニオンにダメージを与える。
 ・仲間全員のフィエンドをすべて撃破する。
 ・4ターンの間、仲間全員に[##elementred]ファイヤーストームウォード[#]が付与され、特殊スキルによる被ダメージを最大で-508軽減する。攻撃者が[##elementgreen]自然[#]属性の場合、さらにダメージが-70%軽減される。
-・4ターンの間、仲間全員のマナ生成が40%になる。","Base damage reduction: -508
+・すべての仲間がマナ生成40%を得る(4ターン)。この効果は解除不可","Base damage reduction: -508
 
 ・Damage reduction scales depending on the defender's defense and attacker's attack power.
 
@@ -4556,9 +4348,11 @@ This character has innate resistance against [#!]Sand[#] damage.
 lang_id resolution failed.","--- Passives ---
 
 - 砂ダメージ耐性 -
-このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Attacks the target and nearby enemies with [##elementblue]Frostfall Strike[#], dealing up to 64 damage. Deals -60% more damage if the target is of the [##elementred]Fire[#] element. This Special Skill never misses its targets.
+このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals -60% damage to the target and nearby enemies.
+[*]Deals additional 240% damage per each [#ff9f81]Fire[#] shield on the board, up to 240% damage in total.
 ・All damage the target and nearby enemies receive is increased by -99% for 3 turns.
-・The target and nearby enemies reflect status effect buffs to a random character on the opposing team for 3 turns.","・ターゲットと近くにいる敵を[##elementblue]フロストフォールストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementred]炎[#]属性の場合は、ダメージが-60%増加する。この特殊スキルは決して的を外さない。
+・The target and nearby enemies reflect status effect buffs to a random character on the opposing team for 3 turns.","・ターゲットと近くにいる敵に-60%のダメージを与える。
+[*]さらに、ダメージの合計が240%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に240%の追加ダメージを与える。
 ・3ターンの間、ターゲットと近くにいる敵が受けるダメージが-99%増加する。
 ・3ターンにわたり、ターゲットと近くにいる敵がステータス効果バフを跳ね返し、そのバフを相手チームのランダムなキャラクター1体に付与する。","Base damage:  6720
 
@@ -4590,9 +4384,11 @@ This character has innate resistance against [#!]Sand[#] damage.
 lang_id resolution failed.","--- Passives ---
 
 - 砂ダメージ耐性 -
-このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Attacks the target and nearby enemies with [##elementblue]Frostfall Strike[#], dealing up to 64 damage. Deals -60% more damage if the target is of the [##elementred]Fire[#] element. This Special Skill never misses its targets.
+このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals -60% damage to the target and nearby enemies.
+[*]Deals additional 240% damage per each [#ff9f81]Fire[#] shield on the board, up to 240% damage in total.
 ・Reduces max health of the target and nearby enemies by 3600. The effect is stronger against targets with boosted health.
-・The target and nearby enemies get 30% increase for any healing received for 4 turns.","・ターゲットと近くにいる敵を[##elementblue]フロストフォールストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementred]炎[#]属性の場合は、ダメージが-60%増加する。この特殊スキルは決して的を外さない。
+・The target and nearby enemies get 30% increase for any healing received for 4 turns.","・ターゲットと近くにいる敵に-60%のダメージを与える。
+[*]さらに、ダメージの合計が240%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に240%の追加ダメージを与える。
 ・ターゲットと近くにいる敵の最大HPを3600減少させる。この効果はHPをブーストされたターゲットにも有効となる。
 ・4ターンの間、ターゲットと近くにいる敵の回復量が30%増加する。","Base damage:  7520
 
@@ -4670,7 +4466,7 @@ lang_id resolution failed.","--- Passives ---
 ・ターゲットに-60%のダメージを与える。
 [*]さらに、ダメージの合計が240%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に240%の追加ダメージを与える。
 ・[#!]累積効果(最大：-100)：[#]仲間全員のマナ生成が5%になる。
-・[#!]累積効果(最大：20):[#]仲間全員の防御力が20%になる。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","Base damage:  10320
+・[#!]累積効果(最大：20):[#]仲間全員の防御力が20%になる。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","Base damage:  10320
 
 ・Damage scales depending on the attacker's attack and defender's defense.
 
@@ -4738,9 +4534,11 @@ This character has innate resistance against [#!]Sand[#] damage.
 lang_id resolution failed.","--- Passives ---
 
 - 砂ダメージ耐性 -
-このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Attacks the target and nearby enemies with [##elementblue]Frostfall Strike[#], dealing up to 64 damage. Deals -60% more damage if the target is of the [##elementred]Fire[#] element. This Special Skill never misses its targets.
+このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals -60% damage to the target and nearby enemies.
+[*]Deals additional 240% damage per each [#ff9f81]Fire[#] shield on the board, up to 240% damage in total.
 ・The target and nearby enemies receive 0 Bleed damage over 3 turns.
-・The target and nearby enemies get a [#!]Mark of Bleed[#] for 3 turns. Whenever a marked target receives Bleed damage, they gain a [#!]stack (Max: 105)[#]. Each stack increases all damage the target receives by 105%.","・ターゲットと近くにいる敵を[##elementblue]フロストフォールストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementred]炎[#]属性の場合は、ダメージが-60%増加する。この特殊スキルは決して的を外さない。
+・The target and nearby enemies get a [#!]Mark of Bleed[#] for 3 turns. Whenever a marked target receives Bleed damage, they gain a [#!]stack (Max: 105)[#]. Each stack increases all damage the target receives by 105%.","・ターゲットと近くにいる敵に-60%のダメージを与える。
+[*]さらに、ダメージの合計が240%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に240%の追加ダメージを与える。
 ・3ターンの間、ターゲットと近くにいる敵に0の出血ダメージを与える。
 ・3ターンの間、ターゲットと近くにいる敵に[#!]出血マーク[#]が付く。マークが付いたターゲットが出血ダメージを受けると、そのターゲットに[#!]累積効果（最大：105）[#]が付与される。累積効果が付与されるごとに、そのターゲットが受けるダメージを105%増加させる。","Base damage:  5520
 
@@ -4876,8 +4674,10 @@ This character has innate resistance against [#!]Sand[#] damage.
 lang_id resolution failed.","--- Passives ---
 
 - 砂ダメージ耐性 -
-このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Attacks the target and nearby enemies with [##elementblue]Frostfall Strike[#], dealing up to 64 damage. Deals -80% more damage if the target is of the [##elementred]Fire[#] element. This Special Skill never misses its targets.
-・Increases the mana of the caster and nearby allies by 10%.","・ターゲットと近くにいる敵を[##elementblue]フロストフォールストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementred]炎[#]属性の場合は、ダメージが-80%増加する。この特殊スキルは決して的を外さない。
+このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals -80% damage to the target and nearby enemies.
+[*]Deals additional 240% damage per each [#ff9f81]Fire[#] shield on the board, up to 240% damage in total.
+・Increases the mana of the caster and nearby allies by 10%.","・ターゲットと近くにいる敵に-80%のダメージを与える。
+[*]さらに、ダメージの合計が240%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に240%の追加ダメージを与える。
 ・術者と近くにいる仲間のマナが10%増加する。","Base damage:  1680
 
 ・Damage scales depending on the attacker's attack and defender's defense.
@@ -4942,7 +4742,7 @@ This character gains [#!]5%[#] mana when they receive a status ailment or a nega
 - ステータス異常を受けるごとのマナ -
 ステータス異常またはマイナスの累積状態の間、このキャラクターのマナが[#!]5%[#]増加する","・Cleanses status ailments from all allies.
 ・All allies get 100% chance to dodge Special Skills that deal damage for 1 turns.","・仲間全員のステータス異常を浄化する。
-・1ターンの間、仲間全員が100%の確率で攻撃系の特殊スキルを回避する。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","",""
+・1ターンの間、仲間全員が100%の確率で攻撃系の特殊スキルを回避する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "faun_peregrine","Peregrine","--- Passives ---
 
 - Minion Blind -
@@ -5037,20 +4837,9 @@ All enemies get [#!]50%[#] healing.","--- Passives ---
 敵全員の回復量が[#!]50%[#]になる。","・Deals 540% damage to the target.
 ・The duration of dispellable status ailments is reset for the target.
 ・The target gets silenced for 3 turns.
-・Summons a Sly Fox Minion to the caster and nearby allies with 5% HP and 93% attack inherited from the caster.
-
-・Sly Fox Minion has 80% chance to dodge incoming attacks.
-・Summons a Sly Fox Minion to the caster and nearby allies with 100% HP and 100% attack inherited from the caster.
-[*]Sly Fox Minion has 80% chance to dodge incoming attacks.
-・When Sly Fox Minion dodges, it steals latest dispellable buff from the attacker and gives it to its owner.","・ターゲットに540%のダメージを与える。
+・Failed for familiar fox_dodge_swiftpaw","・ターゲットに540%のダメージを与える。
 ・ターゲットが解除可能なステータス異常の影響を受ける時間がリセットされる。
-・3ターンの間、ターゲットを沈黙状態にする。
-・術者と近くにいる仲間のもとに、術者のライフの5%、攻撃力の93%を持つ狡猾のキツネミニオンをサモンする。
-
-・狡猾のキツネミニオンは80%の確率で敵の攻撃を回避する。
-・術者と近くにいる仲間のもとに、術者のライフの100%、攻撃力の100%を持つ狡猾のキツネミニオンをサモンする。
-[*]狡猾のキツネミニオンは80%の確率で敵の攻撃を回避する。
-・狡猾のキツネミニオンが、回避時に攻撃者から最も新しい解除可能なバフを奪い、自らの所有者に与える。","For dodged normal attacks, only one buff can be reallocated per turn, per Minion.","通常攻撃が回避された場合、1ターンにつき、またミニオン1体につきバフを1つだけ再分配できる。","",""
+・3ターンの間、ターゲットを沈黙状態にする。","","","",""
 "ninja_nomad","Nomad","--- Passives ---
 
 - Weaker Minions -
@@ -5064,14 +4853,14 @@ x1 Mana Charge:
 ・Deals 150% damage to enemies with more than 50% health remaining.
 ・Damage bypasses target's Minions.
 ・If the target is defeated by the attack, all allies get 120% mana generation for 120 turns.
-・All allies get 20% mana generation for 2 turns.
+・All allies get 20% mana generation for 2 turns. This effect can't be dispelled.
 
 x2 Mana Charge:
 ・Deals 425% damage to the target and nearby enemies.
 ・Deals 150% damage to enemies with more than 50% health remaining.
 ・Damage bypasses target's Minions.
 ・If the target is defeated by the attack, all allies get 130% mana generation for 130 turns.
-・All allies get 30% mana generation for 3 turns.
+・All allies get 30% mana generation for 3 turns. This effect can't be dispelled.
 
 x3 Mana Charge:
 ・Deals 450% damage to all enemies.
@@ -5085,14 +4874,14 @@ x1マナチャージ:
 ・敵の残りのライフが50%以上の場合、150%のダメージを与える。
 ・ダメージはターゲットの持つミニオンを貫通する。
 ・攻撃によってターゲットを倒した場合、120ターンの間、仲間全員のマナ生成が120%になる。
-・2ターンの間、仲間全員のマナ生成が20%になる。
+・すべての仲間がマナ生成20%を得る(2ターン)。この効果は解除不可
 
 x2マナチャージ:
 ・ターゲットと近くにいる敵に425%のダメージを与える。
 ・敵の残りのライフが50%以上の場合、150%のダメージを与える。
 ・ダメージはターゲットの持つミニオンを貫通する。
 ・攻撃によってターゲットを倒した場合、130ターンの間、仲間全員のマナ生成が130%になる。
-・3ターンの間、仲間全員のマナ生成が30%になる。
+・すべての仲間がマナ生成30%を得る(3ターン)。この効果は解除不可
 
 x3マナチャージ:
 ・敵全員に450%のダメージを与える。
@@ -5174,7 +4963,7 @@ x2 Mana Charge:
 
 x3 Mana Charge:
 ・Deals 900% damage to the enemies on the edges of the enemy formation. If there is only one enemy, the damage is doubled.
-・The enemies on the edges of the enemy formation receive 64 Poison damage over {TURNS} turns. This effect can't be cleansed.","・マナチャージが100%/200%/300%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
+・The enemies on the edges of the enemy formation receive 64 Poison damage over {TURNS} turns.","・マナチャージが100%/200%/300%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
 
 x1マナチャージ:
 ・敵陣形の両端にいる敵に300%のダメージを与える。敵が1体しかいない場合は与えるダメージが2倍になる。
@@ -5186,21 +4975,21 @@ x2マナチャージ:
 
 x3マナチャージ:
 ・敵陣形の両端にいる敵に900%のダメージを与える。敵が1体しかいない場合は与えるダメージが2倍になる。
-・{TURNS}ターンの間、敵陣形の両端にいる敵に64の毒ダメージを与える。この効果は浄化できない。","A sleeping character cannot gain mana or attack.
+・敵陣形の両端にいる敵に64の毒ダメージを与える({TURNS}ターン)。","The character in Deep Sleep cannot gain mana or attack.
 
-・ The sleeping target is woken once it takes damage. This excludes damage from Minions, Fiends, Mega Minions and Mega Fiends.
+・ The character in Deep Sleep is woken once it takes 160 damage.
 
-・ This effect is uncleansable.","睡眠状態のキャラクターは、マナの獲得や攻撃ができない。
+・ This effect is uncleansable.","深い睡眠状態にあるキャラクターはマナを獲得したり攻撃したりすることができない。
 
-・眠っているターゲットは、ミニオン、フィエンド、メガミニオン、メガフィエンド以外からのダメージを受けると目を覚ます。
+・深い睡眠状態にあるこのキャラクターは合計160ダメージを受けると目を覚ます。
 
-・この効果は浄化できない。","A sleeping character cannot gain mana or attack.
+・この効果は浄化できない。","The character in Deep Sleep cannot gain mana or attack.
 
-・ The sleeping target is woken once it takes damage. This excludes damage from Minions, Fiends, Mega Minions and Mega Fiends.
+・ The character in Deep Sleep is woken once it takes 180 damage.
 
-・ This effect is uncleansable.","睡眠状態のキャラクターは、マナの獲得や攻撃ができない。
+・ This effect is uncleansable.","深い睡眠状態にあるキャラクターはマナを獲得したり攻撃したりすることができない。
 
-・眠っているターゲットは、ミニオン、フィエンド、メガミニオン、メガフィエンド以外からのダメージを受けると目を覚ます。
+・深い睡眠状態にあるこのキャラクターは合計180ダメージを受けると目を覚ます。
 
 ・この効果は浄化できない。"
 "monster_hunter_revna","Revna","--- Passives ---
@@ -5225,7 +5014,7 @@ When this character casts their Special Skill, they have a [#!]100%[#] chance to
 ・Recovers 1% health for all allies.
 ・All allies reflect status ailments, negative stacks, and Wither effects to a random character on the opposing team for 4 turns.","・仲間全員のステータス異常を浄化する。
 ・仲間全員のHPを1%回復する。
-・4ターンにわたり、仲間全員がステータス異常、マイナスの累積、弱化効果を跳ね返し、そのステータス異常を相手チームのランダムなキャラクター1体に付与する。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
+・4ターンにわたり、仲間全員がステータス異常、マイナスの累積、弱化効果を跳ね返し、そのステータス異常を相手チームのランダムなキャラクター1体に付与する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
 "monster_hunter_njal","N/A","--- Passives ---
 
 - Special Skill Damage Reduction -
@@ -5261,14 +5050,9 @@ lang_id resolution failed.","--- Passives ---
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals 400% damage to the target and nearby enemies.
 ・All active status ailments are uncleansable for the target and nearby enemies for the remaining turns of the status ailment.
 ・The target and nearby enemies get -25% defense for 4 turns.
-・Summons a Sword Guard Mega Minion with 35% HP and 230% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.","・ターゲットと近くにいる敵に400%のダメージを与える。
+・Failed for familiar sword_guard_mega_minion","・ターゲットと近くにいる敵に400%のダメージを与える。
 ・ステータス異常の残り有効ターン中、ターゲットと近くにいる敵に対して発動中のすべてのステータス異常が浄化不可になる。
-・4ターンの間、ターゲットと近くにいる敵の防御力が-25%になる。
-・術者のHPの35%と攻撃力の230%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。","","","",""
+・4ターンの間、ターゲットと近くにいる敵の防御力が-25%になる。","","","",""
 "garrison_pip","Pip","--- Passives ---
 
 - Resist Sand Damage -
@@ -5302,7 +5086,7 @@ x2 Mana Charge:
 ・The target and nearby enemies receive 0 Burn damage over 4 turns. This effect can't be cleansed.
 
 x3 Mana Charge:
-・All enemies receive 1824 Poison damage over 6 turns. This effect can't be cleansed.
+・All enemies receive 1824 Poison damage over 6 turns.
 ・All enemies get 50% increase for any healing received for 6 turns. This effect can't be dispelled.","・マナチャージが100%/200%/300%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
 
 x1マナチャージ:
@@ -5314,7 +5098,7 @@ x2マナチャージ:
 ・4ターンの間、ターゲットと近くにいる敵に0の燃焼ダメージを与える。この効果は浄化できない。
 
 x3マナチャージ:
-・敵全員に1824の毒ダメージを与える(6ターン)。この効果は浄化不可。
+・6ターンの間、敵全員に1824の毒ダメージを与える。
 ・6ターンの間、敵全員の回復量が50%になる。この効果は解除できない。","","","",""
 "ninja_aurum","Aurum","--- Passives ---
 
@@ -5336,7 +5120,7 @@ x2 Mana Charge:
 
 x3 Mana Charge:
 ・Deals 365% damage to all enemies.
-・All enemies receive 0 Burn damage over 6 turns.
+・All enemies receive 0 Burn damage over 6 turns. This effect can't be cleansed.
 ・All enemies receive 870 Bleed damage over 6 turns.","・マナチャージが100%/200%/300%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
 
 x1マナチャージ:
@@ -5351,7 +5135,7 @@ x2マナチャージ:
 
 x3マナチャージ:
 ・敵全員に365%のダメージを与える。
-・6ターンの間、敵全員に0の燃焼ダメージを与える。
+・6ターンの間、敵全員に0の燃焼ダメージを与える。この効果は浄化できない。
 ・6ターンの間、敵全員に870出血ダメージを与える。","","","",""
 "nature_god_chloris","Chloris","--- Passives ---
 
@@ -5372,11 +5156,11 @@ When this character casts their Special Skill, they have a [#!]50%[#] chance to 
 特殊スキルがフルチャージ
 された場合は、確率が
 [#!]0%[#]になる。","・Boosts health of all allies by 600. Boosted health can exceed max HP.
-・All allies regenerate 240 HP over 4 turns.
-・All allies get 50% attack for -98 turns. This effect can't be dispelled.
+・All allies regenerate 240 HP over 4 turns. This effect can't be dispelled.
+・All allies get 50% attack for -98 turns.
 ・[#70e92f]Element Link[#] gives all [#70e92f]Nature[#] allies -80% critical chance for 6 turns. This effect can't be dispelled.","・仲間全員のHPを600回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
-・4ターンに渡って、仲間全員のHPが240回復する。
-・-98ターンの間、仲間全員の攻撃力が50%になる。この効果は解除できない。
+・仲間全員のHPが240回復(4ターン)。この効果は解除不可
+・-98ターンの間、仲間全員の攻撃力が50%になる。
 ・6ターンの間、[#70e92f]属性リンク[#]によって、[#70e92f]自然属性[#]の仲間全員のクリティカル攻撃を与える確率が、-80%になる。この効果は解除できない。","","","",""
 "ninja_satsui","Satsui","--- Passives ---
 
@@ -5400,7 +5184,7 @@ x2 Mana Charge:
 
 x3 Mana Charge:
 ・Deals 410% damage to all enemies.
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 2 turns. This effect can't be dispelled.","・マナチャージが100%/200%/300%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 2 turns.","・マナチャージが100%/200%/300%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
 
 x1マナチャージ:
 ・ターゲットに360%のダメージを与える。
@@ -5416,7 +5200,7 @@ x2マナチャージ:
 
 x3マナチャージ:
 ・敵全員に410%のダメージを与える。
-・2ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。","","","",""
+・2ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。","","","",""
 "ninja_sawano","Sawano","--- Passives ---
 
 - Weaker Minions -
@@ -5437,7 +5221,7 @@ x2 Mana Charge:
 
 x3 Mana Charge:
 ・Recovers 19% health for all allies.
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 6 turns. This effect can't be dispelled.","・マナチャージが100%/200%/300%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 6 turns.","・マナチャージが100%/200%/300%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
 
 x1マナチャージ:
 ・仲間全員のライフを9%回復する。
@@ -5451,7 +5235,7 @@ x2マナチャージ:
 
 x3マナチャージ:
 ・仲間全員のライフを19%回復する。
-・6ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。","Each enemy can trigger this effect once per turn.","各敵は、1ターンに1回のみこの効果を発動させられる。","Each enemy can trigger this effect once per turn.","各敵は、1ターンに1回のみこの効果を発動させられる。"
+・6ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。","Each enemy can trigger this effect once per turn.","各敵は、1ターンに1回のみこの効果を発動させられる。","Each enemy can trigger this effect once per turn.","各敵は、1ターンに1回のみこの効果を発動させられる。"
 "ninja_ito","Ito","--- Passives ---
 
 - Weaker Minions -
@@ -5473,7 +5257,7 @@ x2 Mana Charge:
 x3 Mana Charge:
 ・Deals 410% damage to all enemies.
 ・Heals each ally with 25% of total damage dealt.
-・All enemies receive 0 Burn damage over 6 turns.","・マナチャージが100%/200%/300%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
+・All enemies receive 0 Burn damage over 6 turns. This effect can't be cleansed.","・マナチャージが100%/200%/300%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
 
 x1マナチャージ:
 ・ターゲットに390%のダメージを与える。
@@ -5488,7 +5272,7 @@ x2マナチャージ:
 x3マナチャージ:
 ・敵全員に410%のダメージを与える。
 ・与えられた合計ダメージの25%分、仲間全員を回復する。
-・6ターンの間、敵全員に0の燃焼ダメージを与える。","","","",""
+・6ターンの間、敵全員に0の燃焼ダメージを与える。この効果は浄化できない。","","","",""
 "ninja_malum","Malum","--- Passives ---
 
 - Weaker Minions -
@@ -5540,11 +5324,11 @@ Enemy [#!]Minions[#] have [#!]-150%[#] HP.","--- Passives ---
 
 x1 Mana Charge:
 ・Deals 310% damage to the target.
-・The target gets -19% defense for 2 turns. This effect can't be cleansed.
+・The target gets -19% defense for 2 turns.
 
 x2 Mana Charge:
 ・Deals 335% damage to the target.
-・The target gets -24% defense for 4 turns. This effect can't be cleansed.
+・The target gets -24% defense for 4 turns.
 
 x3 Mana Charge:
 ・Deals 360% damage to the target.
@@ -5553,11 +5337,11 @@ x3 Mana Charge:
 
 x1マナチャージ:
 ・ターゲットに310%のダメージを与える。
-・2ターンの間、ターゲットの防御力が-19%になる。この効果は浄化できない。
+・2ターンの間、ターゲットの防御力が-19%になる。
 
 x2マナチャージ:
 ・ターゲットに335%のダメージを与える。
-・4ターンの間、ターゲットの防御力が-24%になる。この効果は浄化できない。
+・4ターンの間、ターゲットの防御力が-24%になる。
 
 x3マナチャージ:
 ・ターゲットに360%のダメージを与える。
@@ -5707,7 +5491,7 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 ・Cleanses status ailments from all allies.
 ・[#41d8fe]Element Link[#] gives all [#41d8fe]Ice[#] allies 130% defense against Special Skills for 4 turns. This effect can't be dispelled.","・仲間全員のライフを5%回復する。味方にかけられたステータス異常ごとにライフをさらに5%回復する。ただし、HPの上限5%まで。
 ・仲間全員のステータス異常を浄化する。
-・[#41d8fe]属性リンク[#]によって、[#41d8fe]氷属性[#]の仲間全員の特殊スキルに対する防御力が130%増加する(4ターン)。この効果は解除不可","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","",""
+・[#41d8fe]属性リンク[#]によって、[#41d8fe]氷属性[#]の仲間全員の特殊スキルに対する防御力が130%増加する(4ターン)。この効果は解除不可","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "holy_god_may","May","--- Passives ---
 
 - Resist Minion Removal -
@@ -5722,11 +5506,8 @@ This character gains [#!]5%[#] mana when they receive a buff or a positive stack
 - バフを受けるごとのマナ -
 バフまたはプラスの累積状態の間、このキャラクターのマナが[#!]5%[#]増加する。","・[#!]Growth:[#] All allies get 752 attack.
 ・[#f2e33a]Element Link[#] gives all [#f2e33a]Holy[#] allies 130% defense against Special Skills for 4 turns. This effect can't be dispelled.
-・Summons a Carrot Minion for each ally with 25% HP inherited from the caster.
-・When summoned, the Carrot Minion gives 120% mana generation for its owner for as long as the owner has Carrot Minions. This effect can't be dispelled.","・[#!]成長：[#]仲間全員の攻撃力が752増加する。
-・[#f2e33a]属性リンク[#]によって、[#f2e33a]聖属性[#]の仲間全員の特殊スキルに対する防御力が130%増加する(4ターン)。この効果は解除不可
-・術者のHPの25%を持つニンジンのミニオンを仲間全員にサモンする。
-・ニンジンのミニオンがサモンされた場合は、所有者がニンジンのミニオンを所有する限り、所有者に120%のマナ生成を与える。この効果は解除できない。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
+・Failed for familiar carrot","・[#!]成長：[#]仲間全員の攻撃力が752増加する。
+・[#f2e33a]属性リンク[#]によって、[#f2e33a]聖属性[#]の仲間全員の特殊スキルに対する防御力が130%増加する(4ターン)。この効果は解除不可","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
 
 ・Additional Wither and Growth effects modify the Ability Scores further.
 
@@ -5782,14 +5563,9 @@ lang_id resolution failed.","--- Passives ---
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Recovers 30% health for all allies.
 ・Heals each ally with 95% of total damage dealt.
 ・[#!]Stack (Max: -5):[#] All damage all allies receive is reduced by -5%.
-・The Shield Guard Mega Minion safely cleanses the latest cleansable status ailment from all allies each turn.
-・The Shield Guard Mega Minion safely cleanses the latest cleansable status ailment from all allies each turn.
-・The Shield Guard Mega Minion safely cleanses the latest cleansable status ailment from all allies each turn.","・仲間全員のライフを30%回復する。
+・Failed for familiar shield_guard_mega_minion","・仲間全員のライフを30%回復する。
 ・与えられた合計ダメージの95%分、仲間全員を回復する。
-・[#!]累積効果（最大：-5）：[#]仲間全員が受けるすべてのダメージが-5%減少する。
-・シールドガードのメガミニオンが、毎ターン、仲間全員に最後に付与された浄化可能なステータス異常を安全に消し去る。
-・シールドガードのメガミニオンが、毎ターン、仲間全員に最後に付与された浄化可能なステータス異常を安全に消し去る。
-・シールドガードのメガミニオンが、毎ターン、仲間全員に最後に付与された浄化可能なステータス異常を安全に消し去る。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
+・[#!]累積効果（最大：-5）：[#]仲間全員が受けるすべてのダメージが-5%減少する。","","","",""
 "garrison_fergus","Fergus","--- Passives ---
 
 - Mana on Status Ailment Received -
@@ -5808,14 +5584,9 @@ lang_id resolution failed.","--- Passives ---
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Reduces the mana of the enemy with the most mana by -56%. Reduces the mana of all other enemies by -26%.
 ・All active status ailments are uncleansable for all enemies for the remaining turns of the status ailment.
 ・All enemies get -30% mana generation for 6 turns.
-・Summons a Sword Guard Mega Minion with 35% HP and 230% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.","・マナが最も多い敵のマナを-56%減少させる。それ以外の敵全員のマナは-26%減少する。
+・Failed for familiar sword_guard_mega_minion","・マナが最も多い敵のマナを-56%減少させる。それ以外の敵全員のマナは-26%減少する。
 ・ステータス異常の残り有効ターン中、敵全員に対して発動中のすべてのステータス異常が浄化不可になる。
-・6ターンの間、敵全員のマナ生成が-30%になる。
-・術者のHPの35%と攻撃力の230%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。","","","",""
+・6ターンの間、敵全員のマナ生成が-30%になる。","","","",""
 "beowulf_hrothgar","Hrothgar","--- Passives ---
 
 - Perfect Accuracy -
@@ -5868,13 +5639,13 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Heals each ally with 50% of total damage dealt.
-・All allies regenerate 2960 HP over 3 turns.
+・All allies regenerate 2960 HP over 3 turns. This effect can't be dispelled.
 ・[#!]Status Effect Generator:[#] At the start of the next 24 turns, this character gives a random ally an additional 100% Special Skill damage and 133% mana generation for 100 turns. This effect cannot be dispelled.
 ・The caster gets [#!]Sticky Surface[#] for 4 turns. This effect can't be dispelled.
 [*][#!]Sticky Surface[#]: Steals -95 random dispellable buff or Growth effect from an attacking enemy.
 ・The caster gets [#!]Sticky Surface[#] for 4 turns. This effect can't be dispelled.
 [*][#!]Sticky Surface[#]: Steals -99 random dispellable buff or Growth effect from an attacking enemy.","・与えられた合計ダメージの50%分、仲間全員を回復する。
-・3ターンに渡って、仲間全員のHPが2960回復する。
+・仲間全員のHPが2960回復(3ターン)。この効果は解除不可
 ・[#!]ステータス効果生成：[#]次の24ターンの開始時に、100ターンの間、このキャラクターが追加でいずれかの仲間に100%の特殊スキルダメージと133%のマナ生成を付与する。この効果は解除できない。
 ・4ターンの間、術者が[#!]粘着層[#]を獲得する。この効果は解除できない。
 [*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで-95個の解除可能なバフまたは成長効果を奪う。
@@ -5923,15 +5694,8 @@ When this character casts their Special Skill, they have a [#!]100%[#] chance to
 された場合は、確率が
 [#!]100%[#]になる。","・Deals 350% damage to all enemies.
 ・All enemies can't get their status ailments cleansed or reallocated by Special Skills for {TURNS} turns.
-・Summons a Bone Trap Fiend for all enemies. The Fiend damages the enemy with 45% attack every turn. The damage increases by 8% each turn, up to a maximum of 45%.
-
-・The Bone Trap Fiend absorbs healing and disappears when it has absorbed health equal to 45% of its owner's max health.
-・All enemies can't get their status ailments cleansed or reallocated by Special Skills for as long as they have Bone Trap Fiends.","・敵全員に350%のダメージを与える。
-・{TURNS}ターンの間、敵全員が特殊スキルによるステータス異常の浄化または再割り当てができない。
-・敵全員にボーントラップのフィエンドをサモンする。フィエンドは、ターン毎に敵に攻撃力45%でダメージを与える。ダメージはターン毎に8%増加する(最大45%)。
-
-・ボーントラップのフィエンドは回復を吸収し、所有者の最大HPの45%に等しいライフを吸収すると消滅する。
-・敵全員に対する特殊スキルでのステータス異常の浄化または再割り当ては、それらの敵がボーントラップのフィエンドを所有している限り実行できない。","This effect also prevents cleansing and reallocating of itself.","この効果は、それ自体の浄化および再割り当ても無効化する。","",""
+・Failed for familiar bone_trap_parasite_amund","・敵全員に350%のダメージを与える。
+・{TURNS}ターンの間、敵全員が特殊スキルによるステータス異常の浄化または再割り当てができない。","This effect also prevents cleansing and reallocating of itself.","この効果は、それ自体の浄化および再割り当ても無効化する。","",""
 "monster_hunter_sorcha","N/A","--- Passives ---
 
 - Special Skill Damage Reduction -
@@ -5969,14 +5733,9 @@ lang_id resolution failed.","--- Passives ---
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Dispels buffs from all enemies.
 ・Deals 6% damage to all enemies.
 [*]Deals additional 6% damage per removed status effect, up to 6% damage in total.
-・The Shield Guard Mega Minion safely cleanses the latest cleansable status ailment from all allies each turn.
-・The Shield Guard Mega Minion safely cleanses the latest cleansable status ailment from all allies each turn.
-・The Shield Guard Mega Minion safely cleanses the latest cleansable status ailment from all allies each turn.","・敵全員のバフを解除する。
+・Failed for familiar shield_guard_mega_minion","・敵全員のバフを解除する。
 ・敵全員に6%のダメージを与える
-[*]さらに、解除したステータス効果の数に応じて6%ずつ最大6%のダメージが追加される。
-・シールドガードのメガミニオンが、毎ターン、仲間全員に最後に付与された浄化可能なステータス異常を安全に消し去る。
-・シールドガードのメガミニオンが、毎ターン、仲間全員に最後に付与された浄化可能なステータス異常を安全に消し去る。
-・シールドガードのメガミニオンが、毎ターン、仲間全員に最後に付与された浄化可能なステータス異常を安全に消し去る。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。"
+[*]さらに、解除したステータス効果の数に応じて6%ずつ最大6%のダメージが追加される。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "bard_balafon","Salimata","--- Passives ---
 
 - Quick Tempo: Ballad -
@@ -5997,7 +5756,7 @@ All [#!]Dances[#] cast by enemies only last for 8 turn.","--- Passives ---
 ・ターゲットと近くにいる敵に5%のダメージを与える。
 ・ターゲットと近くにいる敵が3ターンの間、[#!]ミニオンの外傷[#]を負う。
 [*][#!]ミニオンの外傷[#]：毎ターン、ターゲットのミニオンのライフが50%減少し、メガミニオンのライフが25%減少する。
-・3ターンの間、ターゲットと近くにいる敵の回復量が20%増加する。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
+・3ターンの間、ターゲットと近くにいる敵の回復量が20%増加する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
 "bard_astrid","Astrid","--- Passives ---
 
 - Quick Tempo: Ballad -
@@ -6049,28 +5808,22 @@ All [#!]Dances[#] cast by enemies only last for 8 turn.","--- Passives ---
 敵が使用したすべての[#!]ダンス[#]は8ターンのみ継続する。","・Deals 350% damage to all enemies.
 ・All enemies receive [#!]Minion Wound[#] for 5 turns.
 [*][#!]Minion Wound[#]: Target's Minions' health is reduced by 50% and Mega Minion's health is reduced by 25% each turn.
-・All allies get 40% mana generation for 5 turns.","・敵全員に350%のダメージを与える。
+・All allies get 40% mana generation for 5 turns. This effect can't be dispelled.","・敵全員に350%のダメージを与える。
 ・敵全員が5ターンの間、[#!]ミニオンの外傷[#]を負う。
 [*][#!]ミニオンの外傷[#]：毎ターン、ターゲットのミニオンのライフが50%減少し、メガミニオンのライフが25%減少する。
-・5ターンの間、仲間全員のマナ生成が40%になる。","Reduction is applied to owned Minions and to any received Minions while the effect is active.
+・すべての仲間がマナ生成40%を得る(5ターン)。この効果は解除不可","Reduction is applied to owned Minions and to any received Minions while the effect is active.
 
 ・ Reduction only affects Minions' current health.","減少効果は、所持しているミニオンと、効果の発動中に受け取ったミニオンに対して適用される。
 
 ・減少効果はミニオンの現在のライフにのみ影響を及ぼす。","",""
 "christmas_albin","Albin","","","・Deals 440% damage to all enemies.
 ・The duration of buffs is reset for all allies.
-・Summons an Elf Minion for each ally with 10% HP and 10% attack inherited from the caster.
-・Summons an Elf Minion for each ally with 5% HP and 10% attack inherited from the caster.","・敵全員に440%のダメージを与える。
-・仲間全員のバフの持続時間がリセットされる。
-・仲間全員にエルフミニオンをサモンする。エルフミニオンは、術者のHPの10%と攻撃力の10%を持つ。
-・仲間全員にエルフミニオンをサモンする。エルフミニオンは、術者のHPの5%と攻撃力の10%を持つ。","","","",""
+・Failed for familiar christmas_elf","・敵全員に440%のダメージを与える。
+・仲間全員のバフの持続時間がリセットされる。","","","",""
 "christmas_ottilia","Ottilia","","","・Deals 440% damage to the target.
 ・The caster recovers  10% health per copied buff, up to 0% health in total.
-・Summons an Elf Minion with 10% HP and 10% attack inherited from the caster.
-・Summons an Elf Minion with 5% HP and 10% attack inherited from the caster.","・ターゲットに440%のダメージを与える。
-・術者はコピーしたバフごとに10%のライフを回復する。合計0%ライフまで。
-・術者のHPの10%と攻撃力の10%を持つエルフミニオンをサモンする。
-・術者のHPの5%と攻撃力の10%を持つエルフミニオンをサモンする。","","","",""
+・Failed for familiar christmas_elf","・ターゲットに440%のダメージを与える。
+・術者はコピーしたバフごとに10%のライフを回復する。合計0%ライフまで。","","","",""
 "holy_god_faeona","Faeona","--- Passives ---
 
 - Resist Sand Damage -
@@ -6103,10 +5856,10 @@ The first [#!]16[#] times this character casts a Special Skill that deals damage
 
 - 特殊スキルによるダメージの増加 -
 このキャラクターが攻撃系の特殊スキルを初めて使用した場合、[#!]16[#]回目まで、攻撃力が[#!]50%[#]増加する。","・Deals 440% damage to the target.
-・The target gets -34% defense for 2 turns. This effect can't be cleansed.
+・The target gets -34% defense for 2 turns.
 ・The target gets 66% increase for any healing received for 2 turns. This effect can't be dispelled.
 ・[#e290ff]Element Link[#] gives all [#e290ff]Dark[#] allies -80% critical chance for 6 turns. This effect can't be dispelled.","・ターゲットに440%のダメージを与える。
-・2ターンの間、ターゲットの防御力が-34%になる。この効果は浄化できない。
+・2ターンの間、ターゲットの防御力が-34%になる。
 ・2ターンの間、ターゲットの回復量が66%になる。この効果は解除できない。
 ・6ターンの間、[#e290ff]属性リンク[#]によって、[#e290ff]闇属性[#]の仲間全員のクリティカル攻撃を与える確率が、-80%になる。この効果は解除できない。","","","",""
 "faun_bramble","Bramble","--- Passives ---
@@ -6135,7 +5888,7 @@ This character has innate resistance against [#!]Insanity[#].","--- Passives ---
 ・Cleanses status ailments from all allies.","・仲間全員のHPを1%回復する。
 ・バフが有効なターン中、仲間全員に対して発動中のすべてのバフが解除不可になる。
 ・術者が次の3ターン以内に倒された場合、仲間全員のマナが25%になる。
-・仲間全員のステータス異常を浄化する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。"
+・仲間全員のステータス異常を浄化する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。"
 "faun_isidore","Isidore","--- Passives ---
 
 - Minion Blind -
@@ -6247,8 +6000,7 @@ This character has a [#!]15%[#] chance to dodge Special Skills that deal damage.
 ・ターゲットと近くにいる敵に420%のダメージを与える。
 ・ターゲットと近くにいる敵が4ターンにわたって0の[#!]猛毒[#]ダメージを受ける。
 HPがブーストされたターゲットやミニオンまたはメガミニオンを所有するターゲットには追加ダメージを付与する。
-・4ターンの間、術者のHPが1680回復する。","The target and nearby enemies receive 0 [#!]Toxin[#] damage over 4 turns. Damage is increased against targets with boosted health, Minions or a Mega Minion.","ターゲットと近くにいる敵が4ターンにわたって0の[#!]猛毒[#]ダメージを受ける。
-HPがブーストされたターゲットやミニオンまたはメガミニオンを所有するターゲットには追加ダメージを付与する。","",""
+・4ターンの間、術者のHPが1680回復する。","The enemies on the edges of the enemy formation receive 0 [#!]Toxin damage[#] over 4 turns. Damage is increased against targets with boosted health, Minions or a Mega Minion.","敵陣形の端にいる敵が4ターンにわたって0の[#!]猛毒[#]ダメージを受ける。HPがブーストされたターゲットやミニオンまたはメガミニオンを所有するターゲットには追加ダメージを付与する。","",""
 "moth_mortewitch","Mortewitch","--- Passives ---
 
 - Dodge Special Damage -
@@ -6257,19 +6009,8 @@ This character has a [#!]15%[#] chance to dodge Special Skills that deal damage.
 - 特殊スキル回避 -
 このキャラクターは[#!]15%[#]の確率でダメージ付きの特殊スキルを回避する。","・Deals 800% damage to the target.
 ・The attack has a 100% chance to bypass defensive buffs.
-・Summons a Grave Mothling Mega Fiend for the target. The Fiend damages the enemy with 270% attack every turn.
-
-・The Grave Mothling Mega Fiend absorbs healing and disappears when it has absorbed health equal to 80% of its owner's max health.
-・When summoned, the Grave Mothling Mega Fiend increases the damage dealt to its target from all sources by  50%. The effect lasts as long as the target has Grave Mothling Mega Fiend.
-・Summons a Grave Mothling Mega Fiend for the target. The Fiend damages the enemy with 270% attack every turn.
-[*]The Grave Mothling Mega Fiend absorbs healing and disappears when it has absorbed health equal to 50% of its owner's max health.","・ターゲットに800%のダメージを与える。
-・攻撃時に100%の確率で、敵の防御バフを無効化する。
-・ターゲットに墓場の小蛾メガフィエンドをサモンする。ターン毎に敵に攻撃力270%でダメージを与える。
-
-・墓場の小蛾メガフィエンドは回復を吸収し、所有者の最大HPの80%に等しいライフを吸収すると消滅する。
-・墓場の小蛾メガフィエンドがサモンされた場合は、あらゆる手段を使って、ターゲットに与えるダメージを50%増加させる。この効果は所有者が墓場の小蛾メガフィエンドを所有する限り有効となる。
-・ターゲットに墓場の小蛾メガフィエンドをサモンする。ターン毎に敵に攻撃力270%でダメージを与える。
-[*]墓場の小蛾メガフィエンドは回復を吸収し、所有者の最大HPの50%に等しいライフを吸収すると消滅する。","","","",""
+・Failed for familiar grave_mothling_big_parasite","・ターゲットに800%のダメージを与える。
+・攻撃時に100%の確率で、敵の防御バフを無効化する。","","","",""
 "moth_grovevert","Grovevert","--- Passives ---
 
 - Dodge Special Damage -
@@ -6277,20 +6018,7 @@ This character has a [#!]15%[#] chance to dodge Special Skills that deal damage.
 
 - 特殊スキル回避 -
 このキャラクターは[#!]15%[#]の確率でダメージ付きの特殊スキルを回避する。","・After the Special Skill has been cast, increases the mana of the caster by 20%.
-・Summons a Moss Mothling Mega Fiend for the target. The Fiend damages the enemy with 275% attack every turn.
-
-・The Moss Mothling Mega Fiend absorbs healing and disappears when it has absorbed health equal to 70% of its owner's max health.
-・Summons a Moss Mothling Mega Fiend for the target. The Fiend damages the enemy with 275% attack every turn.
-[*]The Moss Mothling Mega Fiend absorbs healing and disappears when it has absorbed health equal to 50% of its owner's max health.
-・Summons a Moss Mothling Mega Fiend for the target. The Fiend damages the enemy with 275% attack every turn.
-[*]The Moss Mothling Mega Fiend absorbs healing and disappears when it has absorbed health equal to 50% of its owner's max health.","・特殊スキルを発動すると、術者のマナが20%増加する。
-・ターゲットに苔の小蛾メガフィエンドをサモンする。ターン毎に敵に攻撃力275%でダメージを与える。
-
-・苔の小蛾メガフィエンドは回復を吸収し、所有者の最大HPの70%に等しいライフを吸収すると消滅する。
-・ターゲットに苔の小蛾メガフィエンドをサモンする。ターン毎に敵に攻撃力275%でダメージを与える。
-[*]苔の小蛾メガフィエンドは回復を吸収し、所有者の最大HPの50%に等しいライフを吸収すると消滅する。
-・ターゲットに苔の小蛾メガフィエンドをサモンする。ターン毎に敵に攻撃力275%でダメージを与える。
-[*]苔の小蛾メガフィエンドは回復を吸収し、所有者の最大HPの50%に等しいライフを吸収すると消滅する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・Failed for familiar moss_mothling_big_parasite","・特殊スキルを発動すると、術者のマナが20%増加する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
 "moth_pepperbleu","Pepperbleu","--- Passives ---
 
 - Dodge Special Damage -
@@ -6299,19 +6027,8 @@ This character has a [#!]15%[#] chance to dodge Special Skills that deal damage.
 - 特殊スキル回避 -
 このキャラクターは[#!]15%[#]の確率でダメージ付きの特殊スキルを回避する。","・Deals 450% damage to the target.
 ・Dispels buffs from the target.
-・Summons a Dusk Mothling Mega Fiend for the target. The Fiend damages the enemy with 270% attack every turn.
-
-・The Dusk Mothling Mega Fiend absorbs healing and disappears when it has absorbed health equal to 75% of its owner's max health.
-・When summoned, the Dusk Mothling Mega Fiend causes its target to be immune to new buffs. The effect lasts as long as the target has Dusk Mothling Mega Fiend.
-・Summons a Dusk Mothling Mega Fiend for the target. The Fiend damages the enemy with 270% attack every turn.
-[*]The Dusk Mothling Mega Fiend absorbs healing and disappears when it has absorbed health equal to 50% of its owner's max health.","・ターゲットに450%のダメージを与える。
-・ターゲットのバフを解除する。
-・ターゲットに夕闇の小蛾メガフィエンドをサモンする。ターン毎に敵に攻撃力270%でダメージを与える。
-
-・夕闇の小蛾メガフィエンドは回復を吸収し、所有者の最大HPの75%に等しいライフを吸収すると消滅する。
-・夕闇の小蛾メガフィエンドがサモンされた場合は、ターゲットが夕闇の小蛾メガフィエンドを所有する限り、ターゲットが新たなバフを獲得できないようにする。
-・ターゲットに夕闇の小蛾メガフィエンドをサモンする。ターン毎に敵に攻撃力270%でダメージを与える。
-[*]夕闇の小蛾メガフィエンドは回復を吸収し、所有者の最大HPの50%に等しいライフを吸収すると消滅する。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","",""
+・Failed for familiar dusk_mothling_big_parasite","・ターゲットに450%のダメージを与える。
+・ターゲットのバフを解除する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "garrison_maisie","Maisie","--- Passives ---
 
 - Resist Sand Damage -
@@ -6322,12 +6039,7 @@ lang_id resolution failed.","--- Passives ---
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Boosts health of all allies by 720. Boosts health of all allies by additional 720 for each status ailment the ally has, up to 80 health in total.
-・The Shield Guard Mega Minion safely cleanses the latest cleansable status ailment from all allies each turn.
-・The Shield Guard Mega Minion safely cleanses the latest cleansable status ailment from all allies each turn.
-・The Shield Guard Mega Minion safely cleanses the latest cleansable status ailment from all allies each turn.","・仲間全員のライフを720ブーストさせる。また仲間のステータス異常の数に応じて仲間全員のライフを720ブーストさせる。ただし、HPの上限80まで。
-・シールドガードのメガミニオンが、毎ターン、仲間全員に最後に付与された浄化可能なステータス異常を安全に消し去る。
-・シールドガードのメガミニオンが、毎ターン、仲間全員に最後に付与された浄化可能なステータス異常を安全に消し去る。
-・シールドガードのメガミニオンが、毎ターン、仲間全員に最後に付与された浄化可能なステータス異常を安全に消し去る。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
+・Failed for familiar shield_guard_mega_minion","・仲間全員のライフを720ブーストさせる。また仲間のステータス異常の数に応じて仲間全員のライフを720ブーストさせる。ただし、HPの上限80まで。","","","",""
 "garrison_archibald","Archibald","--- Passives ---
 
 - Resist Sand Damage -
@@ -6341,15 +6053,10 @@ lang_id resolution failed.","--- Passives ---
 ・Damage bypasses target's Minions.
 ・All active status ailments are uncleansable for all enemies for the remaining turns of the status ailment.
 ・All enemies get -40% defense against [#70e92f]Nature[#] for 4 turns.
-・Summons a Sword Guard Mega Minion with 35% HP and 230% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.","・敵全員に300%のダメージを与える。
+・Failed for familiar sword_guard_mega_minion","・敵全員に300%のダメージを与える。
 ・ダメージはターゲットの持つミニオンを貫通する。
 ・ステータス異常の残り有効ターン中、敵全員に対して発動中のすべてのステータス異常が浄化不可になる。
-・4ターンの間、敵全員の[#70e92f]自然属性[#]に対する防御力が-40%になる。
-・術者のHPの35%と攻撃力の230%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。","","","",""
+・4ターンの間、敵全員の[#70e92f]自然属性[#]に対する防御力が-40%になる。","","","",""
 "garrison_frostsnout","Frostsnout","--- Passives ---
 
 - Resist Sand Damage -
@@ -6404,9 +6111,9 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Recovers 50% health for all allies.
-・All allies regenerate 760 HP over 4 turns.
+・All allies regenerate 760 HP over 4 turns. This effect can't be dispelled.
 ・All allies reduce all received damage by -50% for 4 turns.","・仲間全員のライフを50%回復する。
-・4ターンに渡って、仲間全員のHPが760回復する。
+・仲間全員のHPが760回復(4ターン)。この効果は解除不可
 ・4ターンの間、仲間全員の受けるダメージが-50%になる。","","","",""
 "astral_dwarf_pluth","Pluth","--- Passives ---
 
@@ -6533,8 +6240,7 @@ This character has a [#!]15%[#] chance to dodge Special Skills that deal damage.
 - 特殊スキル回避 -
 このキャラクターは[#!]15%[#]の確率でダメージ付きの特殊スキルを回避する。","・Deals 250% damage to the enemies on the edges of the enemy formation. If there is only one enemy, the damage is doubled.
 ・The enemies on the edges of the enemy formation receive 0 [#!]Toxin damage[#] over 4 turns. Damage is increased against targets with boosted health, Minions or a Mega Minion.","・敵陣形の両端にいる敵に250%のダメージを与える。敵が1体しかいない場合は与えるダメージが2倍になる。
-・敵陣形の端にいる敵が4ターンにわたって0の[#!]猛毒[#]ダメージを受ける。HPがブーストされたターゲットやミニオンまたはメガミニオンを所有するターゲットには追加ダメージを付与する。","The target and nearby enemies receive 0 [#!]Toxin[#] damage over 4 turns. Damage is increased against targets with boosted health, Minions or a Mega Minion.","ターゲットと近くにいる敵が4ターンにわたって0の[#!]猛毒[#]ダメージを受ける。
-HPがブーストされたターゲットやミニオンまたはメガミニオンを所有するターゲットには追加ダメージを付与する。","",""
+・敵陣形の端にいる敵が4ターンにわたって0の[#!]猛毒[#]ダメージを受ける。HPがブーストされたターゲットやミニオンまたはメガミニオンを所有するターゲットには追加ダメージを付与する。","The enemies on the edges of the enemy formation receive 0 [#!]Toxin damage[#] over 4 turns. Damage is increased against targets with boosted health, Minions or a Mega Minion.","敵陣形の端にいる敵が4ターンにわたって0の[#!]猛毒[#]ダメージを受ける。HPがブーストされたターゲットやミニオンまたはメガミニオンを所有するターゲットには追加ダメージを付与する。","",""
 "moth_joyvert","Joyvert","--- Passives ---
 
 - Dodge Special Damage -
@@ -6561,8 +6267,7 @@ This character has a [#!]15%[#] chance to dodge Special Skills that deal damage.
 このキャラクターは[#!]15%[#]の確率でダメージ付きの特殊スキルを回避する。","・Deals 200% damage to the target and nearby enemies.
 ・The target and nearby enemies receive 0 [#!]Toxin[#] damage over 4 turns. Damage is increased against targets with boosted health, Minions or a Mega Minion.","・ターゲットと近くにいる敵に200%のダメージを与える。
 ・ターゲットと近くにいる敵が4ターンにわたって0の[#!]猛毒[#]ダメージを受ける。
-HPがブーストされたターゲットやミニオンまたはメガミニオンを所有するターゲットには追加ダメージを付与する。","The target and nearby enemies receive 0 [#!]Toxin[#] damage over 4 turns. Damage is increased against targets with boosted health, Minions or a Mega Minion.","ターゲットと近くにいる敵が4ターンにわたって0の[#!]猛毒[#]ダメージを受ける。
-HPがブーストされたターゲットやミニオンまたはメガミニオンを所有するターゲットには追加ダメージを付与する。","",""
+HPがブーストされたターゲットやミニオンまたはメガミニオンを所有するターゲットには追加ダメージを付与する。","The enemies on the edges of the enemy formation receive 0 [#!]Toxin damage[#] over 4 turns. Damage is increased against targets with boosted health, Minions or a Mega Minion.","敵陣形の端にいる敵が4ターンにわたって0の[#!]猛毒[#]ダメージを受ける。HPがブーストされたターゲットやミニオンまたはメガミニオンを所有するターゲットには追加ダメージを付与する。","",""
 "nature_god_mystia","Mystia","--- Passives ---
 
 - Resist Sand Damage -
@@ -6573,11 +6278,11 @@ lang_id resolution failed.","--- Passives ---
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・All enemies become [#!]Soul Connected[#] for 4 turns. Soul Connected enemies share received damage.
-・All enemies get -34% defense for 4 turns.
-・All allies reflect all status effects and 145% damage back to the attacker and block other negative effects from enemies' [##elementred]Fire[#] Special Skills for 4 turns.
+・All enemies get -34% defense for 4 turns. This effect can't be dispelled.
+・All allies reflect all status effects and 145% damage back to the attacker and block other negative effects from enemies' [##elementred]Fire[#] Special Skills for 4 turns. This effect can't be dispelled.
 ・[#70e92f]Element Link[#] gives all [#70e92f]Nature[#] allies 130% defense against Special Skills for 4 turns. This effect can't be dispelled.","・4ターンの間、敵全員に[#!]ソウル・コネクト[#]が発動する。ソウル・コネクトによって魂が繋がった敵同士は被ダメージを共有する。
-・4ターンの間、敵全員の防御力が-34%になる。
-・仲間全員が、すべてのステータス効果を跳ね返す。さらに、4ターンの間、[##elementred]炎属性[#]の敵の特殊スキルによって発生した、その他のマイナスの影響を無効にし、ダメージの145%を攻撃者に跳ね返す。
+・4ターンの間、敵全員の防御力が-34%になる。この効果は解除できない。
+・仲間全員が、すべてのステータス効果を跳ね返す。さらに、4ターンの間、[##elementred]炎属性[#]の敵の特殊スキルによって発生した、その他のマイナスの影響を無効にし、ダメージの145%を攻撃者に跳ね返す。この効果は解除不可。
 ・[#70e92f]属性リンク[#]によって、[#70e92f]自然属性[#]の仲間全員の特殊スキルに対する防御力が130%増加する(4ターン)。この効果は解除不可","Status effects cast by characters, Minions and Fiends on the same side cannot be reflected.","同じチームのキャラクター、ミニオン、フィエンドが特殊スキルを使用して敵にステータス効果を付与した場合、敵はこれらの効果を跳ね返すことができない。","",""
 "lunar_new_year_xiaoqing","Xiaoqing","--- Passives ---
 
@@ -6586,9 +6291,9 @@ Enemy Mega Minions can't attack or use abilities.","--- Passives ---
 
 - メガミニオン阻止 -
 敵のメガミニオンが攻撃できず、能力も使用できなくなる。","・Recovers 40% health for all allies.
-・Lifts all cleansable status ailments from all allies and randomly distributes them on enemies.
+・Steals all dispellable buffs from all enemies and randomly distributes them on allies.
 ・All allies reflect status ailments, negative stacks, and Wither effects to a random character on the opposing team for 3 turns.","・仲間全員のライフを40%回復する。
-・仲間全員の浄化可能なステータス異常を浄化し、敵にランダムに分配する。
+・敵全員から、解除可能なバフをすべて盗み、仲間全員にランダムに分配する。
 ・3ターンにわたり、仲間全員がステータス異常、マイナスの累積、弱化効果を跳ね返し、そのステータス異常を相手チームのランダムなキャラクター1体に付与する。","Status effects cast by characters, Minions and Fiends on the same side cannot be reflected.","同じチームのキャラクター、ミニオン、フィエンドが特殊スキルを使用して敵にステータス効果を付与した場合、敵はこれらの効果を跳ね返すことができない。","",""
 "lunar_new_year_baishu","Baishu","--- Passives ---
 
@@ -6609,11 +6314,11 @@ This character has a [#!]15%[#] chance to dodge Special Skills that deal damage.
 ・Cleanses status ailments from all allies.
 ・The caster gets [#!]Sticky Surface[#] for 4 turns. This effect can't be dispelled.
 [*][#!]Sticky Surface[#]: Steals 100 random dispellable buff or Growth effect from an attacking enemy.
-・All allies get 30% mana generation for 4 turns.","・仲間全員のライフを45%回復する。
+・All allies get 30% mana generation for 4 turns. This effect can't be dispelled.","・仲間全員のライフを45%回復する。
 ・仲間全員のステータス異常を浄化する。
 ・4ターンの間、術者が[#!]粘着層[#]を獲得する。この効果は解除できない。
 [*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで100個の解除可能なバフまたは成長効果を奪う。
-・4ターンの間、仲間全員のマナ生成が30%になる。","Each character can trigger this effect once per turn.","各キャラクターは、1ターンに1回のみこの効果を発動させられる。","",""
+・すべての仲間がマナ生成30%を得る(4ターン)。この効果は解除不可","Each character can trigger this effect once per turn.","各キャラクターは、1ターンに1回のみこの効果を発動させられる。","",""
 "moth_limeboire","Limeboire","--- Passives ---
 
 - Dodge Special Damage -
@@ -6737,14 +6442,9 @@ lang_id resolution failed.","--- Passives ---
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Recovers 40% health for all allies.
 ・All active buffs are undispellable for all allies for the remaining turns of the buff.
 ・All allies get 40% defense for 5 turns.
-・Summons a Sword Guard Mega Minion with 35% HP and 230% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.","・仲間全員のライフを40%回復する。
+・Failed for familiar sword_guard_mega_minion","・仲間全員のライフを40%回復する。
 ・バフが有効なターン中、仲間全員に対して発動中のすべてのバフが解除不可になる。
-・5ターンの間、仲間全員の防御力が40%になる。
-・術者のHPの35%と攻撃力の230%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。","","","",""
+・5ターンの間、仲間全員の防御力が40%になる。","","","",""
 "garrison_flamehide","Flamehide","--- Passives ---
 
 - Resist Sand Damage -
@@ -6755,12 +6455,7 @@ lang_id resolution failed.","--- Passives ---
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals 375% damage to the target.
-・Summons a Sword Guard Mega Minion with 35% HP and 230% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.
-・Summons a Sword Guard Mega Minion with 20% HP and 300% attack inherited from the caster.","・ターゲットに375%のダメージを与える。
-・術者のHPの35%と攻撃力の230%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。
-・術者のHPの20%と攻撃力の300%を持つソードガードのメガミニオンをサモンする。","","","",""
+・Failed for familiar sword_guard_mega_minion","・ターゲットに375%のダメージを与える。","","","",""
 "garrison_iarlaith","Iarlaith","--- Passives ---
 
 - Resist Sand Damage -
@@ -6785,12 +6480,7 @@ lang_id resolution failed.","--- Passives ---
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals 200% damage to all enemies.
-・Each hit from the Spear Guard Mega Minion dispels all dispellable buffs from the target.
-・Each hit from the Spear Guard Mega Minion dispels all dispellable buffs from the target.
-・Each hit from the Spear Guard Mega Minion dispels all dispellable buffs from the target.","・敵全員に200%のダメージを与える。
-・槍持ちの衛兵のメガミニオンが敵を攻撃するたびに、ターゲットから解除可能なバフをすべて解除する。
-・槍持ちの衛兵のメガミニオンが敵を攻撃するたびに、ターゲットから解除可能なバフをすべて解除する。
-・槍持ちの衛兵のメガミニオンが敵を攻撃するたびに、ターゲットから解除可能なバフをすべて解除する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
+・Failed for familiar spear_guard_mega_minion","・敵全員に200%のダメージを与える。","","","",""
 "garrison_godfrey","Godfrey","--- Passives ---
 
 - Resist Sand Damage -
@@ -6802,15 +6492,10 @@ lang_id resolution failed.","--- Passives ---
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Recovers 35% health for all allies.
 ・All active buffs are undispellable for all allies for the remaining turns of the buff.
-・All allies are immune to new status ailments for 4 turns. This effect can't be dispelled.
-・Each hit from the Spear Guard Mega Minion dispels all dispellable buffs from the target.
-・Each hit from the Spear Guard Mega Minion dispels all dispellable buffs from the target.
-・Each hit from the Spear Guard Mega Minion dispels all dispellable buffs from the target.","・仲間全員のライフを35%回復する。
+・All allies are immune to new status ailments for 4 turns.
+・Failed for familiar spear_guard_mega_minion","・仲間全員のライフを35%回復する。
 ・バフが有効なターン中、仲間全員に対して発動中のすべてのバフが解除不可になる。
-・4ターンに渡って、仲間全員が新たなステータス異常を無効化する。この効果は解除できない。
-・槍持ちの衛兵のメガミニオンが敵を攻撃するたびに、ターゲットから解除可能なバフをすべて解除する。
-・槍持ちの衛兵のメガミニオンが敵を攻撃するたびに、ターゲットから解除可能なバフをすべて解除する。
-・槍持ちの衛兵のメガミニオンが敵を攻撃するたびに、ターゲットから解除可能なバフをすべて解除する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
+・4ターンの間、仲間全員が新たなステータス異常を受けない。","","","",""
 "beowulf_beowulf","Beowulf","--- Passives ---
 
 - Perfect Accuracy -
@@ -6831,10 +6516,10 @@ When this character receives damage [#!]Special Skills[#], they receive [#!]0%[#
 - 被ダメージ時の累積効果攻撃力 -
 このキャラクターが[#!]特殊スキル[#]によりダメージを受けると、マナが[#!]0%[#]増加する。","・Deals 615% damage to the target.
 ・Recovers 1% health for all allies.
-・Reduces the mana of all allies by 1%.
+・Increases the mana of all allies by 1%.
 ・[#!]Stack (Max: 25):[#] All allies get 25% attack.","・ターゲットに615%のダメージを与える。
 ・仲間全員のHPを1%回復する。
-・仲間全員のマナが1%減少する。
+・仲間全員のマナが1%増加する。
 ・[#!]累積効果(最大：25):[#]仲間全員の攻撃力が25%になる。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
 "beowulf_ecgtheow","Ecgtheow","--- Passives ---
 
@@ -6904,13 +6589,13 @@ This character gains [#!]5%[#] mana when they receive a status ailment or a nega
 [*][#!]Sticky Surface[#]: Steals -98 random dispellable buff or Growth effect from an attacking enemy.
 ・The caster gets [#!]Sticky Surface[#] for 3 turns. This effect can't be dispelled.
 [*][#!]Sticky Surface[#]: Steals 160 random dispellable buff or Growth effect from an attacking enemy.
-・All allies regenerate 920 HP over 4 turns.","・敵全員のバフを解除する。
+・All allies regenerate 920 HP over 4 turns. This effect can't be dispelled.","・敵全員のバフを解除する。
 ・[#!]ステータス効果生成：[#]次の32ターンの開始時に、125ターンの間、このキャラクターが追加でいずれかの仲間に125%のマナ生成を付与し、全ての回復量を125%増加させる。この効果は解除できない。
 ・3ターンの間、術者が[#!]粘着層[#]を獲得する。この効果は解除できない。
 [*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで-98個の解除可能なバフまたは成長効果を奪う。
 ・3ターンの間、術者が[#!]粘着層[#]を獲得する。この効果は解除できない。
 [*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで160個の解除可能なバフまたは成長効果を奪う。
-・4ターンに渡って、仲間全員のHPが920回復する。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","",""
+・仲間全員のHPが920回復(4ターン)。この効果は解除不可","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "beowulf_unferth","Unferth","--- Passives ---
 
 - Resist Damage from Status Effects -
@@ -7021,9 +6706,9 @@ When this character receives damage [#!]Special Skills[#], they receive [#!]0%[#
 - 被ダメージ時の累積効果攻撃力 -
 このキャラクターが[#!]特殊スキル[#]によりダメージを受けると、マナが[#!]0%[#]増加する。","・Deals 220% damage to all enemies.
 ・All allies get 35% defense for 5 turns.
-・All allies regenerate 520 HP over 5 turns.","・敵全員に220%のダメージを与える。
+・All allies regenerate 520 HP over 5 turns. This effect can't be dispelled.","・敵全員に220%のダメージを与える。
 ・5ターンの間、仲間全員の防御力が35%になる。
-・5ターンに渡って、仲間全員のHPが520回復する。","","","",""
+・仲間全員のHPが520回復(5ターン)。この効果は解除不可","","","",""
 "beowulf_freawaru","N/A","--- Passives ---
 
 - Mana per Enemy Buff -
@@ -7050,7 +6735,7 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 ・仲間全員のHPを160回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
 ・[#!]ステータス効果生成：[#]次の32ターンの開始時に、このキャラクターが40ターンの間、いずれかの敵1体のマナ生成を20%、特殊スキルに対する防御力を40%付与する。この効果は解除できない。
 ・3ターンの間、敵全員のマナ生成が-80%になる。
-・3ターンの間、敵全員の特殊スキルに対する防御力が-102%になる。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
+・3ターンの間、敵全員の特殊スキルに対する防御力が-102%になる。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
 "beowulf_hygd","N/A","--- Passives ---
 
 - Mana on Buff Received -
@@ -7077,7 +6762,7 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 ・仲間全員のHPを1%回復する。
 ・[#!]ステータス効果生成：[#]次の32ターンの開始時に、140ターンの間、このキャラクターが仲間全員に特殊スキルに対する防御力を140%付与し、全ての回復量を140%増加させる。この効果は解除できない。
 ・3ターンの間、仲間全員の特殊スキルに対する防御力が-98%になる。
-・3ターンの間、仲間全員の回復量が140%増加する。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
+・3ターンの間、仲間全員の回復量が140%増加する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
 "beowulf_wiglaf","N/A","--- Passives ---
 
 - Resist Sand Damage -
@@ -7137,10 +6822,10 @@ lang_id resolution failed.","--- Passives ---
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals 300% damage to all enemies.
 ・Dispels buffs from all enemies.
-・All enemies receive 640 Burn damage over 4 turns.
+・All enemies receive 640 Burn damage over 4 turns. This effect can't be cleansed.
 ・[#ff9f81]Element Link[#] gives all [#ff9f81]Fire[#] allies 130% defense against Special Skills for 4 turns. This effect can't be dispelled.","・敵全員に300%のダメージを与える。
 ・敵全員のバフを解除する。
-・4ターンの間、敵全員に640の燃焼ダメージを与える。
+・4ターンの間、敵全員に640の燃焼ダメージを与える。この効果は浄化できない。
 ・[#ff9f81]属性リンク[#]によって、[#ff9f81]炎属性[#]の仲間全員の特殊スキルに対する防御力が130%増加する(4ターン)。この効果は解除不可","","","",""
 "bard_darkbeat","Darkbeat","--- Passives ---
 
@@ -7179,10 +6864,10 @@ The chance of revival is reduced for all enemies in the battle. The chance is [#
 バトル中の敵全員の復活確率を減少させる。確率は元の値の[#!]-80%[#]になる。","・Deals 500% damage to all enemies.
 ・All enemies receive Corrosive Burn for 5 turns. The Corrosive Burn deals 0.7 Burn damage and lowers the target's defense by -75% each turn.
 ・The caster regenerates 1840 HP over 4 turns.
-・The caster gets 50% mana generation for 4 turns.","・敵全員に500%のダメージを与える。
+・The caster gets 50% mana generation for 4 turns. This effect can't be dispelled.","・敵全員に500%のダメージを与える。
 ・5ターンの間、敵全員に腐食性燃焼を与える。腐食性燃焼は、ターン毎に0.7の燃焼ダメージを与え、ターゲットの防御力が-75%ずつ減少する。
 ・4ターンの間、術者のHPが1840回復する。
-・術者のマナ生成が50%になる(4ターン)","","","",""
+・4ターンの間、術者のマナ生成が50%になる。この効果は解除できない。","","","",""
 "bard_lyria","N/A","--- Passives ---
 
 - Revival Chance Reduction -
@@ -7247,7 +6932,7 @@ This character has innate resistance against all status effects and stacks that 
 ・[#!]Stack (Max: 30):[#] All allies get 35% attack.","・仲間全員のステータス異常を浄化する。
 ・4ターンの間、仲間全員が攻撃時に100%の確率で敵の防御バフを無効化する。
 ・4ターンの間、仲間全員が新たなマイナスのマナ効果を無効化する。
-・[#!]累積効果(最大：30):[#]仲間全員の攻撃力が35%になる。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","Defensive buffs include counterattacks.","防御バフには反撃が含まれる。"
+・[#!]累積効果(最大：30):[#]仲間全員の攻撃力が35%になる。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","Defensive buffs include counterattacks.","防御バフには反撃が含まれる。"
 "wild_cat_imagus","Imagus","--- Passives ---
 
 - Revive -
@@ -7268,11 +6953,11 @@ This character has innate resistance against all status effects and stacks that 
 このキャラクターは、[#!]攻撃力[#]に影響するすべてのステータス効果と累積への耐性を最初から持つ。対象にはバフも含まれる。","・[#!]Wither:[#] All enemies get -2640 attack.
 ・[#!]Wither:[#] All enemies get 20 attack.
 ・All enemies get 20% increase for any healing received for 4 turns. This effect can't be dispelled.
-・Lifts all cleansable status ailments from all allies and randomly distributes them on enemies.
+・Steals all dispellable buffs from all enemies and randomly distributes them on allies.
 ・Cleanses status ailments from all allies at the end of each turn for 4 turns. This effect can't be dispelled.","・[#!]弱化：[#]敵全員の攻撃力が-2640減少する。
 ・[#!]弱化：[#]敵全員の攻撃力が20減少する。
 ・4ターンの間、敵全員の回復量が20%になる。この効果は解除できない。
-・仲間全員の浄化可能なステータス異常を浄化し、敵にランダムに分配する。
+・敵全員から、解除可能なバフをすべて盗み、仲間全員にランダムに分配する。
 ・4ターン毎の、ターン終了時に仲間全員のステータス異常を浄化する。この効果は解除不可","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
 
 ・Additional Wither and Growth effects modify the Ability Scores further.
@@ -7397,7 +7082,7 @@ This character has innate resistance against all status effects and stacks that 
 効果耐性 -
 このキャラクターは、[#!]攻撃力[#]に影響するすべてのステータス効果と累積への耐性を最初から持つ。対象にはバフも含まれる。","・Dispels buffs from all enemies.
 ・All enemies are unable to gain mana for 3 turns.","・敵全員のバフを解除する。
-・敵全員がマナを生成できなくなる(3ターン)","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","",""
+・敵全員がマナを生成できなくなる(3ターン)","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "easter_viscount_cluckwood","Viscount Cluckwood","","","・Rearranges the enemy positions randomly.
 ・Deals 5% damage to all enemies.
 ・For 3 turns, the element of all allies except the caster is changed each turn. On the first 24 turns, the element is random.
@@ -7427,10 +7112,7 @@ All enemies get [#!]50%[#] healing.","--- Passives ---
 
 - 回復量低下 -
 敵全員の回復量が[#!]50%[#]になる。","・Deals 300% damage to all enemies.
-・Summons a Firewall Minion for all allies with 35% HP inherited from the caster.
-・Each time a Firewall Minion is attacked by normal attacks or Special Skills, the attacker receives Corrosive Burn for -65 turns. The Corrosive Burn deals -65 Burn damage and lowers the target's defense by -65% each turn. Deals extra damage against heroes with Minions or a Mega Minion.","・敵全員に300%のダメージを与える。
-・術者のHPの35%を持つファイヤーウォールのミニオンを仲間全員にサモンする。
-・ファイヤーウォールのミニオンが通常攻撃または特殊スキルで攻撃を受けるたびに、-65ターンの間、その攻撃者に腐食性燃焼を与える。腐食性燃焼は、ターン毎に-65の燃焼ダメージを与え、ターゲットの防御力が-65%ずつ減少する。ミニオンまたはメガミニオンを所有する英雄には追加ダメージを付与する。","","","",""
+・Failed for familiar firewall_minion","・敵全員に300%のダメージを与える。","","","",""
 "fox_foxley","Foxley","--- Passives ---
 
 - Decreased healing -
@@ -7502,7 +7184,7 @@ This character's Special Skill never misses its targets.","--- Passives ---
 ・Dispels buffs from all enemies.
 ・[#!]Wither:[#] All enemies get 0 attack.","・攻撃したターゲットにバフがかかっている場合、バフがかかっている他の敵にも攻撃が連鎖する。バフがかかっている敵がいない場合は、ランダムな敵1体を攻撃する。連続して攻撃するたびに、与えるダメージは減少する。それぞれの敵は1度しか攻撃できない。
 ・敵全員のバフを解除する。
-・[#!]弱化：[#]敵全員の攻撃力が0減少する。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
+・[#!]弱化：[#]敵全員の攻撃力が0減少する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
 
 ・Additional Wither and Growth effects modify the Ability Scores further.
 
@@ -7948,11 +7630,11 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・This Special Skill has a chance to deal [#!]critical[#] hits.
 ・Deals 100% damage to the target. 
 [*] Deals additional 0% damage to 32 random enemies.
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns. This effect can't be dispelled.
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns.
 ・The caster reduces all received damage by -102% for 4 turns.","・この特殊スキルは一定確率で[#!]クリティカル[#]攻撃を与える。
 ・ターゲットに100%のダメージを与える。
 [*]ランダムな敵32体に0%の追加ダメージを与える。
-・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
+・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
 ・4ターンの間、術者の受けるダメージが-102%になる。","The chance of dealing a Critical hit is based on the Hero's overall critical chance when the damage is dealt.
 ・
 ・Critical hits caused by this Special Skill deal 50% more damage. 
@@ -8010,10 +7692,10 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・This Special Skill has a chance to deal [#!]critical[#] hits.
 ・Dispels buffs from all enemies.
 ・Deals 380% damage to the enemy with the highest remaining HP. Deals 180% damage to all other enemies.
-・All enemies receive 822 Water damage over 3 turns.","・この特殊スキルは一定確率で[#!]クリティカル[#]攻撃を与える。
+・All [##elementred]Fire[#] enemies receive 822 Water damage over 3 turns.","・この特殊スキルは一定確率で[#!]クリティカル[#]攻撃を与える。
 ・敵全員のバフを解除する。
 ・残りのHPが最も高い敵に380%のダメージを与える。その他の敵全員に180%のダメージを与える。
-・3ターンの間、敵全員に822の水ダメージを与える。","The chance of dealing a Critical hit is based on the Hero's overall critical chance when the damage is dealt.
+・3ターンの間、[##elementred]炎属性[#]の敵全員に822の水ダメージを与える。","The chance of dealing a Critical hit is based on the Hero's overall critical chance when the damage is dealt.
 ・
 ・Critical hits caused by this Special Skill deal 50% more damage. 
 ・
@@ -8021,7 +7703,7 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 ・
 ・この特殊スキルによるクリティカル攻撃は50%のダメージを与える。
 ・
-・PVPバトルでは、クリティカル攻撃により敵の最大HPを低下させることができる。この効果はHPブーストに対して高い威力を発揮する。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。"
+・PVPバトルでは、クリティカル攻撃により敵の最大HPを低下させることができる。この効果はHPブーストに対して高い威力を発揮する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。"
 "outlaw_gu_dasao","Gu Dasao","--- Passives ---
 
 - Health Boost on Critical Special Attack -
@@ -8039,10 +7721,10 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・This Special Skill has a chance to deal [#!]critical[#] hits.
 ・Deals 5% damage to the target and minor damage to all other enemies.
-・The caster counterattacks with 70% of the damage received for 4 turns.
+・The caster counterattacks with 70% of the damage received for 4 turns. This effect can't be dispelled.
 ・The caster decreases 15% mana from the attacker on each counterattack for 4 turns. The effect gets diminished for consecutive activations during the same turn.","・この特殊スキルは一定確率で[#!]クリティカル[#]攻撃を与える。
 ・ターゲットに5%のダメージを、他の敵全員には小ダメージを与える。
-・4ターンの間、術者が受けたダメージの70%で反撃する。
+・4ターンの間、術者が受けたダメージの70%で反撃する。この効果は解除できない。
 ・4ターンの間、術者が反撃するたびに、攻撃者のマナを15%減少させる。同じターン中に連続して実行した場合、効果は減少する。","The chance of dealing a Critical hit is based on the Hero's overall critical chance when the damage is dealt.
 ・
 ・Critical hits caused by this Special Skill deal 50% more damage. 
@@ -8069,9 +7751,9 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・This Special Skill has a chance to deal [#!]critical[#] hits.
 ・Deals 5% damage to the target and minor damage to nearby enemies.
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 5 turns. This effect can't be dispelled.","・この特殊スキルは一定確率で[#!]クリティカル[#]攻撃を与える。
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 5 turns.","・この特殊スキルは一定確率で[#!]クリティカル[#]攻撃を与える。
 ・ターゲットに5%のダメージを、近くにいる敵には小ダメージを与える。
-・5ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。","The chance of dealing a Critical hit is based on the Hero's overall critical chance when the damage is dealt.
+・5ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。","The chance of dealing a Critical hit is based on the Hero's overall critical chance when the damage is dealt.
 ・
 ・Critical hits caused by this Special Skill deal 50% more damage. 
 ・
@@ -8089,7 +7771,7 @@ lang_id resolution failed.","--- Passives ---","・Deals 370% damage to the targ
 ・The caster and nearby allies get -84% critical chance for 3 turns.","・ターゲットに370%のダメージを与える。
 ・ターゲットが[##elementred]炎属性[#]の場合、近くにいる敵に350%のダメージを与える。
 ・ターゲットと近くにいる敵のバフを解除する。
-・3ターンの間、術者と近くにいる仲間がクリティカル攻撃を与える確率が-84%になる。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","",""
+・3ターンの間、術者と近くにいる仲間がクリティカル攻撃を与える確率が-84%になる。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "outlaw_wu_yong","N/A","--- Passives ---
 
 - FAILED: righteous_rebellion_parent -
@@ -8145,7 +7827,7 @@ lang_id resolution failed.","--- Passives ---","・Deals 390% damage to all enem
 ・
 ・この特殊スキルによるクリティカル攻撃は50%のダメージを与える。
 ・
-・PVPバトルでは、クリティカル攻撃により敵の最大HPを低下させることができる。この効果はHPブーストに対して高い威力を発揮する。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。"
+・PVPバトルでは、クリティカル攻撃により敵の最大HPを低下させることができる。この効果はHPブーストに対して高い威力を発揮する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。"
 "outlaw_xiang_chong","N/A","--- Passives ---
 
 - FAILED: righteous_rebellion_parent -
@@ -8428,10 +8110,10 @@ Enemy [#!]Minions[#] have [#!]-175%[#] HP.","--- Passives ---
 敵の[#!]ミニオン[#]のHPが[#!]-175%[#]になる。","・All ailments affecting attack, defense and mana generation on all allies are transformed into matching undispellable buffs.
 ・Cleanses status ailments from all allies.
 ・Deals 5% damage to all enemies.
-・Deals 595 - 50 damage to all enemies after 3 turns, based on the damage the caster had taken while this effect was active.","・仲間全員の攻撃力、防御力、マナ生成に作用するあらゆるステータス異常が、それらに応じた解除不可のバフに変化する。
+・All allies deal 595 - 50 damage to a random enemy after 3 turns, based on the damage allies had taken while this effect was active. This effect is undispellable.","・仲間全員の攻撃力、防御力、マナ生成に作用するあらゆるステータス異常が、それらに応じた解除不可のバフに変化する。
 ・仲間全員のステータス異常を浄化する。
 ・敵全員に5%のダメージを与える。
-・3ターン後に、この効果が発動中に術者が受けたダメージに基づいて、595-50のダメージを敵全員に与える。","Transform cannot be blocked by status effects, family effects or passives.
+・3ターン後に、この効果が発動中に仲間が受けたダメージに基づいて、仲間全員が595-50のダメージをランダムな敵1体に与える。この効果は解除できない。","Transform cannot be blocked by status effects, family effects or passives.
 
 ・ Only status ailments that are dispellable can be transformed.
 ・Transformed effects: 
@@ -8449,7 +8131,7 @@ Enemy [#!]Minions[#] have [#!]-175%[#] HP.","--- Passives ---
 
 ・140ターンの間、防御力異常が140%の防御力バフに変化する。 
 
-・140ターンの間、マナ生成ステータス異常が140%のマナ生成バフに変化する。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。"
+・140ターンの間、マナ生成ステータス異常が140%のマナ生成バフに変化する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。"
 "magic_carpet_manpip","Manpip","--- Passives ---
 
 - Flight Momentum -
@@ -8510,10 +8192,10 @@ Enemy [#!]Minions[#] have [#!]-175%[#] HP.","--- Passives ---
 
 - ミニオン弱体化 -
 敵の[#!]ミニオン[#]のHPが[#!]-175%[#]になる。","・All active buffs are undispellable for all allies for the remaining turns of the buff.
-・All allies regenerate 120 HP over 5 turns.
+・All allies regenerate 120 HP over 5 turns. This effect can't be dispelled.
 ・Each defeated ally has a 35% chance to get revived with 1% HP.
 ・All ailments affecting attack, defense and mana generation on all allies are transformed into matching undispellable buffs.","・バフが有効なターン中、仲間全員に対して発動中のすべてのバフが解除不可になる。
-・5ターンに渡って、仲間全員のHPが120回復する。
+・仲間全員のHPが120回復(5ターン)。この効果は解除不可
 ・35%の確率で、倒れた仲間が最大HPの1%を有した状態で復活する。
 ・仲間全員の攻撃力、防御力、マナ生成に作用するあらゆるステータス異常が、それらに応じた解除不可のバフに変化する。","Transform cannot be blocked by status effects, family effects or passives.
 
@@ -8545,13 +8227,13 @@ lang_id resolution failed.","--- Passives ---","・Deals 550% damage to the targ
 - FAILED: guestip1_stat_modifier_slow -
 lang_id resolution failed.","--- Passives ---","・Deals 750% damage to the target.
 ・The target falls [#!]asleep[#] and receives 146% increased damage while sleeping.","・ターゲットに750%のダメージを与える。
-・ターゲットが[#!]睡眠状態[#]となる。眠っている間は被ダメージが146%増加する。","A sleeping character cannot gain mana or attack.
+・ターゲットが[#!]睡眠状態[#]となる。眠っている間は被ダメージが146%増加する。","The character in Deep Sleep cannot gain mana or attack.
 
-・ The sleeping target is woken once it takes damage. This excludes damage from Minions, Fiends, Mega Minions and Mega Fiends.
+・ The character in Deep Sleep is woken once it takes 146 damage.
 
-・ This effect is uncleansable.","睡眠状態のキャラクターは、マナの獲得や攻撃ができない。
+・ This effect is uncleansable.","深い睡眠状態にあるキャラクターはマナを獲得したり攻撃したりすることができない。
 
-・眠っているターゲットは、ミニオン、フィエンド、メガミニオン、メガフィエンド以外からのダメージを受けると目を覚ます。
+・深い睡眠状態にあるこのキャラクターは合計146ダメージを受けると目を覚ます。
 
 ・この効果は浄化できない。","",""
 "guestip1_hero3","N/A","--- Passives ---
@@ -8564,14 +8246,14 @@ lang_id resolution failed.","--- Passives ---","・Deals 450% damage to the targ
 
 - FAILED: guestip1_stat_modifier_slow -
 lang_id resolution failed.","--- Passives ---","・Deals 300% damage to the target and nearby enemies.
-・All allies regenerate 300 HP over 3 turns.","・ターゲットと近くにいる敵に300%のダメージを与える。
-・3ターンに渡って、仲間全員のHPが300回復する。","","","",""
+・All allies regenerate 300 HP over 3 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵に300%のダメージを与える。
+・仲間全員のHPが300回復(3ターン)。この効果は解除不可","","","",""
 "guestip1_hero5","N/A","--- Passives ---
 
 - FAILED: guestip1_stat_modifier_fast -
 lang_id resolution failed.","--- Passives ---","・Deals 250% damage to the target and nearby enemies.
-・All allies regenerate 200 HP over 3 turns.","・ターゲットと近くにいる敵に250%のダメージを与える。
-・3ターンに渡って、仲間全員のHPが200回復する。","","","",""
+・All allies regenerate 200 HP over 3 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵に250%のダメージを与える。
+・仲間全員のHPが200回復(3ターン)。この効果は解除不可","","","",""
 "guestip1_hero6","N/A","--- Passives ---
 
 - FAILED: guestip1_stat_modifier_slow -
@@ -8694,11 +8376,11 @@ If this character loses more than [#!]25%[#] of max health at once, they summon 
 ・3ターンの間、術者と近くにいる仲間が[#!]粘着層[#]を獲得する。この効果は解除できない。
 [*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで8個の解除可能なバフか成長効果を奪う。","Stolen dispellable buff or Growth effect is chosen by random.
 
-・[#!]Sticky Surface[#] is activated when the enemy deals damage through normal attacks or Special Skills.
+・[#!]Sticky Surface[#] is activated when any damage is received from an enemy.
 
 ・Each character with [#!]Sticky Surface[#] can only steal one status effect buff or Growth effect per turn from normal attacks.","解除可能なバフや成長効果のうち、どれを奪うかはランダムに選ばれる。
 
-・[#!]粘着層[#]は、敵の通常攻撃や特殊スキルにより自身がダメージを受けた際に発動する。
+・[#!]粘着層[#]は敵からなんらかのダメージを受けた際に発動する。
 
 ・[#!]粘着層[#]を持つ各キャラクターのみが、通常攻撃から1ターンごとに1つのステータス効果バフか成長効果を奪える。","",""
 "slime_harubo","N/A","--- Passives ---
@@ -8743,10 +8425,10 @@ This character's Special Skill never misses its targets.","--- Passives ---
 このキャラクターの特殊スキルはターゲットに必ず命中する。","・Deals 850% damage to the target.
 ・Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.
 ・[#!]Growth:[#] All allies get 3280 attack.
-・All allies get 35% mana generation for 5 turns.","・ターゲットに850%のダメージを与える。
+・All allies get 35% mana generation for 5 turns. This effect can't be dispelled.","・ターゲットに850%のダメージを与える。
 ・安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。
 ・[#!]成長：[#]仲間全員の攻撃力が3280増加する。
-・5ターンの間、仲間全員のマナ生成が35%になる。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
+・すべての仲間がマナ生成35%を得る(5ターン)。この効果は解除不可","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
 
 ・Additional Wither and Growth effects modify the Ability Scores further.
 
@@ -8789,10 +8471,10 @@ This character's Special Skill never misses its targets.","--- Passives ---
 - 百発百中の命中率 -
 このキャラクターの特殊スキルはターゲットに必ず命中する。","・Deals 450% damage to all enemies.
 ・All active status ailments are uncleansable for all enemies for the remaining turns of the status ailment.
-・All enemies receive 785 Burn damage over 5 turns.
+・All enemies receive 785 Burn damage over 5 turns. This effect can't be cleansed.
 ・[#!]Wither:[#] All enemies get -2240 attack.","・敵全員に450%のダメージを与える。
 ・ステータス異常の残り有効ターン中、敵全員に対して発動中のすべてのステータス異常が浄化不可になる。
-・5ターンの間、敵全員に785の燃焼ダメージを与える。
+・5ターンの間、敵全員に785の燃焼ダメージを与える。この効果は浄化できない。
 ・[#!]弱化：[#]敵全員の攻撃力が-2240減少する。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
 
 ・Additional Wither and Growth effects modify the Ability Scores further.
@@ -8836,9 +8518,9 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Recovers 45% health for all allies.
 ・[#!]Growth:[#] All allies get 0 attack.
-・All allies are immune to new status ailments for 4 turns. This effect can't be dispelled.","・仲間全員のライフを45%回復する。
+・All allies are immune to new status ailments for 4 turns.","・仲間全員のライフを45%回復する。
 ・[#!]成長：[#]仲間全員の攻撃力が0増加する。
-・4ターンに渡って、仲間全員が新たなステータス異常を無効化する。この効果は解除できない。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。","",""
+・4ターンの間、仲間全員が新たなステータス異常を受けない。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。","",""
 "moth_lilareine","Lilareine","--- Passives ---
 
 - Dodge Special Damage -
@@ -8853,7 +8535,7 @@ This character has a [#!]15%[#] chance to dodge Special Skills that deal damage.
 ・仲間全員のステータス異常を浄化する。
 ・[#!]累積効果(最大：-100)：[#]仲間全員のマナ生成が5%になる。
 ・5ターンの間、術者が[#!]粘着層[#]を獲得する。この効果は解除できない。
-[*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで8個の解除可能なバフまたは成長効果を奪う。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","",""
+[*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで8個の解除可能なバフまたは成長効果を奪う。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "moth_chimister","Chimister","--- Passives ---
 
 - Dodge Special Damage -
@@ -8867,15 +8549,15 @@ This character has a [#!]15%[#] chance to dodge Special Skills that deal damage.
 This character has a [#!]15%[#] chance to dodge Special Skills that deal damage.","--- Passives ---
 
 - 特殊スキル回避 -
-このキャラクターは[#!]15%[#]の確率でダメージ付きの特殊スキルを回避する。","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns. This effect can't be dispelled.
+このキャラクターは[#!]15%[#]の確率でダメージ付きの特殊スキルを回避する。","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns.
 ・The caster has a 50% chance to drop any received damage to 1 for 4 turns.
 ・For the next 4 turns, this character deals 250% damage to a random enemy each time any other ally casts their Special Skill. The hit enemy falls into [#!]Deep Sleep[#] and receives 180% increased damage while in Deep Sleep.
 ・The target falls into [#!]Deep Sleep[#] and receives 180% increased damage while in Deep Sleep.
-・All allies get 25% mana generation for 4 turns.","・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
+・All allies get 25% mana generation for 4 turns. This effect can't be dispelled.","・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
 ・術者が50%の確率で受けたダメージを1に落とす(4ターン)
 ・以後4ターン、他の仲間が特殊スキルを使用する度に、このキャラクターはランダムな敵1体に250%のダメージを与える。攻撃された敵は[#!]深い眠り[#]に落ち、その間は180%の増加ダメージを受ける。
 ・ターゲットが[#!]深い睡眠状態[#]となる。深い睡眠状態になっている間は被ダメージが180%増加する。
-・4ターンの間、仲間全員のマナ生成が25%になる。","Each character can trigger this effect once per turn.","各キャラクターは、1ターンに1回のみこの効果を発動させられる。","The character in Deep Sleep cannot gain mana or attack.
+・すべての仲間がマナ生成25%を得る(4ターン)。この効果は解除不可","Each character can trigger this effect once per turn.","各キャラクターは、1ターンに1回のみこの効果を発動させられる。","The character in Deep Sleep cannot gain mana or attack.
 
 ・ The character in Deep Sleep is woken once it takes 6000 damage.
 
@@ -8899,8 +8581,7 @@ This character has a [#!]15%[#] chance to dodge Special Skills that deal damage.
 ・ターゲットが4ターンにわたって0の[#!]猛毒[#]ダメージを受ける。
 HPがブーストされたターゲットやミニオンまたはメガミニオンを所有するターゲットには追加ダメージを付与する。
 ・敵陣形の両端にいる敵に5%のダメージを与える。敵が1体しかいない場合は与えるダメージが2倍になる。
-・陣形の端にいる敵が[#!]深い睡眠状態[#]となる。深く眠っている間は被ダメージが180%増加する。","The target and nearby enemies receive 0 [#!]Toxin[#] damage over 4 turns. Damage is increased against targets with boosted health, Minions or a Mega Minion.","ターゲットと近くにいる敵が4ターンにわたって0の[#!]猛毒[#]ダメージを受ける。
-HPがブーストされたターゲットやミニオンまたはメガミニオンを所有するターゲットには追加ダメージを付与する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
+・陣形の端にいる敵が[#!]深い睡眠状態[#]となる。深く眠っている間は被ダメージが180%増加する。","The enemies on the edges of the enemy formation receive 0 [#!]Toxin damage[#] over 4 turns. Damage is increased against targets with boosted health, Minions or a Mega Minion.","敵陣形の端にいる敵が4ターンにわたって0の[#!]猛毒[#]ダメージを受ける。HPがブーストされたターゲットやミニオンまたはメガミニオンを所有するターゲットには追加ダメージを付与する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
 "fox_halcyon","Halcyon","--- Passives ---
 
 - Decreased healing -
@@ -8908,8 +8589,8 @@ All enemies get [#!]50%[#] healing.","--- Passives ---
 
 - 回復量低下 -
 敵全員の回復量が[#!]50%[#]になる。","・Deals 325% damage to hit targets.
-・The caster counterattacks with 115% of the damage received for 115 turns.","・攻撃したターゲットに325%のダメージを与える。
-・115ターンの間、術者が受けたダメージの115%で反撃する。","This effect applies to Mega Minions as well but instead of destroying, damage equal to 5% of the Mega Minion's max health is dealt to the Mega Minion.","この効果はメガミニオンにも適用されるが、ミニオンを撃破する効果は、メガミニオンの最大ライフの5%に等しいダメージをメガミニオンに与える効果と置き換わる。","",""
+・The caster counterattacks with 115% of the damage received for 115 turns. This effect can't be dispelled.","・攻撃したターゲットに325%のダメージを与える。
+・115ターンの間、術者が受けたダメージの115%で反撃する。この効果は解除できない。","This effect applies to Mega Minions as well but instead of destroying, damage equal to 5% of the Mega Minion's max health is dealt to the Mega Minion.","この効果はメガミニオンにも適用されるが、ミニオンを撃破する効果は、メガミニオンの最大ライフの5%に等しいダメージをメガミニオンに与える効果と置き換わる。","",""
 "guestip2_hero1","N/A","","","・Deals 400% damage to the target.
 ・The target cannot cast any new status effects on enemies or allies for 3 turns.
 ・[#f2e33a]Element Link[#] gives all [#f2e33a]Holy[#] allies -90% critical chance for 6 turns. This effect can't be dispelled.","・ターゲットに400%のダメージを与える。
@@ -9007,10 +8688,10 @@ All enemies get [#!]50%[#] healing.","--- Passives ---
 
 - 回復量低下 -
 敵全員の回復量が[#!]50%[#]になる。","・Recovers 20% health for all allies.
-・Lifts all cleansable status ailments from all allies and randomly distributes them on enemies.
-・All allies regenerate 1360 HP over 160 turns.","・仲間全員のライフを20%回復する。
-・仲間全員の浄化可能なステータス異常を浄化し、敵にランダムに分配する。
-・160ターンに渡って、仲間全員のHPが1360回復する。","","","",""
+・Steals all dispellable buffs from all enemies and randomly distributes them on allies.
+・All allies regenerate 1360 HP over 160 turns. This effect can't be dispelled.","・仲間全員のライフを20%回復する。
+・敵全員から、解除可能なバフをすべて盗み、仲間全員にランダムに分配する。
+・仲間全員のHPが1360回復(160ターン)。この効果は解除不可","","","",""
 "fox_foxglove","Foxglove","--- Passives ---
 
 - Decreased healing -
@@ -9018,9 +8699,9 @@ All enemies get [#!]50%[#] healing.","--- Passives ---
 
 - 回復量低下 -
 敵全員の回復量が[#!]50%[#]になる。","・Deals 255% damage to the target and nearby enemies.
-・The target and nearby enemies receive 97 Poison damage over 0.5 turns.
+・Target and nearby enemies receive 97 Poison damage over 0.5 turns. This effect can't be cleansed.
 ・The target and nearby enemies get -30% mana generation for 4 turns.","・ターゲットと近くにいる敵に255%のダメージを与える。
-・0.5ターンの間、ターゲットと近くにいる敵に97の毒ダメージを与える。
+・0.5ターンの間、ターゲットと近くにいる敵に97の毒ダメージを与える。この効果は浄化できない。
 ・4ターンの間、ターゲットと近くにいる敵のマナ生成が-30%になる。","","","",""
 "fox_nettletail","Nettletail","--- Passives ---
 
@@ -9049,11 +8730,11 @@ If this character loses more than [#!]25%[#] of max health at once, they summon 
 ・3ターンの間、仲間全員が[#!]粘着層[#]を獲得する。この効果は解除できない。
 [*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで8個の解除可能なバフまたは成長効果を奪う。","Stolen dispellable buff or Growth effect is chosen by random.
 
-・[#!]Sticky Surface[#] is activated when the enemy deals damage through normal attacks or Special Skills.
+・[#!]Sticky Surface[#] is activated when any damage is received from an enemy.
 
 ・Each character with [#!]Sticky Surface[#] can only steal one status effect buff or Growth effect per turn from normal attacks.","解除可能なバフや成長効果のうち、どれを奪うかはランダムに選ばれる。
 
-・[#!]粘着層[#]は、敵の通常攻撃や特殊スキルにより自身がダメージを受けた際に発動する。
+・[#!]粘着層[#]は敵からなんらかのダメージを受けた際に発動する。
 
 ・[#!]粘着層[#]を持つ各キャラクターのみが、通常攻撃から1ターンごとに1つのステータス効果バフか成長効果を奪える。","",""
 "slime_goldrip","Goldrip","--- Passives ---
@@ -9089,9 +8770,8 @@ If this character loses more than [#!]25%[#] of max health at once, they summon 
 - スライムミニオンの分裂 -
 このキャラクターが、1回の攻撃により最大ライフの[#!]25%[#]を失うと、自身のもとに[#!]10%[#]のHPと[#!]40%[#]の攻撃力を備えた[#!]スライムのメガミニオン[#]をサモンする。","・Increases the mana of nearby allies by 3%.
 ・[#!]Growth:[#] Nearby allies gets 2880 attack and 2880 defense.
-・Summon a Slime Mega Minion for the nearby allies with 0% HP and 8% attack inherited from the caster.","・近くにいる仲間のマナが3%増加する。
-・[#!]成長：[#]近くにいる仲間の攻撃力が2880、防御力が2880増加する。
-・近くにいる仲間にスライムのメガミニオンをサモンする。メガミニオンは、術者のHPの0%と攻撃力の8%を持つ。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
+・Failed for familiar slime_big_minion_red","・近くにいる仲間のマナが3%増加する。
+・[#!]成長：[#]近くにいる仲間の攻撃力が2880、防御力が2880増加する。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
 
 ・Additional Wither and Growth effects modify the Ability Scores further.
 
@@ -9129,10 +8809,9 @@ If this character loses more than [#!]25%[#] of max health at once, they summon 
 このキャラクターが、1回の攻撃により最大ライフの[#!]25%[#]を失うと、自身のもとに[#!]10%[#]のHPと[#!]40%[#]の攻撃力を備えた[#!]スライムのメガミニオン[#]をサモンする。","・Increase the mana of allies on the edges of formation by 3%
 ・The allies on the edges of the formation gets 50% attack for 4 turns.
 ・The allies on the edges of the formation gets -64% critical chance for 4 turns.
-・Summon a Slime Mega Minion for the allies on the edges of formation with 0% HP and {FAMILIARATTACK}% attack inherited from the caster.","・陣形の両端にいる仲間のマナが3%増加する。
+・Failed for familiar slime_big_minion_purple","・陣形の両端にいる仲間のマナが3%増加する。
 ・4ターンの間、陣形の両端にいる仲間の攻撃力が50%になる。
-・4ターンの間、仲間のクリティカル攻撃を与える確率が-64%になる。
-・陣形の両端にいる仲間にスライムのメガミニオンをサモンする。メガミニオンは、術者のHPの0%と攻撃力の{FAMILIARATTACK}%を持つ。","","","",""
+・4ターンの間、仲間のクリティカル攻撃を与える確率が-64%になる。","","","",""
 "slime_gloozmer","Gloozmer","--- Passives ---
 
 - Slime Minion upon Defeat -
@@ -9339,7 +9018,7 @@ This character has innate resistance against incoming [#!]negative effects and d
 
 ・最大[#!]6400[#]まで追加回復を行う。
 
-・回復に影響を与えるステータス効果は回復値に作用する。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。"
+・回復に影響を与えるステータス効果は回復値に作用する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。"
 "kalevala_mother_lemminkainen","Mother Lemminkäinen","--- Passives ---
 
 - Power of Sisu -
@@ -9348,10 +9027,10 @@ When this character starts a turn with low health for the first time during a ba
 - 忍耐の力 -
 このキャラクターがバトル中にライフが低い状態で初めてターンを開始した場合、このキャラクターのライフが[#!]15%[#]回復し、マナが[#!]8%[#]増加する。","・Each defeated ally has a 60% chance to get revived with 20% HP.
 ・Deals -98.4% damage per each [##elementpurple]Dark[#] shield on the board to all enemies, up to -98.4% damage in total.
-・All allies regenerate 1600 HP over 4 turns.
+・All allies regenerate 1600 HP over 4 turns. This effect can't be dispelled.
 ・All enemies get -102% defense against Special Skills for 4 turns.","・60%の確率で、倒れた仲間が最大HPの20%を有した状態で復活する。
 ・ボード上に[##elementpurple]闇属性[#]の盾が出現する度に、敵全員に-98.4%の追加ダメージを与える。付与ダメージの上限は合計-98.4%まで。
-・4ターンに渡って、仲間全員のHPが1600回復する。
+・仲間全員のHPが1600回復(4ターン)。この効果は解除不可
 ・4ターンの間、敵全員の特殊スキルに対する防御力が-102%になる。","","","",""
 "kalevala_suomuhauki","Suomuhauki","--- Passives ---
 
@@ -9361,19 +9040,8 @@ When this character starts a turn with low health for the first time during a ba
 - 忍耐の力 -
 このキャラクターがバトル中にライフが低い状態で初めてターンを開始した場合、このキャラクターのライフが[#!]15%[#]回復し、マナが[#!]8%[#]増加する。","・Deals 400% damage to the target.
 ・Damage is increased by -98.4% per each [##elementred]Fire[#] shield on the board, up to -98.4% damage per hit.
-・Summons a Pike Mega Fiend for the target. The Fiend damages the enemy with 270% attack every turn. Deals strong damage against [##elementred]Fire[#] characters.
-
-・The Pike Mega Fiend absorbs healing and disappears when it has absorbed health equal to 70% of its target's max health.
-・Summons a Pike Mega Fiend for the target. The Fiend damages the enemy with 270% attack every turn. Deals strong damage against [##elementred]Fire[#] characters.
-[*]The Pike Mega Fiend absorbs healing and disappears when it has absorbed health equal to 50% of its target's max health.
-・When summoned, the Pike Mega Fiend gives 270% attack for its target. Against [##elementred]Fire[#] characters, the Pike Mega Fiend gives 50% attack. The effect lasts as long as the target has a Pike Mega Fiend.","・ターゲットに400%のダメージを与える。
-・ボード上にある[##elementred]炎属性[#]の盾1つごとに与ダメージが-98.4%増加する。与ダメージは攻撃1発ごとに最大-98.4%まで上昇する。
-・ターゲットにカワカマスのメガフィエンドをサモンする。ターン毎に敵に攻撃力270%でダメージを与える。[##elementred]炎[#]属性のキャラクターに強力なダメージを与える。
-
-・カワカマスのメガフィエンドは回復を吸収し、ターゲットの最大HPの70%に等しいライフを吸収すると消滅する。
-・ターゲットにカワカマスのメガフィエンドをサモンする。ターン毎に敵に攻撃力270%でダメージを与える。[##elementred]炎[#]属性のキャラクターに強力なダメージを与える。
-[*]カワカマスのメガフィエンドは回復を吸収し、ターゲットの最大HPの50%に等しいライフを吸収すると消滅する。
-・カワカマスのメガフィエンドがサモンされると、ターゲットの攻撃力を270%上昇させる。[##elementred]炎[#]属性のキャラクターに対しては、カワカマスのメガフィエンドは攻撃力を50%上昇させる。この効果は、ターゲットがカワカマスのメガフィエンドを所有する限り続く。","","","",""
+・Failed for familiar pike_big_parasite","・ターゲットに400%のダメージを与える。
+・ボード上にある[##elementred]炎属性[#]の盾1つごとに与ダメージが-98.4%増加する。与ダメージは攻撃1発ごとに最大-98.4%まで上昇する。","","","",""
 "vegetable_bartholomew","N/A","--- Passives ---
 
 - Seedling Summoner -
@@ -9588,12 +9256,12 @@ The [#!]Repair Core[#] activates each time this character's Special Skill is cas
 
 [*][#!]修復コア[#]がチャージが満タンになると、仲間全員のライフが250%ブーストされる。
 [*]この際にブーストされるライフはコアのチャージ量に基づいて決められる。コアが有効になると、すべてのチャージが消耗される。","・Cleanses status ailments from all allies.
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns. This effect can't be dispelled.
-・The caster counterattacks with 80% of the damage received for 4 turns.
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns.
+・The caster counterattacks with 80% of the damage received for 4 turns. This effect can't be dispelled.
 ・The caster reduces all received damage by -102% for 4 turns.","・仲間全員のステータス異常を浄化する。
-・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
-・4ターンの間、術者が受けたダメージの80%で反撃する。
-・4ターンの間、術者の受けるダメージが-102%になる。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。","",""
+・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
+・4ターンの間、術者が受けたダメージの80%で反撃する。この効果は解除できない。
+・4ターンの間、術者の受けるダメージが-102%になる。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "construct_hotspin","N/A","--- Passives ---
 
 - Repair Core -
@@ -9612,10 +9280,10 @@ The [#!]Repair Core[#] activates each time this character's Special Skill is cas
 [*][#!]修復コア[#]がチャージが満タンになると、仲間全員のライフが250%ブーストされる。
 [*]この際にブーストされるライフはコアのチャージ量に基づいて決められる。コアが有効になると、すべてのチャージが消耗される。","・Deals 500% damage to the target.
 [*]Deals additional 15% damage per each [#ff9f81]Fire[#] shield on the board, up to 500% damage in total.
-・The caster gets 50% attack for 4 turns. This effect can't be cleansed.
+・The caster gets 50% attack for 4 turns.
 ・The caster reflect status ailments and negative stacks for 4 turns.","・ターゲットに500%のダメージを与える。
 [*]さらに、ダメージの合計が500%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に15%の追加ダメージを与える。
-・4ターンの間、術者の攻撃力が50%になる。この効果は浄化できない。
+・4ターンの間、術者の攻撃力が50%になる。
 ・4ターンの間、術者が新しいステータス異常とマイナスの累積状態を跳ね返す。","Status effects cast by characters, Minions and Fiends on the same side cannot be reflected.","同じチームのキャラクター、ミニオン、フィエンドが特殊スキルを使用して敵にステータス効果を付与した場合、敵はこれらの効果を跳ね返すことができない。","",""
 "construct_sizzle3000","N/A","--- Passives ---
 
@@ -9635,10 +9303,10 @@ The [#!]Repair Core[#] activates each time this character's Special Skill is cas
 [*][#!]修復コア[#]がチャージが満タンになると、仲間全員のライフが250%ブーストされる。
 [*]この際にブーストされるライフはコアのチャージ量に基づいて決められる。コアが有効になると、すべてのチャージが消耗される。","・Deals 500% damage to all enemies.
 [*]Deals additional 15% damage per each [#ff9f81]Fire[#] shield on the board, up to 500% damage in total.
-・All allies get 60% attack for 6 turns. This effect can't be dispelled.
+・All allies get 60% attack for 6 turns.
 ・All allies reflect status ailments and negative stacks for 6 turns.","・敵全員に500%のダメージを与える。
 [*]さらに、ダメージの合計が500%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に15%の追加ダメージを与える。
-・6ターンの間、仲間全員の攻撃力が60%になる。この効果は解除できない。
+・6ターンの間、仲間全員の攻撃力が60%になる。
 ・6ターンの間、仲間全員が新たなステータス異常とマイナスの累積状態を跳ね返す。","Status effects cast by characters, Minions and Fiends on the same side cannot be reflected.","同じチームのキャラクター、ミニオン、フィエンドが特殊スキルを使用して敵にステータス効果を付与した場合、敵はこれらの効果を跳ね返すことができない。","",""
 "construct_zavok","N/A","--- Passives ---
 
@@ -9693,7 +9361,7 @@ The [#!]Repair Core[#] activates each time this character's Special Skill is cas
 
 ・最大[#!]6400[#]まで追加回復を行う。
 
-・回復に影響を与えるステータス効果は回復値に作用する。","Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.","ステータス異常は付与された順に解除される。最後に付与されたステータス異常が最初に解除される。"
+・回復に影響を与えるステータス効果は回復値に作用する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。"
 "construct_sylosis","N/A","--- Passives ---
 
 - Repair Core -
