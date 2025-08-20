@@ -12,28 +12,28 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals 355% damage to the target.
-・Steals all dispellable buffs from the target and randomly distributes them on allies.
+・Steals all dispellable buffs from all enemies to the caster.
 ・Randomly casts one of the following alternatives:
 [%88]15[%]
 ・[#ff9f81]Element Link[#] gives all [#ff9f81]Fire[#] allies -80% critical chance for 6 turns. This effect can't be dispelled.","・ターゲットに355%のダメージを与える。
-・ターゲットから、解除可能なバフをすべて盗み、仲間全員にランダムに分配する。
+・敵全員から解除可能なバフを全て盗み、術者に付与する。
 ・以下の選択肢のいずれかをランダムに適用する：
 [%88]15[%]
 ・6ターンの間、[#ff9f81]属性リンク[#]によって、[#ff9f81]炎属性[#]の仲間全員のクリティカル攻撃を与える確率が、-80%になる。この効果は解除できない。","","","",""
 "nomad_female_lord_costume_flame","Elena C","","","・Deals 172% damage to all enemies.
-・The caster and nearby allies counterattack with 155% of the damage received for 5 turns. This effect cannot be dispelled.","・敵全員に172%のダメージを与える。
-・5ターンの間、術者と付近の仲間が受けたダメージの155%で反撃する。この効果は解除できない。","","","",""
+・The caster and nearby allies counterattack with 155% of the damage received for 5 turns.","・敵全員に172%のダメージを与える。
+・5ターンの間、術者と近くにいる仲間が受けたダメージの155%で反撃する。","","","",""
 "orc_gladiator_costume_chef","Boldtusk C","","","・Recovers 37% health for all allies.
 ・All allies get 30% attack for 4 turns.","・仲間全員のライフを37%回復する。
 ・4ターンの間、仲間全員の攻撃力が30%になる。","","","",""
 "oriental_female_mystic_costume_magician","Vivica C","","","・Recovers 44% health for all allies.
 ・Dispels buffs from all enemies.
-・All enemies get -44% defense for 4 turns. This effect can't be dispelled.","・仲間全員のライフを44%回復する。
+・All enemies get -44% defense for 4 turns.","・仲間全員のライフを44%回復する。
 ・敵全員のバフを解除する。
-・4ターンの間、敵全員の防御力が-44%になる。この効果は解除できない。","","","",""
+・4ターンの間、敵全員の防御力が-44%になる。","","","",""
 "blackguard_commander_costume_metal","Tiburtus C","","","・Deals 175% damage to all enemies.
-・All enemies get -34% defense for 4 turns. This effect can't be dispelled.","・敵全員に175%のダメージを与える。
-・4ターンの間、敵全員の防御力が-34%になる。この効果は解除できない。","","","",""
+・All enemies get -34% defense for 4 turns.","・敵全員に175%のダメージを与える。
+・4ターンの間、敵全員の防御力が-34%になる。","","","",""
 "nordic_male_lord_costume_senior","Richard C","","","・Deals 435% damage to the target and minor damage to nearby enemies.
 ・The target and nearby enemies get -34% attack for 4 turns.","・ターゲットに435%ダメージ、近くにいる敵に小ダメージを与える。
 ・4ターンの間、ターゲットと近くにいる敵の攻撃力が-34%になる。","","","",""
@@ -41,8 +41,8 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 ・The target gets -135% accuracy for 4 turns.","・ターゲットに488%のダメージを与える。
 ・4ターンの間、ターゲットの命中率が-135%になる。","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。","",""
 "royal_knight_costume_blacksmith","Gunnar C","","","・All enemies become [#!]Soul Connected[#] for 5 turns. Soul Connected enemies share received damage.
-・All enemies get -44% defense for 5 turns. This effect can't be dispelled.","・5ターンの間、敵全員に[#!]ソウル・コネクト[#]が発動する。ソウル・コネクトによって魂が繋がった敵同士は被ダメージを共有する。
-・5ターンの間、敵全員の防御力が-44%になる。この効果は解除できない。","","","",""
+・All enemies get -44% defense for 5 turns.","・5ターンの間、敵全員に[#!]ソウル・コネクト[#]が発動する。ソウル・コネクトによって魂が繋がった敵同士は被ダメージを共有する。
+・5ターンの間、敵全員の防御力が-44%になる。","","","",""
 "oriental_brawler_costume_egypt","Bane C","","","・Deals 280% damage to the target.
 ・The target gets -140% accuracy for 4 turns.","・ターゲットに280%のダメージを与える。
 ・4ターンの間、ターゲットの命中率が-140%になる。","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。","",""
@@ -71,7 +71,7 @@ lang_id resolution failed.","--- Passives ---","・All allies become [#!]Soul Co
 ・2ターンの間、[##elementblue]氷[#]属性の仲間全員が新たなステータス異常とマイナスの累積状態を跳ね返す。","Status effects cast by characters, Minions and Fiends on the same side cannot be reflected.","同じチームのキャラクター、ミニオン、フィエンドが特殊スキルを使用して敵にステータス効果を付与した場合、敵はこれらの効果を跳ね返すことができない。","",""
 "oriental_female_templar_costume_kimono","Li Xiu C","","","・Deals 180% damage to all enemies.
 ・Reduces the mana of all enemies by -10%.","・敵全員に180%のダメージを与える。
-・敵全員のマナが-10%減少する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・敵全員のマナが-10%減少する。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "undead_running_skeleton_costume_roman","Tyrum C","","","・Deals 310% damage to the target.
 ・Cleanses status ailments from all allies.","・ターゲットに310%のダメージを与える。
 ・仲間全員のステータス異常を浄化する。","","","",""
@@ -90,8 +90,8 @@ lang_id resolution failed.","--- Passives ---","・All allies become [#!]Soul Co
 ・All enemies get -34% attack for 4 turns. This effect can't be cleansed.","・敵全員に235%のダメージを与える。
 ・4ターンの間、敵全員の攻撃力が-34%になる。この効果は浄化不可。","","","",""
 "nordic_ice_enchantress_costume_aqua","Isarnia C","","","・Deals 255% damage to all enemies.
-・All enemies get -34% defense for 6 turns. This effect can't be dispelled.","・敵全員に255%のダメージを与える。
-・6ターンの間、敵全員の防御力が-34%になる。この効果は解除できない。","","","",""
+・All enemies get -34% defense for 6 turns.","・敵全員に255%のダメージを与える。
+・6ターンの間、敵全員の防御力が-34%になる。","","","",""
 "lizardman_warrior_costume_dinosaur","Isshtak C","","","・Deals 185% damage to the target and minor damage to nearby enemies.
 ・The target and nearby enemies get -44% defense for 4 turns.","・ターゲットに185%ダメージ、近くにいる敵に小ダメージを与える。
 ・4ターンの間、ターゲットと近くにいる敵の防御力が-44%になる。","","","",""
@@ -99,14 +99,14 @@ lang_id resolution failed.","--- Passives ---","・All allies become [#!]Soul Co
 ・The caster and nearby allies get 64% defense against [#ff9f81]Fire[#] for 3 turns.","・術者と近くにいる仲間のライフを450回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
 ・術者と近くにいる仲間の[#ff9f81]炎属性[#]への防御力が64%になる(3ターン)","","","",""
 "forest_friar_costume_explorer","Friar Tuck C","","","・Recovers 22% health for all allies.
-・All allies get 24% mana generation for 3 turns. This effect can't be dispelled.","・仲間全員のライフを22%回復する。
-・すべての仲間がマナ生成24%を得る(3ターン)。この効果は解除不可","","","",""
+・All allies get 24% mana generation for 3 turns.","・仲間全員のライフを22%回復する。
+・3ターンの間、仲間全員のマナ生成が24%になる。","","","",""
 "exalted_warrior_costume_ice","Magni C","","","・Deals 420% damage to the target.
 ・The target and nearby enemies get -34% defense for 4 turns.","・ターゲットに420%のダメージを与える。
 ・4ターンの間、ターゲットと近くにいる敵の防御力が-34%になる。","","","",""
 "dwarven_smasher_costume_smith","Karil C","","","・Deals 240% damage to the target and minor damage to nearby enemies.
-・The target and nearby enemies receive 66 Burn damage over 3 turns. This effect can't be cleansed.","・ターゲットに240%ダメージ、近くにいる敵に小ダメージを与える。
-・3ターンの間、ターゲットと近くにいる敵に66の燃焼ダメージを与える。この効果は浄化できない。","","","",""
+・The target and nearby enemies receive 66 Burn damage over 3 turns.","・ターゲットに240%ダメージ、近くにいる敵に小ダメージを与える。
+・3ターンの間、ターゲットと近くにいる敵に66の燃焼ダメージを与える。","","","",""
 "dwarven_guard_costume_ram","Boril C","","","・All allies counterattack with 60% of the damage received for 4 turns.","・4ターンの間、仲間全員が受けたダメージの60%で反撃する。","","","",""
 "cultist_sorceress_costume_shaman","Sartana C","","","・Deals 532% damage to the target.","・ターゲットに532%のダメージを与える。","","","",""
 "blackguard_skulker_costume_doctor","Renfeld C","","","・Deals 195% damage to the target.
@@ -120,26 +120,26 @@ lang_id resolution failed.","--- Passives ---","・All allies become [#!]Soul Co
 ・仲間全員のステータス異常を浄化する。","","","",""
 "dwarwen_brewmaster_costume_guitarist","Kiril C","","","・Recovers 28% health for all allies.
 ・All enemies get -34% attack for 3 turns. This effect can't be cleansed.
-・All enemies get -34% defense for 3 turns. This effect can't be dispelled.","・仲間全員のライフを28%回復する。
+・All enemies get -34% defense for 3 turns.","・仲間全員のライフを28%回復する。
 ・3ターンの間、敵全員の攻撃力が-34%になる。この効果は浄化不可。
-・3ターンの間、敵全員の防御力が-34%になる。この効果は解除できない。","","","",""
+・3ターンの間、敵全員の防御力が-34%になる。","","","",""
 "cultist_mage_costume_voodoo","Balthazar C","","","・Deals 315% damage to the target.
 ・The target receives 66 Poison damage over 3 turns.","・ターゲットに315%のダメージを与える。
 ・3ターンの間、ターゲットに66の毒ダメージを与える。","","","",""
 "blackguard_female_captain_costume_musketeer","Prisca C","","","・Deals 205% damage to the target and minor damage to nearby enemies.","・ターゲットに205%ダメージ、近くにいる敵に小ダメージを与える。","","","",""
 "nomad_female_swordmaster_costume_native","Azar C","","","・Deals 170% damage to the target and nearby enemies.
 ・Reduces the mana of the target and nearby enemies by -15%.","・ターゲットと近くにいる敵に170%のダメージを与える。
-・ターゲットと近くにいる敵のマナが-15%減少する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・ターゲットと近くにいる敵のマナが-15%減少する。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "magitech_sniper_costume_steampunk","Domitia C","","","・Deals 400% damage to the target.
 ・Cleanses status ailments from the caster and nearby allies.
-・Target and nearby enemies receive 544 Poison damage over 4 turns. This effect can't be cleansed.","・ターゲットに400%のダメージを与える。
+・The target and nearby enemies receive 544 Poison damage over 4 turns.","・ターゲットに400%のダメージを与える。
 ・術者と近くにいる仲間のステータス異常を浄化する。
-・4ターンの間、ターゲットと近くにいる敵に544の毒ダメージを与える。この効果は浄化できない。","","","",""
+・4ターンの間、ターゲットと近くにいる敵に544の毒ダメージを与える。","","","",""
 "lionman_barbarian_costume_armor","Azlar C","","","・Deals 205% damage to the target and nearby enemies.
 ・Deals 200% damage to enemies with more than 50% health remaining.
-・The target and nearby enemies receive 718 Burn damage over 2 turns. This effect can't be cleansed.","・ターゲットと近くにいる敵に205%のダメージを与える。
+・The target and nearby enemies receive 718 Burn damage over 2 turns.","・ターゲットと近くにいる敵に205%のダメージを与える。
 ・敵の残りのライフが50%以上の場合、200%のダメージを与える。
-・2ターンの間、ターゲットと近くにいる敵に718の燃焼ダメージを与える。この効果は浄化できない。","","","",""
+・2ターンの間、ターゲットと近くにいる敵に718の燃焼ダメージを与える。","","","",""
 "goblin_fighter_costume_evil","Carver C","","","・Deals 125% damage to all enemies.
 ・All enemies are immune to new status effect buffs for 3 turns. Attempted mana generation buffs will be replaced by -102% mana generation for -102 turns.","・敵全員に125%のダメージを与える。
 ・3ターンの間、敵全員が新たなステータス効果バフの影響を受けなくなる。マナ生成バフを発動しようとすると-102ターンの間、マナ生成が-102%になる。","","","",""
@@ -161,8 +161,8 @@ lang_id resolution failed.","--- Passives ---","・All allies become [#!]Soul Co
 ・3ターンの間、ターゲットと近くにいる敵の[#ff9f81]炎属性[#]への防御力が-54%になる。
 ・3ターンの間、すべての[#41d8fe]氷属性[#]の敵の攻撃力が-34%になる。","","","",""
 "nomad_mage_costume_goggles","Jahangir C","","","・Deals 115% damage to all enemies.
-・All enemies receive 172 Burn damage over 4 turns. This effect can't be cleansed.","・敵全員に115%のダメージを与える。
-・4ターンの間、敵全員に172の燃焼ダメージを与える。この効果は浄化できない。","","","",""
+・All enemies receive 172 Burn damage over 4 turns.","・敵全員に115%のダメージを与える。
+・4ターンの間、敵全員に172の燃焼ダメージを与える。","","","",""
 "oriental_warrior_king_costume_roman","Leonidas C","","","・Deals 390% damage to the target and minor damage to nearby enemies.
 ・The target and nearby enemies get -54% defense against [#f2e33a]Holy[#] for 4 turns.
 ・All [#e290ff]Dark[#] enemies get -34% attack for 4 turns.","・ターゲットに390%ダメージ、近くにいる敵に小ダメージを与える。
@@ -174,35 +174,35 @@ lang_id resolution failed.","--- Passives ---","・All allies become [#!]Soul Co
 ・敵全員のミニオンをすべて撃破し、全メガミニオンにダメージを与える。
 ・ミニオンを倒す毎に、仲間全員のHPが640回復する。","","","",""
 "nordic_chained_werewolf_costume_raccoon","Graymane C","","","・Deals 235% damage to the target.
-・The caster is immune to new status ailments for 3 turns.
-・The caster gets 50% attack for 3 turns.","・ターゲットに235%のダメージを与える。
-・3ターンに渡って、術者が新たなステータス異常を無効化する。
-・3ターンの間、術者の攻撃力が50%になる。","","","",""
+・The caster is immune to new status ailments for 3 turns. This effect can't be dispelled.
+・The caster gets 50% attack for 3 turns. This effect can't be cleansed.","・ターゲットに235%のダメージを与える。
+・3ターンに渡って、術者が新たなステータス異常を無効化する。この効果は解除できない。
+・3ターンの間、術者の攻撃力が50%になる。この効果は浄化できない。","","","",""
 "nordic_ancestral_warrior_costume_corrupted","Grimm C","","","・Deals 295% damage to the target and minor damage to nearby enemies.
 ・The caster and nearby allies get 50% attack for 6 turns.","・ターゲットに295%ダメージ、近くにいる敵に小ダメージを与える。
 ・6ターンの間、術者と近くにいる仲間の攻撃力が50%になる。","","","",""
 "oriental_female_guard_costume_soldier","Dawa C","","","・Deals 200% damage per each [##elementpurple]Dark[#] shield on the board to all enemies, up to 200% damage in total.","・ボード上に[##elementpurple]闇属性[#]の盾が出現する度に、敵全員に200%の追加ダメージを与える。付与ダメージの上限は合計200%まで。","This effect targets the same enemy as the first hit if there are no other valid targets.","有効な他のターゲットがいない場合、最初の攻撃を受けた敵をもう一度攻撃する。","",""
 "nomad_female_assassin_costume_poison","Scarlett C","","","・Deals 185% damage to the target and minor damage to nearby enemies.
-・Target and nearby enemies receive 156 Poison damage over 3 turns. This effect can't be cleansed.
+・The target and nearby enemies receive 156 Poison damage over 3 turns.
 ・The caster and nearby allies get 30% attack for 3 turns.","・ターゲットに185%ダメージ、近くにいる敵に小ダメージを与える。
-・3ターンの間、ターゲットと近くにいる敵に156の毒ダメージを与える。この効果は浄化できない。
+・3ターンの間、ターゲットと近くにいる敵に156の毒ダメージを与える。
 ・3ターンの間、術者と近くにいる仲間の攻撃力が30%になる。","","","",""
 "undead_captain_warrior_costume_prince","Cyprian C","","","・All allies counterattack with 60% of the damage received for 4 turns.","・4ターンの間、仲間全員が受けたダメージの60%で反撃する。","","","",""
 "exalted_female_statue_costume_sungoddess","Justice C","","","・Deals 250% damage to all enemies.
 ・The damage is increased by 50% per each defeated ally.
-・The caster gets 24% mana generation for 3 turns. This effect can't be dispelled.","・敵全員に250%のダメージを与える。
+・The caster gets 24% mana generation for 3 turns.","・敵全員に250%のダメージを与える。
 ・倒れた仲間1人につき攻撃力が50%増加する。
-・3ターンの間、術者のマナ生成が24%になる。この効果は解除できない。","","","",""
+・術者のマナ生成が24%になる(3ターン)","","","",""
 "undead_horned_skeleton_costume_fool","Oberon C","","","・All enemies receive 357 Poison damage over 3 turns.","・3ターンの間、敵全員に357の毒ダメージを与える。","","","",""
 "oriental_panda_berserker_costume_farmer","Gan Ju C","","","・Deals 220% damage to the target.
 ・Reduces the mana of the target by -40%.","・ターゲットに220%のダメージを与える。
-・ターゲットのマナが-40%減少する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・ターゲットのマナが-40%減少する。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "royal_knight_commander_costume_king","Thorne C","","","・Deals 540% damage to the target.
-・The caster gets 24% mana generation for 3 turns. This effect can't be dispelled.","・ターゲットに540%のダメージを与える。
-・3ターンの間、術者のマナ生成が24%になる。この効果は解除できない。","","","",""
+・The caster gets 24% mana generation for 3 turns.","・ターゲットに540%のダメージを与える。
+・術者のマナ生成が24%になる(3ターン)","","","",""
 "nordic_swordman_costume_climber","Valen C","","","・Deals 335% damage to the target.
-・The caster gets 54% attack for 6 turns.","・ターゲットに335%のダメージを与える。
-・6ターンの間、術者の攻撃力が54%になる。","","","",""
+・The caster gets 54% attack for 6 turns. This effect can't be cleansed.","・ターゲットに335%のダメージを与える。
+・6ターンの間、術者の攻撃力が54%になる。この効果は浄化できない。","","","",""
 "oriental_panda_warrior_costume_armor","Hu Tao C","","","・Deals 160% damage to all enemies.
 ・All enemies get -130% accuracy for 4 turns.
 ・All enemies get 50% increase for any healing received for 4 turns. This effect can't be dispelled.","・敵全員に160%のダメージを与える。
@@ -213,7 +213,7 @@ lang_id resolution failed.","--- Passives ---","・All allies become [#!]Soul Co
 ・All enemies are immune to new status effect buffs for 3 turns.","・敵全員のバフを解除する。
 ・仲間全員のHPが1120回復(3ターン)。この効果は解除不可
 ・3ターンの間、敵に新しく追加されるステータス効果を付与するバフを無効化する。","","","",""
-"nomad_female_berserker_costume_shaman","Kelile C","","","・All enemies receive 346 Burn damage over 2 turns. This effect can't be cleansed.","・2ターンの間、敵全員に346の燃焼ダメージを与える。この効果は浄化できない。","","","",""
+"nomad_female_berserker_costume_shaman","Kelile C","","","・All enemies receive 346 Burn damage over 2 turns.","・2ターンの間、敵全員に346の燃焼ダメージを与える。","","","",""
 "oriental_female_mage_costume_mender","Kailani C","","","・All allies become [#!]Soul Connected[#] for 5 turns. Soul Connected allies share received damage.
 ・All allies get 50% attack for 5 turns.","・5ターンの間、仲間全員に[#!]ソウル・コネクト[#]が発動する。ソウル・コネクトによって魂が繋がった仲間同士は被ダメージを共有する。
 ・5ターンの間、仲間全員の攻撃力が50%になる。","","","",""
@@ -221,28 +221,28 @@ lang_id resolution failed.","--- Passives ---","・All allies become [#!]Soul Co
 ・All allies get 48% attack for 6 turns.","・敵全員に145%のダメージを与える。
 ・6ターンの間、仲間全員の攻撃力が48%になる。","","","",""
 "tribal_chief_costume_conqueror","Khagan C","","","・Deals 514% damage to the target.
-・All allies get 12% mana generation for 5 turns. This effect can't be dispelled.
+・All allies get 12% mana generation for 5 turns.
 ・All allies get 46% defense for 5 turns.","・ターゲットに514%のダメージを与える。
-・すべての仲間がマナ生成12%を得る(5ターン)。この効果は解除不可
+・5ターンの間、仲間全員のマナ生成が12%になる。
 ・5ターンの間、仲間全員の防御力が46%になる。","","","",""
 "nomad_axe_adventurer_costume_magma","Colen C","","","・Deals 240% damage to all enemies.
-・All enemies receive 231 Burn damage over 3 turns. This effect can't be cleansed.","・敵全員に240%のダメージを与える。
-・3ターンの間、敵全員に231の燃焼ダメージを与える。この効果は浄化できない。","","","",""
+・All enemies receive 231 Burn damage over 3 turns.","・敵全員に240%のダメージを与える。
+・3ターンの間、敵全員に231の燃焼ダメージを与える。","","","",""
 "orc_warrior_costume_urukhai","Nashgar C","","","・Deals 260% damage to the target.
 ・The target receives 141 Burn damage over 3 turns. This effect can't be cleansed.","・ターゲットに260%のダメージを与える。
 ・3ターンの間、ターゲットに141の燃焼ダメージを与える。この効果は浄化できない。","","","",""
 "underworld_champion_costume_champion","Obakan C","","","・Deals 182% damage to all enemies.
-・The caster and nearby allies counterattack with 85% of the damage received for 4 turns. This effect cannot be dispelled.","・敵全員に182%のダメージを与える。
-・4ターンの間、術者と付近の仲間が受けたダメージの85%で反撃する。この効果は解除できない。","","","",""
+・The caster and nearby allies counterattack with 85% of the damage received for 4 turns.","・敵全員に182%のダメージを与える。
+・4ターンの間、術者と近くにいる仲間が受けたダメージの85%で反撃する。","","","",""
 "oriental_falconer_costume_dodo","Chao C","","","・Deals 275% damage to the target.
-・The caster steals generated mana from the target over 4 turns starting low and increasing every turn until on the last turn all the generated mana is stolen.","・ターゲットに275%のダメージを与える。
-・術者がターゲットのマナを4ターンに渡って奪う。最初は少量しか奪えないが、ターン毎に奪える量が増え、生成されたすべてのマナを奪うまで続く。","","","",""
+・The caster steals generated mana of the target over 4 turns starting low and increasing every turn until on the last turn all the generated mana is stolen. This effect can't be cleansed, but it gets removed if the caster is defeated.","・ターゲットに275%のダメージを与える。
+・術者がターゲットのマナを4ターンに渡って奪う。最初は少量しか奪えないが、ターン毎に奪える量が増え、生成されたすべてのマナを奪うまで続く。この効果は浄化不可だが、術者が倒れると消える。","","","",""
 "oriental_monkey_captain_costume_warrior","Wu Kong C","","","・Deals 210% damage to all enemies.
-・The caster gets -20% defense for 3 turns. This effect can't be dispelled.","・敵全員に210%のダメージを与える。
-・術者が防御力-20%を得る(3ターン)。この効果は解除不可","","","",""
+・The caster gets -20% defense for 3 turns.","・敵全員に210%のダメージを与える。
+・術者の防御力-20%(3ターン)","","","",""
 "s2_poseidon_costume_slayer","Poseidon C","","","・Deals 480% damage to the target.
-・All allies are immune to new status ailments for 3 turns.","・ターゲットに480%のダメージを与える。
-・3ターンの間、仲間全員が新たなステータス異常を受けない。","","","",""
+・All allies are immune to new status ailments for 3 turns. This effect can't be dispelled.","・ターゲットに480%のダメージを与える。
+・3ターンに渡って、仲間全員が新たなステータス異常を無効化する。この効果は解除できない。","","","",""
 "s2_ariel_costume_enchanter","Ariel C","","","・Boosts health of all allies by 520. Boosted health can exceed max HP.
 ・Cleanses status ailments from all allies.
 ・All allies receive a small amount of mana over 4 turns.","・仲間全員のHPを520回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
@@ -266,26 +266,26 @@ lang_id resolution failed.","--- Passives ---","・All allies become [#!]Soul Co
 ・All allies except the caster get -20% attack for 3 turns.","・敵全員に330%のダメージを与える。
 ・術者以外の仲間全員の攻撃力が-20%になる(3ターン)","","","",""
 "rabbit_blue_costume_riftbreaker","Master Lepus C","","","・Deals 280% damage to all enemies.
-・The caster gets -24% mana generation for 4 turns. This effect can't be dispelled.","・敵全員に280%のダメージを与える。
-・4ターンの間、術者のマナ生成が-24%になる。この効果は解除できない。","","","",""
+・The caster gets -24% mana generation for 4 turns.","・敵全員に280%のダメージを与える。
+・術者のマナ生成が-24%になる(4ターン)","","","",""
 "sand_queen_costume_surfer","Rana C","","","・Deals 185% damage to the target and nearby enemies.
 ・Cleanses status ailments from the caster and nearby allies.
 ・The target and nearby enemies receive 708 Water damage over 4 turns.
-・The target and nearby enemies get 25% increase for any healing received for 4 turns.","・ターゲットと近くにいる敵に185%のダメージを与える。
+・The target and nearby enemies get 25% increase for any healing received for 4 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵に185%のダメージを与える。
 ・術者と近くにいる仲間のステータス異常を浄化する。
 ・4ターンの間、ターゲットと近くにいる敵に708の水ダメージを与える。
-・4ターンの間、ターゲットと近くにいる敵の回復量が25%増加する。","","","",""
+・4ターンの間、ターゲットと近くにいる敵の回復量が25%増加する。この効果は解除できない。","","","",""
 "sand_king_costume_lifeguard","Yunan C","","","・Deals 215% damage to all enemies.
 ・Cleanses status ailments from all allies.
 ・All enemies receive 835 Sand damage over 5 turns.
-・All allies get 33% mana generation for 5 turns. This effect can't be dispelled.","・敵全員に215%のダメージを与える。
+・All allies get 33% mana generation for 5 turns.","・敵全員に215%のダメージを与える。
 ・仲間全員のステータス異常を浄化する。
 ・5ターンの間、敵全員に835の砂ダメージを与える。
-・すべての仲間がマナ生成33%を得る(5ターン)。この効果は解除不可","","","",""
+・5ターンの間、仲間全員のマナ生成が33%になる。","","","",""
 "fire_god_doom_costume_avenger","Gravemaker C","","","・Deals 175% damage to all enemies.
-・All enemies receive 542 Burn damage over 2 turns. This effect can't be cleansed.
+・All enemies receive 542 Burn damage over 2 turns.
 ・[#ff9f81]Element Link[#] gives all [#ff9f81]Fire[#] allies 105% attack and 105% defense for 6 turns. This effect can't be dispelled.","・敵全員に175%のダメージを与える。
-・2ターンの間、敵全員に542の燃焼ダメージを与える。この効果は浄化できない。
+・2ターンの間、敵全員に542の燃焼ダメージを与える。
 ・6ターンの間、[#ff9f81]属性リンク[#]により、[#ff9f81]炎属性[#]の仲間全員の攻撃力が105%になり、防御力が105%になる。この効果は解除できない。","","","",""
 "dark_god_seshat_costume_revenant","Seshat C","・Dispels buffs from the target and nearby enemies.
 
@@ -320,10 +320,10 @@ This character has innate resistance against [#!]Sand[#] damage.","・ターゲ�
 ・6ターンの間、[#41d8fe]属性リンク[#]により、[#41d8fe]氷属性[#]の仲間全員の攻撃力が115%になり、防御力が115%になる。この効果は解除できない。","","","",""
 "forest_god_oberon_costume_everoak","Alberich C","","","・Each defeated ally has a 38% chance to get revived with 1% HP.
 ・All allies regenerate 792 HP over 4 turns. This effect can't be dispelled.
-・All allies get 38% mana generation for 4 turns. This effect can't be dispelled.
+・All allies get 38% mana generation for 4 turns.
 ・[#70e92f]Element Link[#] gives all [#70e92f]Nature[#] allies 115% attack and 115% defense for 6 turns. This effect can't be dispelled.","・38%の確率で、倒れた仲間が最大HPの1%を有した状態で復活する。
 ・仲間全員のHPが792回復(4ターン)。この効果は解除不可
-・すべての仲間がマナ生成38%を得る(4ターン)。この効果は解除不可
+・4ターンの間、仲間全員のマナ生成が38%になる。
 ・6ターンの間、[#70e92f]属性リンク[#]により、[#70e92f]自然属性[#]の仲間全員の攻撃力が115%になり、防御力が115%になる。この効果は解除できない。","","","",""
 "ice_god_eskimo_costume_champion","Alasie C","","","・Deals 496% damage to the target and minor damage to nearby enemies.
 ・Reduces the mana of the target and nearby enemies by -10%.
@@ -331,7 +331,7 @@ This character has innate resistance against [#!]Sand[#] damage.","・ターゲ�
 ・[#41d8fe]Element Link[#] gives all [#41d8fe]Ice[#] allies 105% attack and 105% defense for 6 turns. This effect can't be dispelled.","・ターゲットに496%ダメージ、近くにいる敵に小ダメージを与える。
 ・ターゲットと近くにいる敵のマナが-10%減少する。
 ・3ターンの間、ターゲットと近くにいる敵のマナ生成が-24%になる。
-・6ターンの間、[#41d8fe]属性リンク[#]により、[#41d8fe]氷属性[#]の仲間全員の攻撃力が105%になり、防御力が105%になる。この効果は解除できない。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・6ターンの間、[#41d8fe]属性リンク[#]により、[#41d8fe]氷属性[#]の仲間全員の攻撃力が105%になり、防御力が105%になる。この効果は解除できない。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "pirate_marie_therese_costume_priestess","Marie-Thérèse C","","","・Deals 138% damage to all enemies.
 ・All allies regenerate 920 HP over 4 turns. This effect can't be dispelled.
 ・All allies get 30% defense for 4 turns.
@@ -389,9 +389,9 @@ When this character casts their Special Skill, they transfer the newest cleansab
 - バフ奪取 -
 このキャラクターが特殊スキルを使用すると、自らに付与された、最も新しい浄化可能なステータス異常をターゲットに移行できる。特殊スキルが特定のターゲットを攻撃できない性質のものである場合は、ランダムな敵がターゲットとして選ばれる。このキャラクターに浄化可能なステータス異常が付与されていない場合は、HPが50%回復する。","・Deals 115% damage to all enemies.
 ・The caster steals 51% of any healing applied to all enemies for 3 turns.
-・All allies are immune to new status ailments for 3 turns.","・敵全員に115%のダメージを与える。
+・All allies are immune to new status ailments for 3 turns. This effect can't be dispelled.","・敵全員に115%のダメージを与える。
 ・3ターンの間、術者が敵全員に適用されたあらゆる種類の回復の51%を盗む。
-・3ターンの間、仲間全員が新たなステータス異常を受けない。","","","",""
+・3ターンに渡って、仲間全員が新たなステータス異常を無効化する。この効果は解除できない。","","","",""
 "halloween_francine_costume_mafia","Francine C","--- Passives ---
 
 - Steal Buff -
@@ -399,9 +399,9 @@ When this character casts their Special Skill, they transfer the newest cleansab
 
 - バフ奪取 -
 このキャラクターが特殊スキルを使用すると、自らに付与された、最も新しい浄化可能なステータス異常をターゲットに移行できる。特殊スキルが特定のターゲットを攻撃できない性質のものである場合は、ランダムな敵がターゲットとして選ばれる。このキャラクターに浄化可能なステータス異常が付与されていない場合は、HPが50%回復する。","・Deals 225% damage to the target and nearby enemies.
-・Cleanses status ailments from all allies at the end of each turn for 3 turns. This effect can't be dispelled.
+・Cleanses status ailments from all allies at the end of each turn for 3 turns.
 ・All [##elementblue]Ice[#] enemies get -54% defense against [#70e92f]Nature[#] for 3 turns.","・ターゲットと近くにいる敵に225%のダメージを与える。
-・3ターン毎の、ターン終了時に仲間全員のステータス異常を浄化する。この効果は解除不可
+・3ターンの間、各ターン終了時に仲間全員のステータス異常を浄化する。
 ・すべての[##elementblue]氷属性[#]の敵の、[#70e92f]自然属性[#]に対する防御力が-54%になる(3ターン)","","","",""
 "halloween_frank_costume_mafia","Frank C","--- Passives ---
 
@@ -424,15 +424,15 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・仲間全員のHPが720回復(4ターン)。この効果は解除不可","","","",""
 "christmas_santa_costume_metal","Santa Claus C","","","・Deals 150% damage to all enemies.
 ・All enemies get -24% attack for 4 turns. This effect can't be cleansed.
-・All enemies get -54% defense for 4 turns. This effect can't be dispelled.
+・All enemies get -54% defense for 4 turns.
 ・Failed for familiar christmas_elf","・敵全員に150%のダメージを与える。
 ・4ターンの間、敵全員の攻撃力が-24%になる。この効果は浄化不可。
-・4ターンの間、敵全員の防御力が-54%になる。この効果は解除できない。","","","",""
+・4ターンの間、敵全員の防御力が-54%になる。","","","",""
 "christmas_krampus_costume_eager_devil","Krampus C","","","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns.
-・The caster gets 30% defense for 3 turns. This effect can't be dispelled.
+・The caster gets 30% defense for 3 turns.
 ・All allies get 145% attack, and a further 20% increase every time they are hit during 3 turns, up to 40% attack.
 ・Failed for familiar christmas_elf","・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
-・術者が防御力30%を得る(3ターン)。この効果は解除不可
+・術者の防御力30%(3ターン)
 ・仲間全員の攻撃力が145%になる。さらに、3ターンの間、攻撃を受ける度に20%ずつ増加する。最大40%まで。","","","",""
 "rabbit_green_costume_egg_hunter","Jack O'Hare C","","","・The attack chains through all the enemies who are adjacent to any hit enemy.
 ・All allies except the caster get -20% attack for 3 turns.","・この攻撃は、攻撃した敵のすぐ隣にいる敵全員に連鎖する。
@@ -464,9 +464,9 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・3ターンの間、敵全員の命中率が-125%になる。","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。","",""
 "sand_roc_costume_juice","Roc C","","","・Dispels buffs from all enemies.
 ・All enemies receive 800 Sand damage over 4 turns.
-・All enemies get -44% defense for 3 turns. This effect can't be dispelled.","・敵全員のバフを解除する。
+・All enemies get -44% defense for 3 turns.","・敵全員のバフを解除する。
 ・4ターンの間、敵全員に800の砂ダメージを与える。
-・3ターンの間、敵全員の防御力が-44%になる。この効果は解除できない。","","","",""
+・3ターンの間、敵全員の防御力が-44%になる。","","","",""
 "s3_skadi_costume_ravager","Skadi C","","","・Deals 320% damage to the target and nearby enemies.
 ・The damage is increased by 35% per each defeated enemy.
 ・[#!]Wither:[#] All enemies get 0 attack.
@@ -482,11 +482,11 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・Deals 185% damage to a random enemy at the end of each turn for as long as the caster has boosted health. This effect can't be dispelled.","・ターゲットに400%のダメージを与える。
 ・術者のライフを160回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
 ・術者のライフが回復している間、仲間全員がマナ奪取に対して耐性を持つ。この効果は解除できない。
-・術者のHPが回復している間、ランダムな敵1体に毎ターン終了時に185%のダメージを与える。この効果は解除できない。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・術者のHPが回復している間、ランダムな敵1体に毎ターン終了時に185%のダメージを与える。この効果は解除できない。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "s3_sif_costume_golden","Sif C","","","・Increases the mana of the caster and nearby allies by 2%.
-・The caster and nearby allies counterattack with 125% of the damage received for 4 turns. This effect cannot be dispelled.
+・The caster and nearby allies counterattack with 125% of the damage received for 4 turns.
 ・The caster and nearby allies reduce all received damage by -102% for 4 turns.","・術者と近くにいる仲間のマナが2%増加する。
-・4ターンの間、術者と付近の仲間が受けたダメージの125%で反撃する。この効果は解除できない。
+・4ターンの間、術者と近くにいる仲間が受けたダメージの125%で反撃する。
 ・4ターンの間、術者と近くにいる仲間の受けるダメージが-102%になる。","","","",""
 "s3_gefjon_costume_wilderness","Gefjon C","","","・Deals 335% damage to the target and nearby enemies.
 ・Destroys all Minions from the target and nearby enemies. This effect damages Mega Minions.","・ターゲットと近くにいる敵に335%のダメージを与える。
@@ -506,9 +506,9 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・敵1体が倒れる度に、攻撃力が25%増加する。","","","",""
 "s3_kvasir_costume_captain","Kvasir C","","","・Failed for familiar bee_costume_kvasir","","","","",""
 "s3_bjorn_costume_viking","Bjorn C","","","・Deals 100% damage to hit targets.
-・Cleanses status ailments from all allies at the end of each turn for 3 turns. This effect can't be dispelled.
+・Cleanses status ailments from all allies at the end of each turn for 3 turns.
 ・[#!]Growth:[#] All allies get -98.4 attack.","・攻撃したターゲットに100%のダメージを与える。
-・3ターン毎の、ターン終了時に仲間全員のステータス異常を浄化する。この効果は解除不可
+・3ターンの間、各ターン終了時に仲間全員のステータス異常を浄化する。
 ・[#!]成長：[#]仲間全員の攻撃力が-98.4増加する。","This effect targets the same enemy as the first hit if there are no other valid targets.","有効な他のターゲットがいない場合、最初の攻撃を受けた敵をもう一度攻撃する。","",""
 "nomad_female_berserker_costume_sorceress","Kelile C2","","","・Deals 220% damage to the target and nearby enemies.
 ・The target and nearby enemies receive 207 Burn damage over 3 turns. The caster absorbs 30% of dealt Burn damage as health.","・ターゲットと近くにいる敵に220%のダメージを与える。
@@ -522,16 +522,14 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・[#!]成長：[#]仲間全員の攻撃力が-98.4増加する。
 ・4ターンの間、敵全員の攻撃力が-34%になる。この効果は浄化不可。","","","",""
 "underworld_champion_costume_vampire","Obakan C2","","","・Deals 260% damage to the target and nearby enemies.
-・The caster and nearby allies counterattack with 95% of the damage received for 3 turns. This effect cannot be dispelled.
-・The caster and nearby allies get [#!]Sticky Surface[#] for 3 turns. This effect can't be dispelled.
-[*][#!]Sticky Surface[#]: Steals 33 random dispellable buff or Growth effect from an attacking enemy.","・ターゲットと近くにいる敵に260%のダメージを与える。
-・3ターンの間、術者と付近の仲間が受けたダメージの95%で反撃する。この効果は解除できない。
-・3ターンの間、術者と近くにいる仲間が[#!]粘着層[#]を獲得する。この効果は解除できない。
-[*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで33個の解除可能なバフか成長効果を奪う。","","","",""
+・The caster and nearby allies counterattack with 95% of the damage received for 3 turns.
+・The caster and nearby allies regenerate a small amount of mana for each counterattack for 3 turns. The effect gets diminished for consecutive activations during the same turn.","・ターゲットと近くにいる敵に260%のダメージを与える。
+・3ターンの間、術者と近くにいる仲間が受けたダメージの95%で反撃する。
+・3ターンの間、術者と近くにいる仲間が反撃するたびに、少量のマナを生成する。同じターン中に連続して実行した場合、効果は減少する。","","","",""
 "oriental_enchanted_monk_costume_stoneguard","Joon C2","","","・Deals 260% damage to the target and nearby enemies.
-・The target and nearby enemies receive 300 Burn damage over 3 turns. This effect can't be cleansed.
+・The target and nearby enemies receive 300 Burn damage over 3 turns.
 ・The target and nearby enemies get -135% accuracy for 3 turns.","・ターゲットと近くにいる敵に260%のダメージを与える。
-・3ターンの間、ターゲットと近くにいる敵に300の燃焼ダメージを与える。この効果は浄化できない。
+・3ターンの間、ターゲットと近くにいる敵に300の燃焼ダメージを与える。
 ・3ターンの間、ターゲットと近くにいる敵の命中率が-135%になる。","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。","",""
 "exalted_warrior_costume_underworld","Magni C2","","","・Deals 285% damage to the target and nearby enemies.
 ・The target and nearby enemies get -103% defense against Special Skills for 4 turns.","・ターゲットと近くにいる敵に285%のダメージを与える。
@@ -553,18 +551,18 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・ターゲットと近くにいる敵の[#e290ff]闇属性[#]への防御力が-64%になる(4ターン)","","","",""
 "forest_titan_costume_nightmare","Horghall C2","","","・Deals 260% damage to all enemies.
 ・All enemies get 69% attack, and a further -4% decrease every time they are hit during 4 turns, down to 40% attack.
-・All enemies get -24% defense for 4 turns. This effect can't be dispelled.
+・All enemies get -24% defense for 4 turns.
 ・All enemies receive 284 Poison damage over 4 turns.","・敵全員に260%のダメージを与える。
 ・敵全員の攻撃力が69%になる。さらに、4ターンの間、攻撃を受ける度に-4%ずつ減少する。最大40%まで。
-・4ターンの間、敵全員の防御力が-24%になる。この効果は解除できない。
+・4ターンの間、敵全員の防御力が-24%になる。
 ・4ターンの間、敵全員に284の毒ダメージを与える。","","","",""
 "oriental_warrior_king_costume_mage","Leonidas C2","","","・Deals 240% damage to all enemies.
 ・Reduces the mana of all enemies by -10%.
 ・[#!]Growth:[#] All allies get -98.4 attack.
-・All enemies get -34% defense for 3 turns. This effect can't be dispelled.","・敵全員に240%のダメージを与える。
+・All enemies get -34% defense for 3 turns.","・敵全員に240%のダメージを与える。
 ・敵全員のマナが-10%減少する。
 ・[#!]成長：[#]仲間全員の攻撃力が-98.4増加する。
-・3ターンの間、敵全員の防御力が-34%になる。この効果は解除できない。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・3ターンの間、敵全員の防御力が-34%になる。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "oriental_female_mystic_costume_scribe","Vivica C2","","","・Boosts health of all allies by 670. Boosted health can exceed max HP.
 ・Dispels buffs from all enemies.
 ・All enemies get -39% attack for 4 turns. This effect can't be cleansed.","・仲間全員のHPを670回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
@@ -586,12 +584,10 @@ When this character casts their Special Skill, they transfer the newest cleansab
 "oriental_female_templar_costume_fireworks","Li Xiu C2","","","・Deals 270% damage to the target and nearby enemies.
 ・The target and nearby enemies get silenced for 3 turns.","・ターゲットと近くにいる敵に270%のダメージを与える。
 ・3ターンの間、ターゲットと近くにいる敵を沈黙状態にする。","","","",""
-"undead_captain_warrior_costume_reveller","Cyprian C2","","","・The caster and nearby allies counterattack with 80% of the damage received for 4 turns. This effect cannot be dispelled.
-・The caster and nearby allies get [#!]Sticky Surface[#] for 4 turns. This effect can't be dispelled.
-[*][#!]Sticky Surface[#]: Steals 33 random dispellable buff or Growth effect from an attacking enemy.
-・The caster and nearby allies reduce all received damage by -102% for 4 turns.","・4ターンの間、術者と付近の仲間が受けたダメージの80%で反撃する。この効果は解除できない。
-・4ターンの間、術者と近くにいる仲間が[#!]粘着層[#]を獲得する。この効果は解除できない。
-[*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで33個の解除可能なバフか成長効果を奪う。
+"undead_captain_warrior_costume_reveller","Cyprian C2","","","・The caster and nearby allies counterattack with 80% of the damage received for 4 turns.
+・The caster and nearby allies regenerate a small amount of mana for each counterattack for 4 turns. The effect gets diminished for consecutive activations during the same turn.
+・The caster and nearby allies reduce all received damage by -102% for 4 turns.","・4ターンの間、術者と近くにいる仲間が受けたダメージの80%で反撃する。
+・4ターンの間、術者と近くにいる仲間が反撃するたびに、少量のマナを生成する。同じターン中に連続して実行した場合、効果は減少する。
 ・4ターンの間、術者と近くにいる仲間の受けるダメージが-102%になる。","","","",""
 "guardian_gazelle_costume_bandalore","Guardian Gazelle C","","","","","","","",""
 "guardian_jackal_assassin_costume_bones","Guardian Jackal C","","","・Deals 280% damage to the target.
@@ -601,12 +597,12 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・Recovers 1% health for all allies.
 ・All allies reflect all status effects and 115% damage back to the attacker and block other negative effects from enemies' [##elementpurple]Dark[#] Special Skills for 4 turns.","・ターゲットと近くにいる敵のマナが2%減少する。
 ・仲間全員のHPを1%回復する。
-・4ターンの間、仲間全員がすべてのステータス効果を跳ね返す。さらに、[##elementpurple]闇属性[#]の敵の特殊スキルによって発生した、その他のマイナスの影響を無効にし、ダメージの115%を攻撃者に跳ね返す。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","Status effects cast by characters, Minions and Fiends on the same side cannot be reflected.","同じチームのキャラクター、ミニオン、フィエンドが特殊スキルを使用して敵にステータス効果を付与した場合、敵はこれらの効果を跳ね返すことができない。"
+・4ターンの間、仲間全員がすべてのステータス効果を跳ね返す。さらに、[##elementpurple]闇属性[#]の敵の特殊スキルによって発生した、その他のマイナスの影響を無効にし、ダメージの115%を攻撃者に跳ね返す。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","Status effects cast by characters, Minions and Fiends on the same side cannot be reflected.","同じチームのキャラクター、ミニオン、フィエンドが特殊スキルを使用して敵にステータス効果を付与した場合、敵はこれらの効果を跳ね返すことができない。"
 "knights_merlin_costume_astrology","Merlin C","","","・Deals 210% damage to the target and nearby enemies.
 ・The more mana the enemies have, the more damage they will receive, up to 60%.
-・The target automatically casts [#!]Mindless Attack[#] on a random ally when mana is full at the start of a turn during 3 turns. This effect can't be cleansed.","・ターゲットと近くにいる敵に210%のダメージを与える。
+・The target automatically casts [#!]Mindless Attack[#] on a random ally when mana is full at the start of a turn during 3 turns.","・ターゲットと近くにいる敵に210%のダメージを与える。
 ・敵が所有するマナが多いほど、与えるダメージが増加する。最大で60%になる。
-・3ターンの間、マナが満タンの場合に限り、ターン開始時にターゲットが自動的に[#!]マインドレスアタック[#]をランダムな仲間に放つ。この効果は浄化できない。","","","",""
+・3ターンの間、マナが満タンの場合に限り、ターン開始時にターゲットが自動的に[#!]マインドレスアタック[#]をランダムな仲間に放つ。","","","",""
 "nomad_female_archer","Sharan","","","・Recovers 27% health for all allies.","・仲間全員のライフを27%回復する。","","","",""
 "nomad_scout","Tudan","","","","","","","",""
 "trainer_red_common","trainer_red_common","","","・Deals 150% damage to the target.","・ターゲットに150%のダメージを与える。","","","",""
@@ -618,17 +614,17 @@ When this character casts their Special Skill, they transfer the newest cleansab
 "nomad_female_shaman","Hawkmoon","","","・Recovers 32% health for all allies.","・仲間全員のライフを32%回復する。","","","",""
 "nomad_female_swordmaster","Azar","","","・Deals 280% damage to the target.
 ・Reduces the mana of the target by -25%.","・ターゲットに280%のダメージを与える。
-・ターゲットのマナが-25%減少する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・ターゲットのマナが-25%減少する。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "nomad_mage","Jahangir","","","・Deals 145% damage to all enemies.
-・All enemies receive 132 Burn damage over 6 turns. This effect can't be cleansed.","・敵全員に145%のダメージを与える。
-・6ターンの間、敵全員に132の燃焼ダメージを与える。この効果は浄化できない。","","","",""
+・All enemies receive 132 Burn damage over 6 turns.","・敵全員に145%のダメージを与える。
+・6ターンの間、敵全員に132の燃焼ダメージを与える。","","","",""
 "orc_warrior","Nashgar","","","・Deals 290% damage to the target.
 ・The target receives 138 Burn damage over 6 turns. This effect can't be cleansed.","・ターゲットに290%のダメージを与える。
 ・6ターンの間、ターゲットに138の燃焼ダメージを与える。この効果は浄化できない。","","","",""
 "trainer_red_rare","trainer_red_rare","","","・Deals 150% damage to the target.","・ターゲットに150%のダメージを与える。","","","",""
 "nomad_axe_adventurer","Colen","","","・Deals 180% damage to all enemies.
-・All enemies receive 390 Burn damage over 6 turns. This effect can't be cleansed.","・敵全員に180%のダメージを与える。
-・6ターンの間、敵全員に390の燃焼ダメージを与える。この効果は浄化できない。","","","",""
+・All enemies receive 390 Burn damage over 6 turns.","・敵全員に180%のダメージを与える。
+・6ターンの間、敵全員に390の燃焼ダメージを与える。","","","",""
 "nomad_female_assassin","Scarlett","","","・Deals 215% damage to the target and minor damage to nearby enemies.
 ・The target and nearby enemies get -34% attack for 6 turns.","・ターゲットに215%ダメージ、近くにいる敵に小ダメージを与える。
 ・6ターンの間、ターゲットと近くにいる敵の攻撃力が-34%になる。","","","",""
@@ -643,18 +639,18 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・6ターンの間、ターゲットと近くにいる敵の防御力が-34%になる。","","","",""
 "trainer_red_epic","trainer_red_epic","","","・Deals 150% damage to the target.","・ターゲットに150%のダメージを与える。","","","",""
 "lionman_barbarian","Azlar","","","・Deals 205% damage to all enemies.
-・All enemies receive 630 Burn damage over 6 turns. This effect can't be cleansed.","・敵全員に205%のダメージを与える。
-・6ターンの間、敵全員に630の燃焼ダメージを与える。この効果は浄化できない。","","","",""
+・All enemies receive 630 Burn damage over 6 turns.","・敵全員に205%のダメージを与える。
+・6ターンの間、敵全員に630の燃焼ダメージを与える。","","","",""
 "nomad_female_captain","Marjana","","","・Deals 458% damage to the target.
 ・The target receives 528 Burn damage over 6 turns. This effect can't be cleansed.","・ターゲットに458%のダメージを与える。
 ・6ターンの間、ターゲットに528の燃焼ダメージを与える。この効果は浄化できない。","","","",""
 "nomad_female_lord","Elena","","","・Deals 202% damage to all enemies.
-・The caster and nearby allies counterattack with 125% of the damage received for 5 turns. This effect cannot be dispelled.","・敵全員に202%のダメージを与える。
-・5ターンの間、術者と付近の仲間が受けたダメージの125%で反撃する。この効果は解除できない。","","","",""
+・The caster and nearby allies counterattack with 125% of the damage received for 5 turns.","・敵全員に202%のダメージを与える。
+・5ターンの間、術者と近くにいる仲間が受けたダメージの125%で反撃する。","","","",""
 "tribal_chief","Khagan","","","・Deals 380% damage to the target and nearby enemies.
-・The caster and nearby allies get 24% mana generation for 5 turns. This effect can't be dispelled.
+・The caster and nearby allies get 24% mana generation for 5 turns.
 ・The caster and nearby allies get 63% defense for 5 turns. This effect can't be cleansed.","・ターゲットと近くにいる敵に380%のダメージを与える。
-・5ターンの間、術者と近くにいる仲間のマナ生成が24%になる。この効果は解除できない。
+・5ターンの間、術者と近くにいる仲間のマナ生成が24%になる。
 ・5ターンの間、術者と近くにいる仲間の防御力が63%になる。この効果は浄化できない。","","","",""
 "forest_female_warrior","Aife","","","・Deals 275% damage to the target.","・ターゲットに275%のダメージを与える。","","","",""
 "forest_woodsman","Derric","","","・Deals 255% damage to the target.","・ターゲットに255%のダメージを与える。","","","",""
@@ -671,11 +667,11 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・Dispels buffs from all enemies.","・仲間全員のライフを32%回復する。
 ・敵全員のバフを解除する。","","","",""
 "forest_friar","Friar Tuck","","","・Recovers 37% health for the caster and nearby allies.
-・The caster and nearby allies get 24% mana generation for 3 turns. This effect can't be dispelled.","・術者と近くにいる仲間のライフを37%回復する。
-・3ターンの間、術者と近くにいる仲間のマナ生成が24%になる。この効果は解除できない。","","","",""
+・The caster and nearby allies get 24% mana generation for 3 turns.","・術者と近くにいる仲間のライフを37%回復する。
+・3ターンの間、術者と近くにいる仲間のマナ生成が24%になる。","","","",""
 "goblin_fighter","Carver","","","・Deals 125% damage to all enemies.
 ・Reduces the mana of all enemies by -16%.","・敵全員に125%のダメージを与える。
-・敵全員のマナが-16%減少する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・敵全員のマナが-16%減少する。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "lizardman_warrior","Isshtak","","","・Deals 260% damage to the target and minor damage to nearby enemies.","・ターゲットに260%ダメージ、近くにいる敵に小ダメージを与える。","","","",""
 "trainer_green_rare","trainer_green_rare","","","・Deals 150% damage to the target.","・ターゲットに150%のダメージを与える。","","","",""
 "elven_captain","Caedmon","","","・Deals 345% damage to the target.
@@ -712,8 +708,8 @@ When this character casts their Special Skill, they transfer the newest cleansab
 "dwarven_smasher","Karil","","","・Deals 260% damage to the target and minor damage to nearby enemies.","・ターゲットに260%ダメージ、近くにいる敵に小ダメージを与える。","","","",""
 "nordic_chained_werewolf","Graymane","","","・Deals 225% damage to the target.","・ターゲットに225%のダメージを与える。","","","",""
 "nordic_mage","Ulmer","","","・Deals 116% damage to all enemies.
-・All enemies get -34% defense for 6 turns. This effect can't be dispelled.","・敵全員に116%のダメージを与える。
-・6ターンの間、敵全員の防御力が-34%になる。この効果は解除できない。","","","",""
+・All enemies get -34% defense for 6 turns.","・敵全員に116%のダメージを与える。
+・6ターンの間、敵全員の防御力が-34%になる。","","","",""
 "nordic_swordman","Valen","","","・Deals 300% damage to the target.
 ・The target gets -34% defense for 6 turns.","・ターゲットに300%のダメージを与える。
 ・6ターンの間、ターゲットの防御力が-34%になる。","","","",""
@@ -721,7 +717,7 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・All allies get 63% defense for 5 turns.","・5ターンの間、仲間全員に[#!]ソウル・コネクト[#]が発動する。ソウル・コネクトによって魂が繋がった仲間同士は被ダメージを共有する。
 ・5ターンの間、仲間全員の防御力が63%になる。","","","",""
 "trainer_blue_rare","trainer_blue_rare","","","・Deals 150% damage to the target.","・ターゲットに150%のダメージを与える。","","","",""
-"dwarven_guard","Boril","","","・The caster and nearby allies counterattack with 125% of the damage received for 5 turns. This effect cannot be dispelled.","・5ターンの間、術者と付近の仲間が受けたダメージの125%で反撃する。この効果は解除できない。","","","",""
+"dwarven_guard","Boril","","","・The caster and nearby allies counterattack with 125% of the damage received for 5 turns.","・5ターンの間、術者と近くにいる仲間が受けたダメージの125%で反撃する。","","","",""
 "dwarwen_brewmaster","Kiril","","","・Recovers 28% health for all allies.
 ・All allies get 30% attack for 3 turns.
 ・All allies get 30% defense for 3 turns.","・仲間全員のライフを28%回復する。
@@ -738,8 +734,8 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・The caster and nearby allies get 63% defense for 4 turns. This effect can't be cleansed.","・ターゲットに420%のダメージを与える。
 ・4ターンの間、術者と近くにいる仲間の防御力が63%になる。この効果は浄化できない。","","","",""
 "nordic_ice_enchantress","Isarnia","","","・Deals 235% damage to all enemies.
-・All enemies get -44% defense for 6 turns. This effect can't be dispelled.","・敵全員に235%のダメージを与える。
-・6ターンの間、敵全員の防御力が-44%になる。この効果は解除できない。","","","",""
+・All enemies get -44% defense for 6 turns.","・敵全員に235%のダメージを与える。
+・6ターンの間、敵全員の防御力が-44%になる。","","","",""
 "nordic_male_lord","Richard","","","・Deals 415% damage to the target and minor damage to nearby enemies.
 ・The target and nearby enemies get -34% attack for 6 turns.","・ターゲットに415%ダメージ、近くにいる敵に小ダメージを与える。
 ・6ターンの間、ターゲットと近くにいる敵の攻撃力が-34%になる。","","","",""
@@ -762,14 +758,14 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・5ターンの間、仲間全員の防御力が63%になる。","","","",""
 "oriental_panda_berserker","Gan Ju","","","・Deals 270% damage to the target.
 ・Reduces the mana of the target by -25%.","・ターゲットに270%のダメージを与える。
-・ターゲットのマナが-25%減少する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・ターゲットのマナが-25%減少する。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "trainer_yellow_rare","trainer_yellow_rare","","","・Deals 150% damage to the target.","・ターゲットに150%のダメージを与える。","","","",""
 "oriental_falconer","Chao","","","・Deals 315% damage to the target.
 ・Reduces the mana of the target by -25%.","・ターゲットに315%のダメージを与える。
-・ターゲットのマナが-25%減少する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・ターゲットのマナが-25%減少する。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "oriental_female_templar","Li Xiu","","","・Deals 150% damage to all enemies.
 ・Reduces the mana of all enemies by -20%.","・敵全員に150%のダメージを与える。
-・敵全員のマナが-20%減少する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・敵全員のマナが-20%減少する。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "oriental_monkey_captain","Wu Kong","","","・All allies get 285% attack with 68% accuracy for 5 turns.","・5ターンの間、仲間全員の攻撃力が285%に、命中率が68%になる。","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。","",""
 "oriental_panda_warrior","Hu Tao","","","・Deals 210% damage to all enemies.
 ・All enemies get -140% accuracy for 4 turns.","・敵全員に210%のダメージを与える。
@@ -788,7 +784,7 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・4ターンの間、仲間全員の防御力が63%になる。","","","",""
 "oriental_warrior_king","Leonidas","","","・Deals 415% damage to the target.
 ・Reduces the mana of the target by -40%.","・ターゲットに415%のダメージを与える。
-・ターゲットのマナが-40%減少する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・ターゲットのマナが-40%減少する。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "blackguard_female_archer","Nightshade","","","・Deals 250% damage to the target.","・ターゲットに250%のダメージを与える。","","","",""
 "cultist_thief","Fletcher","","","","","","","",""
 "trainer_purple_common","trainer_purple_common","","","・Deals 150% damage to the target.","・ターゲットに150%のダメージを与える。","","","",""
@@ -815,7 +811,7 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・Cleanses status ailments from all allies.","・仲間全員のライフを42%回復する。
 ・仲間全員のステータス異常を浄化する。","","","",""
 "trainer_purple_epic","trainer_purple_epic","","","・Deals 150% damage to the target.","・ターゲットに150%のダメージを与える。","","","",""
-"undead_captain_warrior","Cyprian","","","・The caster and nearby allies counterattack with 125% of the damage received for 5 turns. This effect cannot be dispelled.","・5ターンの間、術者と付近の仲間が受けたダメージの125%で反撃する。この効果は解除できない。","","","",""
+"undead_captain_warrior","Cyprian","","","・The caster and nearby allies counterattack with 125% of the damage received for 5 turns.","・5ターンの間、術者と近くにいる仲間が受けたダメージの125%で反撃する。","","","",""
 "undead_female_warrior","Sabina","","","・Recovers 42% health for all allies.
 ・Dispels buffs from all enemies.","・仲間全員のライフを42%回復する。
 ・敵全員のバフを解除する。","","","",""
@@ -829,11 +825,11 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・ターゲットと近くにいる敵のバフを解除する。
 ・4ターンの間、術者と近くにいる仲間の[#f2e33a]聖属性[#]に対する防御力が94%になる。","","","",""
 "underworld_champion","Obakan","","","・Deals 310% damage to the target and minor damage to nearby enemies.
-・The caster counterattacks with 115% of the damage received for 4 turns. This effect can't be dispelled.","・ターゲットに310%ダメージ、近くにいる敵に小ダメージを与える。
-・4ターンの間、術者が受けたダメージの115%で反撃する。この効果は解除できない。","","","",""
+・The caster counterattacks with 115% of the damage received for 4 turns.","・ターゲットに310%ダメージ、近くにいる敵に小ダメージを与える。
+・4ターンの間、術者が受けたダメージの115%で反撃する。","","","",""
 "rabbit_red","Squire Wabbit","","","・Deals 355% damage to the target.
-・The caster gets -20% defense for 3 turns. This effect can't be dispelled.","・ターゲットに355%のダメージを与える。
-・術者が防御力-20%を得る(3ターン)。この効果は解除不可","","","",""
+・The caster gets -20% defense for 3 turns.","・ターゲットに355%のダメージを与える。
+・術者の防御力-20%(3ターン)","","","",""
 "fire_god_ares","Ares","","","・The caster and nearby allies get 54% attack for 4 turns.
 ・The caster and nearby allies get -68% critical chance for 4 turns.
 ・The caster and nearby allies regenerate 1440 HP over 4 turns.
@@ -853,8 +849,8 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・The target gets silenced for 3 turns.","・ターゲットに320%のダメージを与える。
 ・3ターンの間、ターゲットを沈黙状態にする。","","","",""
 "rabbit_green","Jack O'Hare","","","・Deals 180% damage to all enemies.
-・The caster gets -20% defense for 3 turns. This effect can't be dispelled.","・敵全員に180%のダメージを与える。
-・術者が防御力-20%を得る(3ターン)。この効果は解除不可","","","",""
+・The caster gets -20% defense for 3 turns.","・敵全員に180%のダメージを与える。
+・術者の防御力-20%(3ターン)","","","",""
 "pirate_lady","Lady Locke","","","・Cleanses status ailments from all allies.
 ・The target and nearby enemies receive 4740 [#!]Curse[#] damage over 4 turns, starting low and increasing every turn.","・仲間全員のステータス異常を浄化する。
 ・4ターンの間、ターゲットの敵と近くにいる敵に4740の[#!]呪い[#]ダメージを与える。最初は小ダメージを与え、ターン毎に増加する。","","","",""
@@ -885,8 +881,8 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・4ターンの間、術者と近くにいる仲間の[#70e92f]自然属性[#]に対する防御力が94%になる。
 ・4ターンの間、[#41d8fe]属性リンク[#]によって、[#41d8fe]氷属性[#]の仲間全員のマナ生成が110%増加する。この効果は解除できない。","","","",""
 "rabbit_blue","Master Lepus","","","・Deals 410% damage to the target and minor damage to nearby enemies.
-・The caster gets -20% defense for 3 turns. This effect can't be dispelled.","・ターゲットに410%ダメージ、近くにいる敵に小ダメージを与える。
-・術者が防御力-20%を得る(3ターン)。この効果は解除不可","","","",""
+・The caster gets -20% defense for 3 turns.","・ターゲットに410%ダメージ、近くにいる敵に小ダメージを与える。
+・術者の防御力-20%(3ターン)","","","",""
 "holy_god_musashi","Musashi","","","・Deals 362% damage to the target and minor damage to nearby enemies.
 ・The caster heals 36% of dealt normal damage for 5 turns.
 ・[#f2e33a]Element Link[#] gives all [#f2e33a]Holy[#] allies 115% attack and 115% defense for 6 turns. This effect can't be dispelled.","・ターゲットに362%ダメージ、近くにいる敵に小ダメージを与える。
@@ -905,8 +901,8 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・Failed for familiar witch_king_undead","・ターゲットと近くにいる敵に310%のダメージを与える。
 ・4ターンの間、[#e290ff]属性リンク[#]によって、[#e290ff]闇属性[#]の仲間全員のマナ生成が110%増加する。この効果は解除できない。","","","",""
 "pirate_dread_captain","Sargasso","","","・Deals 415% damage to the target and minor damage to nearby enemies.
-・The target and nearby enemies get 10% increase for any healing received for 4 turns.","・ターゲットに415%ダメージ、近くにいる敵に小ダメージを与える。
-・4ターンの間、ターゲットと近くにいる敵の回復量が10%増加する。","","","",""
+・The target and nearby enemies get 10% increase for any healing received for 4 turns. This effect can't be dispelled.","・ターゲットに415%ダメージ、近くにいる敵に小ダメージを与える。
+・4ターンの間、ターゲットと近くにいる敵の回復量が10%増加する。この効果は解除できない。","","","",""
 "guardian_cat_warrior","Guardian Panther","","","・Deals 210% damage to the target and nearby enemies.
 ・Dispels buffs from the target and nearby enemies.
 ・The target and nearby enemies get -54% defense against [#e290ff]Dark[#] for 4 turns.","・ターゲットと近くにいる敵に210%のダメージを与える。
@@ -914,10 +910,10 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・ターゲットと近くにいる敵の[#e290ff]闇属性[#]への防御力が-54%になる(4ターン)","","","",""
 "guardian_owl_gentleman","Guardian Owl","","","・Deals 300% damage to all enemies.
 ・The damage is increased by 60% per each defeated ally.
-・The caster gets 46% defense for 5 turns. This effect can't be dispelled.
+・The caster gets 46% defense for 5 turns.
 ・The caster regenerates 1120 HP over 5 turns.","・敵全員に300%のダメージを与える。
 ・倒れた仲間1人につき攻撃力が60%増加する。
-・術者が防御力46%を得る(5ターン)。この効果は解除不可
+・術者の防御力46%(5ターン)
 ・5ターンの間、術者のHPが1120回復する。","","","",""
 "guardian_jackal_assassin","Guardian Jackal","","","・Deals 270% damage to the target.
 ・The target gets -54% defense against [#f2e33a]Holy[#] for 4 turns.","・ターゲットに270%のダメージを与える。
@@ -945,16 +941,16 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・[#!]強化防御異常[#]：特殊スキルに対するターゲットの防御力が-98%になる。この効果は、ターゲットが特殊スキルにより1回ダメージを受けるまで継続する。
 [*][#!]強化防御異常[#]が終了するか、解除されるか、置き換えられると、そのターゲットの全ステータス効果バフも解除される。","","","",""
 "knights_sir_lancelot","Sir Lancelot","","","・Deals 265% damage to the target.
-・The caster and nearby allies get 24% mana generation for 4 turns. This effect can't be dispelled.
+・The caster and nearby allies get 24% mana generation for 4 turns.
 ・The caster and nearby allies get 48% attack for 4 turns.","・ターゲットに265%のダメージを与える。
-・4ターンの間、術者と近くにいる仲間のマナ生成が24%になる。この効果は解除できない。
+・4ターンの間、術者と近くにいる仲間のマナ生成が24%になる。
 ・4ターンの間、術者と近くにいる仲間の攻撃力が48%になる。","","","",""
 "knights_morgan_le_fay","Morgan Le Fay","","","","","","","",""
 "knights_merlin","Merlin","","","・Deals 220% damage to the target.
 ・The more mana the enemies have, the more damage they will receive, up to 30%.
-・The target automatically casts [#!]Mindless Attack[#] on a random ally when mana is full at the start of a turn during 3 turns. This effect can't be cleansed.","・ターゲットに220%のダメージを与える。
+・The target automatically casts [#!]Mindless Attack[#] on a random ally when mana is full at the start of a turn during 3 turns.","・ターゲットに220%のダメージを与える。
 ・敵が所有するマナが多いほど、与えるダメージが増加する。最大で30%になる。
-・3ターンの間、マナが満タンの場合に限り、ターン開始時にターゲットが自動的に[#!]マインドレスアタック[#]をランダムな仲間に放つ。この効果は浄化できない。","","","",""
+・3ターンの間、マナが満タンの場合に限り、ターン開始時にターゲットが自動的に[#!]マインドレスアタック[#]をランダムな仲間に放つ。","","","",""
 "holy_god_delilah","Delilah","","","・Recovers 40% health for all allies.
 ・[#f2e33a]Element Link[#] gives 110% mana generation for all [#f2e33a]Holy[#] allies for 4 turns. This effect can't be dispelled.
 ・Failed for familiar holy_god_delilah","・仲間全員のライフを40%回復する。
@@ -972,9 +968,9 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・3ターンの間、ターゲットと近くにいる敵のマナ生成が-24%になる。
 ・6ターンの間、[#41d8fe]属性リンク[#]により、[#41d8fe]氷属性[#]の仲間全員の攻撃力が105%になり、防御力が105%になる。この効果は解除できない。","","","",""
 "fire_god_doom","Gravemaker","","","・Deals 200% damage to the target and nearby enemies.
-・The target and nearby enemies receive 492 Burn damage over 2 turns. This effect can't be cleansed.
+・The target and nearby enemies receive 492 Burn damage over 2 turns.
 ・[#ff9f81]Element Link[#] gives all [#ff9f81]Fire[#] allies 105% attack and 105% defense for 6 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵に200%のダメージを与える。
-・2ターンの間、ターゲットと近くにいる敵に492の燃焼ダメージを与える。この効果は浄化できない。
+・2ターンの間、ターゲットと近くにいる敵に492の燃焼ダメージを与える。
 ・6ターンの間、[#ff9f81]属性リンク[#]により、[#ff9f81]炎属性[#]の仲間全員の攻撃力が105%になり、防御力が105%になる。この効果は解除できない。","","","",""
 "s2_chameleon_mage","Agwe","","","・Deals 190% damage to all enemies.
 ・All allies get 54% defense against [#70e92f]Nature[#] for 4 turns.","・敵全員に190%のダメージを与える。
@@ -987,24 +983,24 @@ When this character casts their Special Skill, they transfer the newest cleansab
 "s2_rugged_fisherman","Wilbur","","","・All allies become [#!]Soul Connected[#] for 4 turns. Soul Connected allies share received damage.
 [*] All enemies become [#!]Soul Connected[#] for 4 turns. Soul Connected enemies share received damage.
 ・All allies get 63% defense for 4 turns.
-・All enemies get -44% defense for 4 turns. This effect can't be dispelled.","・4ターンの間、仲間全員に[#!]ソウル・コネクト[#]が発動する。ソウル・コネクトによって魂が繋がった仲間同士は被ダメージを共有する。
+・All enemies get -44% defense for 4 turns.","・4ターンの間、仲間全員に[#!]ソウル・コネクト[#]が発動する。ソウル・コネクトによって魂が繋がった仲間同士は被ダメージを共有する。
 [*]4ターンの間、敵全員に[#!]ソウル・コネクト[#]が発動する。ソウル・コネクトによって魂が繋がった敵同士は被ダメージを共有する。
 ・4ターンの間、仲間全員の防御力が63%になる。
-・4ターンの間、敵全員の防御力が-44%になる。この効果は解除できない。","","","",""
+・4ターンの間、敵全員の防御力が-44%になる。","","","",""
 "s2_junglehunter","Tarlak","","","・All allies get 100% normal attack for 4 turns. This effect can be active in addition to effects that alter attack in general. Normal attacks can have a total maximum of 160% increased power while this effect is active.
 ・All allies regenerate 480 HP over 4 turns. This effect can't be dispelled.","・4ターンの間、仲間全員の通常攻撃が100%になる。この効果は、通常攻撃を変化させる一般的な効果とは別に有効化することができる。この効果が有効な間、通常攻撃は最大で160%まで増加できる。
 ・仲間全員のHPが480回復(4ターン)。この効果は解除不可","","","",""
 "s2_hammerhead_hulk","Mok-Arr","","","・Deals 270% damage to all enemies.
 ・Deals 50% damage to all allies.","・敵全員に270%のダメージを与える。
-・仲間全員に50%のダメージを与える。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・仲間全員に50%のダメージを与える。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "s2_mercenary_woman","Misandra","","","","","","","",""
 "s2_tanuki_raccoon","Danzaburo","","","・Perform a trick for a specific effect:","・特定の効果を発揮するためのトリックを実行する:","","","",""
 "s2_ghost_woman","Ameonna","","","","","","","",""
 "s2_demon_master","Sumitomo","","","・Deals 300% damage to the target.
-・The caster counterattacks with 135% of the damage received for 5 turns. This effect can't be dispelled.
+・The caster counterattacks with 135% of the damage received for 5 turns.
 ・The caster gets [#!]Sticky Surface[#] for 5 turns. This effect can't be dispelled.
 [*][#!]Sticky Surface[#]: Steals 33 random dispellable buff or Growth effect from an attacking enemy.","・ターゲットに300%のダメージを与える。
-・5ターンの間、術者が受けたダメージの135%で反撃する。この効果は解除できない。
+・5ターンの間、術者が受けたダメージの135%で反撃する。
 ・5ターンの間、術者が[#!]粘着層[#]を獲得する。この効果は解除できない。
 [*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで33個の解除可能なバフまたは成長効果を奪う。","","","",""
 "s2_noble_lady","Mitsuko","","","","","","","",""
@@ -1014,8 +1010,8 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・Deals 200% damage to enemies with more than 50% health remaining.","・ターゲットのバフを解除する。
 ・ターゲットに225%のダメージを与える。
 ・敵の残りのライフが50%以上の場合、200%のダメージを与える。","","","",""
-"s2_proteus","Proteus","","","・Target and nearby enemies receive 336 Poison damage over 3 turns. This effect can't be cleansed.
-・The target and nearby enemies can't gain mana for 3 turns.","・3ターンの間、ターゲットと近くにいる敵に336の毒ダメージを与える。この効果は浄化できない。
+"s2_proteus","Proteus","","","・The target and nearby enemies receive 336 Poison damage over 3 turns.
+・The target and nearby enemies can't gain mana for 3 turns.","・3ターンの間、ターゲットと近くにいる敵に336の毒ダメージを与える。
 ・3ターンの間、ターゲットと近くにいる敵がマナを獲得できなくなる。","","","",""
 "s2_triton","Triton","","","・Deals 335% damage to the target.
 ・All allies get 139% increase for any healing received for 4 turns.","・ターゲットに335%のダメージを与える。
@@ -1027,18 +1023,18 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・5ターン以内に術者が倒れた場合、次のターン開始時に、32%のライフを保有した状態で復活する。すべてのステータス効果と累積効果は、術者が倒れた時に解除される。","","","",""
 "s2_ariel","Ariel","","","・Recovers 40% health for all allies.
 ・Cleanses status ailments from all allies.
-・All allies get 24% mana generation for 4 turns. This effect can't be dispelled.","・仲間全員のライフを40%回復する。
+・All allies get 24% mana generation for 4 turns.","・仲間全員のライフを40%回復する。
 ・仲間全員のステータス異常を浄化する。
-・すべての仲間がマナ生成24%を得る(4ターン)。この効果は解除不可","","","",""
+・4ターンの間、仲間全員のマナ生成が24%になる。","","","",""
 "s2_poseidon","Poseidon","","","・Deals 450% damage to the target.
 ・All allies resist new negative mana effects for 3 turns.
 ・All enemies receive Mana Corruption for 3 turns. Each time an afflicted enemy receives mana from an additional source, they receive 931 damage.","・ターゲットに450%のダメージを与える。
 ・3ターンの間、仲間全員が新たなマイナスのマナ効果を無効化する。
 ・3ターンの間、敵全員がマナ崩壊の影響を受ける。マナ崩壊の影響に苦しむいずれかの敵が追加のマナ供給源からマナを入手するたびに、敵全員に931ダメージが付与される。","","","",""
 "s2_fiji_mermaid","Gill-Ra","","","・Cleanses status ailments from all allies.
-・All enemies get -34% defense for 4 turns. This effect can't be dispelled.
+・All enemies get -34% defense for 4 turns.
 ・All enemies get -34% attack for 4 turns. This effect can't be cleansed.","・仲間全員のステータス異常を浄化する。
-・4ターンの間、敵全員の防御力が-34%になる。この効果は解除できない。
+・4ターンの間、敵全員の防御力が-34%になる。
 ・4ターンの間、敵全員の攻撃力が-34%になる。この効果は浄化不可。","","","",""
 "s2_merwoman","Melia","","","・Deals 120% damage to all enemies.
 ・All allies get -78% critical chance for 4 turns.","・敵全員に120%のダメージを与える。
@@ -1070,9 +1066,9 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・[#f2e33a]Element Link[#] gives all [#f2e33a]Holy[#] allies 105% attack and 105% defense for 6 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵に330%のダメージを与える。
 ・3ターンの間、ターゲットと近くにいる敵の命中率が-135%になる。
 ・6ターンの間、[#f2e33a]属性リンク[#]により、[#f2e33a]聖属性[#]の仲間全員の攻撃力が105%になり、防御力が105%になる。この効果は解除できない。","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。","",""
-"fables_boss_wolf","Boss Wolf","","","・All allies get 24% mana generation for 4 turns. This effect can't be dispelled.
+"fables_boss_wolf","Boss Wolf","","","・All allies get 24% mana generation for 4 turns.
 ・All enemies are immune to new status effect buffs for 4 turns. Attempted mana generation buffs will be replaced by -102% mana generation for -102 turns.
-・All allies counterattack with 115% of the damage received for 4 turns.","・すべての仲間がマナ生成24%を得る(4ターン)。この効果は解除不可
+・All allies counterattack with 115% of the damage received for 4 turns.","・4ターンの間、仲間全員のマナ生成が24%になる。
 ・4ターンの間、敵全員が新たなステータス効果バフの影響を受けなくなる。マナ生成バフを発動しようとすると-102ターンの間、マナ生成が-102%になる。
 ・4ターンの間、仲間全員が受けたダメージの115%で反撃する。","","","",""
 "fables_red_hood","Red Hood","","","・Deals 215% damage to all enemies.
@@ -1102,10 +1098,10 @@ When this character casts their Special Skill, they transfer the newest cleansab
 "sand_tower","Jabbar","","","・Deals 235% damage to the target and minor damage to nearby enemies.
 ・Cleanses status ailments from the caster.
 ・The target and nearby enemies receive 172 Sand damage over 4 turns.
-・The target and nearby enemies get 25% increase for any healing received for 2 turns.","・ターゲットに235%ダメージ、近くにいる敵に小ダメージを与える。
+・The target and nearby enemies get 25% increase for any healing received for 2 turns. This effect can't be dispelled.","・ターゲットに235%ダメージ、近くにいる敵に小ダメージを与える。
 ・術者のステータス異常を浄化する。
 ・ターゲットと近くにいる敵に172の砂ダメージを与える(4ターン)。
-・2ターンの間、ターゲットと近くにいる敵の回復量が25%増加する。","","","",""
+・2ターンの間、ターゲットと近くにいる敵の回復量が25%増加する。この効果は解除できない。","","","",""
 "sand_soldier","Arman","","","・Deals 130% damage to all enemies.
 ・Cleanses status ailments from the caster.
 ・All enemies receive 92 Sand damage over 4 turns.
@@ -1130,10 +1126,10 @@ When this character casts their Special Skill, they transfer the newest cleansab
 "sand_queen","Rana","","","・Deals 185% damage to the target and nearby enemies.
 ・Cleanses status ailments from the caster.
 ・The target and nearby enemies receive 501 Sand damage over 3 turns.
-・The target and nearby enemies get 25% increase for any healing received for 2 turns.","・ターゲットと近くにいる敵に185%のダメージを与える。
+・The target and nearby enemies get 25% increase for any healing received for 2 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵に185%のダメージを与える。
 ・術者のステータス異常を浄化する。
 ・ターゲットと近くにいる敵に501の砂ダメージを与える(3ターン)。
-・2ターンの間、ターゲットと近くにいる敵の回復量が25%増加する。","","","",""
+・2ターンの間、ターゲットと近くにいる敵の回復量が25%増加する。この効果は解除できない。","","","",""
 "dark_god_september","Khiona","","","・Deals 422% damage to the target.
 ・The caster and nearby allies get 145% attack, and a further 20% increase every time they are hit during 3 turns, up to 40% attack.
 ・[#e290ff]Element Link[#] recovers 4% health for all [#e290ff]Dark[#] allies for 6 turns. This effect can't be dispelled.","・ターゲットに422%のダメージを与える。
@@ -1207,8 +1203,8 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・すべての[#f2e33a]聖属性[#]の敵の防御力が-44%になる (4ターン)
 ・4ターンの間、敵全員に288の毒ダメージを与える。","","","",""
 "wonderland_hatter","The Hatter","","","・Deals 400% damage to the target and minor damage to nearby enemies.
-・Steals all dispellable buffs from all enemies and randomly distributes them on allies.","・ターゲットに400%ダメージ、近くにいる敵に小ダメージを与える。
-・敵全員から、解除可能なバフをすべて盗み、仲間全員にランダムに分配する。","","","",""
+・Lifts all cleansable status ailments from all allies and randomly distributes them on enemies.","・ターゲットに400%ダメージ、近くにいる敵に小ダメージを与える。
+・仲間全員の浄化可能なステータス異常を浄化し、敵にランダムに分配する。","","","",""
 "christmas_elf","Buddy","","","・Deals 205% damage to the target and nearby enemies.
 ・The target and nearby enemies get -24% attack for 3 turns.
 ・The target and nearby enemies get -34% defense for 3 turns.
@@ -1221,14 +1217,14 @@ When this character casts their Special Skill, they transfer the newest cleansab
 ・50%の確率で、倒れた仲間が最大HPの10%を有した状態で復活する。","","","",""
 "christmas_santa","Santa Claus","","","・Deals 200% damage to all enemies.
 ・All enemies get -34% attack for 3 turns. This effect can't be cleansed.
-・All enemies get -44% defense for 3 turns. This effect can't be dispelled.
+・All enemies get -44% defense for 3 turns.
 ・Failed for familiar christmas_elf","・敵全員に200%のダメージを与える。
 ・3ターンの間、敵全員の攻撃力が-34%になる。この効果は浄化不可。
-・3ターンの間、敵全員の防御力が-44%になる。この効果は解除できない。","","","",""
+・3ターンの間、敵全員の防御力が-44%になる。","","","",""
 "christmas_reindeer","Rudolph","","","・Deals 285% damage to the target.
 ・Reduces the mana of the target by -20%.
 ・Failed for familiar christmas_elf","・ターゲットに285%のダメージを与える。
-・ターゲットのマナが-20%減少する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・ターゲットのマナが-20%減少する。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "holy_god_onatel","Onatel","--- Passives ---
 
 - Resist Sand Damage -
@@ -1248,10 +1244,10 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 - ステータス異常に抵抗 -
 このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ","・Recovers 45% health for all allies.
 ・Cleanses status ailments from all allies.
-・All enemies get -34% defense for 5 turns. This effect can't be dispelled.
+・All enemies get -34% defense for 5 turns.
 ・[#e290ff]Element Link[#] gives all [#e290ff]Dark[#] allies 46% defense against [#f2e33a]Holy[#] for 4 turns. This effect can't be dispelled.","・仲間全員のライフを45%回復する。
 ・仲間全員のステータス異常を浄化する。
-・5ターンの間、敵全員の防御力が-34%になる。この効果は解除できない。
+・5ターンの間、敵全員の防御力が-34%になる。
 ・[#e290ff]属性リンク[#]によって、[#e290ff]闇属性[#]の仲間全員の[#f2e33a]聖属性[#]に対する防御力が46%増加する(4ターン)。この効果は解除不可","","","",""
 "ice_god_frida","Frida","--- Passives ---
 
@@ -1339,9 +1335,9 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Recovers 22% health for all allies.
-・All allies are immune to new status ailments for 2 turns.
+・All allies are immune to new status ailments for 2 turns. This effect can't be dispelled.
 ・[#ff9f81]Element Link[#] gives 104% mana generation for all [#ff9f81]Fire[#] allies for 4 turns. This effect can't be dispelled.","・仲間全員のライフを22%回復する。
-・2ターンの間、仲間全員が新たなステータス異常を受けない。
+・2ターンに渡って、仲間全員が新たなステータス異常を無効化する。この効果は解除できない。
 ・4ターンの間、[#ff9f81]属性リンク[#]によって、[#ff9f81]炎属性[#]の仲間全員のマナ生成が104%増加する。この効果は解除できない。","","","",""
 "guardian_chameleon","Guardian Chameleon","・Removes all status effects from all enemies. Removes even status effects that are otherwise undispellable or uncleansable.","・敵全員からすべてのステータス効果を解除する。（解除不可や浄化不可のものを含む）","・Removes all status effects from all enemies. Removes even status effects that are otherwise undispellable or uncleansable.
 ・Changes the element of all enemies to the element they are strong against for 4 turns.
@@ -1400,8 +1396,8 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 ・敵全員に15%のダメージを与える
 [*]さらに、解除したステータス効果の数に応じて15%ずつ最大15%のダメージが追加される。","","","",""
 "wonderland_jabberwocky","Jabberwock","","","・Deals 300% damage to the enemies on the edges of the enemy formation. If there is only one enemy, the damage is doubled.
-・The enemies on the edges of the enemy formation receive 297 Poison damage over 3 turns.","・敵陣形の両端にいる敵に300%のダメージを与える。敵が1体しかいない場合は与えるダメージが2倍になる。
-・敵陣形の両端にいる敵に297の毒ダメージを与える(3ターン)。","","","",""
+・The enemies on the edges of the enemy formation receive 297 Poison damage over 3 turns. This effect can't be cleansed.","・敵陣形の両端にいる敵に300%のダメージを与える。敵が1体しかいない場合は与えるダメージが2倍になる。
+・3ターンの間、敵陣形の両端にいる敵に297の毒ダメージを与える。この効果は浄化できない。","","","",""
 "wonderland_white_rabbit","White Rabbit","","","・Deals 280% damage to the target and nearby enemies.
 ・The target gets -34% defense for 4 turns.","・ターゲットと近くにいる敵に280%のダメージを与える。
 ・4ターンの間、ターゲットの防御力が-34%になる。","","","",""
@@ -1409,10 +1405,10 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 ・The more mana the enemies have, the more damage they will receive, up to 120%.","・ターゲットに280%のダメージを与える。
 ・敵が所有するマナが多いほど、与えるダメージが増加する。最大で120%になる。","","","",""
 "wonderland_bear","Shrubbear","","","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns.
-・The caster gets 63% defense for 4 turns. This effect can't be dispelled.
+・The caster gets 63% defense for 4 turns.
 ・[#!]Enhanced Defense Ailment[#]: The target gets -98% defense against Special Skills. This effect lasts until the target takes damage from a Special Skill once.
 [*] After the [#!]Enhanced Defense Ailment[#] ends or is removed or replaced, dispels all status effect buffs on the target.","・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
-・術者が防御力63%を得る(4ターン)。この効果は解除不可
+・術者の防御力63%(4ターン)
 ・[#!]強化防御異常[#]：特殊スキルに対するターゲットの防御力が-98%になる。この効果は、ターゲットが特殊スキルにより1回ダメージを受けるまで継続する。
 [*][#!]強化防御異常[#]が終了するか、解除されるか、置き換えられると、そのターゲットの全ステータス効果バフも解除される。","","","",""
 "guardian_bat","Guardian Bat","","","・Deals 270% damage to the target and minor damage to nearby enemies.
@@ -1420,9 +1416,9 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 ・倒れた仲間1人につき攻撃力が50%増加する。","","","",""
 "knights_bauchan","Bauchan","","","・Deals 105% damage to all enemies.
 ・Reduces the mana of all enemies by -20%.
-・All allies get 24% mana generation for 4 turns. This effect can't be dispelled.","・敵全員に105%のダメージを与える。
+・All allies get 24% mana generation for 4 turns.","・敵全員に105%のダメージを与える。
 ・敵全員のマナが-20%減少する。
-・すべての仲間がマナ生成24%を得る(4ターン)。この効果は解除不可","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・4ターンの間、仲間全員のマナ生成が24%になる。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "fables_pixie","Pixie","","","・Deals 290% damage to the target.
 ・Automatically does 89 damage to the target and consumes 50% mana from the target when the target's mana gets full for 3 turns.","・ターゲットに290%のダメージを与える。
 ・3ターンの間、ターゲットのマナが満タンになると、自動的にターゲットに89ダメージを与える。さらに、ターゲットのマナを50%消費する。","","","",""
@@ -1438,7 +1434,7 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 ・[#f2e33a]Element Link[#] gives 104% mana generation for all [#f2e33a]Holy[#] allies for 4 turns. This effect can't be dispelled.","・敵全員に200%のダメージを与える。
 ・敵全員のマナが-20%減少する。
 ・4ターンの間、敵全員の命中率が-135%になる。
-・4ターンの間、[#f2e33a]属性リンク[#]によって、[#f2e33a]聖属性[#]の仲間全員のマナ生成が104%増加する。この効果は解除できない。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。"
+・4ターンの間、[#f2e33a]属性リンク[#]によって、[#f2e33a]聖属性[#]の仲間全員のマナ生成が104%増加する。この効果は解除できない。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。"
 "dark_god_grimble","Grimble","--- Passives ---
 
 - Resist Sand Damage -
@@ -1471,10 +1467,10 @@ This character has innate resistance against incoming [#!]negative effects and d
 This character has innate resistance against [#!]Sand[#] damage.","--- Passives ---
 
 - 砂ダメージ耐性 -
-このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・All enemies receive 630 Burn damage over 3 turns. This effect can't be cleansed.
+このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・All enemies receive 630 Burn damage over 3 turns.
 ・All allies get 94% defense against [#41d8fe]Ice[#] for 4 turns.
 ・All allies get Defense Status Ailment Protection for 5 turns. New status ailments affecting defense will be replaced by 163% defense for 163 turns.
-・[#ff9f81]Element Link[#] gives all [#ff9f81]Fire[#] allies -90% critical chance for 6 turns. This effect can't be dispelled.","・3ターンの間、敵全員に630の燃焼ダメージを与える。この効果は浄化できない。
+・[#ff9f81]Element Link[#] gives all [#ff9f81]Fire[#] allies -90% critical chance for 6 turns. This effect can't be dispelled.","・3ターンの間、敵全員に630の燃焼ダメージを与える。
 ・4ターンの間、仲間全員の[#41d8fe]氷属性[#]に対する防御力が94%になる。
 ・5ターンの間、仲間全員が防御力ステータス異常耐性を得る。163ターンの間、防御力に影響する新たなステータス異常を受けると、防御力が163%になる。
 ・6ターンの間、[#ff9f81]属性リンク[#]によって、[#ff9f81]炎属性[#]の仲間全員のクリティカル攻撃を与える確率が、-90%になる。この効果は解除できない。","","","",""
@@ -1515,7 +1511,7 @@ This character has innate resistance against [#!]Minion removal[#].","--- Passiv
 ・Deals 165% damage to a random enemy at the end of each turn for as long as the caster has boosted health. This effect can't be dispelled.","・ランダムな敵1体に165%のダメージを与える。
 ・術者のライフを240回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
 ・術者のライフが回復している間、仲間全員がマナ奪取に対して耐性を持つ。この効果は解除できない。
-・術者のHPが回復している間、ランダムな敵1体に毎ターン終了時に165%のダメージを与える。この効果は解除できない。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・術者のHPが回復している間、ランダムな敵1体に毎ターン終了時に165%のダメージを与える。この効果は解除できない。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "s3_nordri","Nordri","","","・Deals 245% damage to the target and minor damage to nearby enemies.
 ・The target and nearby enemies get -54% defense against [#41d8fe]Ice[#] for 4 turns.","・ターゲットに245%ダメージ、近くにいる敵に小ダメージを与える。
 ・4ターンの間、ターゲットと近くにいる敵の[#41d8fe]氷属性[#]に対する防御力が-54%になる。","","","",""
@@ -1528,11 +1524,11 @@ This character has innate resistance against [#!]Minion removal[#].","--- Passiv
 ・4ターンの間、ターゲットに272の出血ダメージを与える。
 ・4ターンの間、術者のHPが592回復する。
 ・4ターン以内に術者が倒れた場合、次のターン開始時に、32%のライフを保有した状態で復活する。すべてのステータス効果と累積効果は、術者が倒れた時に解除される。","This includes counterattacks.","対象には「反撃」も含まれる。","",""
-"s3_sif","Sif","","","・The caster and nearby allies counterattack with 100% of the damage received for 4 turns. This effect cannot be dispelled.
+"s3_sif","Sif","","","・The caster and nearby allies counterattack with 100% of the damage received for 4 turns.
 ・The caster and nearby allies reduce all received damage by -102% for 4 turns.
-・The caster and nearby allies get 24% mana generation for 4 turns. This effect can't be dispelled.","・4ターンの間、術者と付近の仲間が受けたダメージの100%で反撃する。この効果は解除できない。
+・The caster and nearby allies get 24% mana generation for 4 turns.","・4ターンの間、術者と近くにいる仲間が受けたダメージの100%で反撃する。
 ・4ターンの間、術者と近くにいる仲間の受けるダメージが-102%になる。
-・4ターンの間、術者と近くにいる仲間のマナ生成が24%になる。この効果は解除できない。","","","",""
+・4ターンの間、術者と近くにいる仲間のマナ生成が24%になる。","","","",""
 "s3_mireweave","Mireweave","","","・Deals 150% damage to the target and nearby enemies.
 ・[#!]Stack (Max: 10):[#] The caster gets 10% attack.","・ターゲットと近くにいる敵に150%のダメージを与える。
 ・[#!]累積効果(最大：10):[#]術者の攻撃力が10%になる。","","","",""
@@ -1550,11 +1546,11 @@ This character has innate resistance against [#!]Minion removal[#].","--- Passiv
 ・The caster and nearby allies are immune to buff dispels and reallocations for 3 turns.
 ・[#!]Enhanced Defense Ailment[#]: The target and nearby enemies get -98% defense against Special Skills. This effect lasts until the enemy takes damage from a Special Skill -98 times.
 [*] After the [#!]Enhanced Defense Ailment[#] ends or is removed or replaced, dispels buffs on the enemy.
-・The caster and nearby allies get 24% mana generation for 3 turns. This effect can't be dispelled.","・術者と近くにいる仲間のライフを37%回復する。
+・The caster and nearby allies get 24% mana generation for 3 turns.","・術者と近くにいる仲間のライフを37%回復する。
 ・3ターンの間、術者と近くにいる仲間がバフ解除および再割り当てに耐性を持つ。
 ・[#!]強化防御異常[#]：特殊スキルに対するターゲットと近くの敵の防御力が-98%になる。この効果は、その敵が特殊スキルにより-98回ダメージを受けるまで継続する。
 [*][#!]強化防御異常[#]が終了するか、解除されるか、置き換えられると、その敵のバフも解除される。
-・3ターンの間、術者と近くにいる仲間のマナ生成が24%になる。この効果は解除できない。","The immunity also includes this effect itself.","耐性には、この効果自体も含まれる。","",""
+・3ターンの間、術者と近くにいる仲間のマナ生成が24%になる。","The immunity also includes this effect itself.","耐性には、この効果自体も含まれる。","",""
 "s3_shadereave","Shadereave","","","・All allies get 30% attack for 4 turns.
 ・All allies get -84% critical chance for 4 turns.
 ・If any ally is defeated during the next 4 turns, they are resurrected in the beginning of their next turn with 100% health. All status effects and stacks are removed when the ally is defeated.","・4ターンの間、仲間全員の攻撃力が30%になる。
@@ -1605,10 +1601,8 @@ This character has innate resistance against [#!]Minion removal[#].","--- Passiv
 ・4ターンの間、術者と近くにいる仲間の防御力が46%になる。この効果は浄化できない。
 ・4ターンの間、術者と近くにいる仲間のHPが720回復する。
 ・4ターンの間、各ターン終了時に術者のステータス異常を浄化する。","","","",""
-"s3_alfrike","Alfrike","","","・Casts 280 Dark Cubes to random enemies.
-[*]Dark Cube reduces max health of the target by 3. The effect is stronger against targets with boosted health.
-・All enemies automatically cast [#!]Mindless Attack[#] on a random ally when mana is full at the start of a turn during 3 turns.","・ランダムな敵数体に向けて、280個のダークキューブを放つ。
-[*]ダークキューブは、ターゲットの最大HPを3減少させる。HPをブーストされたターゲットにより効果がある。
+"s3_alfrike","Alfrike","","","・Deals 100% damage to hit targets.
+・All enemies automatically cast [#!]Mindless Attack[#] on a random ally when mana is full at the start of a turn during 3 turns.","・攻撃したターゲットに100%のダメージを与える。
 ・3ターンの間、マナが満タンの場合に限り、敵全員が自動的に[#!]マインドレスアタック[#]をランダムな仲間に放つ。","Max health can't get lower than 280% of the original max health.
 
 ・ Any boosted health is reduced by an additional 3.","最大ライフは元の最大値の280%以下にはできない。
@@ -1644,9 +1638,9 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals 175% damage to the target and nearby enemies.
-・Target and nearby enemies receive 344 Poison damage over 2 turns. This effect can't be cleansed.
+・The target and nearby enemies receive 344 Poison damage over 2 turns.
 ・[#e290ff]Element Link[#] gives all [#e290ff]Dark[#] allies 130% defense against Special Skills for 4 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵に175%のダメージを与える。
-・2ターンの間、ターゲットと近くにいる敵に344の毒ダメージを与える。この効果は浄化できない。
+・2ターンの間、ターゲットと近くにいる敵に344の毒ダメージを与える。
 ・[#e290ff]属性リンク[#]によって、[#e290ff]闇属性[#]の仲間全員の特殊スキルに対する防御力が130%増加する(4ターン)。この効果は解除不可","","","",""
 "ice_god_raffaele","Raffaele","--- Passives ---
 
@@ -1671,14 +1665,14 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 ・[#!]累積効果（最大：0.2）：[#]毎ターンの最後に、敵全員に39のフロストダメージを与える。
 ・[#!]累積効果(最大：-100)：[#]敵全員のマナ生成が-6%になる。","","","",""
 "easter_chick_jr","Chick Jr.","","","・Deals 180% damage to all enemies.
-・The caster gets -20% attack for 3 turns.","・敵全員に180%のダメージを与える。
-・3ターンの間、術者の攻撃力が-20%になる。","","","",""
+・The caster gets -20% attack for 3 turns. This effect can't be cleansed.","・敵全員に180%のダメージを与える。
+・3ターンの間、術者の攻撃力が-20%になる。この効果は浄化できない。","","","",""
 "easter_lady_woolerton","Lady Woolerton","","","・Recovers 40% health for all allies.
-・The caster can't gain mana for 2 turns. This effect can't be cleansed.","・仲間全員のライフを40%回復する。
-・2ターンの間、術者がマナを獲得できなくなる。この効果は浄化できない。","","","",""
+・The caster can't gain mana for 2 turns.","・仲間全員のライフを40%回復する。
+・術者がマナを生成できなくなる(2ターン)","","","",""
 "easter_sir_roostley","Sir Roostley","","","・The attack chains through all the enemies who are adjacent to any hit enemy.
-・The caster gets -20% attack for 3 turns.","・この攻撃は、攻撃した敵のすぐ隣にいる敵全員に連鎖する。
-・3ターンの間、術者の攻撃力が-20%になる。","","","",""
+・The caster gets -20% attack for 3 turns. This effect can't be cleansed.","・この攻撃は、攻撃した敵のすぐ隣にいる敵全員に連鎖する。
+・3ターンの間、術者の攻撃力が-20%になる。この効果は浄化できない。","","","",""
 "easter_killhare","Killhare","","","・Deals 300% damage to all enemies.
 ・All allies except the caster get -20% defense for 3 turns. This effect can't be cleansed.","・敵全員に300%のダメージを与える。
 ・3ターンの間、術者以外の仲間全員の防御力が-20%になる。この効果は浄化できない。","","","",""
@@ -1734,12 +1728,12 @@ This character has innate resistance against [#!]Sand[#] damage.","--- Passives 
 
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals 320% damage to the target.
-・Reduces the mana of the target by 50%.
-・The target automatically casts [#!]Mindless Attack[#] on a random ally when mana is full at the start of a turn during 3 turns. This effect can't be cleansed.
+・Increases the mana of the target by 50%.
+・The target automatically casts [#!]Mindless Attack[#] on a random ally when mana is full at the start of a turn during 3 turns.
 ・[#70e92f]Element Link[#] gives all [#70e92f]Nature[#] allies 130% defense against Special Skills for 4 turns. This effect can't be dispelled.","・ターゲットに320%のダメージを与える。
-・ターゲットのマナが50%減少する。
-・3ターンの間、マナが満タンの場合に限り、ターン開始時にターゲットが自動的に[#!]マインドレスアタック[#]をランダムな仲間に放つ。この効果は浄化できない。
-・[#70e92f]属性リンク[#]によって、[#70e92f]自然属性[#]の仲間全員の特殊スキルに対する防御力が130%増加する(4ターン)。この効果は解除不可","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・ターゲットのマナが50%増加する。
+・3ターンの間、マナが満タンの場合に限り、ターン開始時にターゲットが自動的に[#!]マインドレスアタック[#]をランダムな仲間に放つ。
+・[#70e92f]属性リンク[#]によって、[#70e92f]自然属性[#]の仲間全員の特殊スキルに対する防御力が130%増加する(4ターン)。この効果は解除不可","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "fire_god_noor","Noor","--- Passives ---
 
 - Sparrow Summoner -
@@ -1804,11 +1798,11 @@ x1 Mana Charge:
 
 x2 Mana Charge:
 ・Deals 340% damage to the target and nearby enemies.
-・The target and nearby enemies receive 64 Burn damage over 4 turns. This effect can't be cleansed.
+・The target and nearby enemies receive 64 Burn damage over 4 turns.
 
 x3 Mana Charge:
 ・Deals 380% damage to all enemies.
-・All enemies receive 64 Burn damage over 5 turns. This effect can't be cleansed.","・マナチャージが100%/200%/300%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
+・All enemies receive 64 Burn damage over 5 turns.","・マナチャージが100%/200%/300%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
 
 x1マナチャージ:
 ・ターゲットに300%のダメージを与える。
@@ -1816,17 +1810,17 @@ x1マナチャージ:
 
 x2マナチャージ:
 ・ターゲットと近くにいる敵に340%のダメージを与える。
-・4ターンの間、ターゲットと近くにいる敵に64の燃焼ダメージを与える。この効果は浄化できない。
+・4ターンの間、ターゲットと近くにいる敵に64の燃焼ダメージを与える。
 
 x3マナチャージ:
 ・敵全員に380%のダメージを与える。
-・5ターンの間、敵全員に64の燃焼ダメージを与える。この効果は浄化できない。","","","",""
+・5ターンの間、敵全員に64の燃焼ダメージを与える。","","","",""
 "ninja_mica","Mica","","","・Special Skill has a different effect when charged with 100%/200%/300% mana:
 
 x1 Mana Charge:
 ・All allies become [#!]Soul Connected[#] for 2 turns. Soul Connected allies share received damage.
 ・All allies get 25% defense for 2 turns.
-・All allies get 24% mana generation for 2 turns. This effect can't be dispelled.
+・All allies get 24% mana generation for 2 turns.
 
 x2 Mana Charge:
 ・All allies receive 64 Burn damage over 4 turns.
@@ -1836,12 +1830,12 @@ x2 Mana Charge:
 x3 Mana Charge:
 ・All allies receive 64 Burn damage over 5 turns.
 ・All allies get 73% defense for 5 turns.
-・All allies get 38% mana generation for 5 turns. This effect can't be dispelled.","・マナチャージが100%/200%/300%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
+・All allies get 38% mana generation for 5 turns.","・マナチャージが100%/200%/300%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
 
 x1マナチャージ:
 ・2ターンの間、仲間全員に[#!]ソウル・コネクト[#]が発動する。ソウル・コネクトによって魂が繋がった仲間同士は被ダメージを共有する。
 ・2ターンの間、仲間全員の防御力が25%になる。
-・すべての仲間がマナ生成24%を得る(2ターン)。この効果は解除不可
+・2ターンの間、仲間全員のマナ生成が24%になる。
 
 x2マナチャージ:
 ・4ターンの間、仲間全員に64の燃焼ダメージを与える。
@@ -1851,12 +1845,12 @@ x2マナチャージ:
 x3マナチャージ:
 ・5ターンの間、仲間全員に64の燃焼ダメージを与える。
 ・5ターンの間、仲間全員の防御力が73%になる。
-・すべての仲間がマナ生成38%を得る(5ターン)。この効果は解除不可","","","",""
+・5ターンの間、仲間全員のマナ生成が38%になる。","","","",""
 "ninja_garnet","Garnet","","","・Special Skill has a different effect when charged with 100%/200%/300% mana:
 
 x1 Mana Charge:
 ・Boosts health of all allies by 230. Boosted health can exceed max HP.
-・All allies are immune to new status ailments for 2 turns.
+・All allies are immune to new status ailments for 2 turns. This effect can't be dispelled.
 
 x2 Mana Charge:
 ・Boosts health of all allies by 450. Boosted health can exceed max HP.
@@ -1868,7 +1862,7 @@ x3 Mana Charge:
 
 x1マナチャージ:
 ・仲間全員のHPを230回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
-・2ターンの間、仲間全員が新たなステータス異常を受けない。
+・2ターンに渡って、仲間全員が新たなステータス異常を無効化する。この効果は解除できない。
 
 x2マナチャージ:
 ・仲間全員のHPを450回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
@@ -1907,7 +1901,7 @@ x2マナチャージ:
 x3マナチャージ:
 ・敵全員に300%のダメージを与える。
 ・敵全員のマナが-25%減少する。
-・5ターンの間、仲間全員に64の燃焼ダメージを与える。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
+・5ターンの間、仲間全員に64の燃焼ダメージを与える。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。"
 "ninja_cobalt","Cobalt","","","・Special Skill has a different effect when charged with 100%/200%/300% mana:
 
 x1 Mana Charge:
@@ -2004,9 +1998,9 @@ When this character casts their Special Skill, they transfer the newest cleansab
 - バフ奪取 -
 このキャラクターが特殊スキルを使用すると、自らに付与された、最も新しい浄化可能なステータス異常をターゲットに移行できる。特殊スキルが特定のターゲットを攻撃できない性質のものである場合は、ランダムな敵がターゲットとして選ばれる。このキャラクターに浄化可能なステータス異常が付与されていない場合は、HPが50%回復する。","・Deals 200% damage to all enemies.
 ・The damage is increased by 45% per each defeated enemy.
-・All enemies get -44% defense for 4 turns. This effect can't be dispelled.","・敵全員に200%のダメージを与える。
+・All enemies get -44% defense for 4 turns.","・敵全員に200%のダメージを与える。
 ・敵1体が倒れる度に、攻撃力が45%増加する。
-・4ターンの間、敵全員の防御力が-44%になる。この効果は解除できない。","","","",""
+・4ターンの間、敵全員の防御力が-44%になる。","","","",""
 "halloween_francine","Francine","--- Passives ---
 
 - Steal Buff -
@@ -2014,8 +2008,8 @@ When this character casts their Special Skill, they transfer the newest cleansab
 
 - バフ奪取 -
 このキャラクターが特殊スキルを使用すると、自らに付与された、最も新しい浄化可能なステータス異常をターゲットに移行できる。特殊スキルが特定のターゲットを攻撃できない性質のものである場合は、ランダムな敵がターゲットとして選ばれる。このキャラクターに浄化可能なステータス異常が付与されていない場合は、HPが50%回復する。","・Deals 225% damage to the target and nearby enemies.
-・Cleanses status ailments from all allies at the end of each turn for 3 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵に225%のダメージを与える。
-・3ターン毎の、ターン終了時に仲間全員のステータス異常を浄化する。この効果は解除不可","","","",""
+・Cleanses status ailments from all allies at the end of each turn for 3 turns.","・ターゲットと近くにいる敵に225%のダメージを与える。
+・3ターンの間、各ターン終了時に仲間全員のステータス異常を浄化する。","","","",""
 "halloween_vanda","Vanda","--- Passives ---
 
 - Steal Buff -
@@ -2024,9 +2018,9 @@ When this character casts their Special Skill, they transfer the newest cleansab
 - バフ奪取 -
 このキャラクターが特殊スキルを使用すると、自らに付与された、最も新しい浄化可能なステータス異常をターゲットに移行できる。特殊スキルが特定のターゲットを攻撃できない性質のものである場合は、ランダムな敵がターゲットとして選ばれる。このキャラクターに浄化可能なステータス異常が付与されていない場合は、HPが50%回復する。","・Deals 125% damage to all enemies.
 ・The caster steals 61% of any healing applied to all enemies for 2 turns.
-・All allies are immune to new status ailments for 2 turns.","・敵全員に125%のダメージを与える。
+・All allies are immune to new status ailments for 2 turns. This effect can't be dispelled.","・敵全員に125%のダメージを与える。
 ・2ターンの間、術者が敵全員に適用されたあらゆる種類の回復の61%を盗む。
-・2ターンの間、仲間全員が新たなステータス異常を受けない。","","","",""
+・2ターンに渡って、仲間全員が新たなステータス異常を無効化する。この効果は解除できない。","","","",""
 "halloween_jack","Jack","--- Passives ---
 
 - Steal Buff -
@@ -2157,12 +2151,20 @@ Received damage from Special Skills is reduced by [#!]80%[#] for this character.
 ・[#!]Wither:[#] All enemies get 0 attack.
 ・All enemies receive Corrosive Frost for 4 turns. The Corrosive Frost deals 0 Frost damage and lowers the target's attack by -65% each turn.","・敵全員に190%のダメージを与える。
 ・[#!]弱化：[#]敵全員の攻撃力が0減少する。
-・4ターンの間、敵全員に腐食性フロストを与える。腐食性フロストは、ターン毎に0のフロストダメージを与え、ターゲットの攻撃力が-65%になる。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。","",""
+・4ターンの間、敵全員に腐食性フロストを与える。腐食性フロストは、ターン毎に0のフロストダメージを与え、ターゲットの攻撃力が-65%になる。","The duration modification affects both cleansable and uncleansable effects.
+・
+・If the duration of any effect is reduced to zero, the effect is considered as having expired naturally.","持続時間変更は浄化可能な効果および浄化不可な効果両方に影響を及ぼす。
+・
+・効果の持続時間がゼロになった場合、その効果は自然に失効したものと見なされる。","",""
 "villain_asterius","Asterius","","","・Deals 360% damage to the target and nearby enemies.
 ・[#!]Wither:[#] The target and nearby enemies get 0 attack and 0 defense.
 ・The target and nearby enemies receive Corrosive Burn for 3 turns. The Corrosive Burn deals 0 Burn damage and lowers the target's defense by -65% each turn.","・ターゲットと近くにいる敵に360%のダメージを与える。
 ・[#!]弱化：[#]ターゲットと近くにいる敵の攻撃力が0、防御力が0減少する。
-・3ターンの間、ターゲットと近くにいる敵に腐食性燃焼を与える。腐食性燃焼は、ターン毎に0の燃焼ダメージを与え、ターゲットの防御力が-65%ずつ減少する。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。","",""
+・3ターンの間、ターゲットと近くにいる敵に腐食性燃焼を与える。腐食性燃焼は、ターン毎に0の燃焼ダメージを与え、ターゲットの防御力が-65%ずつ減少する。","The duration modification affects both cleansable and uncleansable effects.
+・
+・If the duration of any effect is reduced to zero, the effect is considered as having expired naturally.","持続時間変更は浄化可能な効果および浄化不可な効果両方に影響を及ぼす。
+・
+・効果の持続時間がゼロになった場合、その効果は自然に失効したものと見なされる。","",""
 "villain_karnov","Karnov","","","・Deals 290% damage to all enemies.
 ・Alters the power of all [##elementpurple]Dark[#] shields on the board. When an attacking Hero casts the special, the shields become enhanced and give 64% more mana. When a defending Hero casts the special, the shields become weakened and give 64% less mana.","・敵全員に290%のダメージを与える。
 ・ボード上にあるすべての[##elementpurple]闇属性[#]の盾を変容する。攻撃側の英雄が特殊スキルを使用すると、盾が強化され、マナが64%になる。防衛側の英雄が特殊スキルを使用すると、盾が弱体化され、マナが64%になる。","","","",""
@@ -2170,19 +2172,25 @@ Received damage from Special Skills is reduced by [#!]80%[#] for this character.
 ・[#!]Wither:[#] The target and nearby enemies get 0 attack and 0 defense.
 ・The target and nearby enemies receive Corrosive Poison for 4 turns. The Corrosive Poison deals 0 Poison damage and lowers the target's mana generation by -65% each turn.","・ターゲットに550%のダメージを与える。
 ・[#!]弱化：[#]ターゲットと近くにいる敵の攻撃力が0、防御力が0減少する。
-・4ターンの間、ターゲットと近くにいる敵に腐食性毒を与える。腐食性毒は、ターン毎に0の毒ダメージを与え、ターゲットのマナ生成が-65%になる。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。","",""
+・4ターンの間、ターゲットと近くにいる敵に腐食性毒を与える。腐食性毒は、ターン毎に0の毒ダメージを与え、ターゲットのマナ生成が-65%になる。","The duration modification affects both cleansable and uncleansable effects.
+・
+・If the duration of any effect is reduced to zero, the effect is considered as having expired naturally.","持続時間変更は浄化可能な効果および浄化不可な効果両方に影響を及ぼす。
+・
+・効果の持続時間がゼロになった場合、その効果は自然に失効したものと見なされる。","",""
 "villain_isrod","Isrod","","","・Deals 260% damage to the target and nearby enemies.
-・The caster and nearby allies counterattack with 110% of the damage received for 3 turns. This effect cannot be dispelled.
-・The caster and nearby allies get [#!]Sticky Surface[#] for 3 turns. This effect can't be dispelled.
-[*][#!]Sticky Surface[#]: Steals 33 random dispellable buff or Growth effect from an attacking enemy.","・ターゲットと近くにいる敵に260%のダメージを与える。
-・3ターンの間、術者と付近の仲間が受けたダメージの110%で反撃する。この効果は解除できない。
-・3ターンの間、術者と近くにいる仲間が[#!]粘着層[#]を獲得する。この効果は解除できない。
-[*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで33個の解除可能なバフか成長効果を奪う。","","","",""
+・The caster and nearby allies counterattack with 110% of the damage received for 3 turns.
+・The caster and nearby allies regenerate a small amount of mana for each counterattack for 3 turns. The effect gets diminished for consecutive activations during the same turn.","・ターゲットと近くにいる敵に260%のダメージを与える。
+・3ターンの間、術者と近くにいる仲間が受けたダメージの110%で反撃する。
+・3ターンの間、術者と近くにいる仲間が反撃するたびに、少量のマナを生成する。同じターン中に連続して実行した場合、効果は減少する。","","","",""
 "villain_ingolf","Ingolf","","","・Deals 280% damage to all enemies.
 ・[#!]Wither:[#] All enemies get 0 attack.
 ・All enemies receive Corrosive Poison for 4 turns. The Corrosive Poison deals 0 Poison damage and lowers the target's mana generation by -65% each turn.","・敵全員に280%のダメージを与える。
 ・[#!]弱化：[#]敵全員の攻撃力が0減少する。
-・4ターンの間、敵全員に腐食性毒を与える。腐食性毒は、ターン毎に0の毒ダメージを与え、ターゲットのマナ生成が-65%になる。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。","",""
+・4ターンの間、敵全員に腐食性毒を与える。腐食性毒は、ターン毎に0の毒ダメージを与え、ターゲットのマナ生成が-65%になる。","The duration modification affects both cleansable and uncleansable effects.
+・
+・If the duration of any effect is reduced to zero, the effect is considered as having expired naturally.","持続時間変更は浄化可能な効果および浄化不可な効果両方に影響を及ぼす。
+・
+・効果の持続時間がゼロになった場合、その効果は自然に失効したものと見なされる。","",""
 "villain_sanngrior","Sanngrior","","","・Boosts health of the caster and nearby allies by 650. Boosted health can exceed max HP.
 ・The caster and nearby allies get 94% defense against [#70e92f]Nature[#] for 3 turns.","・術者と近くにいる仲間のライフを650回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
 ・3ターンの間、術者と近くにいる仲間の[#70e92f]自然属性[#]に対する防御力が94%になる。","","","",""
@@ -2284,8 +2292,8 @@ The first [#!]8[#] times this character casts a Special Skill that deals damage,
 
 - 特殊スキルによるダメージの増加 -
 このキャラクターが攻撃系の特殊スキルを初めて使用した場合、[#!]8[#]回目まで、攻撃力が[#!]30%[#]増加する。","・Deals 180% damage to all enemies.
-・All enemies get -34% defense for 3 turns. This effect can't be dispelled.","・敵全員に180%のダメージを与える。
-・3ターンの間、敵全員の防御力が-34%になる。この効果は解除できない。","","","",""
+・All enemies get -34% defense for 3 turns.","・敵全員に180%のダメージを与える。
+・3ターンの間、敵全員の防御力が-34%になる。","","","",""
 "s4_octros","Octros","--- Passives ---
 
 - Increase Buff Duration -
@@ -2323,10 +2331,10 @@ Duration of the first [#!]24[#] buffs this character receives from Special Skill
 
 - バフの持続時間の増加 -
 このキャラクターが特殊スキルによって獲得した最初の[#!]24[#]個のバフの持続時間が、[#!]-100.8[#]ターン分増加する。","・Recovers 40% health for all allies.
-・Increases the mana of all allies by 10%.
+・Reduces the mana of all allies by 10%.
 ・Alters the power of all [##elementpurple]Dark[#] shields on the board. When an attacking Hero casts the special, the shields become enhanced and give 64% more mana. When a defending Hero casts the special, the shields become weakened and give 64% less mana.","・仲間全員のライフを40%回復する。
-・仲間全員のマナが10%増加する。
-・ボード上にあるすべての[##elementpurple]闇属性[#]の盾を変容する。攻撃側の英雄が特殊スキルを使用すると、盾が強化され、マナが64%になる。防衛側の英雄が特殊スキルを使用すると、盾が弱体化され、マナが64%になる。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","",""
+・仲間全員のマナが10%減少する。
+・ボード上にあるすべての[##elementpurple]闇属性[#]の盾を変容する。攻撃側の英雄が特殊スキルを使用すると、盾が強化され、マナが64%になる。防衛側の英雄が特殊スキルを使用すると、盾が弱体化され、マナが64%になる。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","",""
 "s4_griffin","Griffin","--- Passives ---
 
 - Increased Special Skill Damage -
@@ -2342,8 +2350,8 @@ The first [#!]8[#] times this character casts a Special Skill that deals damage,
 Duration of the first [#!]24[#] buffs this character receives from Special Skills is increased by [#!]-99.2[#] turn.","--- Passives ---
 
 - バフの持続時間の増加 -
-このキャラクターが特殊スキルによって獲得した最初の[#!]24[#]個のバフの持続時間が、[#!]-99.2[#]ターン分増加する。","・The caster and nearby allies counterattack with 125% of the damage received for 4 turns. This effect cannot be dispelled.
-・The caster and nearby allies get 25% attack for 4 turns.","・4ターンの間、術者と付近の仲間が受けたダメージの125%で反撃する。この効果は解除できない。
+このキャラクターが特殊スキルによって獲得した最初の[#!]24[#]個のバフの持続時間が、[#!]-99.2[#]ターン分増加する。","・The caster and nearby allies counterattack with 125% of the damage received for 4 turns.
+・The caster and nearby allies get 25% attack for 4 turns.","・4ターンの間、術者と近くにいる仲間が受けたダメージの125%で反撃する。
 ・4ターンの間、術者と近くにいる仲間の攻撃力が25%になる。","","","",""
 "s4_zila_lei","Zila Lei","--- Passives ---
 
@@ -2478,9 +2486,9 @@ Duration of the first [#!]24[#] buffs this character receives from Special Skill
 ・3ターンの間、ターゲットと近くにいる敵の防御力が-34%になる。","","","",""
 "circus_dandre","D'Andre","","","・Recovers 35% health for all allies.
 ・All allies with a cleansable status ailment that affects defense get 150% defense for 150 turns.
-・All allies get 24% mana generation for 3 turns. This effect can't be dispelled.","・仲間全員のライフを35%回復する。
+・All allies get 24% mana generation for 3 turns.","・仲間全員のライフを35%回復する。
 ・防御力に影響する浄化可能なステータス異常を持つ仲間全員の防御力が150%になる (150ターン)
-・すべての仲間がマナ生成24%を得る(3ターン)。この効果は解除不可","","","",""
+・3ターンの間、仲間全員のマナ生成が24%になる。","","","",""
 "circus_eichbelborg","Eichbelborg","","","・Deals 340% damage to the target.
 ・Deals 0% damage to the enemy with the highest remaining HP. Deals 0% damage to all other enemies.
 ・All allies get -44% defense for 4 turns.","・ターゲットに340%のダメージを与える。
@@ -2491,9 +2499,9 @@ Duration of the first [#!]24[#] buffs this character receives from Special Skill
 ・仲間全員のHPが192回復(3ターン)。この効果は解除不可","","","",""
 "circus_whacker","Whacker","","","・Deals 315% damage to the target.
 ・Deals 0% damage to the enemy with the highest remaining HP. Deals 0% damage to all other enemies.
-・All [##elementred]Fire[#] allies get -54% attack for 3 turns.","・ターゲットに315%のダメージを与える。
+・All allies get -54% attack for 3 turns.","・ターゲットに315%のダメージを与える。
 ・残りのHPが最も高い敵に0%のダメージを与える。その他の敵全員に0%のダメージを与える。
-・3ターンの間、[##elementred]炎属性[#]の仲間全員の攻撃力が-54%になる。","","","",""
+・3ターンの間、仲間全員の攻撃力が-54%になる。","","","",""
 "circus_theobald","Theobald","","","・Deals 370% damage to the enemy with the highest remaining HP. Deals 225% damage to all other enemies.
 ・All allies reflect all status effects and 115% damage back to the attacker and block other negative effects from enemies' [##elementgreen]Nature[#] Special Skills for 4 turns.
 ・All allies get 145% attack, and a further 20% increase every time they are hit during 4 turns, up to 40% attack.","・残りのHPが最も高い敵に370%のダメージを与える。その他の敵全員に225%のダメージを与える。
@@ -2515,9 +2523,9 @@ Duration of the first [#!]24[#] buffs this character receives from Special Skill
 "circus_emilio","Emilio","","","・[#!]Wither:[#] All enemies get 64 attack.","・[#!]弱化：[#]敵全員の攻撃力が64減少する。","","","",""
 "circus_faline","Faline","","","・Deals 330% damage to the target and nearby enemies.
 ・[#!]Wither:[#] The target and nearby enemies get 0 attack and 0 defense.
-・Cleanses status ailments from all allies at the end of each turn for 3 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵に330%のダメージを与える。
+・Cleanses status ailments from all allies at the end of each turn for 3 turns.","・ターゲットと近くにいる敵に330%のダメージを与える。
 ・[#!]弱化：[#]ターゲットと近くにいる敵の攻撃力が0、防御力が0減少する。
-・3ターン毎の、ターン終了時に仲間全員のステータス異常を浄化する。この効果は解除不可","","","",""
+・3ターンの間、各ターン終了時に仲間全員のステータス異常を浄化する。","","","",""
 "holy_god_devana","Devana","--- Passives ---
 
 - Resist Sand Damage -
@@ -2627,7 +2635,7 @@ When this character casts their Special Skill, they have a [#!]50%[#] chance to 
 
 x1 Mana Charge:
 ・All enemies get -20% attack for 3 turns. This effect can't be cleansed.
-・All enemies get -20% defense for 3 turns. This effect can't be dispelled.
+・All enemies get -20% defense for 3 turns.
 ・All enemies receive 252 Poison damage over 3 turns.
 
 x2 Mana Charge:
@@ -2637,7 +2645,7 @@ x2 Mana Charge:
 
 x1マナチャージ:
 ・3ターンの間、敵全員の攻撃力が-20%になる。この効果は浄化不可。
-・3ターンの間、敵全員の防御力が-20%になる。この効果は解除できない。
+・3ターンの間、敵全員の防御力が-20%になる。
 ・3ターンの間、敵全員に252の毒ダメージを与える。
 
 x2マナチャージ:
@@ -2659,7 +2667,7 @@ When this character casts their Special Skill, they have a [#!]50%[#] chance to 
 [#!]100%[#]になる。","・Special Skill has a different effect when charged with 100%/200% mana:
 
 x1 Mana Charge:
-・The target and nearby enemies receive 248 Burn damage over 2 turns. This effect can't be cleansed.
+・The target and nearby enemies receive 248 Burn damage over 2 turns.
 ・If the caster is defeated during the next 2 turns, they are resurrected in the beginning of their next turn with 32% health. All status effects and stacks are removed when the caster is defeated.
 
 x2 Mana Charge:
@@ -2668,7 +2676,7 @@ x2 Mana Charge:
 ・All allies receive 64 Burn damage over 3 turns.","・マナチャージが100%/200%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
 
 x1マナチャージ:
-・2ターンの間、ターゲットと近くにいる敵に248の燃焼ダメージを与える。この効果は浄化できない。
+・2ターンの間、ターゲットと近くにいる敵に248の燃焼ダメージを与える。
 ・2ターン以内に術者が倒れた場合、次のターン開始時に、32%のライフを保有した状態で復活する。すべてのステータス効果と累積効果は、術者が倒れた時に解除される。
 
 x2マナチャージ:
@@ -2771,16 +2779,16 @@ x1 Mana Charge:
 ・All allies get 63% defense for 3 turns.
 
 x2 Mana Charge:
-・All enemies receive 64 Burn damage over 5 turns. This effect can't be cleansed.
-・All enemies receive 64 Burn damage over 5 turns. This effect can't be cleansed.","・マナチャージが100%/200%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
+・All enemies receive 64 Burn damage over 5 turns.
+・All enemies receive 64 Burn damage over 5 turns.","・マナチャージが100%/200%の場合に特殊スキルを使用すると、それぞれ異なる効果を発揮する:
 
 x1マナチャージ:
 ・3ターンの間、仲間全員に[#!]ソウル・コネクト[#]が発動する。ソウル・コネクトによって魂が繋がった仲間同士は被ダメージを共有する。
 ・3ターンの間、仲間全員の防御力が63%になる。
 
 x2マナチャージ:
-・5ターンの間、敵全員に64の燃焼ダメージを与える。この効果は浄化できない。
-・5ターンの間、敵全員に64の燃焼ダメージを与える。この効果は浄化できない。","","","",""
+・5ターンの間、敵全員に64の燃焼ダメージを与える。
+・5ターンの間、敵全員に64の燃焼ダメージを与える。","","","",""
 "magic_kornel","Kornel","--- Passives ---
 
 - Damage on Special -
@@ -2998,10 +3006,10 @@ lang_id resolution failed.","--- Passives ---
 - 砂ダメージ耐性 -
 このキャラクターは[#!]砂[#]ダメージに対する耐性を最初から持つ","・Deals 400% damage to the target.
 ・This Special Skill never misses its targets.
-・The target and nearby enemies receive 381 Burn damage over 3 turns. This effect can't be cleansed.
+・The target and nearby enemies receive 381 Burn damage over 3 turns.
 ・[##elementred]Element Link[#] gives 10% increase for any healing received for all [##elementred]Fire[#] allies for 4 turns. This effect can't be dispelled.","・ターゲットに400%のダメージを与える。
 ・この特殊スキルはターゲットに必ず命中する。
-・3ターンの間、ターゲットと近くにいる敵に381の燃焼ダメージを与える。この効果は浄化できない。
+・3ターンの間、ターゲットと近くにいる敵に381の燃焼ダメージを与える。
 ・4ターンの間、[##elementred]属性リンク[#]によって、[##elementred]炎属性[#]の仲間全員の回復量が10%増加する。この効果は解除できない。","","","",""
 "ninja_topaz","Topaz","","","・Special Skill has a different effect when charged with 100%/200%/300% mana:
 
@@ -3064,7 +3072,7 @@ x2マナチャージ:
 x3マナチャージ:
 ・敵全員に370%のダメージを与える。
 ・敵全員のマナが-100%減少する。
-・4ターンの間、敵全員が新たなステータス効果バフの影響を受けなくなる。マナ生成バフを発動しようとすると32ターンの間、マナ生成が32%になる。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
+・4ターンの間、敵全員が新たなステータス効果バフの影響を受けなくなる。マナ生成バフを発動しようとすると32ターンの間、マナ生成が32%になる。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。","Targetable means characters that aren't defeated, ghosts, or affected by invisibility, abyss, or any similar effect.","「ターゲット可能」とは、戦闘不能になっていないキャラクターやゴーストではないユニット、不可視や奈落の底といった効果を受けていないユニットを意味する。"
 "ninja_zircon","Zircon","","","・Special Skill has a different effect when charged with 100%/200%/300% mana:
 
 x1 Mana Charge:
@@ -3105,8 +3113,8 @@ x1 Mana Charge:
 
 x2 Mana Charge:
 ・Deals 280% damage to the target and nearby enemies.
-・The target and nearby enemies receive 64 Burn damage over 3 turns. This effect can't be cleansed.
-・The target and nearby enemies receive 64 Burn damage over 3 turns. This effect can't be cleansed.
+・The target and nearby enemies receive 64 Burn damage over 3 turns.
+・The target and nearby enemies receive 64 Burn damage over 3 turns.
 
 x3 Mana Charge:
 ・Deals 320% damage to all enemies.
@@ -3120,8 +3128,8 @@ x1マナチャージ:
 
 x2マナチャージ:
 ・ターゲットと近くにいる敵に280%のダメージを与える。
-・3ターンの間、ターゲットと近くにいる敵に64の燃焼ダメージを与える。この効果は浄化できない。
-・3ターンの間、ターゲットと近くにいる敵に64の燃焼ダメージを与える。この効果は浄化できない。
+・3ターンの間、ターゲットと近くにいる敵に64の燃焼ダメージを与える。
+・3ターンの間、ターゲットと近くにいる敵に64の燃焼ダメージを与える。
 
 x3マナチャージ:
 ・敵全員に320%のダメージを与える。
@@ -3201,15 +3209,15 @@ This character recovers [#!]5%[#] health when they receive a buff or a positive 
 ・If an ally had Fiends they will be immune to new Fiends for 32 turns.","・仲間全員のHPを650回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
 ・仲間全員のフィエンドをすべて撃破する。
 ・仲間がフィエンドを保有する場合、32ターンに渡って、仲間の新たなフィエンドを無効化する。","","","",""
-"castle_wolf_ferant","Ferant","","","・The caster and nearby allies counterattack with 115% of the damage received for 5 turns. This effect cannot be dispelled.
-・The caster and nearby allies decrease 20% mana from the attacker on each counterattack for 5 turns. The effect gets diminished for consecutive activations during the same turn.","・5ターンの間、術者と付近の仲間が受けたダメージの115%で反撃する。この効果は解除できない。
+"castle_wolf_ferant","Ferant","","","・The caster and nearby allies counterattack with 115% of the damage received for 5 turns.
+・The caster and nearby allies decrease 20% mana from the attacker on each counterattack for 5 turns. The effect gets diminished for consecutive activations during the same turn.","・5ターンの間、術者と近くにいる仲間が受けたダメージの115%で反撃する。
 ・5ターンの間、術者と近くにいる仲間が反撃するたびに、攻撃者のマナを20%減少させる。同じターン中に連続して実行した場合、効果は減少する。","","","",""
 "castle_wolf_bertulf","Bertulf","","","・All allies get 100% normal attack for 4 turns. This effect can be active in addition to effects that alter attack in general. Normal attacks can have a total maximum of 160% increased power while this effect is active.","・4ターンの間、仲間全員の通常攻撃が100%になる。この効果は、通常攻撃を変化させる一般的な効果とは別に有効化することができる。この効果が有効な間、通常攻撃は最大で160%まで増加できる。","","","",""
 "castle_raven_wren","Wren","","","・The damage and the amount of enemies targeted will increase based on ally attack buffs:
 [*]If at least 5 allies currently on the battlefield have attack buffs, the damage will increase to 240% and it will affect nearby enemies.
-・All [##elementred]Fire[#] allies get -34% attack for 3 turns.","・仲間の攻撃バフに応じて、敵に与えるダメージと攻撃対象になる敵の数が増加する。
+・All allies get -34% attack for 3 turns.","・仲間の攻撃バフに応じて、敵に与えるダメージと攻撃対象になる敵の数が増加する。
 [*]戦場にいる仲間のうち最低5人が攻撃バフを受けている場合、ダメージが240%増加し、ターゲットの近くにいる敵にもダメージを与える。
-・3ターンの間、[##elementred]炎属性[#]の仲間全員の攻撃力が-34%になる。","","","",""
+・3ターンの間、仲間全員の攻撃力が-34%になる。","","","",""
 "castle_raven_aderyn","Aderyn","","","・Recovers 32% health for all allies.
 ・All enemies get 50% increase for any healing received for 4 turns. This effect can't be dispelled.","・仲間全員のライフを32%回復する。
 ・4ターンの間、敵全員の回復量が50%になる。この効果は解除できない。","","","",""
@@ -3308,8 +3316,8 @@ When an enemy summons any Minions by a Special Skill, this character summons a C
 このキャラクターが特殊
 スキルを使用すると、[#!]100%[#]の
 確率で次の効果を発揮できる：","・Boosts health of all allies by 480. Boosted health can exceed max HP.
-・All allies are immune to new status ailments for 4 turns.","・仲間全員のHPを480回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
-・4ターンの間、仲間全員が新たなステータス異常を受けない。","","","",""
+・All allies are immune to new status ailments for 4 turns. This effect can't be dispelled.","・仲間全員のHPを480回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
+・4ターンに渡って、仲間全員が新たなステータス異常を無効化する。この効果は解除できない。","","","",""
 "s5_eset","Eset","--- Passives ---
 
 - Effects on Special Skill -
@@ -3319,8 +3327,8 @@ When an enemy summons any Minions by a Special Skill, this character summons a C
 このキャラクターが特殊
 スキルを使用すると、[#!]100%[#]の
 確率で次の効果を発揮できる：","・Deals 250% damage per each [##elementpurple]Dark[#] shield on the board to all enemies, up to 250% damage in total.
-・Enhances all [##elementyellow]Holy[#] shields on the board. Enhanced shields give 64% less mana to Heroes.","・ボード上に[##elementpurple]闇属性[#]の盾が出現する度に、敵全員に250%の追加ダメージを与える。付与ダメージの上限は合計250%まで。
-・ボード上にあるすべての[##elementyellow]聖属性[#]の盾が「強化」される。盾が「強化」されると、英雄のマナが64%減少する","This effect targets the same enemy as the first hit if there are no other valid targets.","有効な他のターゲットがいない場合、最初の攻撃を受けた敵をもう一度攻撃する。","",""
+・Alters the power of all [##elementyellow]Holy[#] shields on the board. When an attacking Hero casts the special, the shields become enhanced and give 64% more mana. When a defending Hero casts the special, the shields become weakened and give 64% less mana.","・ボード上に[##elementpurple]闇属性[#]の盾が出現する度に、敵全員に250%の追加ダメージを与える。付与ダメージの上限は合計250%まで。
+・ボード上にあるすべての[##elementyellow]聖属性[#]の盾を変容する。攻撃側の英雄が特殊スキルを使用すると、盾が強化され、マナが64%になる。防衛側の英雄が特殊スキルを使用すると、盾が弱体化され、マナが64%になる。","This effect targets the same enemy as the first hit if there are no other valid targets.","有効な他のターゲットがいない場合、最初の攻撃を受けた敵をもう一度攻撃する。","",""
 "s5_maat","Ma'at","--- Passives ---
 
 - Effects on Special Skill -
@@ -3330,10 +3338,10 @@ When an enemy summons any Minions by a Special Skill, this character summons a C
 このキャラクターが特殊
 スキルを使用すると、[#!]100%[#]の
 確率で次の効果を発揮できる：","・Deals 195% damage to all enemies.
-・All enemies get -34% defense for 3 turns. This effect can't be dispelled.
-・All [##elementred]Fire[#] enemies get -24% attack for 3 turns. This effect can't be cleansed.","・敵全員に195%のダメージを与える。
-・3ターンの間、敵全員の防御力が-34%になる。この効果は解除できない。
-・3ターンの間、[##elementred]炎属性[#]の敵全員の攻撃力が-24%になる。この効果は浄化できない。","","","",""
+・All enemies get -34% defense for 3 turns.
+・All [#ff9f81]Fire[#] enemies get -24% attack for 3 turns.","・敵全員に195%のダメージを与える。
+・3ターンの間、敵全員の防御力が-34%になる。
+・3ターンの間、すべての[#ff9f81]炎属性[#]の敵の攻撃力が-24%になる。","","","",""
 "s5_set","Set","--- Passives ---
 
 - Effects on Special Skill -
@@ -3451,10 +3459,10 @@ Received damage from Special Skills is reduced by [#!]80%[#] for this character.
 ・術者以外の仲間全員のマナ生成が24%になる(3ターン)","","","",""
 "knights_treevil","Treevil","","","・Deals 280% damage to all enemies.
 ・All enemies get -34% attack for 6 turns. This effect can't be cleansed.
-・All enemies get -34% defense for 6 turns. This effect can't be dispelled.
+・All enemies get -34% defense for 6 turns.
 ・All enemies are immune to new status effect buffs for 6 turns. Attempted mana generation buffs will be replaced by -102% mana generation for -102 turns.","・敵全員に280%のダメージを与える。
 ・6ターンの間、敵全員の攻撃力が-34%になる。この効果は浄化不可。
-・6ターンの間、敵全員の防御力が-34%になる。この効果は解除できない。
+・6ターンの間、敵全員の防御力が-34%になる。
 ・6ターンの間、敵全員が新たなステータス効果バフの影響を受けなくなる。マナ生成バフを発動しようとすると-102ターンの間、マナ生成が-102%になる。","","","",""
 "fables_gnomer","Gnomer","","","・Deals 250% damage to the target.
 ・The target receives 94 Bleed damage over 2 turns.","・ターゲットに250%のダメージを与える。
@@ -3540,8 +3548,8 @@ Received damage from Special Skills is reduced by [#!]80%[#] for this character.
 このキャラクターが特殊
 スキルを使用すると、[#!]100%[#]の
 確率で次の効果を発揮できる：","・Deals 400% damage to all enemies.
-・All allies reflect all status effects and 150% damage back to the attacker and block other negative effects from enemies' [##elementred]Fire[#] Special Skills for 4 turns. This effect can't be dispelled.","・敵全員に400%のダメージを与える。
-・仲間全員が、すべてのステータス効果を跳ね返す。さらに、4ターンの間、[##elementred]炎属性[#]の敵の特殊スキルによって発生した、その他のマイナスの影響を無効にし、ダメージの150%を攻撃者に跳ね返す。この効果は解除不可。","Status effects cast by characters, Minions and Fiends on the same side cannot be reflected.","同じチームのキャラクター、ミニオン、フィエンドが特殊スキルを使用して敵にステータス効果を付与した場合、敵はこれらの効果を跳ね返すことができない。","",""
+・All allies reflect all status effects and 150% damage back to the attacker and block other negative effects from enemies' [##elementred]Fire[#] Special Skills for 4 turns.","・敵全員に400%のダメージを与える。
+・仲間全員が、すべてのステータス効果を跳ね返す。さらに、4ターンの間、[##elementred]炎属性[#]の敵の特殊スキルによって発生した、その他のマイナスの影響を無効にし、ダメージの150%を攻撃者に跳ね返す。","Status effects cast by characters, Minions and Fiends on the same side cannot be reflected.","同じチームのキャラクター、ミニオン、フィエンドが特殊スキルを使用して敵にステータス効果を付与した場合、敵はこれらの効果を跳ね返すことができない。","",""
 "s5_bastet","Bastet","--- Passives ---
 
 - Effects on Special Skill -
@@ -3644,9 +3652,9 @@ Received damage from Special Skills is reduced by [#!]80%[#] for this character.
 このキャラクターが特殊
 スキルを使用すると、[#!]100%[#]の
 確率で次の効果を発揮できる：","・Boosts health of all allies by 350. Boosted health can exceed max HP.
-・All allies are immune to new status ailments for 4 turns.
+・All allies are immune to new status ailments for 4 turns. This effect can't be dispelled.
 ・All allies get 30% defense for 4 turns.","・仲間全員のHPを350回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
-・4ターンの間、仲間全員が新たなステータス異常を受けない。
+・4ターンに渡って、仲間全員が新たなステータス異常を無効化する。この効果は解除できない。
 ・4ターンの間、仲間全員の防御力が30%になる。","","","",""
 "s5_rekhetre","Rekhetre","--- Passives ---
 
@@ -3775,9 +3783,9 @@ Each time this character receives a [#!]status ailment affecting their defense[#
 スキルを使用すると、[#!]100%[#]の
 確率で次の効果を発揮できる：","・Inflicts the target with [#!]Greed[#] for 3 turns. Friendly effects from Special Skills only affect characters with Greed.
 ・All enemies receive 726 Poison damage over 3 turns.
-・All enemies get -34% defense for 3 turns. This effect can't be dispelled.","・3ターンの間、ターゲットに[#!]グリード[#]を付与する。この間、特殊スキルによる有用な効果は、グリードが付与されたキャラクターのみにしか作用しなくなる。
+・All enemies get -34% defense for 3 turns.","・3ターンの間、ターゲットに[#!]グリード[#]を付与する。この間、特殊スキルによる有用な効果は、グリードが付与されたキャラクターのみにしか作用しなくなる。
 ・3ターンの間、敵全員に726の毒ダメージを与える。
-・3ターンの間、敵全員の防御力が-34%になる。この効果は解除できない。","Greed prevents all other heroes in the same team from gaining friendly effects. This includes all buffs, healing and growth effects.","グリードにより、同じチーム内の他の英雄全員が有用な効果を獲得できなくなる。これには全てのバフや回復、成長効果も含まれる。","",""
+・3ターンの間、敵全員の防御力が-34%になる。","Greed prevents all other heroes in the same team from gaining friendly effects. This includes all buffs, healing and growth effects.","グリードにより、同じチーム内の他の英雄全員が有用な効果を獲得できなくなる。これには全てのバフや回復、成長効果も含まれる。","",""
 "s4_hulda","Hulda","--- Passives ---
 
 - Increase Buff Duration -

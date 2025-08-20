@@ -295,10 +295,8 @@ def parse_properties(properties_list: list, special_data: dict, hero_stats: dict
         elif isinstance(prop_id_or_dict, str): prop_id, prop_data = prop_id_or_dict, game_db['special_properties'].get(prop_id_or_dict, {})
         if not prop_data or not prop_id: continue
         
-        # --- NEW: Guard to prevent double-parsing of familiar summons ---
-        # If a property is just a container for a familiar summon, skip it.
-        # The dedicated parse_familiars function will handle it comprehensively.
-        if "summonedFamiliarIds" in prop_data or "summonedFamiliars" in prop_data:
+        # --- MODIFIED: Robust guard to prevent double-parsing of familiar summons ---
+        if prop_data.get("propertyType") == "SummonFamiliar":
             continue
 
         property_type = prop_data.get("propertyType", "")
