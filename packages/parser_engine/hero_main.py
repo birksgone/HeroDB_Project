@@ -38,20 +38,12 @@ FAMILIAR_LOG_PATH = OUTPUT_DIR / "familiar_debug_log.txt"
 
 # --- Formatting & Output Functions ---
 
-def _format_final_description(skill_descriptions: dict, lang: str, skill_types_to_include: list, special_data: dict) -> (str, list):
+def _format_final_description(skill_descriptions: dict, lang: str, skill_types_to_include: list, special_data: dict) -> list:
     """
-    Formats a list of skill types into a main description string and a list of tooltips.
+    Formats skills into a list of structured objects, each containing text and its own tooltip.
+    Returns a list: [ { "text": "...", "tooltip": "..." }, ... ]
     """
-    # --- DEBUGGING: Print the raw input to this function ---
-    if special_data and special_data.get("id") == "heedless_hammer_flurry":
-        print(f"\n\n--- DEBUG: Entering _format_final_description for goblin_madhammer ({lang}) ---")
-        print("--- Input skill_descriptions: ---")
-        import pprint
-        pprint.pprint(skill_descriptions)
-        print("------------------------------------")
-
-    output_lines = []
-    tooltip_lines = []
+    output_items = []
     
     local_skill_types_to_include = list(skill_types_to_include)
 
@@ -59,7 +51,7 @@ def _format_final_description(skill_descriptions: dict, lang: str, skill_types_t
         if clear_buffs_item := skill_descriptions.get('clear_buffs'):
             description = clear_buffs_item.get(lang, "").strip()
             if description:
-                output_lines.append(f"・{description}")
+                output_items.append({"text": f"・{description}", "tooltip": ""})
             if 'clear_buffs' in local_skill_types_to_include:
                 local_skill_types_to_include.remove('clear_buffs')
 
@@ -73,30 +65,38 @@ def _format_final_description(skill_descriptions: dict, lang: str, skill_types_t
             if not isinstance(item, dict):
                 continue
 
+            skill_line = { "text": "", "tooltip": "" }
+
             if item.get("lang_id") == "SEARCH_FAILED":
-                output_lines.append(f"・{item.get(lang, 'FAIL_UNKNOWN')}")
+                skill_line["text"] = f"・{item.get('en', 'FAIL_UNKNOWN')}"
+                if lang == 'ja': # Ensure JA also gets the failure text
+                    skill_line["text"] = f"・{item.get('ja', 'FAIL_UNKNOWN')}"
+                output_items.append(skill_line)
                 continue
 
+            description = ""
+            title = ""
             if is_passive:
                 title = item.get(f'title_{lang}', "").strip()
                 if title:
-                    output_lines.append(f"\n- {title} -")
+                    output_items.append({"text": f"\n- {title} -", "tooltip": ""})
                 description = item.get(f'description_{lang}', "").strip()
             else:
                 description = item.get(lang, "").strip()
 
             if item.get("id") == "heading":
-                output_lines.append(f"\n{description}")
+                skill_line["text"] = f"\n{description}"
             elif description:
-                prefix = "" if is_passive and 'title' in locals() and title else "・"
-                output_lines.append(f"{prefix}{description}")
+                prefix = "" if is_passive and title else "・"
+                skill_line["text"] = f"{prefix}{description}"
 
             if 'extra' in item and isinstance(item['extra'], dict):
-                tooltip_text = item['extra'].get(lang, "").strip()
-                if tooltip_text:
-                    tooltip_lines.append(tooltip_text)
+                skill_line["tooltip"] = item['extra'].get(lang, "").strip()
+            
+            if skill_line["text"]:
+                output_items.append(skill_line)
 
-            if 'nested_effects' in item and item['nested_effects']:
+            if 'nested_effects' in item and isinstance(item['nested_effects'], list):
                 process_level(item['nested_effects'], is_passive=False)
 
     for skill_type in local_skill_types_to_include:
@@ -107,18 +107,21 @@ def _format_final_description(skill_descriptions: dict, lang: str, skill_types_t
         items_to_process = skill_data if isinstance(skill_data, list) else [skill_data]
         is_passive_skill = (skill_type == 'passiveSkills')
         
-        if is_passive_skill and any(items_to_process) and not any("--- Passives ---" in line for line in output_lines):
-             output_lines.append("\n--- Passives ---")
+        has_content = any(
+            isinstance(item, dict) and (item.get(lang) or item.get(f'description_{lang}') or item.get("lang_id") == "SEARCH_FAILED")
+            for item in items_to_process
+        )
+        
+        if is_passive_skill and has_content and not any("--- Passives ---" in line["text"] for line in output_items):
+             output_items.append({"text": "\n--- Passives ---", "tooltip": ""})
             
         process_level(items_to_process, is_passive=is_passive_skill)
             
-    main_description = "\n".join(line for line in output_lines if line).strip()
-    return main_description, tooltip_lines
-
+    return output_items
 
 def write_final_csv(processed_data: list, output_path: Path):
     """
-    Writes the main, human-readable CSV, splitting it into multiple files if it's too large.
+    Writes the main, human-readable CSV, handling the new structured skill format.
     """
     print(f"\n--- Writing final results to {output_path.name} (and potential chunks) ---")
     if not processed_data:
@@ -131,31 +134,47 @@ def write_final_csv(processed_data: list, output_path: Path):
     for hero in processed_data:
         skills = hero.get('skillDescriptions', {})
         special_context = hero.get('_special_data_context', {})
-        passive_en_main, passive_en_tooltips = _format_final_description(skills, 'en', ['passiveSkills'], special_context)
-        passive_ja_main, passive_ja_tooltips = _format_final_description(skills, 'ja', ['passiveSkills'], special_context)
-        ss_en_main, ss_en_tooltips = _format_final_description(skills, 'en', ss_skill_types, special_context)
-        ss_ja_main, ss_ja_tooltips = _format_final_description(skills, 'ja', ss_skill_types, special_context)
+
+        passive_skills_en = _format_final_description(skills, 'en', ['passiveSkills'], special_context)
+        passive_skills_ja = _format_final_description(skills, 'ja', ['passiveSkills'], special_context)
+        ss_skills_en = _format_final_description(skills, 'en', ss_skill_types, special_context)
+        ss_skills_ja = _format_final_description(skills, 'ja', ss_skill_types, special_context)
+        
         row = {
-            "hero_id": hero.get('id'), "hero_name": hero.get('name', 'N/A'),
-            "passive_en": passive_en_main, "passive_ja": passive_ja_main,
-            "ss_en": ss_en_main, "ss_ja": ss_ja_main,
+            "hero_id": hero.get('id'),
+            "hero_name": hero.get('name', 'N/A'),
+            "passive_en": "\n".join([s["text"] for s in passive_skills_en]),
+            "passive_ja": "\n".join([s["text"] for s in passive_skills_ja]),
+            "ss_en": "\n".join([s["text"] for s in ss_skills_en]),
+            "ss_ja": "\n".join([s["text"] for s in ss_skills_ja]),
         }
-        all_tooltips_en = passive_en_tooltips + ss_en_tooltips
-        all_tooltips_ja = passive_ja_tooltips + ss_ja_tooltips
-        for i in range(2):
+
+        all_tooltips_en = [s["tooltip"] for s in passive_skills_en if s["tooltip"]] + \
+                          [s["tooltip"] for s in ss_skills_en if s["tooltip"]]
+        all_tooltips_ja = [s["tooltip"] for s in passive_skills_ja if s["tooltip"]] + \
+                          [s["tooltip"] for s in ss_skills_ja if s["tooltip"]]
+        
+        max_tooltips = 3
+        for i in range(max_tooltips):
             row[f'extra_en_{i+1}'] = all_tooltips_en[i] if i < len(all_tooltips_en) else ""
             row[f'extra_ja_{i+1}'] = all_tooltips_ja[i] if i < len(all_tooltips_ja) else ""
+
         output_rows.append(row)
         
     try:
         df = pd.DataFrame(output_rows)
         column_order = [
             "hero_id", "hero_name", "passive_en", "passive_ja", "ss_en", "ss_ja",
-            "extra_en_1", "extra_ja_1", "extra_en_2", "extra_ja_2"
+            "extra_en_1", "extra_ja_1", "extra_en_2", "extra_ja_2", "extra_en_3", "extra_ja_3"
         ]
+        for col in column_order:
+            if col not in df.columns:
+                df[col] = ""
         df = df[column_order]
+        
         chunk_size = 600
         num_chunks = (len(df) - 1) // chunk_size + 1
+        
         if num_chunks <= 1:
             df.to_csv(output_path, index=False, encoding='utf-8-sig', quoting=csv.QUOTE_ALL, lineterminator='\n')
             print(f"Successfully saved {len(df)} rows to {output_path.name}.")
@@ -167,6 +186,7 @@ def write_final_csv(processed_data: list, output_path: Path):
                 chunk_path = output_path.parent / f"{base_name}_{i+1}{suffix}"
                 chunk_df.to_csv(chunk_path, index=False, encoding='utf-8-sig', quoting=csv.QUOTE_ALL, lineterminator='\n')
                 print(f" -> Successfully saved chunk {i+1} ({len(chunk_df)} rows) to {chunk_path.name}.")
+                
     except Exception as e:
         print(f"FATAL: Failed to write final CSV: {e}")
 
