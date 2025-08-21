@@ -106,7 +106,12 @@ def parse_simple_familiar_effect(effect_data: dict, familiar_instance: dict, lan
     primary_candidates = [k for k in all_effect_lang_ids if effect_type_keyword in k]
     lang_id, warning = (find_best_lang_id(context_block, primary_candidates, parsers) if primary_candidates else find_best_lang_id(context_block, all_effect_lang_ids, parsers))
     if warning: warnings.append(warning)
-    if not lang_id: return None, warnings
+    
+    # --- MODIFIED: Return a proper failure object instead of None ---
+    if not lang_id:
+        failure_text = f"FAIL_LANG_ID: FamiliarEffect '{effect_id}'"
+        # Return a dictionary that can be appended to the parsed_items list
+        return {"id": effect_id, "lang_id": "SEARCH_FAILED", "en": failure_text, "ja": failure_text}, warnings
 
     lang_params = {}; search_context = {**context_block, "maxLevel": main_max_level}
     placeholders = set(re.findall(r'\{(\w+)\}', lang_db.get(lang_id,{}).get("en","")))
