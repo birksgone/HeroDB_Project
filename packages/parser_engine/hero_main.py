@@ -408,3 +408,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# D:\HeroDB_Project\packages\parser_engineにいる状態で
+# python hero_main.py

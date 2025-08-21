@@ -36,6 +36,19 @@
     -   **`parse_passive_skills.py`**: パッシブスキルの解析を担当。
     -   **`parse_clear_buffs.py`**: `buffToRemove`の解析を担当。
     -   **`parse_chain_strike.py`**: `DifferentExtraHitPowerChainStrike`という、極めて特殊なプロパティの解析だけに特化した、最初の「超・専門家」。
+-   
+### ファイルリスト
+hero_main.py:
+https://raw.githubusercontent.com/birksgone/HeroDB_Project/refs/heads/main/packages/parser_engine/hero_main.py
+packages/parser_engine/hero_parser.py: https://raw.githubusercontent.com/birksgone/HeroDB_Project/refs/heads/main/packages/parser_engine/hero_parser.py
+hero_data_loader.py: https://raw.githubusercontent.com/birksgone/HeroDB_Project/refs/heads/main/packages/parser_engine/hero_data_loader.py
+packages/parser_engine/parser/
+parse_chain_strike.py: https://raw.githubusercontent.com/birksgone/HeroDB_Project/refs/heads/main/packages/parser_engine/parsers/parse_chain_strike.py
+parse_clear_buffs.py: https://raw.githubusercontent.com/birksgone/HeroDB_Project/refs/heads/main/packages/parser_engine/parsers/parse_clear_buffs.py
+parse_familiars.py: https://raw.githubusercontent.com/birksgone/HeroDB_Project/refs/heads/main/packages/parser_engine/parsers/parse_familiars.py
+parse_passive_skills.py: https://raw.githubusercontent.com/birksgone/HeroDB_Project/refs/heads/main/packages/parser_engine/parsers/parse_passive_skills.py
+parse_properties.py: https://raw.githubusercontent.com/birksgone/HeroDB_Project/refs/heads/main/packages/parser_engine/parsers/parse_properties.py
+parse_status_effects.py: https://raw.githubusercontent.com/birksgone/HeroDB_Project/refs/heads/main/packages/parser_engine/parsers/parse_status_effects.py
 
 ## 3. データ処理アーキテクチャ
 

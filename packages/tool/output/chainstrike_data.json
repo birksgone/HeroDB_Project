@@ -1,0 +1,1462 @@
+[
+  {
+    "hero_id": "oriental_female_guard_costume_soldier",
+    "property_block": {
+      "propertyType": "DifferentExtraHitPowerChainStrike",
+      "id": "chain_strike_one_extra_target_less",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 1650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 1,
+      "extraHitChancePerMil": 1000,
+      "additionalHitDamagePerMil": 1950,
+      "additionalHitDamageIncrementPerLevelPerMil": 50,
+      "strongAttackElement": "Purple",
+      "useStrongAttackElementOnlyForExtraHits": true
+    }
+  },
+  {
+    "hero_id": "pirate_commodore_finley_costume_bleak",
+    "property_block": {
+      "propertyType": "BuffChainStrike",
+      "id": "buff_chain_strike_with_brittle_more",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 3850,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "statusEffects": [
+        {
+          "id": "brittle_more_more",
+          "turns": 3,
+          "statusEffect": "DefenseModifier",
+          "buff": "MinorDebuff",
+          "defenseMultiplierPerMil": 580,
+          "defenseMultiplierIncrementPerLevelPerMil": -20
+        }
+      ],
+      "consecutiveHitDamageReductionPerMil": 200
+    }
+  },
+  {
+    "hero_id": "s3_bjorn_costume_viking",
+    "property_block": {
+      "propertyType": "DifferentExtraHitPowerChainStrike",
+      "id": "one_hit_chain_strike_with_mana_regen_debuff_costume_bjorn",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 1450,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 1,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "mana_regen_reduction_minor",
+          "turns": 3,
+          "statusEffect": "ManaGenerationModifier",
+          "buff": "MinorDebuff",
+          "manaGenerationMultiplierPerMil": 900,
+          "manaGenerationMultiplierIncrementPerLevelPerMil": -20
+        }
+      ],
+      "additionalHitDamagePerMil": 3450,
+      "additionalHitDamageIncrementPerLevelPerMil": 50
+    }
+  },
+  {
+    "hero_id": "s2_mercenary_woman",
+    "property_block": {
+      "propertyType": "ChainStrikeWithEffectPerHit",
+      "id": "chain_strike",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2750,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 3,
+      "extraHitChancePerMil": 420,
+      "minorDamageOnExtraHits": true,
+      "fixedAdditionalEffectPower": 50,
+      "effectType": "AddMana",
+      "targetType": "All",
+      "sideAffected": "Allies"
+    }
+  },
+  {
+    "hero_id": "wonderland_captain",
+    "property_block": {
+      "propertyType": "FamiliarChainStrike",
+      "id": "minion_follower_chain_strike",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2400,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "targetFamiliarTypes": [
+        "Minion",
+        "Follower",
+        "BigMinion"
+      ]
+    }
+  },
+  {
+    "hero_id": "pirate_commodore_finley",
+    "property_block": {
+      "propertyType": "BuffChainStrike",
+      "id": "buff_chain_strike_with_brittle",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 3500,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "statusEffects": [
+        {
+          "id": "brittle",
+          "turns": 3,
+          "statusEffect": "DefenseModifier",
+          "buff": "MinorDebuff",
+          "defenseMultiplierPerMil": 800,
+          "defenseMultiplierIncrementPerLevelPerMil": -20
+        }
+      ],
+      "consecutiveHitDamageReductionPerMil": 200
+    }
+  },
+  {
+    "hero_id": "s3_bjorn",
+    "property_block": {
+      "propertyType": "DifferentExtraHitPowerChainStrike",
+      "id": "chain_strike_one_extra_target",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 1650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 1,
+      "extraHitChancePerMil": 1000,
+      "additionalHitDamagePerMil": 3150,
+      "additionalHitDamageIncrementPerLevelPerMil": 50,
+      "strongAttackElement": "Yellow",
+      "useStrongAttackElementOnlyForExtraHits": true
+    }
+  },
+  {
+    "hero_id": "s3_alfrike",
+    "property_block": {
+      "propertyType": "DarkCubeChainStrike",
+      "id": "dark_cube_chain_strike",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 1860,
+      "powerMultiplierIncrementPerLevelPerMil": 20,
+      "maxExtraHits": 4,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "possession",
+          "turns": 3,
+          "statusEffect": "Possession",
+          "buff": "MinorDebuff",
+          "specialId": "mindless_attack",
+          "specialId_details": {
+            "id": "mindless_attack",
+            "directEffect": {
+              "sideAffected": "Allies",
+              "typeOfTarget": "Single",
+              "effectType": "Damage",
+              "powerMultiplierPerMil": 1000,
+              "powerMultiplierIncrementPerLevelPerMil": 30
+            },
+            "maxLevel": 8
+          }
+        }
+      ],
+      "useRandomMainTarget": true,
+      "maxHealthReduction": 35,
+      "maxHealthReductionIncrementPerLevel": 27
+    }
+  },
+  {
+    "hero_id": "fire_god_yang_mai",
+    "property_block": {
+      "propertyType": "ChainStrikeWithEffectPerHit",
+      "id": "chain_strike_single_target_with_attack_stack",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 3350,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 4,
+      "extraHitChancePerMil": 600,
+      "minorDamageOnExtraHits": true,
+      "statusEffectsPerHit": [
+        {
+          "id": "stacking_attack_yang_mai",
+          "statusEffect": "StackingAttackModifier",
+          "buff": "StackMinorBuff",
+          "attackMultiplierPerMil": 1060,
+          "attackMultiplierIncrementPerLevelPerMil": 0
+        }
+      ],
+      "effectType": "None",
+      "targetType": "Single",
+      "sideAffected": "Allies"
+    }
+  },
+  {
+    "hero_id": "s4_poppy",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_poppy",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 3,
+      "extraHitChancePerMil": 420,
+      "minorDamageOnExtraHits": true
+    }
+  },
+  {
+    "hero_id": "slayer_noril",
+    "property_block": {
+      "propertyType": "DifferentExtraHitPowerChainStrike",
+      "id": "chain_strike_strong_blue",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2050,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 1,
+      "extraHitChancePerMil": 1000,
+      "additionalHitDamagePerMil": 3550,
+      "additionalHitDamageIncrementPerLevelPerMil": 50,
+      "strongAttackElement": "Blue",
+      "useStrongAttackElementOnlyForExtraHits": true
+    }
+  },
+  {
+    "hero_id": "castle_raven_wren",
+    "property_block": {
+      "propertyType": "BuffChainStrike",
+      "id": "buff_chain_strike_with_attack_debuff",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2050,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "statusEffects": [
+        {
+          "id": "stun",
+          "turns": 3,
+          "statusEffect": "AttackModifier",
+          "buff": "MinorDebuff",
+          "attackMultiplierPerMil": 800,
+          "attackMultiplierIncrementPerLevelPerMil": -20
+        }
+      ],
+      "consecutiveHitDamageReductionPerMil": 200
+    }
+  },
+  {
+    "hero_id": "s4_zekena",
+    "property_block": {
+      "propertyType": "DifferentExtraHitPowerChainStrike",
+      "id": "chain_strike_strong_dark_and_defense_debuff",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 1,
+      "extraHitChancePerMil": 1000,
+      "statusEffectsOnExtraHitsOverride": [
+        {
+          "id": "brittle_more_more",
+          "turns": 3,
+          "statusEffect": "DefenseModifier",
+          "buff": "MinorDebuff",
+          "defenseMultiplierPerMil": 580,
+          "defenseMultiplierIncrementPerLevelPerMil": -20
+        }
+      ],
+      "additionalHitDamagePerMil": 4150,
+      "additionalHitDamageIncrementPerLevelPerMil": 50,
+      "strongAttackElement": "Purple",
+      "useStrongAttackElementOnlyForExtraHits": true
+    }
+  },
+  {
+    "hero_id": "christmas_mr_pengi",
+    "property_block": {
+      "propertyType": "ChainStrikeWithHitPerFamiliar",
+      "id": "chain_strike_with_hit_per_ally_minion",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 4150,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "statusEffects": [
+        {
+          "id": "frost",
+          "turns": 3,
+          "statusEffect": "Frost",
+          "buff": "MinorDebuff",
+          "damageMultiplierPerMil": 41,
+          "damageMultiplierIncrementPerLevelPerMil": 2
+        }
+      ],
+      "consecutiveHitDamageReductionPerMil": 50,
+      "extraHitPowerPerMil": 950,
+      "extraHitPowerIncrementPerLevelPerMil": 50,
+      "countedFamiliarTypes": [
+        "Minion"
+      ],
+      "sideToCountFamiliarsFrom": "Allies"
+    }
+  },
+  {
+    "hero_id": "s5_eset",
+    "property_block": {
+      "propertyType": "DifferentExtraHitPowerChainStrike",
+      "id": "chain_strike_eset",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2360,
+      "powerMultiplierIncrementPerLevelPerMil": 20,
+      "maxExtraHits": 5,
+      "extraHitChancePerMil": 1000,
+      "additionalHitDamagePerMil": 1660,
+      "additionalHitDamageIncrementPerLevelPerMil": 20,
+      "strongAttackElement": "Purple"
+    }
+  },
+  {
+    "hero_id": "s4_congalach",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_congalach",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2750,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 4,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "stacking_stun",
+          "statusEffect": "StackingAttackModifier",
+          "buff": "StackMinorDebuff",
+          "attackMultiplierPerMil": 910,
+          "attackMultiplierIncrementPerLevelPerMil": 0
+        }
+      ],
+      "useRandomMainTarget": true,
+      "minorDamageOnExtraHits": false
+    }
+  },
+  {
+    "hero_id": "kalevala_kullervo",
+    "property_block": {
+      "propertyType": "DifferentExtraHitPowerChainStrike",
+      "id": "one_hit_chain_strike_with_possession",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2300,
+      "powerMultiplierIncrementPerLevelPerMil": 100,
+      "maxExtraHits": 1,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "possession",
+          "turns": 3,
+          "statusEffect": "Possession",
+          "buff": "MinorDebuff",
+          "specialId": "mindless_attack",
+          "specialId_details": {
+            "id": "mindless_attack",
+            "directEffect": {
+              "sideAffected": "Allies",
+              "typeOfTarget": "Single",
+              "effectType": "Damage",
+              "powerMultiplierPerMil": 1000,
+              "powerMultiplierIncrementPerLevelPerMil": 30
+            },
+            "maxLevel": 8
+          }
+        }
+      ],
+      "additionalHitDamagePerMil": 3300,
+      "additionalHitDamageIncrementPerLevelPerMil": 200
+    }
+  },
+  {
+    "hero_id": "monster_hunter_ebba",
+    "property_block": {
+      "propertyType": "ChainStrikeWithHitPerFamiliar",
+      "id": "chain_strike_with_hit_per_enemy_fiend",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 5500,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "statusEffects": [
+        {
+          "id": "block_status_effect_casting",
+          "turns": 4,
+          "statusEffect": "BlockStatusEffectCasting",
+          "buff": "MinorDebuff"
+        },
+        {
+          "id": "stun_more_more",
+          "turns": 4,
+          "statusEffect": "AttackModifier",
+          "buff": "MinorDebuff",
+          "attackMultiplierPerMil": 600,
+          "attackMultiplierIncrementPerLevelPerMil": -20
+        }
+      ],
+      "consecutiveHitDamageReductionPerMil": 60,
+      "extraHitPowerPerMil": 2250,
+      "extraHitPowerIncrementPerLevelPerMil": 50,
+      "countedFamiliarTypes": [
+        "Parasite"
+      ],
+      "sideToCountFamiliarsFrom": "Enemies"
+    }
+  },
+  {
+    "hero_id": "pirate_anne",
+    "property_block": {
+      "propertyType": "ThresholdChainStrike",
+      "id": "health_threshold_chain_strike",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 5150,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "statusEffects": [
+        {
+          "id": "debuffs_on_special_cast_anne",
+          "turns": 4,
+          "statusEffect": "StatusEffectsOnSpecialCast",
+          "buff": "MinorDebuff",
+          "statusEffectsOnSpecialCast": [
+            {
+              "statusEffect": "AttackModifier",
+              "id": "stun",
+              "buff": "MinorDebuff",
+              "attackMultiplierPerMil": 800,
+              "attackMultiplierIncrementPerLevelPerMil": -20
+            },
+            {
+              "statusEffect": "DefenseModifier",
+              "id": "brittle",
+              "buff": "MinorDebuff",
+              "defenseMultiplierPerMil": 800,
+              "defenseMultiplierIncrementPerLevelPerMil": -20
+            },
+            {
+              "statusEffect": "ManaGenerationModifier",
+              "id": "mana_regen_reduction_minor",
+              "buff": "MinorDebuff",
+              "manaGenerationMultiplierPerMil": 900,
+              "manaGenerationMultiplierIncrementPerLevelPerMil": -20
+            }
+          ],
+          "durationForStatusEffects": 4
+        }
+      ],
+      "consecutiveHitDamageReductionPerMil": 200,
+      "thresholdPerMil": 500,
+      "thresholdType": "Health",
+      "statNeedsToBeOverThreshold": true
+    }
+  },
+  {
+    "hero_id": "mighty_pet_barkley",
+    "property_block": {
+      "propertyType": "ChainStrikeWithFamiliarSummonToHitTargets",
+      "id": "chain_strike_with_missile_parasite_summon_per_hit",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 2,
+      "extraHitChancePerMil": 1000,
+      "familiarId": "missile_parasite",
+      "familiarId_details": {
+        "familiarType": "Parasite",
+        "id": "missile_parasite",
+        "accuracyPerMil": 1000,
+        "effects": [
+          {
+            "id": "damage_missile_parasite",
+            "effectType": "Damage",
+            "effectTriggers": [
+              "Turn"
+            ],
+            "targetType": "Single",
+            "sideAffected": "Allies",
+            "attackPercentPerMil": 410,
+            "attackPercentIncrementPerLevelPerMil": 20,
+            "monsterAttackPercentPerMil": 410
+          },
+          {
+            "id": "explode_on_owner_death_missile_parasite",
+            "effectType": "Explode",
+            "effectTriggers": [
+              "OwnerDeath"
+            ],
+            "targetType": "NearToTarget",
+            "sideAffected": "Allies",
+            "fixedExplosionDamage": 290,
+            "fixedExplosionDamageIncrementPerLevel": 30
+          }
+        ],
+        "healthPerMil": 280,
+        "monsterHealthPerMil": 280
+      }
+    }
+  },
+  {
+    "hero_id": "ninja_kinsaishi",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_lightning_stream1",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 1100,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 2,
+      "extraHitChancePerMil": 1000,
+      "minorDamageOnExtraHits": false
+    }
+  },
+  {
+    "hero_id": "ninja_kinsaishi",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_lightning_stream2",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 1600,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 3,
+      "extraHitChancePerMil": 1000,
+      "minorDamageOnExtraHits": false
+    }
+  },
+  {
+    "hero_id": "ninja_kinsaishi",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_lightning_stream3",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 1850,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 4,
+      "extraHitChancePerMil": 1000,
+      "minorDamageOnExtraHits": false
+    }
+  },
+  {
+    "hero_id": "s2_mercenary_woman_costume_dancer",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_misandra",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2450,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 3,
+      "extraHitChancePerMil": 420,
+      "statusEffects": [
+        {
+          "id": "possession",
+          "turns": 3,
+          "statusEffect": "Possession",
+          "buff": "MinorDebuff",
+          "specialId": "mindless_attack",
+          "specialId_details": {
+            "id": "mindless_attack",
+            "directEffect": {
+              "sideAffected": "Allies",
+              "typeOfTarget": "Single",
+              "effectType": "Damage",
+              "powerMultiplierPerMil": 1000,
+              "powerMultiplierIncrementPerLevelPerMil": 30
+            },
+            "maxLevel": 8
+          }
+        }
+      ],
+      "minorDamageOnExtraHits": true
+    }
+  },
+  {
+    "hero_id": "s3_alfrike_costume_hatter",
+    "property_block": {
+      "propertyType": "DarkCubeChainStrike",
+      "id": "dark_cube_chain_strike_costume_alfrike",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2050,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 4,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "possession",
+          "turns": 3,
+          "statusEffect": "Possession",
+          "buff": "MinorDebuff",
+          "specialId": "mindless_attack",
+          "specialId_details": {
+            "id": "mindless_attack",
+            "directEffect": {
+              "sideAffected": "Allies",
+              "typeOfTarget": "Single",
+              "effectType": "Damage",
+              "powerMultiplierPerMil": 1000,
+              "powerMultiplierIncrementPerLevelPerMil": 30
+            },
+            "maxLevel": 8
+          }
+        }
+      ],
+      "useRandomMainTarget": true,
+      "maxHealthReduction": 100,
+      "maxHealthReductionIncrementPerLevel": 12
+    }
+  },
+  {
+    "hero_id": "kalevala_kullervo_costume_battle_scarred",
+    "property_block": {
+      "propertyType": "DifferentExtraHitPowerChainStrike",
+      "id": "one_hit_chain_strike_with_possession_costume_kullervo",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 4150,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 1,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "possession",
+          "turns": 4,
+          "statusEffect": "Possession",
+          "buff": "MinorDebuff",
+          "specialId": "mindless_attack",
+          "specialId_details": {
+            "id": "mindless_attack",
+            "directEffect": {
+              "sideAffected": "Allies",
+              "typeOfTarget": "Single",
+              "effectType": "Damage",
+              "powerMultiplierPerMil": 1000,
+              "powerMultiplierIncrementPerLevelPerMil": 30
+            },
+            "maxLevel": 8
+          }
+        }
+      ],
+      "additionalHitDamagePerMil": 2850,
+      "additionalHitDamageIncrementPerLevelPerMil": 50
+    }
+  },
+  {
+    "hero_id": "s4_poppy_costume_lodger",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_poppy_costume",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2450,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 3,
+      "extraHitChancePerMil": 550,
+      "minorDamageOnExtraHits": true
+    }
+  },
+  {
+    "hero_id": "s4_congalach_costume_kelp",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_costume_congalach",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2900,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 4,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "stacking_stun_costume_congalach",
+          "statusEffect": "StackingAttackModifier",
+          "buff": "StackMinorDebuff",
+          "attackMultiplierPerMil": 920,
+          "attackMultiplierIncrementPerLevelPerMil": 0
+        }
+      ],
+      "useRandomMainTarget": true,
+      "minorDamageOnExtraHits": false
+    }
+  },
+  {
+    "hero_id": "s4_zekena_costume_vines",
+    "property_block": {
+      "propertyType": "DifferentExtraHitPowerChainStrike",
+      "id": "chain_strike_strong_dark_and_defense_debuff_costume_zekena",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 3650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 1,
+      "extraHitChancePerMil": 1000,
+      "statusEffectsOnExtraHitsOverride": [
+        {
+          "id": "brittle_more_more",
+          "turns": 3,
+          "statusEffect": "DefenseModifier",
+          "buff": "MinorDebuff",
+          "defenseMultiplierPerMil": 580,
+          "defenseMultiplierIncrementPerLevelPerMil": -20
+        }
+      ],
+      "additionalHitDamagePerMil": 3650,
+      "additionalHitDamageIncrementPerLevelPerMil": 50,
+      "strongAttackElement": "Purple",
+      "useStrongAttackElementOnlyForExtraHits": true
+    }
+  },
+  {
+    "hero_id": "s5_eset_costume_goldensun",
+    "property_block": {
+      "propertyType": "DifferentExtraHitPowerChainStrike",
+      "id": "chain_strike_eset_costume",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2460,
+      "powerMultiplierIncrementPerLevelPerMil": 20,
+      "maxExtraHits": 5,
+      "extraHitChancePerMil": 1000,
+      "additionalHitDamagePerMil": 2360,
+      "additionalHitDamageIncrementPerLevelPerMil": 20,
+      "strongAttackElement": "Purple"
+    }
+  },
+  {
+    "hero_id": "valentines_kabeiroi",
+    "property_block": {
+      "propertyType": "DifferentExtraHitPowerChainStrike",
+      "id": "four_hit_chain_strike_kabeiroi",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 1650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 3,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "love_struck_kabeiroi",
+          "turns": 3,
+          "statusEffect": "Possession",
+          "buff": "MinorDebuff",
+          "specialId": "healing_gift_kabeiroi",
+          "specialId_details": {
+            "id": "healing_gift_kabeiroi",
+            "directEffect": {
+              "sideAffected": "Enemies",
+              "typeOfTarget": "All"
+            },
+            "maxLevel": 0,
+            "properties": [
+              {
+                "propertyType": "ConditionalEffect",
+                "id": "heal_lowest_proportional_hp_enemy_kabeiroi",
+                "includeMissedTargetsInComparison": true,
+                "powerForTargetsThatMeetConditionPerMil": 200,
+                "powerForOtherTargetsPerMil": 0,
+                "powerIncrementPerLevelPerMil": 0,
+                "directionOfCondition": "Lowest",
+                "statForCondition": "CurrentProportionalHp",
+                "effectType": "Heal",
+                "sideAffected": "Enemies",
+                "targetType": "All"
+              }
+            ]
+          }
+        }
+      ],
+      "statusEffectsOnExtraHitsOverride": [
+        {
+          "id": "love_struck_kabeiroi",
+          "turns": 3
+        }
+      ],
+      "applyStatusEffectsOnHit": true,
+      "additionalHitDamagePerMil": 1650,
+      "additionalHitDamageIncrementPerLevelPerMil": 50
+    }
+  },
+  {
+    "hero_id": "journey_nineheaded_beast",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_random_main_target_nine_headed_beast",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 1250,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 8,
+      "extraHitChancePerMil": 1000,
+      "useRandomMainTarget": true,
+      "minorDamageOnExtraHits": false
+    }
+  },
+  {
+    "hero_id": "masquerade_jana",
+    "property_block": {
+      "propertyType": "DifferentExtraHitPowerChainStrike",
+      "id": "one_hit_chain_strike_jana",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 4350,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 1,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "brittle_jana",
+          "turns": 4,
+          "statusEffect": "DefenseModifier",
+          "buff": "MinorDebuff",
+          "defenseMultiplierPerMil": 700,
+          "defenseMultiplierIncrementPerLevelPerMil": -20
+        }
+      ],
+      "statusEffectsOnExtraHitsOverride": [
+        {
+          "id": "mana_regen_reduction_jana",
+          "turns": 4,
+          "statusEffect": "ManaGenerationModifier",
+          "buff": "MinorDebuff",
+          "manaGenerationMultiplierPerMil": 700,
+          "manaGenerationMultiplierIncrementPerLevelPerMil": -20
+        }
+      ],
+      "applyStatusEffectsOnHit": true,
+      "additionalHitDamagePerMil": 4350,
+      "additionalHitDamageIncrementPerLevelPerMil": 50
+    }
+  },
+  {
+    "hero_id": "goblin_madhammer",
+    "property_block": {
+      "propertyType": "DifferentExtraHitPowerChainStrike",
+      "id": "chain_strike_one_extra_target_madhammer",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 4650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 1,
+      "extraHitChancePerMil": 500,
+      "additionalHitDamagePerMil": 4150,
+      "additionalHitDamageIncrementPerLevelPerMil": 50
+    }
+  },
+  {
+    "hero_id": "tales1_gestalt_costume_pearls",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "sunken_magma_cube_chain_strike1",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2400,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 2,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "underwater_magma_cube1",
+          "turns": 3,
+          "statusEffect": "UnderwaterMagmaCube",
+          "buff": "MinorDebuff",
+          "removalEffects": [
+            {
+              "effectType": "Damage",
+              "effectTargetType": "Single",
+              "sideAffected": "Allies",
+              "effectTriggerRemovalReasons": [
+                "Expiration",
+                "ReplaceSameStatusEffect"
+              ],
+              "excludeEffectTriggerRemovalReasons": [],
+              "fixedPower": 300
+            },
+            {
+              "effectType": "None",
+              "effectTargetType": "Single",
+              "sideAffected": "Allies",
+              "effectTriggerRemovalReasons": [
+                "Dispel"
+              ],
+              "excludeEffectTriggerRemovalReasons": [],
+              "statusEffects": [
+                {
+                  "id": "underwater_magma_cube_mana_generation1",
+                  "sideAffected": "Allies",
+                  "statusTargetType": "Single",
+                  "turns": 3,
+                  "statusEffect": "ManaGenerationModifier",
+                  "buff": "MinorDebuff",
+                  "manaGenerationMultiplierPerMil": 800,
+                  "manaGenerationMultiplierIncrementPerLevelPerMil": -20
+                }
+              ],
+              "effectTriggerSources": [
+                "SpecialSkill",
+                "PassiveSkill",
+                "StatusEffect",
+                "StatusEffectSkill"
+              ]
+            }
+          ],
+          "defenseMultiplierPerMil": 660,
+          "maxExplodeCountIfReplacedBySameEffect": 2
+        }
+      ],
+      "useRandomMainTarget": true,
+      "minorDamageOnExtraHits": false
+    }
+  },
+  {
+    "hero_id": "christmas_mr_pengi_costume_snowboarder",
+    "property_block": {
+      "propertyType": "ChainStrikeWithHitPerFamiliar",
+      "id": "chain_strike_with_hit_per_ally_minion_mrpengi_costume",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 3650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "statusEffects": [
+        {
+          "id": "frost_mr_pengi_costume",
+          "turns": 3,
+          "statusEffect": "Frost",
+          "buff": "MinorDebuff",
+          "damageMultiplierPerMil": 56,
+          "damageMultiplierIncrementPerLevelPerMil": 2
+        }
+      ],
+      "consecutiveHitDamageReductionPerMil": 50,
+      "extraHitPowerPerMil": 900,
+      "extraHitPowerIncrementPerLevelPerMil": 100,
+      "countedFamiliarTypes": [
+        "Minion"
+      ],
+      "sideToCountFamiliarsFrom": "Allies"
+    }
+  },
+  {
+    "hero_id": "wonderland_tweedles",
+    "property_block": {
+      "propertyType": "ChainStrikeWithEffectOnSameTargetHits",
+      "id": "chain_strike_tweedles",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 5300,
+      "powerMultiplierIncrementPerLevelPerMil": 100,
+      "maxExtraHits": 1,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "tweedles_defense_debuff",
+          "turns": 5,
+          "statusEffect": "DefenseModifier",
+          "buff": "MinorDebuff",
+          "defenseMultiplierPerMil": 640,
+          "defenseMultiplierIncrementPerLevelPerMil": -20
+        }
+      ],
+      "statusEffectsOnExtraHitsOverride": [
+        {
+          "id": "tweedles_attack_debuff",
+          "turns": 5,
+          "statusEffect": "AttackModifier",
+          "buff": "MinorDebuff",
+          "attackMultiplierPerMil": 640,
+          "attackMultiplierIncrementPerLevelPerMil": -20
+        }
+      ],
+      "useRandomMainTarget": true,
+      "allowMainTargetInRandomTargets": true,
+      "applyStatusEffectsOnHit": true,
+      "additionalHitDamagePerMil": 5300,
+      "additionalHitDamageIncrementPerLevelPerMil": 100,
+      "requiredSameTargetHitsForExtraEffect": 2,
+      "extraSpecialEffectType": "AddMana",
+      "extraSpecialEffectTarget": "Single",
+      "extraSpecialEffectSide": "Allies",
+      "extraEffectPowerMultiplierPerMil": 230,
+      "extraEffectPowerMultiplierPerLevelPerMil": 10
+    }
+  },
+  {
+    "hero_id": "elemental_farrah",
+    "property_block": {
+      "propertyType": "ChainStrikeWithTileCountBasedStrikeCount",
+      "id": "chain_strike_with_tile_count_based_strikes_purple",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 4650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 12,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "berserk_dark_brittle_farrah",
+          "turns": 4,
+          "statusEffect": "BerserkPurpleDefense",
+          "buff": "MinorDebuff",
+          "defenseMultiplierPerMil": 790,
+          "defenseMultiplierIncrementPerLevelPerMil": -20,
+          "defenseMultiplierIncrementPerHitPerMil": -50,
+          "maxNumberOfHits": 5
+        }
+      ],
+      "allowMainTargetInRandomTargets": true,
+      "additionalHitDamagePerMil": 1650,
+      "additionalHitDamageIncrementPerLevelPerMil": 50,
+      "powerAdjustmentPerHitPerMil": -90,
+      "powerAdjustmentPerHitPerLevelPerMil": -10,
+      "requiredElement": "Purple"
+    }
+  },
+  {
+    "hero_id": "shadow_zavinia",
+    "property_block": {
+      "propertyType": "ChainStrikeWithTileCountBasedStrikeCount",
+      "id": "chain_strike_with_tile_count_based_strikes_nature",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 4150,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 12,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "add_insanity_zavinia",
+          "statusEffect": "Insanity",
+          "buff": "PermanentDebuff",
+          "alwaysAdd": true,
+          "insanityToAdd": 10,
+          "reductionOnHealSources": [
+            "SpecialSkill",
+            "AssistSkill",
+            "Item",
+            "TileEffect"
+          ]
+        }
+      ],
+      "allowMainTargetInRandomTargets": true,
+      "additionalHitDamagePerMil": 1450,
+      "additionalHitDamageIncrementPerLevelPerMil": 50,
+      "powerAdjustmentPerHitPerMil": -90,
+      "powerAdjustmentPerHitPerLevelPerMil": -10,
+      "requiredElement": "Green"
+    }
+  },
+  {
+    "hero_id": "shadow_rosanna",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_single_target_with_insanity_rosanna",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 4650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 4,
+      "extraHitChancePerMil": 800,
+      "statusEffects": [
+        {
+          "id": "add_insanity_rosanna",
+          "statusEffect": "Insanity",
+          "buff": "PermanentDebuff",
+          "alwaysAdd": true,
+          "insanityToAdd": 20,
+          "reductionOnHealSources": [
+            "SpecialSkill",
+            "AssistSkill",
+            "Item",
+            "TileEffect"
+          ]
+        }
+      ],
+      "allowMainTargetInRandomTargets": true,
+      "applyStatusEffectsOnHit": true,
+      "minorDamageOnExtraHits": true
+    }
+  },
+  {
+    "hero_id": "guardian_elephant",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_guardian_elephant",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 1250,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 8,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "stacking_stun_guardian_elephant",
+          "statusEffect": "StackingAttackModifier",
+          "buff": "StackMinorDebuff",
+          "attackMultiplierPerMil": 910,
+          "attackMultiplierIncrementPerLevelPerMil": 0
+        },
+        {
+          "id": "stacking_brittle_guardian_elephant",
+          "statusEffect": "StackingDefenseModifier",
+          "buff": "StackMinorDebuff",
+          "defenseMultiplierPerMil": 940
+        }
+      ],
+      "useRandomMainTarget": true,
+      "allowMainTargetInRandomTargets": true,
+      "minorDamageOnExtraHits": false
+    }
+  },
+  {
+    "hero_id": "astral_lemonwood",
+    "property_block": {
+      "propertyType": "ThresholdAfterEffectChainStrike",
+      "id": "mana_threshold_chain_strike",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 3450,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 10,
+      "extraHitChancePerMil": 1000,
+      "allowMainTargetInRandomTargets": true,
+      "consecutiveHitDamageReductionPerMil": 100,
+      "thresholdPerMil": 300,
+      "thresholdType": "Mana",
+      "statNeedsToBeOverThreshold": true,
+      "secondEffectType": "AddMana",
+      "secondEffectPowerPerMil": -130,
+      "secondEffectPowerIncrementPerLevelPerMil": -10
+    }
+  },
+  {
+    "hero_id": "easter_miss_ethel",
+    "property_block": {
+      "propertyType": "ThresholdChainStrike",
+      "id": "health_threshold_chain_strike_miss_ethel",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 5300,
+      "powerMultiplierIncrementPerLevelPerMil": 100,
+      "consecutiveHitDamageReductionPerMil": 200,
+      "thresholdPerMil": 400,
+      "thresholdType": "Health",
+      "statNeedsToBeOverThreshold": true
+    }
+  },
+  {
+    "hero_id": "elemental_ash",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_ash",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 1150,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 8,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "berserk_fire_defense_brittle_ash",
+          "turns": 4,
+          "statusEffect": "BerserkRedDefense",
+          "buff": "MinorDebuff",
+          "defenseMultiplierPerMil": 720,
+          "defenseMultiplierIncrementPerLevelPerMil": -10,
+          "defenseMultiplierIncrementPerHitPerMil": -50,
+          "maxNumberOfHits": 5
+        }
+      ],
+      "useRandomMainTarget": true,
+      "allowMainTargetInRandomTargets": true,
+      "minorDamageOnExtraHits": false
+    }
+  },
+  {
+    "hero_id": "garrison_iocantha",
+    "property_block": {
+      "propertyType": "ChainStrikeWithStatusEffectTurnCountModifierPerHit",
+      "id": "chain_strike_with_buff_duration_reduction",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2500,
+      "powerMultiplierIncrementPerLevelPerMil": 100,
+      "maxExtraHits": 2,
+      "extraHitChancePerMil": 1000,
+      "minorDamageOnExtraHits": false,
+      "turnCountModifier": -1,
+      "affectsBuffs": true
+    }
+  },
+  {
+    "hero_id": "gargoyle_uwe",
+    "property_block": {
+      "propertyType": "ThresholdChainStrike",
+      "id": "health_threshold_chain_strike_uwe",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 8150,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "statusEffects": [
+        {
+          "id": "poison_on_enemy_special_uwe",
+          "turns": 3,
+          "statusEffect": "StatusEffectsOnSpecialCast",
+          "buff": "MajorDebuff",
+          "statusEffectsOnSpecialCast": [
+            {
+              "statusEffect": "Poison",
+              "id": "poison_more_more",
+              "buff": "MinorDebuff",
+              "damageMultiplierPerMil": 100,
+              "damageMultiplierIncrementPerLevelPerMil": 5
+            }
+          ],
+          "durationForStatusEffects": 5
+        }
+      ],
+      "consecutiveHitDamageReductionPerMil": 200,
+      "thresholdPerMil": 500,
+      "thresholdType": "Health"
+    }
+  },
+  {
+    "hero_id": "monster_hunter_dubhain",
+    "property_block": {
+      "propertyType": "ThresholdChainStrike",
+      "id": "health_threshold_chain_strike_dubhain",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "statusEffects": [
+        {
+          "id": "bleed_dubhain",
+          "turns": 3,
+          "statusEffect": "Bleeding",
+          "buff": "MinorDebuff",
+          "iconOverrideStatusEffectId": "",
+          "damageMultiplierPerMil": 75,
+          "damageMultiplierIncrementPerLevelPerMil": 5,
+          "additionalCasterSideEffect": "Heal",
+          "additionalCasterSideEffectPowerPerMil": 300,
+          "additionalCasterSideEffectTargetType": "NearToTarget"
+        }
+      ],
+      "consecutiveHitDamageReductionPerMil": -300,
+      "thresholdPerMil": 500,
+      "thresholdType": "Health",
+      "statNeedsToBeOverThreshold": true
+    }
+  },
+  {
+    "hero_id": "tales2_helgi",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_helgi",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 950,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 7,
+      "extraHitChancePerMil": 1000,
+      "useRandomMainTarget": true,
+      "allowMainTargetInRandomTargets": true,
+      "minorDamageOnExtraHits": false
+    }
+  },
+  {
+    "hero_id": "garrison_pip",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_pip",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 3150,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 2,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "bleed_pip",
+          "turns": 3,
+          "statusEffect": "Bleeding",
+          "buff": "MinorDebuff",
+          "damageMultiplierPerMil": 116,
+          "damageMultiplierIncrementPerLevelPerMil": 2
+        }
+      ],
+      "applyStatusEffectsOnHit": true,
+      "minorDamageOnExtraHits": false
+    }
+  },
+  {
+    "hero_id": "fire_god_maple",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_maple",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 2,
+      "extraHitChancePerMil": 1000,
+      "useRandomMainTarget": true,
+      "minorDamageOnExtraHits": false
+    }
+  },
+  {
+    "hero_id": "faun_isidore",
+    "property_block": {
+      "propertyType": "ChainStrikeWithPowerReductionPerHit",
+      "id": "chain_strike_isidore",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 3150,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 9,
+      "extraHitChancePerMil": 1000,
+      "allowMainTargetInRandomTargets": true,
+      "consecutiveHitDamageReductionPerMil": 100
+    }
+  },
+  {
+    "hero_id": "astral_dwarf_salniss",
+    "property_block": {
+      "propertyType": "DifferentExtraHitPowerChainStrike",
+      "id": "one_hit_chain_strike_salniss",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 4650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 1,
+      "extraHitChancePerMil": 1000,
+      "statusEffects": [
+        {
+          "id": "silence",
+          "turns": 3,
+          "statusEffect": "Silence",
+          "buff": "MinorDebuff"
+        }
+      ],
+      "statusEffectsOnExtraHitsOverride": [
+        {
+          "id": "received_damage_modifier_per_familiar",
+          "turns": 3,
+          "statusEffect": "ReceivedDamageModifierPerFamiliar",
+          "buff": "MinorDebuff",
+          "receivedDamageMultiplierPerMil": 1430,
+          "receivedDamageMultiplierIncrementPerLevelPerMil": 10,
+          "familiarTypes": [
+            "Minion",
+            "BigMinion"
+          ],
+          "extraDamageModifierPerFamiliarPerMil": 100,
+          "maxDamageModifierPerMil": 2000
+        }
+      ],
+      "allowMainTargetInRandomTargets": true,
+      "applyStatusEffectsOnHit": true,
+      "additionalHitDamagePerMil": 4650,
+      "additionalHitDamageIncrementPerLevelPerMil": 50
+    }
+  },
+  {
+    "hero_id": "astral_dwarf_haumri",
+    "property_block": {
+      "propertyType": "BuffChainStrike",
+      "id": "buff_chainstrike_haumri",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 5650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "consecutiveHitDamageReductionPerMil": 200
+    }
+  },
+  {
+    "hero_id": "astral_dwarf_ceris",
+    "property_block": {
+      "propertyType": "ThresholdChainStrike",
+      "id": "chain_strike_ceris",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 5650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "statusEffects": [
+        {
+          "id": "silence",
+          "turns": 4,
+          "statusEffect": "Silence",
+          "buff": "MinorDebuff"
+        }
+      ],
+      "consecutiveHitDamageReductionPerMil": 200,
+      "thresholdPerMil": 500,
+      "thresholdType": "Mana",
+      "statNeedsToBeOverThreshold": true
+    }
+  },
+  {
+    "hero_id": "outlaw_li_kui",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_li_kui",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 4,
+      "extraHitChancePerMil": 1000,
+      "allowMainTargetInRandomTargets": true,
+      "minorDamageOnExtraHits": false
+    }
+  },
+  {
+    "hero_id": "outlaw_wu_yong",
+    "property_block": {
+      "propertyType": "ThresholdAfterEffectChainStrike",
+      "id": "mana_threshold_chain_strike_wu_yong",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 4150,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 10,
+      "extraHitChancePerMil": 1000,
+      "consecutiveHitDamageReductionPerMil": 100,
+      "thresholdPerMil": 300,
+      "thresholdType": "Mana",
+      "statNeedsToBeOverThreshold": true,
+      "secondEffectType": "AddMana",
+      "secondEffectPowerPerMil": -130,
+      "secondEffectPowerIncrementPerLevelPerMil": -10
+    }
+  },
+  {
+    "hero_id": "outlaw_hu_sanniang",
+    "property_block": {
+      "propertyType": "ChainStrikeWithStatusEffectTurnCountModifierPerHit",
+      "id": "chain_strike_with_ailment_duration_increase_hu_sanniang",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 3750,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "useRandomMainTarget": true,
+      "minorDamageOnExtraHits": false,
+      "turnCountModifier": 3,
+      "affectsBuffs": false
+    }
+  },
+  {
+    "hero_id": "outlaw_shi_jin",
+    "property_block": {
+      "propertyType": "DifferentExtraHitPowerChainStrike",
+      "id": "chain_strike_shi_jin",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 8,
+      "extraHitChancePerMil": 1000,
+      "allowMainTargetInRandomTargets": true,
+      "additionalHitDamagePerMil": 2150,
+      "additionalHitDamageIncrementPerLevelPerMil": 50
+    }
+  },
+  {
+    "hero_id": "fox_halcyon",
+    "property_block": {
+      "propertyType": "FamiliarChainStrike",
+      "id": "minion_follower_chain_strike_halcyon",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 2900,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "targetFamiliarTypes": [
+        "Minion",
+        "Follower",
+        "BigMinion"
+      ]
+    }
+  },
+  {
+    "hero_id": "construct_ironheart",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_random_ironheart",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 4150,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 1,
+      "extraHitChancePerMil": 1000,
+      "useRandomMainTarget": true,
+      "minorDamageOnExtraHits": false
+    }
+  },
+  {
+    "hero_id": "construct_ironvein",
+    "property_block": {
+      "propertyType": "ChainStrike",
+      "id": "chain_strike_random_ironvein",
+      "chainEffectType": "Damage",
+      "powerMultiplierPerMil": 3650,
+      "powerMultiplierIncrementPerLevelPerMil": 50,
+      "maxExtraHits": 1,
+      "extraHitChancePerMil": 1000,
+      "useRandomMainTarget": true,
+      "minorDamageOnExtraHits": false
+    }
+  }
+]
