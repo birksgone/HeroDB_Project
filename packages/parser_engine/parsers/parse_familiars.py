@@ -72,22 +72,38 @@ def parse_familiars(familiars_list: list, special_data: dict, hero_stats: dict, 
         if familiar_type_lower in game_db.get('extra_description_keys', set()):
             extra_info = _find_and_parse_extra_description(["familiartype"], familiar_type_lower, search_context, lang_params, lang_db, hero_id, rules, parsers)
         
+        # 1. Create the parent summon item first
         summon_item = {"id":familiar_id,"lang_id":lang_id,"params":json.dumps(lang_params),**main_desc}
         if extra_info: summon_item["extra"] = extra_info
-        parsed_items.append(summon_item)
-
+        
+        # 2. Create a list to hold all child effects
+        nested_effects = []
         if effects := familiar_instance.get('effects'):
             for effect in effects:
                 if not isinstance(effect, dict): continue
                 effect_type = effect.get("effectType", "")
+
                 if effect_type == "AddStatusEffects":
                     status_effects_to_add = effect.get("statusEffects", [])
                     if not status_effects_to_add: continue
+                    # Parse the effects
                     parsed_effects, new_warnings = parse_status_effects(status_effects_to_add, special_data, hero_stats, lang_db, game_db, hero_id, rules, parsers, search_prefix="familiar.statuseffect.")
-                    parsed_items.extend(parsed_effects)
+                    # Add them to the NESTED list
+                    nested_effects.extend(parsed_effects)
                     warnings.extend(new_warnings)
-                elif effect_type: 
+                
+                elif effect_type: # e.g., "Damage"
+                    # The simple damage text is part of the summon description, so we don't need to parse it again as a separate line.
+                    # This could be used for other simple effects in the future.
                     pass
+        
+        # 3. Attach the nested effects to the parent
+        if nested_effects:
+            summon_item["nested_effects"] = nested_effects
+            
+        # 4. Append the single, complete familiar object to the main list
+        parsed_items.append(summon_item)
+
     return parsed_items, warnings
 
 
