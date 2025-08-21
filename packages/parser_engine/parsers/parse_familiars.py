@@ -12,6 +12,8 @@ from hero_parser import (
 # We need to import the status_effects parser to delegate tasks to it.
 from .parse_status_effects import parse_status_effects
 
+# In parsers/parse_familiars.py
+
 def parse_familiars(familiars_list: list, special_data: dict, hero_stats: dict, lang_db: dict, game_db: dict, hero_id: str, rules: dict, parsers: dict) -> (list, list):
     if not familiars_list: return [], []
     parsed_items = []; warnings = []
@@ -41,33 +43,38 @@ def parse_familiars(familiars_list: list, special_data: dict, hero_stats: dict, 
                               else find_best_lang_id(familiar_instance, all_familiar_lang_ids, parsers))
             if warning: warnings.append(warning)
 
-        if lang_id:
-            lang_params = {}; search_context = {**familiar_instance, "maxLevel": main_max_level}
-            placeholders = set(re.findall(r'\{(\w+)\}', lang_db.get(lang_id,{}).get("en","")))
-            health_val = familiar_instance.get('healthPerMil',0); inc_val_health = familiar_instance.get('healthPerLevelPerMil',0)
-            lang_params['FAMILIARHEALTHPERCENT'] = (health_val + inc_val_health * (main_max_level - 1)) / 10.0
-            attack_found = False
-            if effects_for_attack := familiar_instance.get('effects'):
-                for effect in effects_for_attack:
-                    if isinstance(effect,dict) and effect.get('effectType') == 'Damage' and 'attackPercentPerMil' in effect:
-                        attack_val = effect.get('attackPercentPerMil',0)
-                        inc_val_attack = effect.get('attackPercentIncrementPerLevelPerMil', 0)
-                        lang_params['FAMILIARATTACK'] = (attack_val + inc_val_attack * (main_max_level - 1)) / 10.0
-                        attack_found = True; break
-            for p_holder in placeholders - set(lang_params.keys()):
-                value, _ = find_and_calculate_value(p_holder, familiar_instance, main_max_level, hero_id, rules, is_modifier=False, ignore_keywords=['monster'])
-                if value is not None: lang_params[p_holder] = value
-            main_desc = generate_description(lang_id, {k:format_value(v) for k,v in lang_params.items()}, lang_db)
-            
-            extra_info = {}
-            if familiar_type_lower in game_db.get('extra_description_keys', set()):
-                extra_info = _find_and_parse_extra_description(["familiartype"], familiar_type_lower, search_context, lang_params, lang_db, hero_id, rules, parsers)
-            
-            summon_item = {"id":familiar_id,"lang_id":lang_id,"params":json.dumps(lang_params),**main_desc}
-            if extra_info: summon_item["extra"] = extra_info
-            parsed_items.append(summon_item)
-        else:
+        # --- THIS IS THE KEY FIX ---
+        if not lang_id:
             warnings.append(f"Could not find summon description for familiar '{familiar_id}'")
+            failure_text = f"FAIL_LANG_ID: Familiar '{familiar_id}'"
+            parsed_items.append({"id": familiar_id, "lang_id": "SEARCH_FAILED", "en": failure_text, "ja": failure_text})
+            continue
+
+        # --- If successful, proceed with parsing ---
+        lang_params = {}; search_context = {**familiar_instance, "maxLevel": main_max_level}
+        placeholders = set(re.findall(r'\{(\w+)\}', lang_db.get(lang_id,{}).get("en","")))
+        health_val = familiar_instance.get('healthPerMil',0); inc_val_health = familiar_instance.get('healthPerLevelPerMil',0)
+        lang_params['FAMILIARHEALTHPERCENT'] = (health_val + inc_val_health * (main_max_level - 1)) / 10.0
+        attack_found = False
+        if effects_for_attack := familiar_instance.get('effects'):
+            for effect in effects_for_attack:
+                if isinstance(effect,dict) and effect.get('effectType') == 'Damage' and 'attackPercentPerMil' in effect:
+                    attack_val = effect.get('attackPercentPerMil',0)
+                    inc_val_attack = effect.get('attackPercentIncrementPerLevelPerMil', 0)
+                    lang_params['FAMILIARATTACK'] = (attack_val + inc_val_attack * (main_max_level - 1)) / 10.0
+                    attack_found = True; break
+        for p_holder in placeholders - set(lang_params.keys()):
+            value, _ = find_and_calculate_value(p_holder, familiar_instance, main_max_level, hero_id, rules, is_modifier=False, ignore_keywords=['monster'])
+            if value is not None: lang_params[p_holder] = value
+        main_desc = generate_description(lang_id, {k:format_value(v) for k,v in lang_params.items()}, lang_db)
+        
+        extra_info = {}
+        if familiar_type_lower in game_db.get('extra_description_keys', set()):
+            extra_info = _find_and_parse_extra_description(["familiartype"], familiar_type_lower, search_context, lang_params, lang_db, hero_id, rules, parsers)
+        
+        summon_item = {"id":familiar_id,"lang_id":lang_id,"params":json.dumps(lang_params),**main_desc}
+        if extra_info: summon_item["extra"] = extra_info
+        parsed_items.append(summon_item)
 
         if effects := familiar_instance.get('effects'):
             for effect in effects:
@@ -80,10 +87,7 @@ def parse_familiars(familiars_list: list, special_data: dict, hero_stats: dict, 
                     parsed_items.extend(parsed_effects)
                     warnings.extend(new_warnings)
                 elif effect_type: 
-                    parsed_effect, new_warnings = parse_simple_familiar_effect(effect, familiar_instance, lang_db, hero_stats, game_db, hero_id, rules, parsers)
-                    if parsed_effect: parsed_items.append(parsed_effect)
-                    warnings.extend(new_warnings)
-                    
+                    pass
     return parsed_items, warnings
 
 

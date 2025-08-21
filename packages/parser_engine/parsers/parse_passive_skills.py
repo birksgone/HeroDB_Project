@@ -66,6 +66,14 @@ def parse_passive_skills(passive_skills_list: list, hero_stats: dict, lang_db: d
             })
         else:
             warnings.append(f"Could not resolve passive lang_ids for skill '{skill_id}'")
-            parsed_items.append({"id":skill_id,"title_en":f"FAILED: {skill_id}","description_en":"lang_id resolution failed."})
+            # Create a standardized failure object.
+            failure_text = f"FAIL_LANG_ID: type='{skill_type}', id='{skill_id}'"
+            parsed_items.append({
+                "id": skill_id,
+                "title_en": failure_text, 
+                "title_ja": failure_text,
+                "description_en": "", 
+                "description_ja": ""
+                })
             
     return parsed_items, warnings

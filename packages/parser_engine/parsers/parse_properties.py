@@ -56,7 +56,10 @@ def parse_properties(properties_list: list, special_data: dict, hero_stats: dict
             lang_id, warning = find_best_lang_id(prop_data, prop_lang_subset, parsers, parent_block=special_data)
             if warning: warnings.append(warning)
         if not lang_id:
-            parsed_items.append({"id":prop_id,"lang_id":"SEARCH_FAILED","en":f"Failed for {prop_id}","params":"{}"}); continue
+            # Create a standardized failure object.
+            failure_text = f"FAIL_LANG_ID: type='{property_type}', id='{prop_id}'"
+            parsed_items.append({"id":prop_id, "lang_id":"SEARCH_FAILED", "en":failure_text, "ja":failure_text}); 
+            continue
         
         lang_params = {}; search_context = {**prop_data, "maxLevel": main_max_level}
         placeholders = set(re.findall(r'\{(\w+)\}', lang_db.get(lang_id,{}).get("en","")))

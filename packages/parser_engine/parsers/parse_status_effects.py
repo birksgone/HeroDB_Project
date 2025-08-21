@@ -28,7 +28,10 @@ def parse_status_effects(status_effects_list: list, special_data: dict, hero_sta
             lang_id, warning = find_best_lang_id(combined_details, se_lang_subset, parsers, parent_block=special_data)
             if warning: warnings.append(warning)
         if not lang_id:
-            parsed_items.append({"id":effect_id,"lang_id":"SEARCH_FAILED","en":f"Failed for {effect_id}","params":"{}"}); continue
+            # Create a standardized failure object.
+            failure_text = f"FAIL_LANG_ID: type='{property_type}', id='{prop_id}'"
+            parsed_items.append({"id":prop_id, "lang_id":"SEARCH_FAILED", "en":failure_text, "ja":failure_text}); 
+            continue
             
         lang_params = {}; search_context = {**combined_details, "maxLevel": main_max_level}
         if (turns := combined_details.get("turns", 0)) > 0: lang_params["TURNS"] = turns
