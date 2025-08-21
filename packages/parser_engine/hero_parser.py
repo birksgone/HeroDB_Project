@@ -295,50 +295,50 @@ def parse_properties(properties_list: list, special_data: dict, hero_stats: dict
         prop_id = prop_data.get("id")
         property_type = prop_data.get("propertyType", "")
 
-        # --- SPECIAL PARSER: For multi-part properties like ChainStrike ---
+        # --- SPECIAL PARSER: For multi-part properties like ChainStrike (v2) ---
         if property_type == "DifferentExtraHitPowerChainStrike":
             search_context = {**prop_data, "maxLevel": main_max_level}
             
             # --- Part 1: Parse the initial hit ---
-            # Manually find the simple damage lang_id
-            initial_hit_lang_id, warning = find_best_lang_id({"propertyType": "Damage"}, prop_lang_subset, parsers)
+            initial_hit_prop = {"propertyType": prop_data.get("chainEffectType", "Damage")}
+            initial_hit_lang_id, warning = find_best_lang_id(initial_hit_prop, prop_lang_subset, parsers)
             if warning: warnings.append(f"ChainStrike initial hit warning: {warning}")
             if initial_hit_lang_id:
                 lang_params = {}
                 base = search_context.get("powerMultiplierPerMil", 0)
                 inc = search_context.get("powerMultiplierIncrementPerLevelPerMil", 0)
                 val = (base + inc * (main_max_level - 1)) / 10.0
-                lang_params["HEALTH"] = val # Assuming the placeholder is {HEALTH}
-                
+                lang_params["HEALTH"] = val
                 desc = generate_description(initial_hit_lang_id, {k: format_value(v) for k, v in lang_params.items()}, lang_db)
                 parsed_items.append({"id": f"{prop_id}_initial", "lang_id": initial_hit_lang_id, "params": json.dumps(lang_params), **desc})
 
-            # --- Part 2: Parse the chain hit ---
+            # --- Part 2: Parse the chain hit (with intelligence) ---
             chain_search_key = "differentextrahitpowerchainstrike"
+            # --- NEW: Add intelligence based on extraHitChancePerMil ---
+            if "extraHitChancePerMil" in prop_data:
+                chain_search_key += ".with_chance"
+
             chain_candidates = [k for k in prop_lang_subset if chain_search_key in k]
             chain_lang_id, warning = find_best_lang_id(prop_data, chain_candidates, parsers, parent_block=special_data)
             if warning: warnings.append(f"ChainStrike chain hit warning: {warning}")
             
             if chain_lang_id:
                 lang_params = {}
-                # Use find_and_calculate_value for chain params
                 placeholders = set(re.findall(r'\{(\w+)\}', lang_db.get(chain_lang_id,{}).get("en","")))
                 for p_holder in placeholders:
-                    # Override keys to look for specific chain values
-                    search_override = {}
-                    if p_holder == "CHANCE": search_override = {"key": "extraHitChancePerMil"}
-                    if p_holder == "DAMAGE": search_override = {"key": "additionalHitDamagePerMil", "increment_key": "additionalHitDamageIncrementPerLevelPerMil"}
+                    # Manually map placeholders to the correct JSON keys
+                    base_val, inc_val, is_permil = 0, 0, False
+                    if p_holder == "CHANCE":
+                        base_val = search_context.get("extraHitChancePerMil", 0); is_permil = True
+                    elif p_holder == "DAMAGE":
+                        base_val = search_context.get("additionalHitDamagePerMil", 0)
+                        inc_val = search_context.get("additionalHitDamageIncrementPerLevelPerMil", 0)
+                        is_permil = True
                     
-                    if search_override:
-                        base = search_context.get(search_override["key"], 0)
-                        inc = search_context.get(search_override.get("increment_key"), 0)
-                        val = (base + inc * (main_max_level - 1))
-                        if "permil" in search_override["key"]: val /= 10.0
-                        lang_params[p_holder] = val
-                    else:
-                        value, _ = find_and_calculate_value(p_holder, search_context, main_max_level, hero_id, rules)
-                        if value is not None: lang_params[p_holder] = value
-                
+                    calculated_val = base_val + inc_val * (main_max_level - 1)
+                    if is_permil: calculated_val /= 10.0 # --- FIXED: The forgotten / 10 ---
+                    lang_params[p_holder] = calculated_val
+
                 main_desc = generate_description(chain_lang_id, {k:format_value(v) for k,v in lang_params.items()}, lang_db)
                 extra_info = _find_and_parse_extra_description(["specialproperty", "property"], property_type, search_context, lang_params, lang_db, hero_id, rules, parsers)
                 chain_item = {"id": f"{prop_id}_chain", "lang_id": chain_lang_id, "params": json.dumps(lang_params), **main_desc}
