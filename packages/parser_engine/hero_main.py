@@ -272,32 +272,41 @@ def phase_two_parse_skills(debug_data: dict, lang_db: dict, game_db: dict, hero_
             special_data_for_hero = special_data
             parsers["hero_mana_speed_id"] = full_hero_data.get("manaSpeedId")
             
+            # --- The New, Robust Orchestration Logic ---
+            
+            # Direct Effect and Clear Buffs are simple, parse them first.
+            skill_descriptions['directEffect'] = parsers['direct_effect'](special_data, hero_final_stats, lang_db, game_db, hero_id, rules, parsers)
+            parsed_clear_buffs, new_warnings = parsers['clear_buffs'](special_data, lang_db, parsers)
+            skill_descriptions['clear_buffs'] = parsed_clear_buffs; collect_warnings(new_warnings)
+
+            # Pre-process properties to separate special ones from standard ones
             all_properties = special_data.get("properties", [])
             standard_properties = []
             
+            # Use setdefault to safely initialize lists
+            skill_descriptions.setdefault('properties', [])
+
             for prop in all_properties:
                 prop_type = prop.get("propertyType")
                 if prop_type == "DifferentExtraHitPowerChainStrike":
                     parsed_special, new_warnings = parse_chain_strike(prop, special_data, hero_final_stats, lang_db, game_db, hero_id, rules, parsers)
-                    skill_descriptions.setdefault('properties', []).extend(parsed_special)
+                    skill_descriptions['properties'].extend(parsed_special)
                     collect_warnings(new_warnings)
                 else:
                     standard_properties.append(prop)
-
-            skill_descriptions['directEffect'] = parsers['direct_effect'](special_data, hero_final_stats, lang_db, game_db, hero_id, rules, parsers)
             
-            parsed_clear_buffs, new_warnings = parsers['clear_buffs'](special_data, lang_db, parsers)
-            skill_descriptions['clear_buffs'] = parsed_clear_buffs; collect_warnings(new_warnings)
-            
+            # Parse the remaining standard properties
             parsed_properties, new_warnings = parsers['properties'](standard_properties, special_data, hero_final_stats, lang_db, game_db, hero_id, rules, parsers)
-            skill_descriptions.setdefault('properties', []).extend(parsed_properties); collect_warnings(new_warnings)
+            skill_descriptions['properties'].extend(parsed_properties); collect_warnings(new_warnings)
 
+            # Parse other skill types
             parsed_status_effects, new_warnings = parsers['status_effects'](special_data.get("statusEffects",[]), special_data, hero_final_stats, lang_db, game_db, hero_id, rules, parsers)
             skill_descriptions['statusEffects'] = parsed_status_effects; collect_warnings(new_warnings)
             
             parsed_familiars, new_warnings = parsers['familiars'](special_data.get("summonedFamiliars",[]), special_data, hero_final_stats, lang_db, game_db, hero_id, rules, parsers)
             skill_descriptions['familiars'] = parsed_familiars; collect_warnings(new_warnings)
 
+        # Parse passives separately, as they are not part of the special skill
         passive_list = full_hero_data.get('passiveSkills', [])
         costume_passive_list = []
         if costume_bonuses := full_hero_data.get('costumeBonusesId_details'):

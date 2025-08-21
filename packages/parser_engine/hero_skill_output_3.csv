@@ -8,13 +8,13 @@
 このキャラクターが特殊
 スキルを使用すると、[#!]100%[#]の
 確率で次の効果を発揮できる：","・Deals 28% damage per each [##elementpurple]Dark[#] shield on the board to all enemies, up to 0% damage in total.
-・The caster and nearby allies counterattack with 100% of the damage received for 3 turns.
+・The caster and nearby allies counterattack with 100% of the damage received for 3 turns. This effect cannot be dispelled.
 ・The caster and nearby allies reduce all received damage by -102% for 3 turns.
 
 
 ・After 4 turn the target and nearby enemies get [#!]Paralyzed[#] for 32 turns. Paralyzed enemies can't attack or gain mana and receive 64% increased damage.
 ・After 4 turn the target and nearby enemies get [#!]Paralyzed[#] for 32 turns. Paralyzed enemies can't attack or gain mana and receive 64% increased damage.","・ボード上に[##elementpurple]闇属性[#]の盾が出現する度に、敵全員に28%の追加ダメージを与える。付与ダメージの上限は合計0%まで。
-・3ターンの間、術者と近くにいる仲間が受けたダメージの100%で反撃する。
+・3ターンの間、術者と付近の仲間が受けたダメージの100%で反撃する。この効果は解除できない。
 ・3ターンの間、術者と近くにいる仲間の受けるダメージが-102%になる。
 
 
@@ -28,16 +28,16 @@
 - 特殊スキルの効果 -
 このキャラクターが特殊
 スキルを使用すると、[#!]100%[#]の
-確率で次の効果を発揮できる：","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 2 turns. This effect can't be dispelled.
+確率で次の効果を発揮できる：","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 2 turns.
 ・Deals 338 - 50 damage to all enemies after 2 turns, based on the damage the caster had taken while this effect was active.
 
 
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns. This effect can't be dispelled.
-・After 3 turn the target gets [#!]Paralyzed[#] for 24 turns.","・2ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns.
+・After 3 turn the target gets [#!]Paralyzed[#] for 24 turns.","・2ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
 ・2ターン後に、この効果が発動中に術者が受けたダメージに基づいて、338-50のダメージを敵全員に与える。
 
 
-・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
+・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
 ・3ターン後に、ターゲットが24ターンの間[#!]マヒ状態[#]になる。","Maximum effect is achieved upon taking 0% of max health in damage.","この効果は、最大HPの0%のダメージを受けた時点で最大になる。","",""
 "magic_milena_costume_ice","Milena C","--- Passives ---
 
@@ -72,14 +72,14 @@ When this character casts their Special Skill, they have a [#!]60%[#] chance to 
 された場合は、確率が
 [#!]100%[#]になる。","・All enemies get -27% attack for 3 turns.
 ・All enemies get -27% defense for 3 turns.
-・All enemies receive 342 Poison damage over 3 turns. This effect can't be cleansed.
+・All enemies receive 342 Poison damage over 3 turns.
 
 
 ・All allies receive 64 Burn damage over 6 turns.
 ・All allies receive 64 Burn damage over 6 turns.
 ・All allies receive 64 Burn damage over 6 turns.","・3ターンの間、敵全員の攻撃力が-27%になる。
 ・3ターンの間、敵全員の防御力が-27%になる。
-・敵全員に342の毒ダメージを与える(3ターン)。この効果は浄化不可。
+・3ターンの間、敵全員に342の毒ダメージを与える。
 
 
 ・6ターンの間、仲間全員に64の燃焼ダメージを与える。
@@ -113,21 +113,21 @@ When this character casts their Special Skill, they have a [#!]60%[#] chance to 
 ・FAIL_UNKNOWN","・Cleanses status ailments from all allies.
 ・Recovers 28% health for all allies.
 [*]Recovers additional 4% health per each [##elementred]Fire[#] shield on the board, up to 28% health in total.
-・All allies get 55% attack for 4 turns. This effect can't be dispelled.","・仲間全員のステータス異常を浄化する。
+・All allies get 55% attack for 4 turns.","・仲間全員のステータス異常を浄化する。
 ・仲間全員のHPを28%回復する。
 [*]さらに、ボード上の[##elementred]炎属性[#]の盾の数に応じてHPが4%回復する。ただし、回復の上限は28%まで。
-・4ターンの間、仲間全員の攻撃力が55%になる。この効果は解除できない。","","","",""
+・4ターンの間、仲間全員の攻撃力が55%になる。","","","",""
 "elemental_jequn_costume_gilded","Jequn C","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
 ・FAIL_UNKNOWN","・Deals 210% damage to all enemies.
 ・All [##elementpurple]Dark[#] enemies get -139% accuracy for 3 turns.
 ・All [##elementblue]Ice[#] enemies get -39% defense for 3 turns.
 ・All [##elementgreen]Nature[#] enemies get -39% mana generation for 3 turns.
-・All [##elementred]Fire[#] enemies get -39% attack for 3 turns. This effect can't be cleansed.","・敵全員に210%のダメージを与える。
+・All [#ff9f81]Fire[#] enemies get -39% attack for 3 turns.","・敵全員に210%のダメージを与える。
 ・3ターンの間、[##elementpurple]闇属性[#]の敵全員の命中率が-139%になる。
 ・3ターンの間、[##elementblue]氷属性[#]の敵全員の防御力が-39%になる。
 ・3ターンの間、[##elementgreen]自然属性[#]の敵全員のマナ生成が-39%になる。
-・3ターンの間、[##elementred]炎属性[#]の敵全員の攻撃力が-39%になる。この効果は浄化できない。","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。","",""
+・3ターンの間、すべての[#ff9f81]炎属性[#]の敵の攻撃力が-39%になる。","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。","",""
 "elemental_roz_costume_disco","Roz C","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
 ・FAIL_UNKNOWN","・Deals 40% damage to the target.
@@ -211,13 +211,13 @@ When this character casts their Special Skill, they have a [#!]60%[#] chance to 
 特殊スキルがフルチャージ
 された場合は、確率が
 [#!]100%[#]になる。
-・FAIL_UNKNOWN","・All allies regenerate 1368 HP over 3 turns.
-・All allies get 33% attack for 3 turns. This effect can't be dispelled.
+・FAIL_UNKNOWN","・All allies regenerate 1368 HP over 3 turns. This effect can't be dispelled.
+・All allies get 33% attack for 3 turns.
 
 
 ・All enemies receive 64 Burn damage over 5 turns.
-・All enemies receive 64 Burn damage over 5 turns.","・3ターンに渡って、仲間全員のHPが1368回復する。
-・3ターンの間、仲間全員の攻撃力が33%になる。この効果は解除できない。
+・All enemies receive 64 Burn damage over 5 turns.","・仲間全員のHPが1368回復(3ターン)。この効果は解除不可
+・3ターンの間、仲間全員の攻撃力が33%になる。
 
 
 ・5ターンの間、敵全員に64の燃焼ダメージを与える。
@@ -303,10 +303,10 @@ When this character starts a turn with low health for the first time during a ba
 ・FAIL_UNKNOWN","・Deals 480% damage to the target and all [##elementblue]Ice[#] enemies.
 ・All active status ailments are uncleansable for all enemies for the remaining turns of the status ailment.
 ・Automatically does 0 damage to the target and all [##elementblue]Ice[#] enemies when their mana gets full and reduces their mana by 50% for 4 turns.
-・Alters the power of all [##elementgreen]Nature[#] shields on the board. When an attacking Hero casts the special, the shields become enhanced and give 64% more mana. When a defending Hero casts the special, the shields become weakened and give 64% less mana.","・ターゲットと全ての[##elementblue]氷属性[#]の敵に480%のダメージを与える。
+・Enhances all [##elementgreen]Nature[#] shields on the board. Enhanced shields give 64% less mana to Heroes.","・ターゲットと全ての[##elementblue]氷属性[#]の敵に480%のダメージを与える。
 ・ステータス異常の残り有効ターン中、敵全員に対して発動中のすべてのステータス異常が浄化不可になる。
 ・4ターンの間、ターゲットのマナが満タンになると、自動的にターゲットと[##elementblue]氷属性[#]の敵全員に0ダメージを与え、マナを50%減少させる。
-・ボード上にあるすべての[##elementgreen]自然属性[#]の盾を変容する。攻撃側の英雄が特殊スキルを使用すると、盾が強化され、マナが64%になる。防衛側の英雄が特殊スキルを使用すると、盾が弱体化され、マナが64%になる。","","","",""
+・ボード上にあるすべての[##elementgreen]自然属性[#]の盾が「強化」される。盾が「強化」されると英雄のマナが64%減少する。","","","",""
 "elemental_anzia_costume_jailer","N/A","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
 ・FAIL_UNKNOWN","・All allies counterattack with 70% of the damage received, and a further 70% increase per each [##elementblue]Ice[#] shield on the board for 5 turns, up to 70% damage in total.
@@ -382,14 +382,14 @@ When this character starts a turn with low health for the first time during a ba
 スキルを使用すると、[#!]100%[#]の
 確率で次の効果を発揮できる：","・Deals 365% damage to the target and nearby enemies.
 ・The target automatically casts [#!]Shifting Mindless Attack[#] on a random ally when mana is full at the start of a turn during 3 turns. When this effect is triggered, it shifts to the hit ally and the duration is refreshed.
-・The target and nearby enemies get 50% increase for any healing received for 3 turns. This effect can't be dispelled.
+・The target and nearby enemies get 50% increase for any healing received for 3 turns.
 
 
 ・Deals 430% damage to the target and nearby enemies.
 ・After 4 turn the target gets [#!]Paralyzed[#] for 32 turns.
 ・The target and nearby enemies get silenced for 4 turn.","・ターゲットと近くにいる敵に365%のダメージを与える。
 ・3ターンの間、マナが満タンの場合に限り、ターン開始時にターゲットが自動的に[#!]転移マインドレスアタック[#]をランダムな仲間に放つ。この効果が発動された場合、ターゲットの攻撃対象が仲間になり、効果はターン終了時まで持続する。
-・3ターンの間、ターゲットと近くにいる敵の回復量が50%増加する。この効果は解除できない。
+・3ターンの間、ターゲットと近くにいる敵の回復量が50%増加する。
 
 
 ・ターゲットと近くにいる敵に430%のダメージを与える。
@@ -403,16 +403,16 @@ When this character starts a turn with low health for the first time during a ba
 - 特殊スキルの効果 -
 このキャラクターが特殊
 スキルを使用すると、[#!]100%[#]の
-確率で次の効果を発揮できる：","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 2 turns. This effect can't be dispelled.
+確率で次の効果を発揮できる：","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 2 turns.
 ・Deals 344 - 50 damage to all enemies after 2 turns, based on the damage the caster had taken while this effect was active.
 
 
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns. This effect can't be dispelled.
-・After 3 turn the target gets [#!]Paralyzed[#] for 24 turns.","・2ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns.
+・After 3 turn the target gets [#!]Paralyzed[#] for 24 turns.","・2ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
 ・2ターン後に、この効果が発動中に術者が受けたダメージに基づいて、344-50のダメージを敵全員に与える。
 
 
-・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
+・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
 ・3ターン後に、ターゲットが24ターンの間[#!]マヒ状態[#]になる。","Maximum effect is achieved upon taking 0% of max health in damage.","この効果は、最大HPの0%のダメージを受けた時点で最大になる。","",""
 "wonderland_tweedles","Tweedles","--- Passives ---
 
@@ -447,8 +447,8 @@ This character has innate resistance against incoming damage from status effects
 "elemental_farrah","Farrah","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
 ・FAIL_UNKNOWN","・Deals additional 200% damage to as many random enemies as there are [##elementpurple]Dark[#] tiles on the board, up to a maximum of 96 hits. The damage is reduced on each consecutive hit.
-・Cleanses status ailments from all allies at the end of each turn for 4 turns.","・ボード上にある[##elementpurple]闇属性[#]のタイルの数と同数のランダムな敵に与えるダメージが200%増加する。最大で96回目の攻撃ヒットまで有効。攻撃を当てるごとに追加ダメージは減少する。
-・4ターンの間、各ターン終了時に仲間全員のステータス異常を浄化する。","","","",""
+・Cleanses status ailments from all allies at the end of each turn for 4 turns. This effect can't be dispelled.","・ボード上にある[##elementpurple]闇属性[#]のタイルの数と同数のランダムな敵に与えるダメージが200%増加する。最大で96回目の攻撃ヒットまで有効。攻撃を当てるごとに追加ダメージは減少する。
+・4ターン毎の、ターン終了時に仲間全員のステータス異常を浄化する。この効果は解除不可","","","",""
 "castle_bear_torben","Torben","--- Passives ---
 
 - Health Recovery on Buff Received -
@@ -458,10 +458,10 @@ This character recovers [#!]5%[#] health when they receive a buff or a positive 
 バフまたはプラスの累積状態の間、このキャラクターのライフが[#!]5%[#]回復する","・Deals 200% damage to the target and nearby enemies.
 ・The duration of dispellable status ailments is reset for the target.
 ・The target receives 80% damage for all the damage their allies receive for 3 turns.
-・The target gets -44% defense for 3 turns.","・ターゲットと近くにいる敵に200%のダメージを与える。
+・The target gets -44% defense for 3 turns. This effect can't be cleansed.","・ターゲットと近くにいる敵に200%のダメージを与える。
 ・ターゲットが解除可能なステータス異常の影響を受ける時間がリセットされる。
 ・3ターンの間、仲間が受けたダメージの80%をターゲットに与える。
-・3ターンの間、ターゲットの防御力が-44%になる。","","","",""
+・3ターンの間、ターゲットの防御力が-44%になる。この効果は浄化できない。","","","",""
 "castle_bear_teddy","Teddy","--- Passives ---
 
 - Health Recovery on Buff Received -
@@ -470,9 +470,9 @@ This character recovers [#!]5%[#] health when they receive a buff or a positive 
 - バフを受けるごとのライフ回復 -
 バフまたはプラスの累積状態の間、このキャラクターのライフが[#!]5%[#]回復する","・Deals 180% damage to all enemies.
 ・All enemies fall [#!]asleep[#] and receives 170% increased damage while sleeping.
-・All allies regenerate 1896 HP over 4 turns.","・敵全員に180%のダメージを与える。
+・All allies regenerate 1896 HP over 4 turns. This effect can't be dispelled.","・敵全員に180%のダメージを与える。
 ・敵全員が[#!]睡眠状態[#]となる。眠っている間は被ダメージが170%増加する。
-・4ターンに渡って、仲間全員のHPが1896回復する。","A sleeping character cannot gain mana or attack.
+・仲間全員のHPが1896回復(4ターン)。この効果は解除不可","A sleeping character cannot gain mana or attack.
 
 ・ The sleeping target is woken once it takes damage. This excludes damage from Minions, Fiends, Mega Minions and Mega Fiends.
 
@@ -512,9 +512,9 @@ This character recovers [#!]5%[#] health when they receive a buff or a positive 
 - バフを受けるごとのライフ回復 -
 バフまたはプラスの累積状態の間、このキャラクターのライフが[#!]5%[#]回復する","・Each defeated ally has a 60% chance to get revived with 20% HP.
 ・All allies get 50% attack for 5 turns. The attack increases by -95% each turn, up to 50%.
-・All allies regenerate 1472 HP over 5 turns.","・60%の確率で、倒れた仲間が最大HPの20%を有した状態で復活する。
+・All allies regenerate 1472 HP over 5 turns. This effect can't be dispelled.","・60%の確率で、倒れた仲間が最大HPの20%を有した状態で復活する。
 ・5ターンの間、仲間全員の攻撃力が50%になる。攻撃力はターン毎に-95%増加し、最大50%まで増加する。
-・5ターンに渡って、仲間全員のHPが1472回復する。","","","",""
+・仲間全員のHPが1472回復(5ターン)。この効果は解除不可","","","",""
 "goblin_fizzcoil","Fizzcoil","--- Passives ---
 
 - Effects on Special Skill -
@@ -595,9 +595,9 @@ This character recovers [#!]5%[#] health when they receive a buff or a positive 
 スキルを使用すると、[#!]60%[#]の
 確率で次の効果を発揮できる：","・[#!]Growth:[#] All allies get 0 attack.
 ・Summons a Spotted Boar Mega Minion with 65% HP and 260% attack inherited from the caster.
-・When summoned, the Spotted Boar Mega Minion gives its owner immunity to status effect dispels for as long as the owner has a Spotted Boar Mega Minion. This effect can't be dispelled.","・[#!]成長：[#]仲間全員の攻撃力が0増加する。
+・When summoned, the Spotted Boar Mega Minion gives its owner immunity to buff dispels and reallocations for as long as the owner has a Spotted Boar Mega Minion.","・[#!]成長：[#]仲間全員の攻撃力が0増加する。
 ・術者のHPの65%と攻撃力の260%を持つマダラボアのメガミニオンをサモンする。
-・マダラボアのメガミニオンがサモンされた場合、自らの所有者がステータス効果解除に耐性を持つ。（所有者がマダラボアのメガミニオンを所有する限り有効）。この効果は解除できない。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
+・マダラボアのメガミニオンがサモンされた場合、自らの所有者がバフ解除および再割り当てに耐性を持つ。（所有者がマダラボアのメガミニオンを所有する限り有効）。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
 
 ・Additional Wither and Growth effects modify the Ability Scores further.
 
@@ -895,20 +895,20 @@ This character recovers [#!]5%[#] health when they receive a buff or a positive 
 バフまたはプラスの累積状態の間、このキャラクターのライフが[#!]5%[#]回復する","・Deals 290% damage to the target and nearby enemies.
 ・The attack has a 100% chance to bypass defensive buffs.
 ・The target and nearby enemies get -40% attack for 3 turns. The attack decreases by -105% each turn, up to -40%.
-・The target and nearby enemies get 20% increase for any healing received for 3 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵に290%のダメージを与える。
+・The target and nearby enemies get 20% increase for any healing received for 3 turns.","・ターゲットと近くにいる敵に290%のダメージを与える。
 ・攻撃時に100%の確率で、敵の防御バフを無効化する。
 ・3ターンの間、ターゲットと近くにいる敵の攻撃力が-40%になる。攻撃力はターン毎に-105%低下し、最大-40%まで減少する。
-・3ターンの間、ターゲットと近くにいる敵の回復量が20%増加する。この効果は解除できない。","","","",""
+・3ターンの間、ターゲットと近くにいる敵の回復量が20%増加する。","","","",""
 "castle_stag_alvar","Alvar","--- Passives ---
 
 - Health Recovery on Buff Received -
 This character recovers [#!]5%[#] health when they receive a buff or a positive stack.","--- Passives ---
 
 - バフを受けるごとのライフ回復 -
-バフまたはプラスの累積状態の間、このキャラクターのライフが[#!]5%[#]回復する","・Lifts all cleansable status ailments from all allies and randomly distributes them on enemies.
+バフまたはプラスの累積状態の間、このキャラクターのライフが[#!]5%[#]回復する","・Steals all dispellable buffs from all enemies and randomly distributes them on allies.
 ・The duration of status ailments is reset for all enemies.
 ・Deals 5% damage to all enemies.
-・All enemies reflect status effect buffs to a random character on the opposing team for 4 turns.","・仲間全員の浄化可能なステータス異常を浄化し、敵にランダムに分配する。
+・All enemies reflect status effect buffs to a random character on the opposing team for 4 turns.","・敵全員から、解除可能なバフをすべて盗み、仲間全員にランダムに分配する。
 ・敵全員のステータス異常の持続時間がリセットされる。
 ・敵全員に5%のダメージを与える。
 ・4ターンにわたり、敵全員がステータス効果バフを跳ね返し、そのバフを相手チームのランダムなキャラクター1体に付与する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","Only dispellable buffs are reflected.","解除可能なバフのみを跳ね返す。"
@@ -1081,8 +1081,6 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 240 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1099,17 +1097,15 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は240低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
 ・ステータス効果やパッシブスキル、ミニオンなどの付随効果による回復では、[#!]狂気[#]は低下しない。
 
 ・[#!]狂気[#]は敵味方が入れ替わった特殊スキルが使用されると完全に消去される。"
-"shadow_hysteria","Hysteria","","","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns. This effect can't be dispelled.
+"shadow_hysteria","Hysteria","","","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns.
 ・At the end of each turn, steals the latest dispellable buff from all enemies and distributes them randomly among allies for 4 turns.
-・Inflicts 440 [#!]Insanity[#] on the caster.","・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
+・Inflicts 440 [#!]Insanity[#] on the caster.","・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
 ・各ターン終了時に敵全員から、直近の解除可能なバフを盗み、4ターンの間、仲間にランダムに分配する。
 ・術者に440[#!]狂気[#]を付与する。","[#!]Insanity[#] adds a chance of reversing the targeting of a Special Skill.
 
@@ -1121,9 +1117,7 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
-・ [#!]Insanity[#] cannot be dispelled, cleansed or resisted.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
+・ [#!]Insanity[#] cannot be dispelled or cleansed.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 8 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1139,9 +1133,7 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
-・[#!]狂気[#]は解除や浄化、抵抗が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
+・[#!]狂気[#]は解除や浄化が不可能。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は8低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1158,8 +1150,6 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 440 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1176,8 +1166,6 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は440低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1201,8 +1189,6 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 200 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1219,8 +1205,6 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は200低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1252,8 +1236,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 400 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1270,8 +1252,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は400低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1288,8 +1268,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 40 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1306,8 +1284,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は40低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1335,8 +1311,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 440 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1353,8 +1327,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は440低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1384,8 +1356,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 200 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1402,8 +1372,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は200低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1435,8 +1403,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 320 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1453,18 +1419,16 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は320低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
 ・ステータス効果やパッシブスキル、ミニオンなどの付随効果による回復では、[#!]狂気[#]は低下しない。
 
 ・[#!]狂気[#]は敵味方が入れ替わった特殊スキルが使用されると完全に消去される。","",""
-"shadow_wulfstan","Wulfstan","","","・Steals all dispellable buffs from the target and randomly distributes them on allies.
+"shadow_wulfstan","Wulfstan","","","・Steals all dispellable buffs from all enemies to the caster.
 ・Deals 5% damage to all enemies and inflicts 80 [#!]Insanity[#] on them.
 ・Inflicts 80 [#!]Insanity[#] on all enemies.
-・Inflicts 440 [#!]Insanity[#] on the caster.","・ターゲットから、解除可能なバフをすべて盗み、仲間全員にランダムに分配する。
+・Inflicts 440 [#!]Insanity[#] on the caster.","・敵全員から解除可能なバフを全て盗み、術者に付与する。
 ・敵全員に対して5%のダメージを与え、80[#!]狂気[#]を付与する。
 ・敵全員に80[#!]狂気[#]を付与する。
 ・術者に440[#!]狂気[#]を付与する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","[#!]Insanity[#] adds a chance of reversing the targeting of a Special Skill.
@@ -1478,8 +1442,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 80 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1496,8 +1458,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は80低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1533,8 +1493,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 360 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1551,8 +1509,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は360低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1588,8 +1544,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 80 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1606,8 +1560,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は80低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1624,8 +1576,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 400 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1642,8 +1592,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は400低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1665,8 +1613,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 440 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1683,8 +1629,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は440低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1716,8 +1660,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 400 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1734,8 +1676,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は400低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1759,8 +1699,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 320 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1777,8 +1715,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は320低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1794,13 +1730,13 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 このキャラクターに付与された0.5[#!]狂気[#]ごとに、全被ダメージが0.5%軽減される（最大0.5%）。","・Deals 530% damage to the target.
 ・This Special Skill never misses its targets.
 ・The duration of dispellable status ailments is reset for the target.
-・The target gets -25% defense for 3 turns.
+・The target gets -25% defense for 3 turns. This effect can't be cleansed.
 ・If the target is defeated by the attack, then nearby enemies are inflicted with  800 [#!]Insanity[#].
 ・Inflicts 800 [#!]Insanity[#] on all enemies.
 ・Inflicts 400 [#!]Insanity[#] on the caster.","・ターゲットに530%のダメージを与える。
 ・この特殊スキルはターゲットに必ず命中する。
 ・ターゲットが解除可能なステータス異常の影響を受ける時間がリセットされる。
-・3ターンの間、ターゲットの防御力が-25%になる。
+・3ターンの間、ターゲットの防御力が-25%になる。この効果は浄化できない。
 ・攻撃によりターゲットが倒された場合、近くにいる敵に800[#!]狂気[#]が付与される。
 ・敵全員に800[#!]狂気[#]を付与する。
 ・術者に400[#!]狂気[#]を付与する。","[#!]Insanity[#] adds a chance of reversing the targeting of a Special Skill.
@@ -1814,8 +1750,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 800 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1832,8 +1766,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は800低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1850,8 +1782,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 400 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1868,8 +1798,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は400低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1905,8 +1833,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 120 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1923,8 +1849,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は120低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1954,8 +1878,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 160 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -1972,8 +1894,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は160低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -1990,8 +1910,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 400 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -2008,8 +1926,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は400低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -2033,8 +1949,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 80 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -2051,8 +1965,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は80低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -2080,8 +1992,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・ Reaching 100 [#!]Insanity[#] automatically casts a Special Skill when mana is full.
 
 ・ [#!]Insanity[#] cannot be dispelled or cleansed.
-
-・ If the target already has [#!]Insanity[#], the amount inflicted is lowered.
 ・
 ・ Hero's [#!]Insanity[#] can be lowered by 160 each time they are healed directly by Special Skills, Items or Tiles. Direct heals from Special Skills lower [#!]Insanity[#] only once per cast.
 
@@ -2098,8 +2008,6 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・[#!]狂気[#]値が100になると、マナが満タンになった際に自動的に特殊スキルを使用する。
 
 ・[#!]狂気[#]は解除や浄化が不可能。
-
-・ターゲットにすでに[#!]狂気[#]が付与されている場合には、与えられる狂気の値は低下する。
 ・
 ・特殊スキルやアイテム、タイルにより英雄が直接回復されるたびに、[#!]狂気[#]は160低下する。特殊スキルによる直接回復は、スキル使用1回ごとに1度だけ[#!]狂気[#]を低下させる。
 
@@ -2110,9 +2018,9 @@ All damage received by this character is reduced by 0.5% per 0.5 [#!]Insanity[#]
 ・FAIL_UNKNOWN","--- Passives ---
 ・FAIL_UNKNOWN","・The attack chains through all the enemies who are adjacent to any hit enemy and deals minor damage.
 ・All enemies get -134% accuracy for 3 turns.
-・All [##elementblue]Ice[#][#] Heroes get 60% attack for 3 turns.","・この攻撃は、攻撃した敵のすぐ隣にいる敵全員に連鎖し、小ダメージを与える。
+・All  [##elementblue]Ice[#] allies get 60% attack for 3 turns.","・この攻撃は、攻撃した敵のすぐ隣にいる敵全員に連鎖し、小ダメージを与える。
 ・3ターンの間、敵全員の命中率が-134%になる。
-・[##elementblue]氷属性[#]の英雄全員の攻撃力が60%になる(3ターン)","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。","",""
+・3ターンの間、[##elementblue]氷属性[#]の仲間全員の攻撃力が60%になる。","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。","",""
 "journey_xie_zi_jing","Xie Zi Jing","--- Passives ---
 
 - Mana on Buff Received -
@@ -2312,10 +2220,10 @@ This character has a [#!]50%[#] chance to recover [#!]10%[#] health when they re
 - 特殊スキルによるマナ獲得量減少 -
 マナ生成が[#!]-80%[#]になる。","・Attacks the target with [##elementpurple]Moonrise Strike[#], dealing up to 64 damage. Deals -60% more damage if the target is of the [##elementyellow]Holy[#] element.
 ・If the target is defeated by the attack, then nearby enemies are unable to gain any mana for 24 turns.
-・All enemies are unable to gain mana for 3 turns. This effect can't be cleansed.
+・All enemies are unable to gain mana for 3 turns.
 ・All allies counterattack with 60% of the damage received for 3 turns.","・ターゲットを[##elementpurple]ムーンライズストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementyellow]聖[#]属性の場合は、ダメージが-60%増加する。この攻撃は決して的を外さない。
 ・攻撃によりターゲットが倒れた場合、その周囲の敵が24ターンの間マナを獲得できなくなる。
-・敵全員がマナを生成できなくなる(3ターン)。この効果は浄化不可
+・敵全員がマナを生成できなくなる(3ターン)
 ・3ターンの間、仲間全員が受けたダメージの60%で反撃する。","Base damage:  6000
 
 ・Damage scales depending on the attacker's attack and defender's defense.
@@ -2528,9 +2436,9 @@ This character has a [#!]50%[#] chance to recover [#!]10%[#] health when they re
 
 - 特殊スキルによるマナ獲得量減少 -
 マナ生成が[#!]-80%[#]になる。","・All allies get a [##elementpurple]Moonrise Ward[#] for 6 turns, that reduces incoming Special Skill damage by up to --116. Reduces damage by additional -80% when the attacker is of the [##elementyellow]Holy[#] element.
-・All allies get 24% attack for 6 turns. This effect can't be dispelled.
+・All allies get 24% attack for 6 turns.
 ・All allies get 24% mana generation for 6 turns. This effect can't be dispelled.","・6ターンの間、仲間全員に[##elementpurple]ムーンライズウォード[#]が付与され、特殊スキルによる被ダメージを最大で-116軽減する。攻撃者が[##elementyellow]聖[#]属性の場合、さらにダメージが-80%軽減される。
-・6ターンの間、仲間全員の攻撃力が24%になる。この効果は解除できない。
+・6ターンの間、仲間全員の攻撃力が24%になる。
 ・すべての仲間がマナ生成24%を得る(6ターン)。この効果は解除不可","Base damage reduction: -116
 
 ・Damage reduction scales depending on the defender's defense and attacker's attack power.
@@ -2649,9 +2557,9 @@ This character receives [#!]10%[#] mana each time a buff is dispelled from them.
 - 特殊スキルによるマナ獲得量減少 -
 マナ生成が[#!]-80%[#]になる。","・Attacks the target and nearby enemies with [##elementpurple]Moonrise Strike[#], dealing up to 64 damage. Deals -60% more damage if the target is of the [##elementyellow]Holy[#] element.
 ・For 3 turns, reduces the mana of the target and nearby enemies by -15% at the end of the turn.
-・The target and nearby enemies get 50% increase for any healing received for 3 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵を[##elementpurple]ムーンライズストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementyellow]聖[#]属性の場合は、ダメージが-60%増加する。この攻撃は決して的を外さない。
+・The target and nearby enemies get 50% increase for any healing received for 3 turns.","・ターゲットと近くにいる敵を[##elementpurple]ムーンライズストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementyellow]聖[#]属性の場合は、ダメージが-60%増加する。この攻撃は決して的を外さない。
 ・3ターンの間、ターン終了時にターゲットと近くにいる敵のマナが-15%減少する。
-・3ターンの間、ターゲットと近くにいる敵の回復量が50%増加する。この効果は解除できない。","Base damage:  4080
+・3ターンの間、ターゲットと近くにいる敵の回復量が50%増加する。","Base damage:  4080
 
 ・Damage scales depending on the attacker's attack and defender's defense.
 
@@ -2721,10 +2629,10 @@ This character recovers [#!]10%[#] health when they receive a status ailment or 
 
 - ステータス異常によるライフ回復 -
 ステータス異常またはマイナスの累積状態の間、このキャラクターのライフが[#!]10%[#]回復する","・Recovers 1% health for all allies.
-・Steals all dispellable buffs from the target and randomly distributes them on allies.
+・Steals all dispellable buffs from all enemies to the caster.
 ・The target falls [#!]asleep[#] and receives 150% increased damage while sleeping.
 ・[##elementpurple]Element Link[#] gives all [##elementpurple]Dark[#] allies 10% additional Special Skill damage for 4 turns. This effect can't be dispelled.","・仲間全員のHPを1%回復する。
-・ターゲットから、解除可能なバフをすべて盗み、仲間全員にランダムに分配する。
+・敵全員から解除可能なバフを全て盗み、術者に付与する。
 ・ターゲットが[#!]睡眠状態[#]となる。眠っている間は被ダメージが150%増加する。
 ・4ターンの間、[##elementpurple]属性リンク[#]によって、[##elementpurple]闇属性[#]の仲間全員が特殊スキルを使用した際に、10%の追加ダメージを与える。この効果は解除できない。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","A sleeping character cannot gain mana or attack.
 
@@ -2809,9 +2717,9 @@ Enemy Mega Minions can't attack or use abilities.","--- Passives ---
 
 - メガミニオン阻止 -
 敵のメガミニオンが攻撃できず、能力も使用できなくなる。","・Deals 160% damage to all enemies.
-・Lifts the latest cleansable status ailment from all allies and randomly distributes them on enemies.
+・Steals the latest dispellable buff from all enemies and randomly distributes them on allies.
 ・All enemies receive Mana Corruption for 2 turns. Each time an afflicted enemy receives mana from an additional source, they receive -921 damage.","・敵全員に160%のダメージを与える。
-・仲間全員に最後に付与された浄化可能なステータス異常を浄化し、敵にランダムに分配する。
+・敵全員から、直近の解除可能なバフを盗み、仲間にランダムに分配する。
 ・2ターンの間、敵全員がマナ崩壊の影響を受ける。マナ崩壊の影響に苦しむいずれかの敵が追加のマナ供給源からマナを入手するたびに、敵全員に-921ダメージが付与される。","","","",""
 "gargoyle_garten","Garten","--- Passives ---
 
@@ -3150,9 +3058,9 @@ This character has innate resistance against [#!]Burn[#].
 - 被ダメージ共有 -
 このキャラクターが受けたダメージの[#!]20%[#]を他の仲間全員で共有する。","・Deals 265% damage to the target and nearby enemies.
 ・This Special Skill never misses its targets.
-・The caster and nearby allies get 20% mana generation for 3 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵に265%のダメージを与える。
+・The caster and nearby allies get 20% mana generation for 3 turns.","・ターゲットと近くにいる敵に265%のダメージを与える。
 ・この特殊スキルはターゲットに必ず命中する。
-・3ターンの間、術者と近くにいる仲間のマナ生成が20%になる。この効果は解除できない。","","","",""
+・3ターンの間、術者と近くにいる仲間のマナ生成が20%になる。","","","",""
 "fire_god_zarga","Zarga","--- Passives ---
 ・FAIL_UNKNOWN
 ・FAIL_UNKNOWN","--- Passives ---
@@ -3172,16 +3080,16 @@ This character has innate resistance against [#!]Burn[#].
 ・次の3ターンの間、仲間全員に攻撃力-90%が付与され、いずれかの仲間が特殊スキルを使用するたびに、追加で-90%の攻撃力が付与される（最大20%）。
 ・術者が防御力-20%を得る(3ターン)。この効果は解除不可","","","",""
 "easter_miss_ethel","Miss Ethel","","","・Deals 20% damage to hit targets.
-・The caster gets -15% mana generation for 3 turns.","・攻撃したターゲットに20%のダメージを与える。
-・術者のマナ生成が-15%になる(3ターン)","","","",""
+・The caster gets -15% mana generation for 3 turns. This effect can't be dispelled.","・攻撃したターゲットに20%のダメージを与える。
+・3ターンの間、術者のマナ生成が-15%になる。この効果は解除できない。","","","",""
 "elemental_grilka","Grilka","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
 ・FAIL_UNKNOWN","・If there are 64 or more [##elementyellow]Holy shields[#] on the board,  all effects cast in this Special Skill are undispellable.
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 5 turns. This effect can't be dispelled.
-・All allies regenerate 1520 HP over 5 turns.
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 5 turns.
+・All allies regenerate 1520 HP over 5 turns. This effect can't be dispelled.
 ・All allies get 44% mana generation for 5 turns. This effect can't be dispelled.","・ボード上に[##elementyellow]聖属性の盾[#]が64個以上存在している場合、この特殊スキルで付与されるすべての効果が解除不可になる。
-・5ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
-・5ターンに渡って、仲間全員のHPが1520回復する。
+・5ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
+・仲間全員のHPが1520回復(5ターン)。この効果は解除不可
 ・すべての仲間がマナ生成44%を得る(5ターン)。この効果は解除不可","","","",""
 "elemental_craum","Craum","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
@@ -3199,20 +3107,18 @@ This character has innate resistance against [#!]Burn[#].
 "elemental_nylora","Nylora","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
 ・FAIL_UNKNOWN","・Deals 550% damage to the target.
-・Deals 24% damage to the target.
-[*]Deals additional 24% damage per each [#ff9f81]Fire[#] shield on the board, up to 64% damage in total.
+・Attacks the target with [##elementblue]Frostfall Strike[#], dealing up to 64 damage. Deals 24% more damage if the target is of the [##elementred]Fire[#] element. This Special Skill never misses its targets.
 ・Target's element is changed to [##elementred]Fire[#] for 3 turns.
 ・The target gets -68% defense against [#41d8fe]Ice[#] for 3 turns.","・ターゲットに550%のダメージを与える。
-・ターゲットに24%のダメージを与える。
-[*]さらに、ダメージの合計が64%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に24%の追加ダメージを与える。
+・ターゲットを[##elementblue]フロストフォールストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementred]炎[#]属性の場合は、ダメージが24%増加する。この特殊スキルは決して的を外さない。
 ・3ターンの間、ターゲットの属性が[##elementred]炎[#]に変化する。
 ・3ターンの間、ターゲットの[#41d8fe]氷属性[#]に対する防御力が-68%になる。","","","",""
 "elemental_ash","Ash","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
 ・FAIL_UNKNOWN","・Deals 8% damage to the target and 64 random enemies.
-・Cleanses status ailments from all allies at the end of each turn for 4 turns.
+・Cleanses status ailments from all allies at the end of each turn for 4 turns. This effect can't be dispelled.
 ・Damage is increased by 5% per each [##elementred]Fire[#] shield on the board, up to 5% damage per hit.","・ターゲットとランダムな敵64体に8%のダメージを与える。
-・4ターンの間、各ターン終了時に仲間全員のステータス異常を浄化する。
+・4ターン毎の、ターン終了時に仲間全員のステータス異常を浄化する。この効果は解除不可
 ・ボード上にある[##elementred]炎属性[#]の盾1つごとに与ダメージが5%増加する。与ダメージは攻撃1発ごとに最大5%まで上昇する。","","","",""
 "elemental_vander","Vander","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
@@ -3241,7 +3147,15 @@ This character has innate resistance against [#!]Burn[#].
 ・[#!]成長：[#]仲間全員の攻撃力が0増加する。
 ・[#!]弱化：[#]敵全員の攻撃力が0減少する。
 ・5ターンの間、仲間全員の防御力が35%になる。
-・5ターンの間、敵全員の防御力が-35%になる。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。"
+・5ターンの間、敵全員の防御力が-35%になる。","The duration modification affects both cleansable and uncleansable effects.
+・
+・If the duration of any effect is reduced to zero, the effect is considered as having expired naturally.","持続時間変更は浄化可能な効果および浄化不可な効果両方に影響を及ぼす。
+・
+・効果の持続時間がゼロになった場合、その効果は自然に失効したものと見なされる。","The duration modification affects both cleansable and uncleansable effects.
+・
+・If the duration of any effect is reduced to zero, the effect is considered as having expired naturally.","持続時間変更は浄化可能な効果および浄化不可な効果両方に影響を及ぼす。
+・
+・効果の持続時間がゼロになった場合、その効果は自然に失効したものと見なされる。"
 "garrison_iocantha","Iocantha","--- Passives ---
 
 - Resist Burn -
@@ -3322,9 +3236,9 @@ This character has innate resistance against [#!]Burn[#].
 - 燃焼耐性 -
 このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ
 ・FAIL_UNKNOWN","・Deals 210% damage to the target and nearby enemies.
-・The caster and nearby allies get 36% defense for 3 turns. This effect can't be cleansed.
+・The caster and nearby allies get 36% defense for 3 turns.
 ・The caster and nearby allies get -78% critical chance for 3 turns.","・ターゲットと近くにいる敵に210%のダメージを与える。
-・3ターンの間、術者と近くにいる仲間の防御力が36%になる。この効果は浄化できない。
+・3ターンの間、術者と近くにいる仲間の防御力が36%になる。
 ・3ターンの間、術者と近くにいる仲間がクリティカル攻撃を与える確率が-78%になる。","","","",""
 "gargoyle_uwe","Uwe","--- Passives ---
 
@@ -3383,11 +3297,11 @@ Every time this Gargoyle casts a Special Skill, all allies receive Softskin. The
 Every time this Gargoyle casts a Special Skill, all allies receive Softskin. The next 64 times they receive damage, it is reduced by 64%. They also resist all status ailments, mana reductions and Insanity. This effect can't be dispelled.","--- Passives ---
 
 - ガーゴイルの石膚 -
-このガーゴイルが特殊スキルを使用するごとに、仲間全員に「柔膚」が与えられる。その後、仲間の被ダメージが64回、64%軽減される。さらに、あらゆるステータス異常、マナ減少、狂気を無効化する。この効果は解除できない。","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns. This effect can't be dispelled.
-・The caster gets 40% mana generation for 4 turns.
+このガーゴイルが特殊スキルを使用するごとに、仲間全員に「柔膚」が与えられる。その後、仲間の被ダメージが64回、64%軽減される。さらに、あらゆるステータス異常、マナ減少、狂気を無効化する。この効果は解除できない。","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns.
+・The caster gets 40% mana generation for 4 turns. This effect can't be dispelled.
 ・All allies except the caster receive [#!]Softskin[#].
-・All allies recover 5600 health after 4 turns, or immediately if the effect is removed before the duration ends.","・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
-・術者のマナ生成が40%になる(4ターン)
+・All allies recover 5600 health after 4 turns, or immediately if the effect is removed before the duration ends.","・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
+・4ターンの間、術者のマナ生成が40%になる。この効果は解除できない。
 ・術者以外の仲間全員に[#!]柔膚[#]が付与される。
 ・4ターン後に、仲間全員が5600のライフを回復する。前述のターン終了前にこの効果が消去されると、その時点でライフが付与される。","The next time they receive damage, it is reduced by 0%. They also resist all status ailments, mana reductions and Insanity. This effect can't be dispelled.","次のダメージを受けると、被ダメージが0%軽減される。さらに、あらゆるステータス異常、マナ減少、狂気を無効化する。この効果は解除できない。","",""
 "gargoyle_hilda","Hilda","--- Passives ---
@@ -3409,9 +3323,9 @@ Every time this Gargoyle casts a Special Skill, all allies receive Softskin. The
 - ガーゴイルの石膚 -
 このガーゴイルが特殊スキルを使用するごとに、仲間全員に「柔膚」が与えられる。その後、仲間の被ダメージが64回、64%軽減される。さらに、あらゆるステータス異常、マナ減少、狂気を無効化する。この効果は解除できない。","・Cleanses status ailments from all allies.
 ・All allies except the caster receive [#!]Softskin[#].
-・All allies regenerate 800 HP over 3 turns.","・仲間全員のステータス異常を浄化する。
+・All allies regenerate 800 HP over 3 turns. This effect can't be dispelled.","・仲間全員のステータス異常を浄化する。
 ・術者以外の仲間全員に[#!]柔膚[#]が付与される。
-・3ターンに渡って、仲間全員のHPが800回復する。","The next time they receive damage, it is reduced by 0%. They also resist all status ailments, mana reductions and Insanity. This effect can't be dispelled.","次のダメージを受けると、被ダメージが0%軽減される。さらに、あらゆるステータス異常、マナ減少、狂気を無効化する。この効果は解除できない。","",""
+・仲間全員のHPが800回復(3ターン)。この効果は解除不可","The next time they receive damage, it is reduced by 0%. They also resist all status ailments, mana reductions and Insanity. This effect can't be dispelled.","次のダメージを受けると、被ダメージが0%軽減される。さらに、あらゆるステータス異常、マナ減少、狂気を無効化する。この効果は解除できない。","",""
 "construct_rhineglow","Rhineglow","--- Passives ---
 
 - Resist Burn -
@@ -3434,10 +3348,10 @@ The [#!]Destructive Core[#] activates each time this character's Special Skill i
 [#!]破壊コア[#]はこのキャラクターが特殊スキルを使用するたびに有効になる：
 
 [*][#!]破壊コア[#]のチャージが満タンになると、敵全員に300%のダメージを与える。
-[*]この際に与えるダメージはコアのチャージ量に基づいて決められる。コアが有効になると、すべてのチャージが消耗される。","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns. This effect can't be dispelled.
-・All allies regenerate 2080 HP over 3 turns.
-・Stores all damage dealt to the caster for 3 turns. When the effect ends, stored damage is dealt to all enemies, up to a maximum of 6800 damage. This effect can't be dispelled.","・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
-・3ターンに渡って、仲間全員のHPが2080回復する。
+[*]この際に与えるダメージはコアのチャージ量に基づいて決められる。コアが有効になると、すべてのチャージが消耗される。","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns.
+・All allies regenerate 2080 HP over 3 turns. This effect can't be dispelled.
+・Stores all damage dealt to the caster for 3 turns. When the effect ends, stored damage is dealt to all enemies, up to a maximum of 6800 damage. This effect can't be dispelled.","・3ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
+・仲間全員のHPが2080回復(3ターン)。この効果は解除不可
 ・3ターンの間、術者が受けたすべてのダメージを蓄積し、効果終了時に蓄積したダメージを敵全員に付与する。付与できるダメージは最大6800ダメージまで。この効果は解除できない。","","","",""
 "construct_carta","Carta","--- Passives ---
 
@@ -3462,9 +3376,9 @@ The [#!]Repair Core[#] activates each time this character's Special Skill is cas
 
 [*][#!]修復コア[#]がチャージが満タンになると、仲間全員のライフが250%ブーストされる。
 [*]この際にブーストされるライフはコアのチャージ量に基づいて決められる。コアが有効になると、すべてのチャージが消耗される。","・Recovers 45% health for all allies.
-・Lifts the latest cleansable status ailment from all allies and randomly distributes them on enemies.
+・Steals the latest dispellable buff from all enemies and randomly distributes them on allies.
 ・All allies get 33% mana generation for 3 turns. This effect can't be dispelled.","・仲間全員のライフを45%回復する。
-・仲間全員に最後に付与された浄化可能なステータス異常を浄化し、敵にランダムに分配する。
+・敵全員から、直近の解除可能なバフを盗み、仲間にランダムに分配する。
 ・すべての仲間がマナ生成33%を得る(3ターン)。この効果は解除不可","","","",""
 "garrison_caelen","Caelen","--- Passives ---
 
@@ -3682,10 +3596,10 @@ This character has innate resistance against [#!]Burn[#].
 このキャラクターが受けたダメージの[#!]20%[#]を他の仲間全員で共有する。","・Deals 350% damage to all enemies.
 ・This Special Skill never misses its targets.
 ・Dispels buffs from all enemies at the end of each turn for 4 turns.
-・Cleanses status ailments from all allies at the end of each turn for 4 turns.","・敵全員に350%のダメージを与える。
+・Cleanses status ailments from all allies at the end of each turn for 4 turns. This effect can't be dispelled.","・敵全員に350%のダメージを与える。
 ・この特殊スキルはターゲットに必ず命中する。
 ・4ターンの間、各ターン終了時に敵全員のバフを解除する。
-・4ターンの間、各ターン終了時に仲間全員のステータス異常を浄化する。","","","",""
+・4ターン毎の、ターン終了時に仲間全員のステータス異常を浄化する。この効果は解除不可","","","",""
 "holy_god_aviana","Aviana","--- Passives ---
 
 - Resist Burn -
@@ -3714,9 +3628,9 @@ This character has innate resistance against [#!]Burn[#].
 - 燃焼耐性 -
 このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ
 ・FAIL_UNKNOWN","・Deals 280% damage to all enemies.
-・Alters the power of all [##elementblue]Ice[#] shields on the board. When an attacking Hero casts the special, the shields become enhanced and give 64% more mana. When a defending Hero casts the special, the shields become weakened and give 64% less mana.
+・Enhances all [##elementblue]Ice[#] shields on the board. Enhanced shields give 64% less mana to Heroes.
 ・[##elementblue]Element Link[#] gives all [##elementblue]Ice[#] allies -95% dodge chance for 6 turns. This effect can't be dispelled.","・敵全員に280%のダメージを与える。
-・ボード上にあるすべての[##elementblue]氷属性[#]の盾を変容する。攻撃側の英雄が特殊スキルを使用すると、盾が強化され、マナが64%になる。防衛側の英雄が特殊スキルを使用すると、盾が弱体化され、マナが64%になる。
+・ボード上にあるすべての[##elementblue]氷属性[#]の盾が「強化」される。盾が「強化」されると英雄のマナが64%減少する。
 ・6ターンの間、[##elementblue]属性リンク[#]によって、[##elementblue]氷属性[#]の仲間全員の回避確率が-95%になる。この効果は解除できない。","","","",""
 "dark_god_sir_casmir","Sir Casmir","・Cleanses status ailments from the caster and nearby allies.
 
@@ -4036,9 +3950,9 @@ If this character loses more than [#!]25%[#] of max health at once, they summon 
 このキャラクターが倒れると、このキャラクターの[#!]64%[#]のHPと[#!]64%[#]の攻撃力を持つスライムの[#!]メガミニオン[#]が、近くにいる仲間のもとにサモンされる。
 
 - スライムミニオンの分裂 -
-このキャラクターが、1回の攻撃により最大ライフの[#!]25%[#]を失うと、自身のもとに[#!]10%[#]のHPと[#!]40%[#]の攻撃力を備えた[#!]スライムのメガミニオン[#]をサモンする。","・All allies get 60% attack for 5 turns. This effect can't be dispelled.
+このキャラクターが、1回の攻撃により最大ライフの[#!]25%[#]を失うと、自身のもとに[#!]10%[#]のHPと[#!]40%[#]の攻撃力を備えた[#!]スライムのメガミニオン[#]をサモンする。","・All allies get 60% attack for 5 turns.
 ・All allies get 44% mana generation for 5 turns. This effect can't be dispelled.
-・If any ally is defeated during the next 5 turns, they are resurrected in the beginning of their next turn with 100% health. All status effects and stacks are removed when the ally is defeated.","・5ターンの間、仲間全員の攻撃力が60%になる。この効果は解除できない。
+・If any ally is defeated during the next 5 turns, they are resurrected in the beginning of their next turn with 100% health. All status effects and stacks are removed when the ally is defeated.","・5ターンの間、仲間全員の攻撃力が60%になる。
 ・すべての仲間がマナ生成44%を得る(5ターン)。この効果は解除不可
 ・5ターン以内に仲間が倒れた場合、次のターン開始時に、100%のライフを保有した状態で復活する。すべてのステータス効果と累積は、仲間が倒れた時に解除される。","","","",""
 "faun_verity","Verity","--- Passives ---
@@ -4243,10 +4157,10 @@ This character has innate resistance against [#!]Burn[#] and gains 100 boosted h
 このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ。これにより、抵抗に成功するたびにライフが100ブーストされ、さらに100%のマナも獲得する。
 ・FAIL_UNKNOWN","・Attacks all enemies with [##elementred]Firestorm Strike[#], dealing up to 64 damage. Deals -60% more damage if the target is of the [##elementgreen]Nature[#] element.
 ・Damage bypasses target's Minions.
-・All enemies receive 388 Poison damage over 4 turns. This effect can't be cleansed.
+・All enemies receive 388 Poison damage over 4 turns.
 ・All enemies take 50% increased damage from status ailments for 4 turns.","・敵全員を[##elementred]ファイヤーストームストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementgreen]自然[#]属性の場合は、ダメージが-60%増加する。
 ・ダメージはターゲットの持つミニオンを貫通する。
-・敵全員に388の毒ダメージを与える(4ターン)。この効果は浄化不可。
+・4ターンの間、敵全員に388の毒ダメージを与える。
 ・4ターンの間、敵全員がステータス異常から受けるダメージが50%増加する。","Base damage:  4320
 
 ・Damage scales depending on the attacker's attack and defender's defense.
@@ -4277,9 +4191,9 @@ This character has innate resistance against [#!]Burn[#] and gains 100 boosted h
 - 強化燃焼抵抗 -
 このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ。これにより、抵抗に成功するたびにライフが100ブーストされ、さらに100%のマナも獲得する。
 ・FAIL_UNKNOWN","・Attacks all enemies with [##elementred]Firestorm Strike[#], dealing up to 64 damage. Deals -60% more damage if the target is of the [##elementgreen]Nature[#] element.
-・The caster steals generated mana of all enemies over 5 turns starting low and increasing every turn until on the last turn all the generated mana is stolen. This effect can't be cleansed, but it gets removed if the caster is defeated.
+・The caster steals generated mana of all enemies over 5 turns starting low and increasing every turn until on the last turn all the generated mana is stolen.
 ・At the end of each turn, steals the latest dispellable buff from all enemies and distributes them randomly among allies for 5 turns.","・敵全員を[##elementred]ファイヤーストームストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementgreen]自然[#]属性の場合は、ダメージが-60%増加する。
-・術者が敵全員のマナを5ターンに渡って奪う。最初は少量しか奪えないが、ターン毎に奪える量が増え、生成されたすべてのマナを奪うまで続く。この効果は浄化不可だが、術者が倒れると消える。
+・術者が敵全員のマナを5ターンに渡って奪う。最初は少量しか奪えないが、ターン毎に奪える量が増え、生成されたすべてのマナを奪うまで続く。
 ・各ターン終了時に敵全員から、直近の解除可能なバフを盗み、5ターンの間、仲間にランダムに分配する。","Base damage:  7120
 
 ・Damage scales depending on the attacker's attack and defender's defense.
@@ -4426,10 +4340,10 @@ This character has innate resistance against [#!]Burn[#] and gains 100 boosted h
 ・FAIL_UNKNOWN","・Deals -60% damage to the target and nearby enemies.
 [*]Deals additional 240% damage per each [#ff9f81]Fire[#] shield on the board, up to 240% damage in total.
 ・Reduces max health of the target and nearby enemies by 3600. The effect is stronger against targets with boosted health.
-・The target and nearby enemies get 30% increase for any healing received for 4 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵に-60%のダメージを与える。
+・The target and nearby enemies get 30% increase for any healing received for 4 turns.","・ターゲットと近くにいる敵に-60%のダメージを与える。
 [*]さらに、ダメージの合計が240%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に240%の追加ダメージを与える。
 ・ターゲットと近くにいる敵の最大HPを3600減少させる。この効果はHPをブーストされたターゲットにも有効となる。
-・4ターンの間、ターゲットと近くにいる敵の回復量が30%増加する。この効果は解除できない。","Base damage:  7520
+・4ターンの間、ターゲットと近くにいる敵の回復量が30%増加する。","Base damage:  7520
 
 ・Damage scales depending on the attacker's attack and defender's defense.
 
@@ -4462,11 +4376,9 @@ This character has innate resistance against [#!]Burn[#] and gains 100 boosted h
 
 - 強化燃焼抵抗 -
 このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ。これにより、抵抗に成功するたびにライフが100ブーストされ、さらに100%のマナも獲得する。
-・FAIL_UNKNOWN","・Deals -60% damage to all enemies.
-[*]Deals additional 240% damage per each [#ff9f81]Fire[#] shield on the board, up to 240% damage in total.
+・FAIL_UNKNOWN","・Attacks all enemies with [##elementblue]Frostfall Strike[#], dealing up to 64 damage. Deals -60% more damage if the target is of the [##elementred]Fire[#] element. This Special Skill never misses its targets.
 ・All allies get 40% defense for 4 turns.
-・All allies get -100% reduction to damage received from status ailments for 4 turns.","・敵全員に-60%のダメージを与える。
-[*]さらに、ダメージの合計が240%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に240%の追加ダメージを与える。
+・All allies get -100% reduction to damage received from status ailments for 4 turns.","・敵全員を[##elementblue]フロストフォールストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementred]炎[#]属性の場合は、ダメージが-60%増加する。この特殊スキルは決して的を外さない。
 ・4ターンの間、仲間全員の防御力が40%になる。
 ・仲間全員がステータス異常によって受けるダメージを-100%減らす(4ターン)","Base damage:  4720
 
@@ -4498,12 +4410,10 @@ This character has innate resistance against [#!]Burn[#] and gains 100 boosted h
 - 強化燃焼抵抗 -
 このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ。これにより、抵抗に成功するたびにライフが100ブーストされ、さらに100%のマナも獲得する。
 ・FAIL_UNKNOWN","・Safely cleanses all status ailments from the caster.
-・Deals -60% damage to the target.
-[*]Deals additional 240% damage per each [#ff9f81]Fire[#] shield on the board, up to 240% damage in total.
+・Attacks the target with [##elementblue]Frostfall Strike[#], dealing up to 64 damage. Deals -60% more damage if the target is of the [##elementred]Fire[#] element. This Special Skill never misses its targets.
 ・[#!]Stack (Max: -100):[#] All allies get 5% mana generation.
 ・[#!]Stack (Max: 20):[#] All allies get 20% defense.","・術者のステータス異常を全て安全に浄化する。
-・ターゲットに-60%のダメージを与える。
-[*]さらに、ダメージの合計が240%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に240%の追加ダメージを与える。
+・ターゲットを[##elementblue]フロストフォールストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementred]炎[#]属性の場合は、ダメージが-60%増加する。この特殊スキルは決して的を外さない。
 ・[#!]累積効果(最大：-100)：[#]仲間全員のマナ生成が5%になる。
 ・[#!]累積効果(最大：20):[#]仲間全員の防御力が20%になる。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","Base damage:  10320
 
@@ -4534,12 +4444,10 @@ This character has innate resistance against [#!]Burn[#] and gains 100 boosted h
 
 - 強化燃焼抵抗 -
 このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ。これにより、抵抗に成功するたびにライフが100ブーストされ、さらに100%のマナも獲得する。
-・FAIL_UNKNOWN","・Deals -60% damage to the target.
-[*]Deals additional 240% damage per each [#ff9f81]Fire[#] shield on the board, up to 240% damage in total.
+・FAIL_UNKNOWN","・Attacks the target with [##elementblue]Frostfall Strike[#], dealing up to 64 damage. Deals -60% more damage if the target is of the [##elementred]Fire[#] element. This Special Skill never misses its targets.
 ・Steals the latest dispellable buff from target and grants it to the caster.
 ・If the enemy has been inflicted with Frost, [#!]Freezing Power Hooks[#] will be recast on a random target.
-[*]Can be recast up to 32 times. If the enemy is defeated the Special Skill will not be recast.","・ターゲットに-60%のダメージを与える。
-[*]さらに、ダメージの合計が240%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に240%の追加ダメージを与える。
+[*]Can be recast up to 32 times. If the enemy is defeated the Special Skill will not be recast.","・ターゲットを[##elementblue]フロストフォールストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementred]炎[#]属性の場合は、ダメージが-60%増加する。この特殊スキルは決して的を外さない。
 ・ターゲットに最後に付与された解除可能なバフを奪い、それを術者に付与する。
 ・敵にフロストが付与されると、ランダムなターゲット1体に[#!]凍結の強力フック[#]を再度使用する。
 [*]再使用の上限は32回で、フロストを付与された敵が倒されると、この特殊スキルが再度使用されることはなくなる。","Base damage:  6240
@@ -4641,11 +4549,9 @@ This character has innate resistance against [#!]Burn[#] and gains 100 boosted h
 
 - 強化燃焼抵抗 -
 このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ。これにより、抵抗に成功するたびにライフが100ブーストされ、さらに100%のマナも獲得する。
-・FAIL_UNKNOWN","・Deals -70% damage to the target.
-[*]Deals additional 240% damage per each [#ff9f81]Fire[#] shield on the board, up to 240% damage in total.
+・FAIL_UNKNOWN","・Attacks the target with [##elementblue]Frostfall Strike[#], dealing up to 64 damage. Deals -70% more damage if the target is of the [##elementred]Fire[#] element. This Special Skill never misses its targets.
 ・The target gets [#!]Soul Bound[#] for 3 turns. This effect can't be cleansed.
-・All damage received by the caster is also dealt to all [#!]Soul Bound[#] enemies.","・ターゲットに-70%のダメージを与える。
-[*]さらに、ダメージの合計が240%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に240%の追加ダメージを与える。
+・All damage received by the caster is also dealt to all [#!]Soul Bound[#] enemies.","・ターゲットを[##elementblue]フロストフォールストライク[#]で攻撃し、最大64ダメージを与える。対象が[##elementred]炎[#]属性の場合は、ダメージが-70%増加する。この特殊スキルは決して的を外さない。
 ・3ターンの間、ターゲットに[#!]魂の拘束[#]を付与する。この効果は浄化できない。
 ・術者が受けたすべてのダメージが[#!]魂の拘束[#]が付与された敵全員にも与えられる。","Base damage:  2400
 
@@ -5079,23 +4985,23 @@ Enemy [#!]Minions[#] have [#!]-150%[#] HP.","--- Passives ---
 
 - ミニオン弱体化 -
 敵の[#!]ミニオン[#]のHPが[#!]-150%[#]になる。","・The target receives 584 Poison damage over 2 turns.
-・The target gets 60% increase for any healing received for 2 turns. This effect can't be dispelled.
+・The target gets 60% increase for any healing received for 2 turns.
 
 
 ・The target and nearby enemies get silenced for 4 turn.
 ・The target and nearby enemies get silenced for 4 turn.
 
 
-・All enemies receive 1824 Poison damage over 6 turns. This effect can't be cleansed.
+・All enemies receive 1824 Poison damage over 6 turns.
 ・All enemies get 50% increase for any healing received for 6 turns.","・2ターンの間、ターゲットに584の毒ダメージを与える。
-・2ターンの間、ターゲットの回復量が60%になる。この効果は解除できない。
+・2ターンの間、ターゲットの回復量が60%増加する。
 
 
 ・4ターンの間、ターゲットと近くにいる敵を沈黙状態にする。
 ・4ターンの間、ターゲットと近くにいる敵を沈黙状態にする。
 
 
-・敵全員に1824の毒ダメージを与える(6ターン)。この効果は浄化不可。
+・6ターンの間、敵全員に1824の毒ダメージを与える。
 ・6ターンの間、敵全員の回復量が50%になる。","","","",""
 "ninja_aurum","Aurum","--- Passives ---
 
@@ -5147,10 +5053,10 @@ When this character casts their Special Skill, they have a [#!]50%[#] chance to 
 特殊スキルがフルチャージ
 された場合は、確率が
 [#!]0%[#]になる。","・Boosts health of all allies by 600. Boosted health can exceed max HP.
-・All allies regenerate 240 HP over 4 turns.
+・All allies regenerate 240 HP over 4 turns. This effect can't be dispelled.
 ・All allies get 50% attack as long as the caster has boosted health. This effect can't be dispelled.
 ・[#70e92f]Element Link[#] gives all [#70e92f]Nature[#] allies -80% critical chance for 6 turns. This effect can't be dispelled.","・仲間全員のHPを600回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
-・4ターンに渡って、仲間全員のHPが240回復する。
+・仲間全員のHPが240回復(4ターン)。この効果は解除不可
 ・仲間全員の攻撃力が50%になる(術者がライフブースト状態の間ずっと発動)。この効果は解除不可。
 ・6ターンの間、[#70e92f]属性リンク[#]によって、[#70e92f]自然属性[#]の仲間全員のクリティカル攻撃を与える確率が、-80%になる。この効果は解除できない。","","","",""
 "ninja_satsui","Satsui","--- Passives ---
@@ -5278,20 +5184,20 @@ Enemy [#!]Minions[#] have [#!]-150%[#] HP.","--- Passives ---
 
 - ミニオン弱体化 -
 敵の[#!]ミニオン[#]のHPが[#!]-150%[#]になる。","・Deals 310% damage to the target.
-・The target gets -19% defense for 2 turns.
+・The target gets -19% defense for 2 turns. This effect can't be cleansed.
 
 
 ・Deals 335% damage to the target.
-・The target gets -24% defense for 4 turns.
+・The target gets -24% defense for 4 turns. This effect can't be cleansed.
 
 
 ・Deals 360% damage to the target.
 ・After 6 turn the target gets [#!]Paralyzed[#] for 0 turns.","・ターゲットに310%のダメージを与える。
-・2ターンの間、ターゲットの防御力が-19%になる。
+・2ターンの間、ターゲットの防御力が-19%になる。この効果は浄化できない。
 
 
 ・ターゲットに335%のダメージを与える。
-・4ターンの間、ターゲットの防御力が-24%になる。
+・4ターンの間、ターゲットの防御力が-24%になる。この効果は浄化できない。
 
 
 ・ターゲットに360%のダメージを与える。
@@ -5340,9 +5246,9 @@ All enemies get [#!]50%[#] healing.","--- Passives ---
 
 - 回復量低下 -
 敵全員の回復量が[#!]50%[#]になる。","・Steals Minions from the target.
-・Inflicts the target with [#!]Greed[#] for {TURNS} turns. Friendly effects from Special Skills only affect characters with Greed. This effect is uncleansable.
+・Inflicts the target with [#!]Greed[#] for {TURNS} turns. Friendly effects from Special Skills only affect characters with Greed.
 ・All enemies receive 3912 [#!]Curse[#] damage over 4 turns, starting low and increasing every turn.","・ターゲットからミニオンを盗む。
-・{TURNS}ターンの間、ターゲットに[#!]グリード[#]を付与する。この間、特殊スキルによる有用な効果は、グリードが付与されたキャラクターのみにしか作用しなくなる。この効果は浄化できない。
+・{TURNS}ターンの間、ターゲットに[#!]グリード[#]を付与する。この間、特殊スキルによる有用な効果は、グリードが付与されたキャラクターのみにしか作用しなくなる。
 ・4ターンの間、敵全員に3912の[#!]呪い[#]ダメージを与える。与えるダメージは小ダメージから始まり、徐々に増加する。","Greed prevents all other heroes in the same team from gaining friendly effects. This includes all buffs, healing and growth effects.","グリードにより、同じチーム内の他の英雄全員が有用な効果を獲得できなくなる。これには全てのバフや回復、成長効果も含まれる。","",""
 "faun_ysabel","Ysabel","--- Passives ---
 
@@ -5596,13 +5502,13 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 
 - 燃焼耐性 -
 このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ","・Heals each ally with 50% of total damage dealt.
-・All allies regenerate 2960 HP over 3 turns.
+・All allies regenerate 2960 HP over 3 turns. This effect can't be dispelled.
 ・[#!]Status Effect Generator:[#] At the start of the next 24 turns, this character gives a random ally an additional 100% Special Skill damage and 133% mana generation for 100 turns. This effect cannot be dispelled.
 ・The caster gets [#!]Sticky Surface[#] for 4 turns. This effect can't be dispelled.
 [*][#!]Sticky Surface[#]: Steals -95 random dispellable buff or Growth effect from an attacking enemy.
 ・The caster gets [#!]Sticky Surface[#] for 4 turns. This effect can't be dispelled.
 [*][#!]Sticky Surface[#]: Steals -99 random dispellable buff or Growth effect from an attacking enemy.","・与えられた合計ダメージの50%分、仲間全員を回復する。
-・3ターンに渡って、仲間全員のHPが2960回復する。
+・仲間全員のHPが2960回復(3ターン)。この効果は解除不可
 ・[#!]ステータス効果生成：[#]次の24ターンの開始時に、100ターンの間、このキャラクターが追加でいずれかの仲間に100%の特殊スキルダメージと133%のマナ生成を付与する。この効果は解除できない。
 ・4ターンの間、術者が[#!]粘着層[#]を獲得する。この効果は解除できない。
 [*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで-95個の解除可能なバフまたは成長効果を奪う。
@@ -5628,9 +5534,9 @@ When this character casts their Special Skill, they have a [#!]100%[#] chance to
 された場合は、確率が
 [#!]100%[#]になる。","・Deals 465% damage to the enemy with the lowest remaining HP. Deals 65% damage to all other enemies.
 ・Deals 715% damage to the enemy with the highest remaining HP. Deals 115% damage to all other enemies.
-・All enemies are unable to gain mana for 4 turns. This effect can't be cleansed.","・残りのHPが最も少ない敵に465%のダメージを与える。その他の敵全員に65%のダメージを与える。
+・All enemies are unable to gain mana for 4 turns.","・残りのHPが最も少ない敵に465%のダメージを与える。その他の敵全員に65%のダメージを与える。
 ・残りのHPが最も高い敵に715%のダメージを与える。その他の敵全員に115%のダメージを与える。
-・敵全員がマナを生成できなくなる(4ターン)。この効果は浄化不可","","","",""
+・敵全員がマナを生成できなくなる(4ターン)","","","",""
 "monster_hunter_amund","Amund","--- Passives ---
 
 - Special Skill Damage Reduction -
@@ -5710,11 +5616,11 @@ All [#!]Dances[#] cast by enemies only last for 8 turn.","--- Passives ---
 ・Deals 5% damage to the target and nearby enemies.
 ・The target and nearby enemies receive [#!]Minion Wound[#] for 3 turns.
 [*][#!]Minion Wound[#]: Target's Minions' health is reduced by 50% and Mega Minion's health is reduced by 25% each turn.
-・The target and nearby enemies get 20% increase for any healing received for 3 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵のバフを解除する。
+・The target and nearby enemies get 20% increase for any healing received for 3 turns.","・ターゲットと近くにいる敵のバフを解除する。
 ・ターゲットと近くにいる敵に5%のダメージを与える。
 ・ターゲットと近くにいる敵が3ターンの間、[#!]ミニオンの外傷[#]を負う。
 [*][#!]ミニオンの外傷[#]：毎ターン、ターゲットのミニオンのライフが50%減少し、メガミニオンのライフが25%減少する。
-・3ターンの間、ターゲットと近くにいる敵の回復量が20%増加する。この効果は解除できない。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
+・3ターンの間、ターゲットと近くにいる敵の回復量が20%増加する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
 "bard_astrid","Astrid","--- Passives ---
 
 - Quick Tempo: Ballad -
@@ -5816,11 +5722,11 @@ The first [#!]16[#] times this character casts a Special Skill that deals damage
 
 - 特殊スキルによるダメージの増加 -
 このキャラクターが攻撃系の特殊スキルを初めて使用した場合、[#!]16[#]回目まで、攻撃力が[#!]50%[#]増加する。","・Deals 440% damage to the target.
-・The target gets -34% defense for 2 turns.
-・The target gets 66% increase for any healing received for 2 turns. This effect can't be dispelled.
+・The target gets -34% defense for 2 turns. This effect can't be cleansed.
+・The target gets 66% increase for any healing received for 2 turns.
 ・[#e290ff]Element Link[#] gives all [#e290ff]Dark[#] allies -80% critical chance for 6 turns. This effect can't be dispelled.","・ターゲットに440%のダメージを与える。
-・2ターンの間、ターゲットの防御力が-34%になる。
-・2ターンの間、ターゲットの回復量が66%になる。この効果は解除できない。
+・2ターンの間、ターゲットの防御力が-34%になる。この効果は浄化できない。
+・2ターンの間、ターゲットの回復量が66%増加する。
 ・6ターンの間、[#e290ff]属性リンク[#]によって、[#e290ff]闇属性[#]の仲間全員のクリティカル攻撃を与える確率が、-80%になる。この効果は解除できない。","","","",""
 "faun_bramble","Bramble","--- Passives ---
 
@@ -5934,10 +5840,10 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 This character has a [#!]15%[#] chance to dodge Special Skills that deal damage.","--- Passives ---
 
 - 特殊スキル回避 -
-このキャラクターは[#!]15%[#]の確率でダメージ付きの特殊スキルを回避する。","・Steals all dispellable buffs from the target and randomly distributes them on allies.
+このキャラクターは[#!]15%[#]の確率でダメージ付きの特殊スキルを回避する。","・Steals all dispellable buffs from all enemies to the caster.
 ・Deals 6000% damage to the target and inflicts 2 [#!]Insanity[#] on them.
 ・The target falls into [#!]Deep Sleep[#] and receives 180% increased damage while in Deep Sleep.
-・Recovers 1% health for all allies.","・ターゲットから、解除可能なバフをすべて盗み、仲間全員にランダムに分配する。
+・Recovers 1% health for all allies.","・敵全員から解除可能なバフを全て盗み、術者に付与する。
 ・ターゲットに6000%のダメージを与え、2[#!]狂気[#]を付与する。
 ・ターゲットが[#!]深い睡眠状態[#]となる。深い睡眠状態になっている間は被ダメージが180%増加する。
 ・仲間全員のHPを1%回復する。","The character in Deep Sleep cannot gain mana or attack.
@@ -6053,7 +5959,11 @@ This character has innate resistance against [#!]Burn[#].
 ・[#!]Growth:[#] The caster and nearby allies get 0 attack.
 ・The caster and nearby allies get -74% critical chance for 3 turns.","・ターゲットと近くにいる敵に380%のダメージを与える。
 ・[#!]成長：[#]術者と近くにいる仲間の攻撃力が0増加する。
-・3ターンの間、術者と近くにいる仲間がクリティカル攻撃を与える確率が-74%になる。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。","",""
+・3ターンの間、術者と近くにいる仲間がクリティカル攻撃を与える確率が-74%になる。","The duration modification affects both cleansable and uncleansable effects.
+・
+・If the duration of any effect is reduced to zero, the effect is considered as having expired naturally.","持続時間変更は浄化可能な効果および浄化不可な効果両方に影響を及ぼす。
+・
+・効果の持続時間がゼロになった場合、その効果は自然に失効したものと見なされる。","",""
 "astral_dwarf_salniss","Salniss","--- Passives ---
 
 - Bypass Minions -
@@ -6092,9 +6002,9 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 
 - 燃焼耐性 -
 このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ","・Recovers 50% health for all allies.
-・All allies regenerate 760 HP over 4 turns.
+・All allies regenerate 760 HP over 4 turns. This effect can't be dispelled.
 ・All allies reduce all received damage by -50% for 4 turns.","・仲間全員のライフを50%回復する。
-・4ターンに渡って、仲間全員のHPが760回復する。
+・仲間全員のHPが760回復(4ターン)。この効果は解除不可
 ・4ターンの間、仲間全員の受けるダメージが-50%になる。","","","",""
 "astral_dwarf_pluth","Pluth","--- Passives ---
 
@@ -6120,7 +6030,11 @@ This character's Special Skill never misses its targets.","--- Passives ---
 ・All enemies are immune to new status effect buffs for 2 turns. Attempted mana generation buffs will be replaced by -24% mana generation for -24 turns.","・敵の位置をランダムにシャッフルする。
 ・敵全員に5%のダメージを与える。
 ・[#!]弱化：[#]敵全員の攻撃力が0減少する。
-・2ターンの間、敵全員が新たなステータス効果バフの影響を受けなくなる。マナ生成バフを発動しようとすると-24ターンの間、マナ生成が-24%になる。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。"
+・2ターンの間、敵全員が新たなステータス効果バフの影響を受けなくなる。マナ生成バフを発動しようとすると-24ターンの間、マナ生成が-24%になる。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","The duration modification affects both cleansable and uncleansable effects.
+・
+・If the duration of any effect is reduced to zero, the effect is considered as having expired naturally.","持続時間変更は浄化可能な効果および浄化不可な効果両方に影響を及ぼす。
+・
+・効果の持続時間がゼロになった場合、その効果は自然に失効したものと見なされる。"
 "astral_dwarf_quari","Quari","--- Passives ---
 
 - Bypass Minions -
@@ -6261,10 +6175,10 @@ This character has innate resistance against [#!]Burn[#].
 このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ
 ・FAIL_UNKNOWN","・All enemies become [#!]Soul Connected[#] for 4 turns. Soul Connected enemies share received damage.
 ・All enemies get -34% defense for 4 turns.
-・All allies reflect all status effects and 145% damage back to the attacker and block other negative effects from enemies' [##elementred]Fire[#] Special Skills for 4 turns. This effect can't be dispelled.
+・All allies reflect all status effects and 145% damage back to the attacker and block other negative effects from enemies' [##elementred]Fire[#] Special Skills for 4 turns.
 ・[#70e92f]Element Link[#] gives all [#70e92f]Nature[#] allies 130% defense against Special Skills for 4 turns. This effect can't be dispelled.","・4ターンの間、敵全員に[#!]ソウル・コネクト[#]が発動する。ソウル・コネクトによって魂が繋がった敵同士は被ダメージを共有する。
 ・4ターンの間、敵全員の防御力が-34%になる。
-・仲間全員が、すべてのステータス効果を跳ね返す。さらに、4ターンの間、[##elementred]炎属性[#]の敵の特殊スキルによって発生した、その他のマイナスの影響を無効にし、ダメージの145%を攻撃者に跳ね返す。この効果は解除不可。
+・仲間全員が、すべてのステータス効果を跳ね返す。さらに、4ターンの間、[##elementred]炎属性[#]の敵の特殊スキルによって発生した、その他のマイナスの影響を無効にし、ダメージの145%を攻撃者に跳ね返す。
 ・[#70e92f]属性リンク[#]によって、[#70e92f]自然属性[#]の仲間全員の特殊スキルに対する防御力が130%増加する(4ターン)。この効果は解除不可","Status effects cast by characters, Minions and Fiends on the same side cannot be reflected.","同じチームのキャラクター、ミニオン、フィエンドが特殊スキルを使用して敵にステータス効果を付与した場合、敵はこれらの効果を跳ね返すことができない。","",""
 "lunar_new_year_xiaoqing","Xiaoqing","--- Passives ---
 
@@ -6273,9 +6187,9 @@ Enemy Mega Minions can't attack or use abilities.","--- Passives ---
 
 - メガミニオン阻止 -
 敵のメガミニオンが攻撃できず、能力も使用できなくなる。","・Recovers 40% health for all allies.
-・Lifts the latest cleansable status ailment from all allies and randomly distributes them on enemies.
+・Steals the latest dispellable buff from all enemies and randomly distributes them on allies.
 ・All allies reflect status ailments, negative stacks, and Wither effects to a random character on the opposing team for 3 turns.","・仲間全員のライフを40%回復する。
-・仲間全員に最後に付与された浄化可能なステータス異常を浄化し、敵にランダムに分配する。
+・敵全員から、直近の解除可能なバフを盗み、仲間にランダムに分配する。
 ・3ターンにわたり、仲間全員がステータス異常、マイナスの累積、弱化効果を跳ね返し、そのステータス異常を相手チームのランダムなキャラクター1体に付与する。","Status effects cast by characters, Minions and Fiends on the same side cannot be reflected.","同じチームのキャラクター、ミニオン、フィエンドが特殊スキルを使用して敵にステータス効果を付与した場合、敵はこれらの効果を跳ね返すことができない。","",""
 "lunar_new_year_baishu","Baishu","--- Passives ---
 
@@ -6511,10 +6425,10 @@ When this character receives damage [#!]Special Skills[#], they receive [#!]0%[#
 - 被ダメージ時の累積効果攻撃力 -
 このキャラクターが[#!]特殊スキル[#]によりダメージを受けると、マナが[#!]0%[#]増加する。","・Deals 615% damage to the target.
 ・Recovers 1% health for all allies.
-・Increases the mana of all allies by 1%.
+・Reduces the mana of all allies by 1%.
 ・[#!]Stack (Max: 25):[#] All allies get 25% attack.","・ターゲットに615%のダメージを与える。
 ・仲間全員のHPを1%回復する。
-・仲間全員のマナが1%増加する。
+・仲間全員のマナが1%減少する。
 ・[#!]累積効果(最大：25):[#]仲間全員の攻撃力が25%になる。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
 "beowulf_ecgtheow","Ecgtheow","--- Passives ---
 
@@ -6555,14 +6469,14 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 このキャラクターはマナ減少に対する耐性を最初から持つ。また、抵抗に成功するたびにライフが[#!]100[#]ブーストされ、さらに[#!]100%[#]のマナも獲得する。
 
 - 燃焼耐性 -
-このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ","・The caster and nearby allies counterattack with 135% of the damage received for 3 turns.
+このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ","・The caster and nearby allies counterattack with 135% of the damage received for 3 turns. This effect cannot be dispelled.
 ・The caster and nearby allies decrease 20% mana from the attacker on each counterattack for 3 turns. The effect gets diminished for consecutive activations during the same turn.
 ・[#!]Stack (Max: 15):[#] All allies get 15% attack.
 ・[#!]Status Effect Generator:[#] At the start of the next 32 turns, this character gives a random ally an additional 32% Special Skill damage and 32% mana generation for 32 turns. This effect cannot be dispelled.
 ・The caster gets [#!]Sticky Surface[#] for 4 turns. This effect can't be dispelled.
 [*][#!]Sticky Surface[#]: Steals 32 random dispellable buff or Growth effect from an attacking enemy.
 ・The caster gets [#!]Sticky Surface[#] for 4 turns. This effect can't be dispelled.
-[*][#!]Sticky Surface[#]: Steals 32 random dispellable buff or Growth effect from an attacking enemy.","・3ターンの間、術者と近くにいる仲間が受けたダメージの135%で反撃する。
+[*][#!]Sticky Surface[#]: Steals 32 random dispellable buff or Growth effect from an attacking enemy.","・3ターンの間、術者と付近の仲間が受けたダメージの135%で反撃する。この効果は解除できない。
 ・3ターンの間、術者と近くにいる仲間が反撃するたびに、攻撃者のマナを20%減少させる。同じターン中に連続して実行した場合、効果は減少する。
 ・[#!]累積効果(最大：15):[#]仲間全員の攻撃力が15%になる。
 ・[#!]ステータス効果生成：[#]次の32ターンの開始時に、32ターンの間、このキャラクターが追加でいずれかの仲間に32%の特殊スキルダメージと32%のマナ生成を付与する。この効果は解除できない。
@@ -6588,13 +6502,13 @@ This character gains [#!]5%[#] mana when they receive a status ailment or a nega
 [*][#!]Sticky Surface[#]: Steals -98 random dispellable buff or Growth effect from an attacking enemy.
 ・The caster gets [#!]Sticky Surface[#] for 3 turns. This effect can't be dispelled.
 [*][#!]Sticky Surface[#]: Steals 160 random dispellable buff or Growth effect from an attacking enemy.
-・All allies regenerate 920 HP over 4 turns.","・敵全員のバフを1つ解除する。
+・All allies regenerate 920 HP over 4 turns. This effect can't be dispelled.","・敵全員のバフを1つ解除する。
 ・[#!]ステータス効果生成：[#]次の32ターンの開始時に、125ターンの間、このキャラクターが追加でいずれかの仲間に125%のマナ生成を付与し、全ての回復量を125%増加させる。この効果は解除できない。
 ・3ターンの間、術者が[#!]粘着層[#]を獲得する。この効果は解除できない。
 [*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで-98個の解除可能なバフまたは成長効果を奪う。
 ・3ターンの間、術者が[#!]粘着層[#]を獲得する。この効果は解除できない。
 [*][#!]粘着層[#]：攻撃を仕掛けてきた敵から、ランダムで160個の解除可能なバフまたは成長効果を奪う。
-・4ターンに渡って、仲間全員のHPが920回復する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
+・仲間全員のHPが920回復(4ターン)。この効果は解除不可","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "beowulf_unferth","Unferth","--- Passives ---
 
 - Empowered Resist Mana Reduction -
@@ -6610,10 +6524,10 @@ This character's Special Skill never misses its targets.","--- Passives ---
 このキャラクターの特殊スキルはターゲットに必ず命中する。","・Deals 250% damage to the target.
 ・Deals 120% damage to enemies with more than 70% health remaining.
 ・[#!]Status Effect Generator:[#] At the start of the next 24 turns, this character gives a random enemy 50% defense against Special Skills for 50 turns. This effect cannot be dispelled.
-・All enemies get -102% defense against Special Skills for 3 turns.","・ターゲットに250%のダメージを与える。
+・All [##elementred]Fire[#] enemies get -102% defense against Special Skills for 3 turns.","・ターゲットに250%のダメージを与える。
 ・敵の残りのライフが70%以上の場合、120%のダメージを与える。
 ・[#!]ステータス効果生成：[#]次の24ターンの開始時に、このキャラクターが50ターンの間、いずれかの敵1体に特殊スキルに対する防御力を50%にする。この効果は解除できない。
-・3ターンの間、敵全員の特殊スキルに対する防御力が-102%になる。","","","",""
+・3ターンの間、[##elementred]炎属性[#]の敵の特殊スキルに対する防御力が-102%になる。","","","",""
 "beowulf_grendel","Grendel","--- Passives ---
 
 - Perfect Accuracy -
@@ -6687,10 +6601,10 @@ When this character receives damage [#!]Special Skills[#], they receive [#!]0%[#
 
 - 被ダメージ時の累積効果攻撃力 -
 このキャラクターが[#!]特殊スキル[#]によりダメージを受けると、マナが[#!]0%[#]増加する。","・Deals 335% damage to the target and nearby enemies.
-・The caster and nearby allies counterattack with 150% of the damage received for 4 turns.
+・The caster and nearby allies counterattack with 150% of the damage received for 4 turns. This effect cannot be dispelled.
 ・[#!]Enhanced Defense Ailment[#]: The target and nearby enemies get 9.5% defense against Special Skills. This effect lasts until the enemy takes damage from a Special Skill 1 times.
 [*] After the [#!]Enhanced Defense Ailment[#] ends or is removed or replaced, dispels buffs on the enemy.","・ターゲットと近くにいる敵に335%のダメージを与える。
-・4ターンの間、術者と近くにいる仲間が受けたダメージの150%で反撃する。
+・4ターンの間、術者と付近の仲間が受けたダメージの150%で反撃する。この効果は解除できない。
 ・[#!]強化防御異常[#]：特殊スキルに対するターゲットと近くの敵の防御力が9.5%になる。この効果は、その敵が特殊スキルにより1回ダメージを受けるまで継続する。
 [*][#!]強化防御異常[#]が終了するか、解除されるか、置き換えられると、その敵のバフも解除される。","Burning Touch: Each time the owner of this status effect counterattacks an enemy, the attacker receives 9.5 Burn damage over 9.5 turns.","炎の接触：このステータス効果の保有者が敵1体を反撃するたびに、攻撃者が9.5ターンの間、9.5の燃焼ダメージを受ける。","",""
 "beowulf_breca","N/A","--- Passives ---
@@ -6707,9 +6621,9 @@ When this character receives damage [#!]Special Skills[#], they receive [#!]0%[#
 - 被ダメージ時の累積効果攻撃力 -
 このキャラクターが[#!]特殊スキル[#]によりダメージを受けると、マナが[#!]0%[#]増加する。","・Deals 220% damage to all enemies.
 ・All allies get 35% defense for 5 turns.
-・All allies regenerate 520 HP over 5 turns.","・敵全員に220%のダメージを与える。
+・All allies regenerate 520 HP over 5 turns. This effect can't be dispelled.","・敵全員に220%のダメージを与える。
 ・5ターンの間、仲間全員の防御力が35%になる。
-・5ターンに渡って、仲間全員のHPが520回復する。","","","",""
+・仲間全員のHPが520回復(5ターン)。この効果は解除不可","","","",""
 "beowulf_freawaru","N/A","--- Passives ---
 
 - Mana per Enemy Buff -
@@ -6732,11 +6646,11 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 ・Boosts health of all allies by 160. Boosted health can exceed max HP.
 ・[#!]Status Effect Generator:[#] At the start of the next 32 turns, this character gives a random enemy 20% mana generation and 40% defense against Special Skills for 40 turns. This effect cannot be dispelled.
 ・All enemies get -80% mana generation for 3 turns.
-・All enemies get -102% defense against Special Skills for 3 turns.","・敵全員のバフを解除する。
+・All [##elementred]Fire[#] enemies get -102% defense against Special Skills for 3 turns.","・敵全員のバフを解除する。
 ・仲間全員のHPを160回復する。ライフ値が最大HPを超えた場合は、一時的に最大HP値が増加する。
 ・[#!]ステータス効果生成：[#]次の32ターンの開始時に、このキャラクターが40ターンの間、いずれかの敵1体のマナ生成を20%、特殊スキルに対する防御力を40%付与する。この効果は解除できない。
 ・3ターンの間、敵全員のマナ生成が-80%になる。
-・3ターンの間、敵全員の特殊スキルに対する防御力が-102%になる。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
+・3ターンの間、[##elementred]炎属性[#]の敵の特殊スキルに対する防御力が-102%になる。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
 "beowulf_hygd","N/A","--- Passives ---
 
 - Mana on Buff Received -
@@ -6839,7 +6753,15 @@ The chance of revival is reduced for all enemies in the battle. The chance is [#
 ・All allies are immune to buff dispels and reallocations for 4 turns.","・敵全員に355%のダメージを与える。
 ・[#!]成長：[#]仲間全員の攻撃力が0増加する。
 ・[#!]弱化：[#]敵全員の攻撃力が0減少する。
-・4ターンの間、仲間全員がバフ解除および再割り当てに耐性を持つ。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。"
+・4ターンの間、仲間全員がバフ解除および再割り当てに耐性を持つ。","The duration modification affects both cleansable and uncleansable effects.
+・
+・If the duration of any effect is reduced to zero, the effect is considered as having expired naturally.","持続時間変更は浄化可能な効果および浄化不可な効果両方に影響を及ぼす。
+・
+・効果の持続時間がゼロになった場合、その効果は自然に失効したものと見なされる。","The duration modification affects both cleansable and uncleansable effects.
+・
+・If the duration of any effect is reduced to zero, the effect is considered as having expired naturally.","持続時間変更は浄化可能な効果および浄化不可な効果両方に影響を及ぼす。
+・
+・効果の持続時間がゼロになった場合、その効果は自然に失効したものと見なされる。"
 "bard_merith","Merith","--- Passives ---
 
 - Revival Chance Reduction -
@@ -6864,10 +6786,10 @@ The chance of revival is reduced for all enemies in the battle. The chance is [#
 バトル中の敵全員の復活確率を減少させる。確率は元の値の[#!]-80%[#]になる。","・Deals 500% damage to all enemies.
 ・All enemies receive Corrosive Burn for 5 turns. The Corrosive Burn deals 0.7 Burn damage and lowers the target's defense by -75% each turn.
 ・The caster regenerates 1840 HP over 4 turns.
-・The caster gets 50% mana generation for 4 turns.","・敵全員に500%のダメージを与える。
+・The caster gets 50% mana generation for 4 turns. This effect can't be dispelled.","・敵全員に500%のダメージを与える。
 ・5ターンの間、敵全員に腐食性燃焼を与える。腐食性燃焼は、ターン毎に0.7の燃焼ダメージを与え、ターゲットの防御力が-75%ずつ減少する。
 ・4ターンの間、術者のHPが1840回復する。
-・術者のマナ生成が50%になる(4ターン)","","","",""
+・4ターンの間、術者のマナ生成が50%になる。この効果は解除できない。","","","",""
 "bard_lyria","N/A","--- Passives ---
 
 - Revival Chance Reduction -
@@ -6953,12 +6875,12 @@ This character has innate resistance against all status effects and stacks that 
 このキャラクターは、[#!]攻撃力[#]に影響するすべてのステータス効果と累積への耐性を最初から持つ。対象にはバフも含まれる。","・[#!]Wither:[#] All enemies get -2640 attack.
 ・Deals 20% damage to all enemies and inflicts 20 [#!]Insanity[#] on them.
 ・All enemies get 20% increase for any healing received for 4 turns.
-・Lifts the latest cleansable status ailment from all allies and randomly distributes them on enemies.
-・Cleanses status ailments from all allies at the end of each turn for 4 turns.","・[#!]弱化：[#]敵全員の攻撃力が-2640減少する。
+・Steals the latest dispellable buff from all enemies and randomly distributes them on allies.
+・Cleanses status ailments from all allies at the end of each turn for 4 turns. This effect can't be dispelled.","・[#!]弱化：[#]敵全員の攻撃力が-2640減少する。
 ・敵全員に対して20%のダメージを与え、20[#!]狂気[#]を付与する。
 ・4ターンの間、敵全員の回復量が20%になる。
-・仲間全員に最後に付与された浄化可能なステータス異常を浄化し、敵にランダムに分配する。
-・4ターンの間、各ターン終了時に仲間全員のステータス異常を浄化する。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
+・敵全員から、直近の解除可能なバフを盗み、仲間にランダムに分配する。
+・4ターン毎の、ターン終了時に仲間全員のステータス異常を浄化する。この効果は解除不可","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
 
 ・Additional Wither and Growth effects modify the Ability Scores further.
 
@@ -7079,8 +7001,8 @@ This character has innate resistance against all status effects and stacks that 
 - 攻撃ステータス
 効果耐性 -
 このキャラクターは、[#!]攻撃力[#]に影響するすべてのステータス効果と累積への耐性を最初から持つ。対象にはバフも含まれる。","・Dispels 1 buff from all enemies.
-・All enemies are unable to gain mana for 3 turns. This effect can't be cleansed.","・敵全員のバフを1つ解除する。
-・敵全員がマナを生成できなくなる(3ターン)。この効果は浄化不可","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
+・All enemies are unable to gain mana for 3 turns.","・敵全員のバフを1つ解除する。
+・敵全員がマナを生成できなくなる(3ターン)","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "easter_viscount_cluckwood","Viscount Cluckwood","","","・Rearranges the enemy positions randomly.
 ・Deals 5% damage to all enemies.
 ・For 3 turns, the element of all allies except the caster is changed each turn. On the first 24 turns, the element is random.
@@ -7225,9 +7147,9 @@ This character's Special Skill never misses its targets.","--- Passives ---
 
 - 百発百中の命中率 -
 このキャラクターの特殊スキルはターゲットに必ず命中する。","・The attack chains through all the enemies who are adjacent to any hit enemy and deals minor damage.
-・Cleanses status ailments from all allies at the end of each turn for 5 turns.
+・Cleanses status ailments from all allies at the end of each turn for 5 turns. This effect can't be dispelled.
 ・[#!]Wither:[#] All enemies get -2200 attack.","・この攻撃は、攻撃した敵のすぐ隣にいる敵全員に連鎖し、小ダメージを与える。
-・5ターンの間、各ターン終了時に仲間全員のステータス異常を浄化する。
+・5ターン毎の、ターン終了時に仲間全員のステータス異常を浄化する。この効果は解除不可
 ・[#!]弱化：[#]敵全員の攻撃力が-2200減少する。","Wither and Growth modify characters' Ability Scores. The effect remains even if the character is defeated.
 
 ・Additional Wither and Growth effects modify the Ability Scores further.
@@ -7628,10 +7550,10 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 - 燃焼耐性 -
 このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ","・This Special Skill has a chance to deal [#!]critical[#] hits.
 ・Deals 0% damage to the target and 32 random enemies.
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns. This effect can't be dispelled.
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns.
 ・The caster reduces all received damage by -102% for 4 turns.","・この特殊スキルは一定確率で[#!]クリティカル[#]攻撃を与える。
 ・ターゲットとランダムな敵32体に0%のダメージを与える。
-・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
+・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
 ・4ターンの間、術者の受けるダメージが-102%になる。","The chance of dealing a Critical hit is based on the Hero's overall critical chance when the damage is dealt.
 ・
 ・Critical hits caused by this Special Skill deal 50% more damage. 
@@ -7715,10 +7637,10 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 - 燃焼耐性 -
 このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ","・This Special Skill has a chance to deal [#!]critical[#] hits.
 ・Deals 5% damage to the target and minor damage to all other enemies.
-・The caster counterattacks with 70% of the damage received for 4 turns. This effect can't be dispelled.
+・The caster counterattacks with 70% of the damage received for 4 turns.
 ・The caster decreases 15% mana from the attacker on each counterattack for 4 turns. The effect gets diminished for consecutive activations during the same turn.","・この特殊スキルは一定確率で[#!]クリティカル[#]攻撃を与える。
 ・ターゲットに5%のダメージを、他の敵全員には小ダメージを与える。
-・4ターンの間、術者が受けたダメージの70%で反撃する。この効果は解除できない。
+・4ターンの間、術者が受けたダメージの70%で反撃する。
 ・4ターンの間、術者が反撃するたびに、攻撃者のマナを15%減少させる。同じターン中に連続して実行した場合、効果は減少する。","The chance of dealing a Critical hit is based on the Hero's overall critical chance when the damage is dealt.
 ・
 ・Critical hits caused by this Special Skill deal 50% more damage. 
@@ -7744,9 +7666,9 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 - 燃焼耐性 -
 このキャラクターは[#!]燃焼[#]に対する耐性を最初から持つ","・This Special Skill has a chance to deal [#!]critical[#] hits.
 ・Deals 5% damage to the target and minor damage to nearby enemies.
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 5 turns. This effect can't be dispelled.","・この特殊スキルは一定確率で[#!]クリティカル[#]攻撃を与える。
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 5 turns.","・この特殊スキルは一定確率で[#!]クリティカル[#]攻撃を与える。
 ・ターゲットに5%のダメージを、近くにいる敵には小ダメージを与える。
-・5ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。","The chance of dealing a Critical hit is based on the Hero's overall critical chance when the damage is dealt.
+・5ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。","The chance of dealing a Critical hit is based on the Hero's overall critical chance when the damage is dealt.
 ・
 ・Critical hits caused by this Special Skill deal 50% more damage. 
 ・
@@ -7790,7 +7712,11 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 ・[#!]Wither:[#] The target gets 0 defense.
 ・Deals -100% damage to hit targets.","・ターゲットに400%のダメージを与える。
 ・[#!]弱化：[#]ターゲットの防御力が0減少する。
-・攻撃したターゲットに-100%のダメージを与える。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。","The duration reduction affects both dispellable and undispellable status effect buffs. 
+・攻撃したターゲットに-100%のダメージを与える。","The duration modification affects both cleansable and uncleansable effects.
+・
+・If the duration of any effect is reduced to zero, the effect is considered as having expired naturally.","持続時間変更は浄化可能な効果および浄化不可な効果両方に影響を及ぼす。
+・
+・効果の持続時間がゼロになった場合、その効果は自然に失効したものと見なされる。","The duration reduction affects both dispellable and undispellable status effect buffs. 
 ・
 ・ If the duration on any buff is reduced to zero, the effect is considered as having expired naturally.","持続時間短縮は解除可能な効果および解除不可なステータス効果バフ両方に影響を及ぼす。
 ・
@@ -7844,23 +7770,23 @@ Enemy [#!]Minions[#] have [#!]-175%[#] HP.","--- Passives ---
 ・ターゲットに5%のダメージを与える。
 ・与えられた合計ダメージの26%分、仲間全員を回復する。","Transform cannot be blocked by status effects, family effects or passives.
 
-・ Only status ailments that are dispellable can be transformed.
+・ Only buffs that are dispellable can be transformed.
 ・Transformed effects: 
 
-・Attack status ailments are transformed into 140% attack buffs for 140 turns.
+・Attack buffs are transformed into 140% attack status ailment for 140 turns.
 
-・Defense status ailments are transformed into 140% defense buffs for 140 turns.
+・Defense buffs are transformed into 140% defense status ailment for 140 turns.
 
-・Mana generation status ailments are transformed into 140% mana generation buffs for 140 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
+・Mana generation buffs are transformed into 140% mana generation status ailment for 140 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
 
-・解除可能なステータス効果のみが変化する。
+・解除可能なバフのみが変化する。
 ・効果の変化：
 
-・140ターンの間、攻撃力異常が140%の攻撃力バフに変化する。 
+・140ターンの間、攻撃力バフが140%の攻撃力異常に変化する。 
 
-・140ターンの間、防御力異常が140%の防御力バフに変化する。 
+・140ターンの間、防御力バフが140%の防御力異常に変化する。 
 
-・140ターンの間、マナ生成ステータス異常が140%のマナ生成バフに変化する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
+・140ターンの間、マナ生成バフが140%のマナ生成ステータス異常に変化する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
 "magic_carpet_agadh","Agadh","--- Passives ---
 
 - Flight Momentum -
@@ -7889,23 +7815,23 @@ Enemy [#!]Minions[#] have [#!]-175%[#] HP.","--- Passives ---
 ・3ターンの間、ターゲットが仲間や自身を復活させることができない。
 ・ターゲットの攻撃力、防御力、マナ生成に作用するあらゆるバフが、それらに対応した浄化不可のステータス異常に変化する。","Transform cannot be blocked by status effects, family effects or passives.
 
-・ Only status ailments that are dispellable can be transformed.
+・ Only buffs that are dispellable can be transformed.
 ・Transformed effects: 
 
-・Attack status ailments are transformed into 32% attack buffs for 32 turns.
+・Attack buffs are transformed into 32% attack status ailment for 32 turns.
 
-・Defense status ailments are transformed into 32% defense buffs for 32 turns.
+・Defense buffs are transformed into 32% defense status ailment for 32 turns.
 
-・Mana generation status ailments are transformed into 32% mana generation buffs for 32 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
+・Mana generation buffs are transformed into 32% mana generation status ailment for 32 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
 
-・解除可能なステータス効果のみが変化する。
+・解除可能なバフのみが変化する。
 ・効果の変化：
 
-・32ターンの間、攻撃力異常が32%の攻撃力バフに変化する。 
+・32ターンの間、攻撃力バフが32%の攻撃力異常に変化する。 
 
-・32ターンの間、防御力異常が32%の防御力バフに変化する。 
+・32ターンの間、防御力バフが32%の防御力異常に変化する。 
 
-・32ターンの間、マナ生成ステータス異常が32%のマナ生成バフに変化する。","",""
+・32ターンの間、マナ生成バフが32%のマナ生成ステータス異常に変化する。","",""
 "dark_god_akilius","Akilius","--- Passives ---
 
 - Resist Negative Minion Effects -
@@ -7968,23 +7894,23 @@ Enemy [#!]Minions[#] have [#!]-175%[#] HP.","--- Passives ---
 ・仲間全員の攻撃力、防御力、マナ生成に作用するあらゆるステータス異常が、それらに応じた解除不可のバフに変化する。
 ・4ターンの間、仲間全員が新たなマイナスのマナ効果を無効化する。","Transform cannot be blocked by status effects, family effects or passives.
 
-・ Only status ailments that are dispellable can be transformed.
+・ Only buffs that are dispellable can be transformed.
 ・Transformed effects: 
 
-・Attack status ailments are transformed into 140% attack buffs for 140 turns.
+・Attack buffs are transformed into 140% attack status ailment for 140 turns.
 
-・Defense status ailments are transformed into 140% defense buffs for 140 turns.
+・Defense buffs are transformed into 140% defense status ailment for 140 turns.
 
-・Mana generation status ailments are transformed into 140% mana generation buffs for 140 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
+・Mana generation buffs are transformed into 140% mana generation status ailment for 140 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
 
-・解除可能なステータス効果のみが変化する。
+・解除可能なバフのみが変化する。
 ・効果の変化：
 
-・140ターンの間、攻撃力異常が140%の攻撃力バフに変化する。 
+・140ターンの間、攻撃力バフが140%の攻撃力異常に変化する。 
 
-・140ターンの間、防御力異常が140%の防御力バフに変化する。 
+・140ターンの間、防御力バフが140%の防御力異常に変化する。 
 
-・140ターンの間、マナ生成ステータス異常が140%のマナ生成バフに変化する。","",""
+・140ターンの間、マナ生成バフが140%のマナ生成ステータス異常に変化する。","",""
 "magic_carpet_lilli","Lilli","--- Passives ---
 
 - Flight Momentum -
@@ -8013,23 +7939,23 @@ This character has innate resistance against incoming [#!]negative effects and d
 ・術者がミニオンかメガミニオンを所持している限り、敵全員へのダメージが50%増加する。この効果は解除できない。
 ・敵全員の攻撃力、防御力、マナ生成に作用するあらゆるバフが、それらに対応した浄化不可のステータス異常に変化する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。","Transform cannot be blocked by status effects, family effects or passives.
 
-・ Only status ailments that are dispellable can be transformed.
+・ Only buffs that are dispellable can be transformed.
 ・Transformed effects: 
 
-・Attack status ailments are transformed into 60% attack buffs for 60 turns.
+・Attack buffs are transformed into 60% attack status ailment for 60 turns.
 
-・Defense status ailments are transformed into 60% defense buffs for 60 turns.
+・Defense buffs are transformed into 60% defense status ailment for 60 turns.
 
-・Mana generation status ailments are transformed into 60% mana generation buffs for 60 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
+・Mana generation buffs are transformed into 60% mana generation status ailment for 60 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
 
-・解除可能なステータス効果のみが変化する。
+・解除可能なバフのみが変化する。
 ・効果の変化：
 
-・60ターンの間、攻撃力異常が60%の攻撃力バフに変化する。 
+・60ターンの間、攻撃力バフが60%の攻撃力異常に変化する。 
 
-・60ターンの間、防御力異常が60%の防御力バフに変化する。 
+・60ターンの間、防御力バフが60%の防御力異常に変化する。 
 
-・60ターンの間、マナ生成ステータス異常が60%のマナ生成バフに変化する。"
+・60ターンの間、マナ生成バフが60%のマナ生成ステータス異常に変化する。"
 "magic_carpet_naeem","Naeem","--- Passives ---
 
 - Flight Momentum -
@@ -8050,31 +7976,31 @@ Enemy [#!]Minions[#] have [#!]-175%[#] HP.","--- Passives ---
 - ミニオン弱体化 -
 敵の[#!]ミニオン[#]のHPが[#!]-175%[#]になる。","・All buffs affecting attack, defense and mana generation on the target and nearby enemies are transformed into matching uncleansable ailments.
 ・Deals 5% damage to the target and nearby enemies.
-・The caster and nearby allies counterattack with 145% of the damage received for 4 turns.
+・The caster and nearby allies counterattack with 145% of the damage received for 4 turns. This effect cannot be dispelled.
 ・[#!]Enhanced Defense Ailment[#]: The target and nearby enemies get 9.5% defense against Special Skills. This effect lasts until the enemy takes damage from a Special Skill 0 times.
 [*] After the [#!]Enhanced Defense Ailment[#] ends or is removed or replaced, dispels buffs on the enemy.","・ターゲットと近くにいる敵の攻撃力、防御力、マナ生成に作用するあらゆるバフが、それらに対応した浄化不可のステータス異常に変化する。
 ・ターゲットと近くにいる敵に5%のダメージを与える。
-・4ターンの間、術者と近くにいる仲間が受けたダメージの145%で反撃する。
+・4ターンの間、術者と付近の仲間が受けたダメージの145%で反撃する。この効果は解除できない。
 ・[#!]強化防御異常[#]：特殊スキルに対するターゲットと近くの敵の防御力が9.5%になる。この効果は、その敵が特殊スキルにより0回ダメージを受けるまで継続する。
 [*][#!]強化防御異常[#]が終了するか、解除されるか、置き換えられると、その敵のバフも解除される。","Transform cannot be blocked by status effects, family effects or passives.
 
-・ Only status ailments that are dispellable can be transformed.
+・ Only buffs that are dispellable can be transformed.
 ・Transformed effects: 
 
-・Attack status ailments are transformed into 60% attack buffs for 60 turns.
+・Attack buffs are transformed into 60% attack status ailment for 60 turns.
 
-・Defense status ailments are transformed into 60% defense buffs for 60 turns.
+・Defense buffs are transformed into 60% defense status ailment for 60 turns.
 
-・Mana generation status ailments are transformed into 60% mana generation buffs for 60 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
+・Mana generation buffs are transformed into 60% mana generation status ailment for 60 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
 
-・解除可能なステータス効果のみが変化する。
+・解除可能なバフのみが変化する。
 ・効果の変化：
 
-・60ターンの間、攻撃力異常が60%の攻撃力バフに変化する。 
+・60ターンの間、攻撃力バフが60%の攻撃力異常に変化する。 
 
-・60ターンの間、防御力異常が60%の防御力バフに変化する。 
+・60ターンの間、防御力バフが60%の防御力異常に変化する。 
 
-・60ターンの間、マナ生成ステータス異常が60%のマナ生成バフに変化する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
+・60ターンの間、マナ生成バフが60%のマナ生成ステータス異常に変化する。","This has no effect on other [#!]Nautica[#] characters.","この効果は他の[#!]ノーティカ[#]のキャラクターには影響しない。"
 "magic_carpet_lando","Lando","--- Passives ---
 
 - Flight Momentum -
@@ -8101,23 +8027,23 @@ Enemy [#!]Minions[#] have [#!]-175%[#] HP.","--- Passives ---
 ・敵全員に5%のダメージを与える。
 ・3ターン後に、この効果が発動中に仲間が受けたダメージに基づいて、仲間全員が595-50のダメージをランダムな敵1体に与える。この効果は解除できない。","Transform cannot be blocked by status effects, family effects or passives.
 
-・ Only status ailments that are dispellable can be transformed.
+・ Only buffs that are dispellable can be transformed.
 ・Transformed effects: 
 
-・Attack status ailments are transformed into 140% attack buffs for 140 turns.
+・Attack buffs are transformed into 140% attack status ailment for 140 turns.
 
-・Defense status ailments are transformed into 140% defense buffs for 140 turns.
+・Defense buffs are transformed into 140% defense status ailment for 140 turns.
 
-・Mana generation status ailments are transformed into 140% mana generation buffs for 140 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
+・Mana generation buffs are transformed into 140% mana generation status ailment for 140 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
 
-・解除可能なステータス効果のみが変化する。
+・解除可能なバフのみが変化する。
 ・効果の変化：
 
-・140ターンの間、攻撃力異常が140%の攻撃力バフに変化する。 
+・140ターンの間、攻撃力バフが140%の攻撃力異常に変化する。 
 
-・140ターンの間、防御力異常が140%の防御力バフに変化する。 
+・140ターンの間、防御力バフが140%の防御力異常に変化する。 
 
-・140ターンの間、マナ生成ステータス異常が140%のマナ生成バフに変化する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。"
+・140ターンの間、マナ生成バフが140%のマナ生成ステータス異常に変化する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。"
 "magic_carpet_manpip","Manpip","--- Passives ---
 
 - Flight Momentum -
@@ -8142,23 +8068,23 @@ Enemy [#!]Minions[#] have [#!]-175%[#] HP.","--- Passives ---
 ・安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。
 ・ターゲットと近くにいる敵の攻撃力、防御力、マナ生成に作用するあらゆるバフが、それらに対応した浄化不可のステータス異常に変化する。","Transform cannot be blocked by status effects, family effects or passives.
 
-・ Only status ailments that are dispellable can be transformed.
+・ Only buffs that are dispellable can be transformed.
 ・Transformed effects: 
 
-・Attack status ailments are transformed into 60% attack buffs for 60 turns.
+・Attack buffs are transformed into 60% attack status ailment for 60 turns.
 
-・Defense status ailments are transformed into 60% defense buffs for 60 turns.
+・Defense buffs are transformed into 60% defense status ailment for 60 turns.
 
-・Mana generation status ailments are transformed into 60% mana generation buffs for 60 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
+・Mana generation buffs are transformed into 60% mana generation status ailment for 60 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
 
-・解除可能なステータス効果のみが変化する。
+・解除可能なバフのみが変化する。
 ・効果の変化：
 
-・60ターンの間、攻撃力異常が60%の攻撃力バフに変化する。 
+・60ターンの間、攻撃力バフが60%の攻撃力異常に変化する。 
 
-・60ターンの間、防御力異常が60%の防御力バフに変化する。 
+・60ターンの間、防御力バフが60%の防御力異常に変化する。 
 
-・60ターンの間、マナ生成ステータス異常が60%のマナ生成バフに変化する。","",""
+・60ターンの間、マナ生成バフが60%のマナ生成ステータス異常に変化する。","",""
 "magic_carpet_bertha","Bertha","--- Passives ---
 
 - Flight Momentum -
@@ -8178,30 +8104,30 @@ Enemy [#!]Minions[#] have [#!]-175%[#] HP.","--- Passives ---
 
 - ミニオン弱体化 -
 敵の[#!]ミニオン[#]のHPが[#!]-175%[#]になる。","・All active buffs are undispellable for all allies for the remaining turns of the buff.
-・All allies regenerate 120 HP over 5 turns.
+・All allies regenerate 120 HP over 5 turns. This effect can't be dispelled.
 ・Each defeated ally has a 35% chance to get revived with 1% HP.
 ・All ailments affecting attack, defense and mana generation on all allies are transformed into matching undispellable buffs.","・バフが有効なターン中、仲間全員に対して発動中のすべてのバフが解除不可になる。
-・5ターンに渡って、仲間全員のHPが120回復する。
+・仲間全員のHPが120回復(5ターン)。この効果は解除不可
 ・35%の確率で、倒れた仲間が最大HPの1%を有した状態で復活する。
 ・仲間全員の攻撃力、防御力、マナ生成に作用するあらゆるステータス異常が、それらに応じた解除不可のバフに変化する。","Transform cannot be blocked by status effects, family effects or passives.
 
-・ Only status ailments that are dispellable can be transformed.
+・ Only buffs that are dispellable can be transformed.
 ・Transformed effects: 
 
-・Attack status ailments are transformed into 140% attack buffs for 140 turns.
+・Attack buffs are transformed into 140% attack status ailment for 140 turns.
 
-・Defense status ailments are transformed into 140% defense buffs for 140 turns.
+・Defense buffs are transformed into 140% defense status ailment for 140 turns.
 
-・Mana generation status ailments are transformed into 140% mana generation buffs for 140 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
+・Mana generation buffs are transformed into 140% mana generation status ailment for 140 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
 
-・解除可能なステータス効果のみが変化する。
+・解除可能なバフのみが変化する。
 ・効果の変化：
 
-・140ターンの間、攻撃力異常が140%の攻撃力バフに変化する。 
+・140ターンの間、攻撃力バフが140%の攻撃力異常に変化する。 
 
-・140ターンの間、防御力異常が140%の防御力バフに変化する。 
+・140ターンの間、防御力バフが140%の防御力異常に変化する。 
 
-・140ターンの間、マナ生成ステータス異常が140%のマナ生成バフに変化する。","",""
+・140ターンの間、マナ生成バフが140%のマナ生成ステータス異常に変化する。","",""
 "guestip1_hero1","N/A","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
 ・FAIL_UNKNOWN","・Deals 550% damage to the target.
@@ -8223,18 +8149,18 @@ Enemy [#!]Minions[#] have [#!]-175%[#] HP.","--- Passives ---
 "guestip1_hero3","N/A","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
 ・FAIL_UNKNOWN","・Deals 450% damage to the target.
-・The target gets -20% attack for 3 turns. This effect can't be cleansed.","・ターゲットに450%のダメージを与える。
-・3ターンの間、ターゲットの攻撃力が-20%になる。この効果は浄化できない。","","","",""
+・The target gets -20% attack for 3 turns.","・ターゲットに450%のダメージを与える。
+・3ターンの間、ターゲットの攻撃力が-20%になる。","","","",""
 "guestip1_hero4","N/A","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
 ・FAIL_UNKNOWN","・Deals 300% damage to the target and nearby enemies.
-・All allies regenerate 300 HP over 3 turns.","・ターゲットと近くにいる敵に300%のダメージを与える。
-・3ターンに渡って、仲間全員のHPが300回復する。","","","",""
+・All allies regenerate 300 HP over 3 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵に300%のダメージを与える。
+・仲間全員のHPが300回復(3ターン)。この効果は解除不可","","","",""
 "guestip1_hero5","N/A","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
 ・FAIL_UNKNOWN","・Deals 250% damage to the target and nearby enemies.
-・All allies regenerate 200 HP over 3 turns.","・ターゲットと近くにいる敵に250%のダメージを与える。
-・3ターンに渡って、仲間全員のHPが200回復する。","","","",""
+・All allies regenerate 200 HP over 3 turns. This effect can't be dispelled.","・ターゲットと近くにいる敵に250%のダメージを与える。
+・仲間全員のHPが200回復(3ターン)。この効果は解除不可","","","",""
 "guestip1_hero6","N/A","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
 ・FAIL_UNKNOWN","・Deals 650% damage to the target.
@@ -8253,8 +8179,8 @@ Enemy [#!]Minions[#] have [#!]-175%[#] HP.","--- Passives ---
 "guestip1_hero9","N/A","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
 ・FAIL_UNKNOWN","・Deals 500% damage to the target.
-・The target gets -20% attack for 3 turns. This effect can't be cleansed.","・ターゲットに500%のダメージを与える。
-・3ターンの間、ターゲットの攻撃力が-20%になる。この効果は浄化できない。","","","",""
+・The target gets -20% attack for 3 turns.","・ターゲットに500%のダメージを与える。
+・3ターンの間、ターゲットの攻撃力が-20%になる。","","","",""
 "guestip1_hero10","N/A","--- Passives ---
 ・FAIL_UNKNOWN","--- Passives ---
 ・FAIL_UNKNOWN","・Deals 450% damage to the target.
@@ -8496,7 +8422,11 @@ This character has innate resistance against [#!]Burn[#].","--- Passives ---
 ・[#!]Growth:[#] All allies get 0 attack.
 ・All allies are immune to new status ailments for 4 turns. This effect can't be dispelled.","・仲間全員のライフを45%回復する。
 ・[#!]成長：[#]仲間全員の攻撃力が0増加する。
-・4ターンに渡って、仲間全員が新たなステータス異常を無効化する。この効果は解除できない。","The duration modification affects both cleansable and uncleansable effects.","持続時間変更は浄化可能な効果および浄化不可能な効果両方に影響を及ぼす。","",""
+・4ターンに渡って、仲間全員が新たなステータス異常を無効化する。この効果は解除できない。","The duration modification affects both cleansable and uncleansable effects.
+・
+・If the duration of any effect is reduced to zero, the effect is considered as having expired naturally.","持続時間変更は浄化可能な効果および浄化不可な効果両方に影響を及ぼす。
+・
+・効果の持続時間がゼロになった場合、その効果は自然に失効したものと見なされる。","",""
 "moth_lilareine","Lilareine","--- Passives ---
 
 - Dodge Special Damage -
@@ -8525,11 +8455,11 @@ This character has a [#!]15%[#] chance to dodge Special Skills that deal damage.
 This character has a [#!]15%[#] chance to dodge Special Skills that deal damage.","--- Passives ---
 
 - 特殊スキル回避 -
-このキャラクターは[#!]15%[#]の確率でダメージ付きの特殊スキルを回避する。","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns. This effect can't be dispelled.
+このキャラクターは[#!]15%[#]の確率でダメージ付きの特殊スキルを回避する。","・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns.
 ・The caster has a 50% chance to drop any received damage to 1 for 4 turns.
 ・For the next 4 turns, this character deals 250% damage to a random enemy each time any other ally casts their Special Skill. The hit enemy falls into [#!]Deep Sleep[#] and receives 180% increased damage while in Deep Sleep.
 ・The target falls into [#!]Deep Sleep[#] and receives 180% increased damage while in Deep Sleep.
-・All allies get 25% mana generation for 4 turns. This effect can't be dispelled.","・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
+・All allies get 25% mana generation for 4 turns. This effect can't be dispelled.","・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
 ・術者が50%の確率で受けたダメージを1に落とす(4ターン)
 ・以後4ターン、他の仲間が特殊スキルを使用する度に、このキャラクターはランダムな敵1体に250%のダメージを与える。攻撃された敵は[#!]深い眠り[#]に落ち、その間は180%の増加ダメージを受ける。
 ・ターゲットが[#!]深い睡眠状態[#]となる。深い睡眠状態になっている間は被ダメージが180%増加する。
@@ -8566,8 +8496,8 @@ All enemies get [#!]50%[#] healing.","--- Passives ---
 
 - 回復量低下 -
 敵全員の回復量が[#!]50%[#]になる。","・Deals 325% damage to hit targets.
-・The caster counterattacks with 115% of the damage received for 115 turns. This effect can't be dispelled.","・攻撃したターゲットに325%のダメージを与える。
-・115ターンの間、術者が受けたダメージの115%で反撃する。この効果は解除できない。","This effect applies to Mega Minions as well but instead of destroying, damage equal to 5% of the Mega Minion's max health is dealt to the Mega Minion.","この効果はメガミニオンにも適用されるが、ミニオンを撃破する効果は、メガミニオンの最大ライフの5%に等しいダメージをメガミニオンに与える効果と置き換わる。","",""
+・The caster counterattacks with 115% of the damage received for 115 turns.","・攻撃したターゲットに325%のダメージを与える。
+・115ターンの間、術者が受けたダメージの115%で反撃する。","This effect applies to Mega Minions as well but instead of destroying, damage equal to 5% of the Mega Minion's max health is dealt to the Mega Minion.","この効果はメガミニオンにも適用されるが、ミニオンを撃破する効果は、メガミニオンの最大ライフの5%に等しいダメージをメガミニオンに与える効果と置き換わる。","",""
 "guestip2_hero1","N/A","","","・Deals 400% damage to the target.
 ・The target cannot cast any new status effects on enemies or allies for 3 turns.
 ・[#f2e33a]Element Link[#] gives all [#f2e33a]Holy[#] allies -90% critical chance for 6 turns. This effect can't be dispelled.","・ターゲットに400%のダメージを与える。
@@ -8665,10 +8595,10 @@ All enemies get [#!]50%[#] healing.","--- Passives ---
 
 - 回復量低下 -
 敵全員の回復量が[#!]50%[#]になる。","・Recovers 20% health for all allies.
-・Lifts the latest cleansable status ailment from all allies and randomly distributes them on enemies.
-・All allies regenerate 1360 HP over 160 turns.","・仲間全員のライフを20%回復する。
-・仲間全員に最後に付与された浄化可能なステータス異常を浄化し、敵にランダムに分配する。
-・160ターンに渡って、仲間全員のHPが1360回復する。","","","",""
+・Steals the latest dispellable buff from all enemies and randomly distributes them on allies.
+・All allies regenerate 1360 HP over 160 turns. This effect can't be dispelled.","・仲間全員のライフを20%回復する。
+・敵全員から、直近の解除可能なバフを盗み、仲間にランダムに分配する。
+・仲間全員のHPが1360回復(160ターン)。この効果は解除不可","","","",""
 "fox_foxglove","Foxglove","--- Passives ---
 
 - Decreased healing -
@@ -8728,10 +8658,10 @@ If this character loses more than [#!]25%[#] of max health at once, they summon 
 - スライムミニオンの分裂 -
 このキャラクターが、1回の攻撃により最大ライフの[#!]25%[#]を失うと、自身のもとに[#!]10%[#]のHPと[#!]40%[#]の攻撃力を備えた[#!]スライムのメガミニオン[#]をサモンする。","・Deals 310% damage to all enemies.
 ・The target has 0.6% chance to get 18.2 Bleed damage over 0.6 turns.
-・Inflicts the target with [#!]Greed[#] for 4 turns. Friendly effects from Special Skills only affect characters with Greed. This effect is uncleansable.
+・Inflicts the target with [#!]Greed[#] for 4 turns. Friendly effects from Special Skills only affect characters with Greed.
 ・All enemies receive 988 Bleed damage over 4 turns.","・敵全員に310%のダメージを与える。
 ・0.6%の確率で、0.6ターンの間ターゲットが18.2の出血ダメージを受ける。
-・4ターンの間、ターゲットに[#!]グリード[#]を付与する。この間、特殊スキルによる有用な効果は、グリードが付与されたキャラクターのみにしか作用しなくなる。この効果は浄化できない。
+・4ターンの間、ターゲットに[#!]グリード[#]を付与する。この間、特殊スキルによる有用な効果は、グリードが付与されたキャラクターのみにしか作用しなくなる。
 ・4ターンの間、敵全員に988出血ダメージを与える。","Greed prevents all other heroes in the same team from gaining friendly effects. This includes all buffs, healing and growth effects.","グリードにより、同じチーム内の他の英雄全員が有用な効果を獲得できなくなる。これには全てのバフや回復、成長効果も含まれる。","",""
 "slime_zestique","Zestique","--- Passives ---
 
@@ -8958,15 +8888,23 @@ This character does 250% damage to Minions and Mega Minions.","--- Passives ---
 ・この特殊スキルはターゲットに必ず命中する。
 ・[#!]成長の恵み：[#]攻撃値が変更される度に、[#!]16倍[#]の追加ダメージを与える。
 ・ターゲットと近くにいる敵の最大HPを4000減少させる。この効果はHPをブーストされたターゲットにも有効となる。
-・3ターンの間、ターゲットと近くにいる敵の命中率が-150%になる。","Extra health is based on the modified defense on the caster when healing is applied.
+・3ターンの間、ターゲットと近くにいる敵の命中率が-150%になる。","Extra damage is based on the modifed attack on caster when damage is dealt.
 
-・Up to maximum [#!]6400[#] of additional healing
+・Up to maximum [#!]6400[#] additional extra damage.
 
-・Status effects affecting healing received do affect the healing scaling.","追加回復は、回復が適用された際の、術者の変更済みの防御力に基づく。
+・Status effects affecting damage dealt do affect the extra damage.
 
-・最大[#!]6400[#]まで追加回復を行う。
+・Defense stat does not affect the extra damage.
 
-・回復に影響を与えるステータス効果は回復値に作用する。","Max health can't get lower than 400% of the original max health.
+・Status effects affecting attack stat do not affect the extra damage.","追加ダメージは、ダメージを与えた際の、術者の変更済みの攻撃力に基づく。
+
+・最大[#!]6400[#]まで追加ダメージを与える。
+
+・与ダメージに影響を与えるステータス効果は、追加ダメージに作用する。
+
+・防御力ステータスは追加ダメージに作用しない。
+
+・攻撃力ステータスに作用するステータス効果は追加ダメージに作用しない。","Max health can't get lower than 400% of the original max health.
 
 ・ Any boosted health is reduced by an additional 4000.","最大ライフは元の最大値の400%以下にはできない。
 
@@ -8989,15 +8927,23 @@ This character has innate resistance against incoming [#!]negative effects and d
 ・Cleanses 1 status ailment from all allies.","・仲間全員のライフを20%回復する。
 ・[#!]成長の恵み：[#]防御値が変更される度に、[#!]16倍[#]の追加HP回復を行う。
 ・35%の確率で、倒れた仲間が最大HPの1%を有した状態で復活する。
-・仲間全員のステータス異常を1つ浄化する。","Extra health is based on the modified defense on the caster when healing is applied.
+・仲間全員のステータス異常を1つ浄化する。","Extra damage is based on the modifed attack on caster when damage is dealt.
 
-・Up to maximum [#!]6400[#] of additional healing
+・Up to maximum [#!]6400[#] additional extra damage.
 
-・Status effects affecting healing received do affect the healing scaling.","追加回復は、回復が適用された際の、術者の変更済みの防御力に基づく。
+・Status effects affecting damage dealt do affect the extra damage.
 
-・最大[#!]6400[#]まで追加回復を行う。
+・Defense stat does not affect the extra damage.
 
-・回復に影響を与えるステータス効果は回復値に作用する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。"
+・Status effects affecting attack stat do not affect the extra damage.","追加ダメージは、ダメージを与えた際の、術者の変更済みの攻撃力に基づく。
+
+・最大[#!]6400[#]まで追加ダメージを与える。
+
+・与ダメージに影響を与えるステータス効果は、追加ダメージに作用する。
+
+・防御力ステータスは追加ダメージに作用しない。
+
+・攻撃力ステータスに作用するステータス効果は追加ダメージに作用しない。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。"
 "kalevala_mother_lemminkainen","Mother Lemminkäinen","--- Passives ---
 
 - Power of Sisu -
@@ -9006,10 +8952,10 @@ When this character starts a turn with low health for the first time during a ba
 - 忍耐の力 -
 このキャラクターがバトル中にライフが低い状態で初めてターンを開始した場合、このキャラクターのライフが[#!]15%[#]回復し、マナが[#!]8%[#]増加する。","・Each defeated ally has a 60% chance to get revived with 20% HP.
 ・Deals -98.4% damage per each [##elementpurple]Dark[#] shield on the board to all enemies, up to -98.4% damage in total.
-・All allies regenerate 1600 HP over 4 turns.
+・All allies regenerate 1600 HP over 4 turns. This effect can't be dispelled.
 ・All enemies get -102% defense against Special Skills for 4 turns.","・60%の確率で、倒れた仲間が最大HPの20%を有した状態で復活する。
 ・ボード上に[##elementpurple]闇属性[#]の盾が出現する度に、敵全員に-98.4%の追加ダメージを与える。付与ダメージの上限は合計-98.4%まで。
-・4ターンに渡って、仲間全員のHPが1600回復する。
+・仲間全員のHPが1600回復(4ターン)。この効果は解除不可
 ・4ターンの間、敵全員の特殊スキルに対する防御力が-102%になる。","","","",""
 "kalevala_suomuhauki","Suomuhauki","--- Passives ---
 
@@ -9088,23 +9034,23 @@ Enemy [#!]Minions[#] have [#!]-175%[#] HP.","--- Passives ---
 ・
 ・モンスターやボスによって発動された場合は、この効果は通常よりも低くなる。","Transform cannot be blocked by status effects, family effects or passives.
 
-・ Only status ailments that are dispellable can be transformed.
+・ Only buffs that are dispellable can be transformed.
 ・Transformed effects: 
 
-・Attack status ailments are transformed into 140% attack buffs for 140 turns.
+・Attack buffs are transformed into 140% attack status ailment for 140 turns.
 
-・Defense status ailments are transformed into 140% defense buffs for 140 turns.
+・Defense buffs are transformed into 140% defense status ailment for 140 turns.
 
-・Mana generation status ailments are transformed into 140% mana generation buffs for 140 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
+・Mana generation buffs are transformed into 140% mana generation status ailment for 140 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
 
-・解除可能なステータス効果のみが変化する。
+・解除可能なバフのみが変化する。
 ・効果の変化：
 
-・140ターンの間、攻撃力異常が140%の攻撃力バフに変化する。 
+・140ターンの間、攻撃力バフが140%の攻撃力異常に変化する。 
 
-・140ターンの間、防御力異常が140%の防御力バフに変化する。 
+・140ターンの間、防御力バフが140%の防御力異常に変化する。 
 
-・140ターンの間、マナ生成ステータス異常が140%のマナ生成バフに変化する。"
+・140ターンの間、マナ生成バフが140%のマナ生成ステータス異常に変化する。"
 "magic_carpet_bart","N/A","--- Passives ---
 
 - Flight Momentum -
@@ -9129,23 +9075,23 @@ Enemy [#!]Minions[#] have [#!]-175%[#] HP.","--- Passives ---
 ・ターゲットと近くにいる敵の攻撃力、防御力、マナ生成に作用するあらゆるバフが、それらに対応した浄化不可のステータス異常に変化する。
 ・2ターンの間、ターゲットと近くにいる敵の命中率が-140%になる。","Transform cannot be blocked by status effects, family effects or passives.
 
-・ Only status ailments that are dispellable can be transformed.
+・ Only buffs that are dispellable can be transformed.
 ・Transformed effects: 
 
-・Attack status ailments are transformed into 60% attack buffs for 60 turns.
+・Attack buffs are transformed into 60% attack status ailment for 60 turns.
 
-・Defense status ailments are transformed into 60% defense buffs for 60 turns.
+・Defense buffs are transformed into 60% defense status ailment for 60 turns.
 
-・Mana generation status ailments are transformed into 60% mana generation buffs for 60 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
+・Mana generation buffs are transformed into 60% mana generation status ailment for 60 turns.","変化はステータス効果やファミリー効果、パッシブによって阻止されない。
 
-・解除可能なステータス効果のみが変化する。
+・解除可能なバフのみが変化する。
 ・効果の変化：
 
-・60ターンの間、攻撃力異常が60%の攻撃力バフに変化する。 
+・60ターンの間、攻撃力バフが60%の攻撃力異常に変化する。 
 
-・60ターンの間、防御力異常が60%の防御力バフに変化する。 
+・60ターンの間、防御力バフが60%の防御力異常に変化する。 
 
-・60ターンの間、マナ生成ステータス異常が60%のマナ生成バフに変化する。","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。"
+・60ターンの間、マナ生成バフが60%のマナ生成ステータス異常に変化する。","Chance to miss also applies to offensive Special Skills.","特殊スキルが不発に終わる可能性は、攻撃系の特殊スキルに対しても適用される。"
 "construct_ironheart","N/A","--- Passives ---
 
 - Repair Core -
@@ -9236,11 +9182,11 @@ The [#!]Repair Core[#] activates each time this character's Special Skill is cas
 
 [*][#!]修復コア[#]がチャージが満タンになると、仲間全員のライフが250%ブーストされる。
 [*]この際にブーストされるライフはコアのチャージ量に基づいて決められる。コアが有効になると、すべてのチャージが消耗される。","・Cleanses all status ailments from all allies, and increases all allies' mana by 15% for each cleansed ailment.
-・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns. This effect can't be dispelled.
-・The caster counterattacks with 80% of the damage received for 4 turns. This effect can't be dispelled.
+・The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns.
+・The caster counterattacks with 80% of the damage received for 4 turns.
 ・The caster reduces all received damage by -102% for 4 turns.","・仲間全員のステータス異常を浄化する。ステータス異常を1つ浄化するごとに仲間全員のマナが15%上昇する。
-・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。この効果は解除できない。
-・4ターンの間、術者が受けたダメージの80%で反撃する。この効果は解除できない。
+・4ターンの間、術者が挑発のステータス効果を発動し、敵が術者の仲間に特殊スキルを使用できなくなる。
+・4ターンの間、術者が受けたダメージの80%で反撃する。
 ・4ターンの間、術者の受けるダメージが-102%になる。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。","",""
 "construct_hotspin","N/A","--- Passives ---
 
@@ -9260,10 +9206,10 @@ The [#!]Repair Core[#] activates each time this character's Special Skill is cas
 [*][#!]修復コア[#]がチャージが満タンになると、仲間全員のライフが250%ブーストされる。
 [*]この際にブーストされるライフはコアのチャージ量に基づいて決められる。コアが有効になると、すべてのチャージが消耗される。","・Deals 500% damage to the target.
 [*]Deals additional 15% damage per each [#ff9f81]Fire[#] shield on the board, up to 500% damage in total.
-・The caster gets 50% attack for 4 turns.
+・The caster gets 50% attack for 4 turns. This effect can't be cleansed.
 ・The caster reflect status ailments and negative stacks for 4 turns.","・ターゲットに500%のダメージを与える。
 [*]さらに、ダメージの合計が500%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に15%の追加ダメージを与える。
-・4ターンの間、術者の攻撃力が50%になる。
+・4ターンの間、術者の攻撃力が50%になる。この効果は浄化できない。
 ・4ターンの間、術者が新しいステータス異常とマイナスの累積状態を跳ね返す。","Status effects cast by characters, Minions and Fiends on the same side cannot be reflected.","同じチームのキャラクター、ミニオン、フィエンドが特殊スキルを使用して敵にステータス効果を付与した場合、敵はこれらの効果を跳ね返すことができない。","",""
 "construct_sizzle3000","N/A","--- Passives ---
 
@@ -9283,10 +9229,10 @@ The [#!]Repair Core[#] activates each time this character's Special Skill is cas
 [*][#!]修復コア[#]がチャージが満タンになると、仲間全員のライフが250%ブーストされる。
 [*]この際にブーストされるライフはコアのチャージ量に基づいて決められる。コアが有効になると、すべてのチャージが消耗される。","・Deals 500% damage to all enemies.
 [*]Deals additional 15% damage per each [#ff9f81]Fire[#] shield on the board, up to 500% damage in total.
-・All allies get 60% attack for 6 turns. This effect can't be dispelled.
+・All allies get 60% attack for 6 turns.
 ・All allies reflect status ailments and negative stacks for 6 turns.","・敵全員に500%のダメージを与える。
 [*]さらに、ダメージの合計が500%になるまで、ボード上に[#ff9f81]炎属性[#]の盾が出現する度に15%の追加ダメージを与える。
-・6ターンの間、仲間全員の攻撃力が60%になる。この効果は解除できない。
+・6ターンの間、仲間全員の攻撃力が60%になる。
 ・6ターンの間、仲間全員が新たなステータス異常とマイナスの累積状態を跳ね返す。","Status effects cast by characters, Minions and Fiends on the same side cannot be reflected.","同じチームのキャラクター、ミニオン、フィエンドが特殊スキルを使用して敵にステータス効果を付与した場合、敵はこれらの効果を跳ね返すことができない。","",""
 "construct_zavok","N/A","--- Passives ---
 
@@ -9333,15 +9279,23 @@ The [#!]Repair Core[#] activates each time this character's Special Skill is cas
 ・Cleanses 1 status ailment from all allies.","・ターゲットに500%のダメージを与える。
 ・[#!]成長の恵み：[#]防御値が変更される度に、[#!]16倍[#]の追加HP回復を行う。
 ・35%の確率で、倒れた仲間が最大HPの1%を有した状態で復活する。
-・仲間全員のステータス異常を1つ浄化する。","Extra health is based on the modified defense on the caster when healing is applied.
+・仲間全員のステータス異常を1つ浄化する。","Extra damage is based on the modifed attack on caster when damage is dealt.
 
-・Up to maximum [#!]6400[#] of additional healing
+・Up to maximum [#!]6400[#] additional extra damage.
 
-・Status effects affecting healing received do affect the healing scaling.","追加回復は、回復が適用された際の、術者の変更済みの防御力に基づく。
+・Status effects affecting damage dealt do affect the extra damage.
 
-・最大[#!]6400[#]まで追加回復を行う。
+・Defense stat does not affect the extra damage.
 
-・回復に影響を与えるステータス効果は回復値に作用する。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。"
+・Status effects affecting attack stat do not affect the extra damage.","追加ダメージは、ダメージを与えた際の、術者の変更済みの攻撃力に基づく。
+
+・最大[#!]6400[#]まで追加ダメージを与える。
+
+・与ダメージに影響を与えるステータス効果は、追加ダメージに作用する。
+
+・防御力ステータスは追加ダメージに作用しない。
+
+・攻撃力ステータスに作用するステータス効果は追加ダメージに作用しない。","Safe cleanse bypasses secondary effects, such as damage on removal, from the removed status ailment. External effects such as passive skills and family effects can still activate.","安全に浄化が行われると、ステータス異常の解除による付随効果（解除時のダメージなど）は発生しない。パッシブスキルやファミリー効果といった外部効果は引き続き発動し続ける。"
 "construct_sylosis","N/A","--- Passives ---
 
 - Repair Core -
