@@ -70,7 +70,7 @@ def parse_familiars(familiars_list: list, special_data: dict, hero_stats: dict, 
         
         extra_info = {}
         if familiar_type_lower in game_db.get('extra_description_keys', set()):
-            extra_info = _find_and_parse_extra_description(["familiartype"], familiar_type_lower, search_context, lang_params, lang_db, hero_id, rules, parsers)
+            extra_info = _find_and_parse_extra_description(["familiars"], familiar_type_lower, search_context, lang_params, lang_db, hero_id, rules, parsers)
         
         # 1. Create the parent summon item first
         summon_item = {"id":familiar_id,"lang_id":lang_id,"params":json.dumps(lang_params),**main_desc}
