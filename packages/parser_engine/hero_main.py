@@ -41,8 +41,15 @@ FAMILIAR_LOG_PATH = OUTPUT_DIR / "familiar_debug_log.txt"
 def _format_final_description(skill_descriptions: dict, lang: str, skill_types_to_include: list, special_data: dict) -> (str, list):
     """
     Formats a list of skill types into a main description string and a list of tooltips.
-    Returns a tuple: (main_description_string, list_of_tooltip_strings)
     """
+    # --- DEBUGGING: Print the raw input to this function ---
+    if special_data and special_data.get("id") == "heedless_hammer_flurry":
+        print(f"\n\n--- DEBUG: Entering _format_final_description for goblin_madhammer ({lang}) ---")
+        print("--- Input skill_descriptions: ---")
+        import pprint
+        pprint.pprint(skill_descriptions)
+        print("------------------------------------")
+
     output_lines = []
     tooltip_lines = []
     
@@ -66,10 +73,7 @@ def _format_final_description(skill_descriptions: dict, lang: str, skill_types_t
             if not isinstance(item, dict):
                 continue
 
-            # --- MODIFIED: Handle standardized failure objects ---
             if item.get("lang_id") == "SEARCH_FAILED":
-                # The 'en' key now contains our standardized failure message.
-                # The 'ja' key will also contain the same message.
                 output_lines.append(f"・{item.get(lang, 'FAIL_UNKNOWN')}")
                 continue
 
@@ -77,10 +81,8 @@ def _format_final_description(skill_descriptions: dict, lang: str, skill_types_t
                 title = item.get(f'title_{lang}', "").strip()
                 if title:
                     output_lines.append(f"\n- {title} -")
-                # For passives, the main text is in description_lang
                 description = item.get(f'description_{lang}', "").strip()
             else:
-                # For other skills, the main text is in the lang key directly
                 description = item.get(lang, "").strip()
 
             if item.get("id") == "heading":
