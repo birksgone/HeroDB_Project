@@ -337,11 +337,15 @@ def main():
         with open(DEBUG_JSON_PATH, 'r', encoding='utf-8') as f:
             debug_data_from_file = json.load(f)
 
+        # The main parser function map.
+        # We wrap status_effects in a lambda to allow passing a custom search_prefix later.
         parsers = {
-            'direct_effect': parse_direct_effect, 'clear_buffs': parse_clear_buffs,
-            'properties': parse_properties, 'status_effects': parse_status_effects,
-            'familiars': parse_familiars, 'passive_skills': parse_passive_skills,
-            'se_lang_subset': [key for key in language_db if key.startswith("specials.v2.statuseffect.")],
+            'direct_effect': parse_direct_effect, 
+            'clear_buffs': parse_clear_buffs,
+            'properties': parse_properties, 
+            'status_effects': lambda effects, *args, **kwargs: parse_status_effects(effects, *args, **kwargs),
+            'familiars': parse_familiars, 
+            'passive_skills': parse_passive_skills,
             'prop_lang_subset': [key for key in language_db if key.startswith("specials.v2.property.")],
             'extra_lang_ids': [key for key in language_db if '.extra' in key]
         }
@@ -353,7 +357,6 @@ def main():
         
         param_log = parsers.get('familiar_parameter_log', [])
         if param_log:
-            # The path is now defined at the top of the file as PARAM_LOG_PATH
             print(f"\n--- 📝 Writing familiar parameter log... ---")
             try:
                 param_df = pd.DataFrame(param_log)
