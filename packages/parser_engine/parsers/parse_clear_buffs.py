@@ -26,8 +26,18 @@ def parse_clear_buffs(special_data: dict, lang_db: dict, parsers: dict) -> (dict
 
         lang_id = f"specials.v2.clearbuffs.{buff_to_remove}.{target_type}.{side_affected}"
         
-        if lang_id not in lang_db and lang_id + ".latest" in lang_db:
-            lang_id += ".latest"
+        found_in_db = True
+        if lang_id not in lang_db:
+            if lang_id + ".latest" in lang_db:
+                lang_id += ".latest"
+            else:
+                found_in_db = False
+
+        if not found_in_db:
+            warning_msg = f"[parse_clear_buffs]: lang_id '{lang_id}' not found in lang_db."
+            warnings.append(warning_msg)
+            # Return a standardized failure object
+            return {"id": "clear_buffs_effect", "lang_id": "SEARCH_FAILED", "en": warning_msg, "ja": warning_msg}, warnings
 
         description = generate_description(lang_id, {}, lang_db)
         
