@@ -2,35 +2,45 @@
 
 import json
 import secrets
+import os
 from pathlib import Path
 import sys
 
+# --- THIS IS THE CRUCIAL FIX FOR 'ModuleNotFoundError' ---
+# We must add the parent 'packages' directory to the Python path
+# so that it can find the 'parser_engine' module.
+sys.path.append(str(Path(__file__).parent.parent.resolve()))
+
 from fastapi import FastAPI, Depends, HTTPException, status, Query
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
-from pydantic_settings import BaseSettings
+from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
 from typing import Any, List, Dict, Optional
 
 # --- Custom Module Imports ---
-# To reuse our robust data loading logic, we need to add the parser_engine directory to the path
-sys.path.append(str(Path(__file__).parent.parent.resolve()))
 from parser_engine.hero_data_loader import load_languages
 
-# --- Configuration Management ---
-# This class will automatically read variables from a .env file or environment variables.
-class Settings(BaseSettings):
-    API_USERNAME: str = "user"
-    API_PASSWORD: str = "password"
+# --- Configuration Management (The Old-Fashioned, Unbreakable Way) ---
+# Load environment variables from a .env file in the same directory as this script.
+dotenv_path = Path(__file__).parent / '.env'
+load_dotenv(dotenv_path=dotenv_path)
 
-    class Config:
-        env_file = ".env"
-
-settings = Settings()
+API_USERNAME = os.getenv("API_USERNAME", "user")
+API_PASSWORD = os.getenv("API_PASSWORD", "password")
 
 # --- Application Setup ---
 app = FastAPI(
     title="HeroDB Parser API",
     description="An API to serve and query hero data.",
-    version="1.1.0"
+    version="1.2.0" # Version bump
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # --- Security Setup ---
@@ -38,8 +48,19 @@ security = HTTPBasic()
 
 def get_current_username(credentials: HTTPBasicCredentials = Depends(security)):
     """A dependency that securely checks the username and password."""
-    correct_username = secrets.compare_digest(credentials.username, settings.API_USERNAME)
-    correct_password = secrets.compare_digest(credentials.password, settings.API_PASSWORD)
+    
+    print("--- AUTHENTICATION ATTEMPT ---")
+    print(f"Username received from browser: '{credentials.username}'")
+    print(f"Password received from browser: '{credentials.password}'")
+    print(f"Username expected from env:     '{API_USERNAME}'")
+    print(f"Password expected from env:     '{API_PASSWORD}'")
+    
+    correct_username = secrets.compare_digest(credentials.username, API_USERNAME)
+    correct_password = secrets.compare_digest(credentials.password, API_PASSWORD)
+    
+    print(f"User match: {correct_username}, Pass match: {correct_password}")
+    print("----------------------------")
+    
     if not (correct_username and correct_password):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
@@ -56,10 +77,7 @@ language_db = {}
 
 @app.on_event("startup")
 def load_data():
-    """This function runs once when the FastAPI server starts."""
     global all_hero_data, language_db
-    
-    # Load hero data
     print("--- Loading hero data from JSON... ---")
     if DEBUG_JSON_PATH.exists():
         with open(DEBUG_JSON_PATH, 'r', encoding='utf-8') as f:
@@ -67,11 +85,8 @@ def load_data():
         print(f"✅ Successfully loaded data for {len(all_hero_data)} heroes into memory.")
     else:
         print(f"🚨 WARNING: '{DEBUG_JSON_PATH.name}' not found. API will have partial data.")
-
-    # Load language data
     print("--- Loading language data... ---")
     try:
-        # We can reuse the function from our parser engine!
         language_db = load_languages()
         print(f"✅ Successfully loaded {len(language_db)} language keys.")
     except Exception as e:
@@ -89,8 +104,6 @@ def find_nested_properties(data: Any, key_to_find: str, keyword: str, results: L
             find_nested_properties(item, key_to_find, keyword, results)
 
 # --- Protected API Endpoints ---
-# Add `username: str = Depends(get_current_username)` to protect an endpoint.
-
 @app.get("/")
 def read_root(username: str = Depends(get_current_username)):
     return {"message": f"Welcome, {username}!"}
@@ -121,14 +134,14 @@ def query_hero_data(key: str, keyword: str, username: str = Depends(get_current_
     return {"query": {"key": key, "keyword": keyword}, "count": len(extracted_data), "results": extracted_data}
 
 @app.get("/api/lang/super_search")
+@app.get("/api/lang/super_search")
 def super_search_language_db(
     id_contains: Optional[str] = Query(None, description="Comma-separated keywords for lang_id"),
-    en_contains: Optional[str] = Query(None, description="Comma-separated keywords for English text"),
-    ja_contains: Optional[str] = Query(None, description="Comma-separated keywords for Japanese text"),
-    username: str = Depends(get_current_username)
+    text_contains: Optional[str] = Query(None, description="Comma-separated keywords for EITHER English OR Japanese text")
 ):
     """
     Performs a powerful, multi-field, AND-based search on the language database.
+    The text search is OR-based between EN and JA fields.
     """
     candidate_keys = list(language_db.keys())
     
@@ -136,16 +149,19 @@ def super_search_language_db(
         keywords = [k.strip().lower() for k in id_contains.split(',') if k.strip()]
         candidate_keys = [key for key in candidate_keys if all(kw in key.lower() for kw in keywords)]
 
-    if en_contains:
-        keywords = [k.strip().lower() for k in en_contains.split(',') if k.strip()]
-        candidate_keys = [key for key in candidate_keys if all(kw in language_db[key].get("en", "").lower() for kw in keywords)]
-
-    if ja_contains:
-        keywords = [k.strip().lower() for k in ja_contains.split(',') if k.strip()]
-        candidate_keys = [key for key in candidate_keys if all(kw in language_db[key].get("ja", "").lower() for kw in keywords)]
+    if text_contains:
+        keywords = [k.strip().lower() for k in text_contains.split(',') if k.strip()]
+        candidate_keys = [
+            key for key in candidate_keys 
+            if all( # This must be all() to ensure all keywords are found
+                kw in language_db[key].get("en", "").lower() or 
+                kw in language_db[key].get("ja", "").lower() 
+                for kw in keywords
+            )
+        ]
         
     if not candidate_keys:
         raise HTTPException(status_code=404, detail="No language keys found matching all criteria.")
         
     results = {key: language_db[key] for key in candidate_keys}
-    return {"query": {"id": id_contains, "en": en_contains, "ja": ja_contains}, "count": len(results), "results": results}
+    return {"query": {"id": id_contains, "text": text_contains}, "count": len(results), "results": results}
