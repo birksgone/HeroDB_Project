@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeroDB Curation Tool</title>
     <link rel="stylesheet" href="style.css">
+    <!--
+        The order of these scripts is CRITICAL.
+        1. The "wizard" (app.js, which defines curationTool) must exist first.
+        2. The "magic wand" (alpine.min.js) must be given to the wizard AFTER he exists.
+        The `defer` attribute ensures Alpine.js runs only after the whole page is ready.
+    -->
+    <script src="app.js"></script>
+    <script src="alpine.min.js" defer></script>
 </head>
 
 <body x-data="curationTool()" x-init="init()">
@@ -90,9 +98,7 @@
             </div>
         </section>
     </main>
-    <script src="app.js defer"></script>
-    <script src="alpine.min.js" defer></script>
-    <!-- Scripts at the end of body for reliability -->
+
 </body>
 
 </html>
