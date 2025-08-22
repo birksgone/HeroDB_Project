@@ -1,7 +1,10 @@
-// This is the official, recommended, and most robust way to initialize an Alpine.js component.
+// This is the official, recommended, and most robust way to initialize 
+// a component with Alpine.js from an external file.
+
 document.addEventListener('alpine:init', () => {
     Alpine.data('curationTool', () => ({
-        // --- STATE ---
+
+        // --- STATE (The App's Memory) ---
         apiTarget: 'local',
         username: '',
         password: '',
@@ -17,7 +20,7 @@ document.addEventListener('alpine:init', () => {
         tableHeaders: '',
         tableRows: [],
 
-        // --- METHODS ---
+        // --- COMPUTED (Derived Data) ---
         getApiBase() {
             return this.apiTarget === 'render' 
                 ? 'https://herodb-project.onrender.com' 
@@ -28,8 +31,14 @@ document.addEventListener('alpine:init', () => {
                 'Authorization': 'Basic ' + btoa(this.username + ':' + this.password)
             });
         },
-        clearHeroSearch() { this.heroSearch = { key: '', keyword: '' }; },
-        clearLangSearch() { this.langSearch = { ids: ['', '', '', ''], texts: ['', '', '', ''] }; },
+
+        // --- METHODS (The App's Actions) ---
+        clearHeroSearch() { 
+            this.heroSearch = { key: '', keyword: '' }; 
+        },
+        clearLangSearch() { 
+            this.langSearch = { ids: ['', '', '', ''], texts: ['', '', '', ''] }; 
+        },
         
         async performHeroSearch() {
             if (!this.heroSearch.key || !this.heroSearch.keyword) {
@@ -38,6 +47,7 @@ document.addEventListener('alpine:init', () => {
             const url = `${this.getApiBase()}/api/query?key=${encodeURIComponent(this.heroSearch.key)}&keyword=${encodeURIComponent(this.heroSearch.keyword)}`;
             await this.fetchData(url, 'hero');
         },
+
         async performLangSearch() {
             const params = new URLSearchParams();
             const idKeywords = this.langSearch.ids.filter(val => val.trim() !== '').join(',');
@@ -50,6 +60,7 @@ document.addEventListener('alpine:init', () => {
             const url = `${this.getApiBase()}/api/lang/super_search?${params.toString()}`;
             await this.fetchData(url, 'lang');
         },
+
         async fetchData(url, type) {
             this.loading = true; this.error = null; this.results = null; this.tableRows = []; this.tableHeaders = '';
             try {
@@ -66,6 +77,7 @@ document.addEventListener('alpine:init', () => {
                 this.loading = false;
             }
         },
+        
         generateTable(type) {
             if (!this.results || !this.results.results) {
                 this.tableRows = []; this.tableHeaders = ''; return;
@@ -84,6 +96,7 @@ document.addEventListener('alpine:init', () => {
                 }));
             }
         },
+
         init() {
             this.username = localStorage.getItem('herodb_username') || '';
             this.password = localStorage.getItem('herodb_password') || '';
