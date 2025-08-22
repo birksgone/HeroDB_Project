@@ -379,12 +379,11 @@ def main():
         with open(DEBUG_JSON_PATH, 'r', encoding='utf-8') as f:
             debug_data_from_file = json.load(f)
 
-        # --- REVISED: The parsers dict now holds the functions themselves ---
         parsers = {
             'direct_effect': parse_direct_effect, 
             'clear_buffs': parse_clear_buffs,
             'properties': parse_properties, 
-            'status_effects': parse_status_effects, # No longer a lambda
+            'status_effects': parse_status_effects,
             'familiars': parse_familiars, 
             'passive_skills': parse_passive_skills,
             'prop_lang_subset': [key for key in language_db if key.startswith("specials.v2.property.")],
@@ -406,11 +405,27 @@ def main():
             except Exception as e:
                 print(f"Warning: Could not write familiar parameter log. Error: {e}")
         
+        # --- MODIFIED: The new, detailed warning report system ---
         warnings_list = parsers.get('warnings_list', [])
         if warnings_list:
             unique_warnings = parsers.get('unique_warnings_set', set())
-            print(f"\n--- 🚨 Found {len(warnings_list)} lang_id search failures ({len(unique_warnings)} unique types) ---")
-        
+            print(f"\n--- 🚨 Found {len(warnings_list)} warnings ({len(unique_warnings)} unique types) ---")
+            
+            warning_counts = Counter()
+            for w in warnings_list:
+                source = "unknown"
+                if w.startswith("["):
+                    # Extracts 'parser_name' from "[parser_name]: message"
+                    source = w.split("]")[0][1:] 
+                warning_counts[source] += 1
+            
+            print("\n--- Breakdown by Parser ---")
+            print(f"{'Parser':<30} | {'Count':<10}")
+            print("-" * 43)
+            for source, count in warning_counts.most_common():
+                print(f"{source:<30} | {count:<10}")
+            print("-" * 43)
+
         analyze_unresolved_placeholders(final_hero_data)
         
         print(f"\n✅ Process complete. All files saved.")
@@ -420,7 +435,7 @@ def main():
         traceback.print_exc()
 
 if __name__ == "__main__":
-    main()
-
+    main()\
+    
 # D:\HeroDB_Project\packages\parser_engineにいる状態で
 # python hero_main.py

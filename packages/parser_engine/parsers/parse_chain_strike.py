@@ -12,7 +12,6 @@ from hero_parser import (
 def parse_chain_strike(prop_data: dict, special_data: dict, hero_stats: dict, lang_db: dict, game_db: dict, hero_id: str, rules: dict, parsers: dict) -> (list, list):
     """
     A specialized, rule-based parser for all 'ChainStrike' type properties.
-    It constructs the lang_id from parts and then parses the initial and chain hits.
     """
     parsed_items = []
     warnings = []
@@ -26,8 +25,7 @@ def parse_chain_strike(prop_data: dict, special_data: dict, hero_stats: dict, la
         initial_hit_prop_type = prop_data.get("chainEffectType", "Damage")
         prop_lang_subset = parsers.get('prop_lang_subset', [k for k in lang_db if k.startswith("specials.v2.property.")])
         initial_hit_lang_id, warning = find_best_lang_id({"propertyType": initial_hit_prop_type}, prop_lang_subset, parsers)
-        if warning:
-            # Add source
+        if warning: 
             warnings.append(f"[parse_chain_strike]: Initial hit warning for '{prop_id}': {warning}")
         
         if initial_hit_lang_id:
@@ -38,6 +36,12 @@ def parse_chain_strike(prop_data: dict, special_data: dict, hero_stats: dict, la
             lang_params["HEALTH"] = val
             desc = generate_description(initial_hit_lang_id, {k: format_value(v) for k, v in lang_params.items()}, lang_db)
             parsed_items.append({"id": f"{prop_id}_initial", "lang_id": initial_hit_lang_id, "params": json.dumps(lang_params), **desc})
+        else:
+            # If initial hit fails, create a failure object
+            failure_text = f"FAIL_LANG_ID: ChainStrike Initial Hit '{prop_id}'"
+            parsed_items.append({"id": f"{prop_id}_initial", "lang_id": "SEARCH_FAILED", "en": failure_text, "ja": failure_text})
+            warnings.append(f"[parse_chain_strike]: Could not determine initial hit lang_id for {prop_id}")
+
 
     # --- Part 2: Construct and parse the chain hit ---
     base_name = property_type.lower()
@@ -81,8 +85,9 @@ def parse_chain_strike(prop_data: dict, special_data: dict, hero_stats: dict, la
         if extra_info: chain_item["extra"] = extra_info
         parsed_items.append(chain_item)
     else:
-        if not parsed_items:
-            # Add source
-            warnings.append(f"[parse_chain_strike]: Could not construct or find any lang_id for property '{prop_id}'")
+        # If chain hit fails, create a failure object
+        failure_text = f"FAIL_LANG_ID: ChainStrike Chain Hit '{prop_id}'"
+        parsed_items.append({"id": f"{prop_id}_chain", "lang_id": "SEARCH_FAILED", "en": failure_text, "ja": failure_text})
+        warnings.append(f"[parse_chain_strike]: Could not construct or find any lang_id for property '{prop_id}'")
         
     return parsed_items, warnings
