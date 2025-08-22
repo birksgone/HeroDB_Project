@@ -1,12 +1,3 @@
 launch.json
 settings.json
-bases.json
-battle.json
-characters.json
-languageOverrides.json
-loots.json
-map.json
-other.json
-quests.json
-shop.json
-specials.json
+data/*.json
