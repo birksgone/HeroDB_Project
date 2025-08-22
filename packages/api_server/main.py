@@ -78,11 +78,26 @@ def load_data():
 
 # --- Helper Logic for Querying ---
 def find_nested_properties(data: Any, key_to_find: str, keyword: str, results: List[Dict]):
+    """
+    Recursively searches through a nested data structure to find blocks
+    containing a specific key with a matching keyword.
+    """
     if isinstance(data, dict):
-        if key_to_find in data and isinstance(data[key_to_find], str) and keyword.lower() in data[key_to_find].lower():
-            results.append(data)
+        # --- DEBUGGING: Print every dictionary it inspects ---
+        # print(f"Checking dict: {list(data.keys())}")
+        
+        if key_to_find in data and isinstance(data[key_to_find], str):
+            # --- DEBUGGING: Print every potential match it finds ---
+            current_value = data[key_to_find]
+            print(f"Found key '{key_to_find}'. Comparing '{keyword.lower()}' with '{current_value.lower()}'")
+            
+            if keyword.lower() in current_value.lower():
+                print(">>> MATCH FOUND! <<<")
+                results.append(data)
+        
         for value in data.values():
             find_nested_properties(value, key_to_find, keyword, results)
+            
     elif isinstance(data, list):
         for item in data:
             find_nested_properties(item, key_to_find, keyword, results)

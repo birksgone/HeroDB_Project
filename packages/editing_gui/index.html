@@ -6,13 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeroDB Curation Tool</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/alpinejs@3.14.1/dist/cdn.min.js" defer></script>
-    <script src="app.js" defer></script>
 </head>
 
-<body x-data="curationTool">
+<body>
 
-    <!-- Alpine.jsが制御する範囲を、このdivで明確に指定する -->
     <div x-data="curationTool">
 
         <header>
@@ -20,7 +17,8 @@
             <div class="controls">
                 <fieldset>
                     <legend>API Target</legend>
-                    <label><input type="radio" name="api_target_radio" x-model="apiTarget" value="local"> Local</label>
+                    <label><input type="radio" name="api_target_radio" x-model="apiTarget" value="local" checked>
+                        Local</label>
                     <label><input type="radio" name="api_target_radio" x-model="apiTarget" value="render">
                         Render</label>
                 </fieldset>
@@ -100,6 +98,9 @@
 
     </div>
 
+    <!-- Scripts are loaded at the very end of the body for maximum reliability -->
+    <script src="https://unpkg.com/alpinejs@3.14.1/dist/cdn.min.js" defer></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

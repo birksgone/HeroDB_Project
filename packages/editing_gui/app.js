@@ -1,10 +1,6 @@
-// This is the official, recommended, and most robust way to initialize 
-// a component with Alpine.js from an external file.
-
 document.addEventListener('alpine:init', () => {
     Alpine.data('curationTool', () => ({
-
-        // --- STATE (The App's Memory) ---
+        // --- STATE ---
         apiTarget: 'local',
         username: '',
         password: '',
@@ -20,7 +16,7 @@ document.addEventListener('alpine:init', () => {
         tableHeaders: '',
         tableRows: [],
 
-        // --- COMPUTED (Derived Data) ---
+        // --- METHODS ---
         getApiBase() {
             return this.apiTarget === 'render' 
                 ? 'https://herodb-project.onrender.com' 
@@ -31,14 +27,8 @@ document.addEventListener('alpine:init', () => {
                 'Authorization': 'Basic ' + btoa(this.username + ':' + this.password)
             });
         },
-
-        // --- METHODS (The App's Actions) ---
-        clearHeroSearch() { 
-            this.heroSearch = { key: '', keyword: '' }; 
-        },
-        clearLangSearch() { 
-            this.langSearch = { ids: ['', '', '', ''], texts: ['', '', '', ''] }; 
-        },
+        clearHeroSearch() { this.heroSearch = { key: '', keyword: '' }; },
+        clearLangSearch() { this.langSearch = { ids: ['', '', '', ''], texts: ['', '', '', ''] }; },
         
         async performHeroSearch() {
             if (!this.heroSearch.key || !this.heroSearch.keyword) {
@@ -47,7 +37,6 @@ document.addEventListener('alpine:init', () => {
             const url = `${this.getApiBase()}/api/query?key=${encodeURIComponent(this.heroSearch.key)}&keyword=${encodeURIComponent(this.heroSearch.keyword)}`;
             await this.fetchData(url, 'hero');
         },
-
         async performLangSearch() {
             const params = new URLSearchParams();
             const idKeywords = this.langSearch.ids.filter(val => val.trim() !== '').join(',');
@@ -63,9 +52,17 @@ document.addEventListener('alpine:init', () => {
 
         async fetchData(url, type) {
             this.loading = true; this.error = null; this.results = null; this.tableRows = []; this.tableHeaders = '';
+            
+            // --- DEBUGGING: Log the exact URL we are fetching ---
+            console.log(`Fetching from: ${url}`);
+
             try {
                 const response = await fetch(url, { headers: this.getAuthHeaders() });
                 const data = await response.json();
+
+                // --- DEBUGGING: Log the raw response from the API ---
+                console.log('API Response:', data);
+
                 if (!response.ok) {
                     throw new Error(`API Error (${response.status}): ${data.detail || response.statusText}`);
                 }
@@ -79,8 +76,14 @@ document.addEventListener('alpine:init', () => {
         },
         
         generateTable(type) {
+            // Guard against null or missing results
             if (!this.results || !this.results.results) {
-                this.tableRows = []; this.tableHeaders = ''; return;
+                this.tableRows = []; this.tableHeaders = ''; 
+                // Don't show "0 items found" if there was an error.
+                if (!this.error) {
+                    this.results = { count: 0 }; // Create a dummy results object
+                }
+                return;
             }
             if (type === 'hero') {
                 this.tableHeaders = `<tr><th>Hero ID</th><th>Property Block</th></tr>`;
