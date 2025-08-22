@@ -6,99 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeroDB Curation Tool</title>
     <link rel="stylesheet" href="style.css">
-    <!--
-        The order of these scripts is CRITICAL.
-        1. The "wizard" (app.js, which defines curationTool) must exist first.
-        2. The "magic wand" (alpine.min.js) must be given to the wizard AFTER he exists.
-        The `defer` attribute ensures Alpine.js runs only after the whole page is ready.
-    -->
-    <script src="app.js"></script>
+    <!-- STEP 1: Alpine.jsのライブラリを、`defer`を付けて、読み込む -->
     <script src="alpine.min.js" defer></script>
+    <!-- STEP 2: 私たちのアプリケーションのロジックを、読み込む -->
+    <script src="app.js"></script>
 </head>
 
-<body x-data="curationTool()" x-init="init()">
+<body>
 
-    <header>
-        <h1>HeroDB Curation Tool</h1>
-        <div class="controls">
-            <fieldset>
-                <legend>API Target</legend>
-                <label><input type="radio" name="api_target_radio" x-model="apiTarget" value="local"> Local</label>
-                <label><input type="radio" name="api_target_radio" x-model="apiTarget" value="render"> Render</label>
-            </fieldset>
-            <fieldset>
-                <legend>Credentials</legend>
-                <input type="text" x-model="username" placeholder="API Username">
-                <input type="password" x-model="password" placeholder="API Password">
-            </fieldset>
-        </div>
-    </header>
+    <!-- STEP 3: `x-data`で、コンポーネントの魂を、呼び出す -->
+    <div x-data="curationTool">
 
-    <main>
-        <section class="tool">
-            <h2>Search Hero Blocks</h2>
-            <div class="form">
-                <input type="text" x-model="heroSearch.key" placeholder="JSON Key (e.g., propertyType)">
-                <input type="text" x-model="heroSearch.keyword" placeholder="Keyword (e.g., ChainStrike)">
-                <button @click="performHeroSearch()">Search Blocks</button>
-                <button @click="clearHeroSearch()" class="secondary">Clear</button>
+        <header>
+            <h1>HeroDB Curation Tool</h1>
+            <div class="controls">
+                <fieldset>
+                    <legend>API Target</legend>
+                    <label><input type="radio" name="api_target_radio" x-model="apiTarget" value="local"> Local</label>
+                    <label><input type="radio" name="api_target_radio" x-model="apiTarget" value="render">
+                        Render</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Credentials</legend>
+                    <input type="text" x-model="username" placeholder="API Username">
+                    <input type="password" x-model="password" placeholder="API Password">
+                </fieldset>
             </div>
-        </section>
+        </header>
 
-        <section class="tool">
-            <h2>SuperSearch Language DB</h2>
-            <div class="form-grid">
-                <input type="text" x-model="langSearch.ids[0]" placeholder="ID contains...">
-                <input type="text" x-model="langSearch.ids[1]" placeholder="ID contains...">
-                <input type="text" x-model="langSearch.ids[2]" placeholder="ID contains...">
-                <input type="text" x-model="langSearch.ids[3]" placeholder="ID contains...">
-
-                <input type="text" x-model="langSearch.texts[0]" placeholder="EN/JA text contains...">
-                <input type="text" x-model="langSearch.texts[1]" placeholder="EN/JA text contains...">
-                <input type="text" x-model="langSearch.texts[2]" placeholder="EN/JA text contains...">
-                <input type="text" x-model="langSearch.texts[3]" placeholder="EN/JA text contains...">
-            </div>
-            <div class="form">
-                <button @click="performLangSearch()">Search Lang DB</button>
-                <button @click="clearLangSearch()" class="secondary">Clear</button>
-            </div>
-        </section>
-
-        <section class="results">
-            <hr>
-            <h2>Results</h2>
-            <div x-show="loading" class="status">Loading...</div>
-            <div x-show="error" class="status error" x-text="error"></div>
-
-            <div x-show="results">
-                <p><strong x-text="results.count"></strong> items found.</p>
-                <div class="tabs">
-                    <button :class="{ 'active': viewMode === 'table' }" @click="viewMode = 'table'">Table View</button>
-                    <button :class="{ 'active': viewMode === 'json' }" @click="viewMode = 'json'">Raw JSON</button>
+        <main>
+            <section class="tool">
+                <h2>Search Hero Blocks</h2>
+                <div class="form">
+                    <input type="text" x-model="heroSearch.key" placeholder="JSON Key (e.g., propertyType)">
+                    <input type="text" x-model="heroSearch.keyword" placeholder="Keyword (e.g., ChainStrike)">
+                    <button @click="performHeroSearch()">Search Blocks</button>
+                    <button @click="clearHeroSearch()" class="secondary">Clear</button>
                 </div>
+            </section>
 
-                <div x-show="viewMode === 'table'">
-                    <table>
-                        <thead x-html="tableHeaders"></thead>
-                        <tbody>
-                            <template x-for="row in tableRows" :key="row.key">
-                                <tr>
-                                    <template x-for="cell in row.cells">
-                                        <td x-html="cell"></td>
-                                    </template>
-                                </tr>
-                            </template>
-                        </tbody>
-                    </table>
+            <section class="tool">
+                <h2>SuperSearch Language DB</h2>
+                <div class="form-grid">
+                    <input type="text" x-model="langSearch.ids[0]" placeholder="ID contains...">
+                    <input type="text" x-model="langSearch.ids[1]" placeholder="ID contains...">
+                    <input type="text" x-model="langSearch.ids[2]" placeholder="ID contains...">
+                    <input type="text" x-model="langSearch.ids[3]" placeholder="ID contains...">
+
+                    <input type="text" x-model="langSearch.texts[0]" placeholder="EN/JA text contains...">
+                    <input type="text" x-model="langSearch.texts[1]" placeholder="EN/JA text contains...">
+                    <input type="text" x-model="langSearch.texts[2]" placeholder="EN/JA text contains...">
+                    <input type="text" x-model="langSearch.texts[3]" placeholder="EN/JA text contains...">
                 </div>
-
-                <div x-show="viewMode === 'json'">
-                    <textarea readonly x-text="JSON.stringify(results, null, 2)"></textarea>
+                <div class="form">
+                    <button @click="performLangSearch()">Search Lang DB</button>
+                    <button @click="clearLangSearch()" class="secondary">Clear</button>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
 
+            <section class="results">
+                <hr>
+                <h2>Results</h2>
+                <div x-show="loading" class="status">Loading...</div>
+                <div x-show="error" class="status error" x-text="error"></div>
+
+                <div x-show="results">
+                    <p><strong x-text="results.count"></strong> items found.</p>
+                    <div class="tabs">
+                        <button :class="{ 'active': viewMode === 'table' }" @click="viewMode = 'table'">Table
+                            View</button>
+                        <button :class="{ 'active': viewMode === 'json' }" @click="viewMode = 'json'">Raw JSON</button>
+                    </div>
+
+                    <div x-show="viewMode === 'table'">
+                        <table>
+                            <thead x-html="tableHeaders"></thead>
+                            <tbody>
+                                <template x-for="row in tableRows" :key="row.key">
+                                    <tr>
+                                        <template x-for="cell in row.cells">
+                                            <td x-html="cell"></td>
+                                        </template>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div x-show="viewMode === 'json'">
+                        <textarea readonly x-text="JSON.stringify(results, null, 2)"></textarea>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div><!-- End of Alpine component -->
 </body>
 
 </html>
