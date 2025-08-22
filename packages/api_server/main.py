@@ -1,17 +1,30 @@
 # packages/api_server/main.py
 
 import json
+import secrets
 from pathlib import Path
-from fastapi import FastAPI, HTTPException, Query
+import sys
+
+from fastapi import FastAPI, Depends, HTTPException, status, Query
+from fastapi.security import HTTPBasic, HTTPBasicCredentials
+from pydantic_settings import BaseSettings
 from typing import Any, List, Dict, Optional
 
 # --- Custom Module Imports ---
 # To reuse our robust data loading logic, we need to add the parser_engine directory to the path
-import sys
-# Add the parent directory of 'api_server' ('packages') to the system path
 sys.path.append(str(Path(__file__).parent.parent.resolve()))
-# Now we can import from hero_data_loader
 from parser_engine.hero_data_loader import load_languages
+
+# --- Configuration Management ---
+# This class will automatically read variables from a .env file or environment variables.
+class Settings(BaseSettings):
+    API_USERNAME: str = "user"
+    API_PASSWORD: str = "password"
+
+    class Config:
+        env_file = ".env"
+
+settings = Settings()
 
 # --- Application Setup ---
 app = FastAPI(
@@ -20,12 +33,24 @@ app = FastAPI(
     version="1.1.0"
 )
 
-# --- Path Setup ---
-API_SERVER_DIR = Path(__file__).parent.resolve()
-PROJECT_ROOT = API_SERVER_DIR.parent.parent
-DEBUG_JSON_PATH = PROJECT_ROOT / "data" / "output" / "debug_hero_data.json"
+# --- Security Setup ---
+security = HTTPBasic()
 
-# --- Data Loading (In-Memory Database) ---
+def get_current_username(credentials: HTTPBasicCredentials = Depends(security)):
+    """A dependency that securely checks the username and password."""
+    correct_username = secrets.compare_digest(credentials.username, settings.API_USERNAME)
+    correct_password = secrets.compare_digest(credentials.password, settings.API_PASSWORD)
+    if not (correct_username and correct_password):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Incorrect username or password",
+            headers={"WWW-Authenticate": "Basic"},
+        )
+    return credentials.username
+
+# --- Path Setup & Data Loading ---
+PROJECT_ROOT = Path(__file__).parent.parent.parent.resolve()
+DEBUG_JSON_PATH = PROJECT_ROOT / "data" / "output" / "debug_hero_data.json"
 all_hero_data = {}
 language_db = {}
 
@@ -52,7 +77,6 @@ def load_data():
     except Exception as e:
         print(f"🚨 WARNING: Could not load language files. Language API will not work. Error: {e}")
 
-
 # --- Helper Logic for Querying ---
 def find_nested_properties(data: Any, key_to_find: str, keyword: str, results: List[Dict]):
     if isinstance(data, dict):
@@ -64,25 +88,26 @@ def find_nested_properties(data: Any, key_to_find: str, keyword: str, results: L
         for item in data:
             find_nested_properties(item, key_to_find, keyword, results)
 
-# --- API Endpoints ---
+# --- Protected API Endpoints ---
+# Add `username: str = Depends(get_current_username)` to protect an endpoint.
 
 @app.get("/")
-def read_root():
-    return {"message": "Welcome to the HeroDB Parser API!"}
+def read_root(username: str = Depends(get_current_username)):
+    return {"message": f"Welcome, {username}!"}
 
 @app.get("/api/heroes")
-def get_all_hero_ids():
+def get_all_hero_ids(username: str = Depends(get_current_username)):
     return {"hero_ids": sorted(list(all_hero_data.keys()))}
 
 @app.get("/api/hero/{hero_id}")
-def get_hero_data(hero_id: str):
+def get_hero_data(hero_id: str, username: str = Depends(get_current_username)):
     hero_data = all_hero_data.get(hero_id)
     if not hero_data:
         raise HTTPException(status_code=404, detail=f"Hero with ID '{hero_id}' not found.")
     return {"hero_id": hero_id, "data": hero_data}
 
 @app.get("/api/query")
-def query_hero_data(key: str, keyword: str):
+def query_hero_data(key: str, keyword: str, username: str = Depends(get_current_username)):
     extracted_data = []
     for hero_id, hero_data in all_hero_data.items():
         found_blocks = []
@@ -99,7 +124,8 @@ def query_hero_data(key: str, keyword: str):
 def super_search_language_db(
     id_contains: Optional[str] = Query(None, description="Comma-separated keywords for lang_id"),
     en_contains: Optional[str] = Query(None, description="Comma-separated keywords for English text"),
-    ja_contains: Optional[str] = Query(None, description="Comma-separated keywords for Japanese text")
+    ja_contains: Optional[str] = Query(None, description="Comma-separated keywords for Japanese text"),
+    username: str = Depends(get_current_username)
 ):
     """
     Performs a powerful, multi-field, AND-based search on the language database.
