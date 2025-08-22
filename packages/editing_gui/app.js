@@ -1,9 +1,7 @@
-// packages/editing_gui/app.js (The True Final Version)
-
 function curationTool() {
     return {
-        // --- STATE (The App's Memory) ---
-        apiTarget: 'local', // 'local' or 'render'
+        // --- STATE ---
+        apiTarget: 'local',
         username: '',
         password: '',
         heroSearch: { key: '', keyword: '' },
@@ -14,37 +12,29 @@ function curationTool() {
         loading: false,
         error: null,
         results: null,
-        viewMode: 'table', // 'table' or 'json'
+        viewMode: 'table',
         tableHeaders: '',
         tableRows: [],
 
-        // --- COMPUTED (Derived Data) ---
+        // --- COMPUTED ---
         getApiBase() {
-            if (this.apiTarget === 'render') {
-                return 'https://herodb-project.onrender.com';
-            }
-            return 'http://127.0.0.1:8000';
+            return this.apiTarget === 'render' 
+                ? 'https://herodb-project.onrender.com' 
+                : 'http://127.0.0.1:8000';
         },
         getAuthHeaders() {
-            // btoa is a browser function to create Base64 strings for Basic Auth
             return new Headers({
                 'Authorization': 'Basic ' + btoa(this.username + ':' + this.password)
             });
         },
 
-        // --- METHODS (The App's Actions) ---
-        clearHeroSearch() {
-            this.heroSearch = { key: '', keyword: '' };
-        },
-        clearLangSearch() {
-            this.langSearch = { ids: ['', '', '', ''], texts: ['', '', '', ''] };
-        },
+        // --- METHODS ---
+        clearHeroSearch() { this.heroSearch = { key: '', keyword: '' }; },
+        clearLangSearch() { this.langSearch = { ids: ['', '', '', ''], texts: ['', '', '', ''] }; },
         
         async performHeroSearch() {
             if (!this.heroSearch.key || !this.heroSearch.keyword) {
-                this.error = "Both Key and Keyword are required for Hero Block Search.";
-                this.results = null;
-                return;
+                this.error = "Both Key and Keyword are required."; this.results = null; return;
             }
             const url = `${this.getApiBase()}/api/query?key=${encodeURIComponent(this.heroSearch.key)}&keyword=${encodeURIComponent(this.heroSearch.keyword)}`;
             await this.fetchData(url, 'hero');
@@ -54,29 +44,20 @@ function curationTool() {
             const params = new URLSearchParams();
             const idKeywords = this.langSearch.ids.filter(val => val.trim() !== '').join(',');
             const textKeywords = this.langSearch.texts.filter(val => val.trim() !== '').join(',');
-
             if (idKeywords) params.append('id_contains', idKeywords);
             if (textKeywords) params.append('text_contains', textKeywords);
-            
             if (params.toString() === '') {
-                this.error = "At least one search field is required for Language DB Search.";
-                this.results = null;
-                return;
+                this.error = "At least one search field is required."; this.results = null; return;
             }
             const url = `${this.getApiBase()}/api/lang/super_search?${params.toString()}`;
             await this.fetchData(url, 'lang');
         },
 
         async fetchData(url, type) {
-            this.loading = true;
-            this.error = null;
-            this.results = null;
-            this.tableRows = [];
-            this.tableHeaders = '';
-            
+            this.loading = true; this.error = null; this.results = null; this.tableRows = []; this.tableHeaders = '';
             try {
                 const response = await fetch(url, { headers: this.getAuthHeaders() });
-                const data = await response.json(); // Always try to get JSON for error details
+                const data = await response.json();
                 if (!response.ok) {
                     throw new Error(`API Error (${response.status}): ${data.detail || response.statusText}`);
                 }
@@ -93,15 +74,11 @@ function curationTool() {
             if (!this.results || !this.results.results) {
                 this.tableRows = []; this.tableHeaders = ''; return;
             }
-
             if (type === 'hero') {
                 this.tableHeaders = `<tr><th>Hero ID</th><th>Property Block</th></tr>`;
                 this.tableRows = this.results.results.map((item, index) => ({
-                    key: item.hero_id + index, // Use index for a unique key
-                    cells: [
-                        item.hero_id, 
-                        `<pre>${JSON.stringify(item.property_block, null, 2)}</pre>`
-                    ]
+                    key: item.hero_id + index,
+                    cells: [item.hero_id, `<pre>${JSON.stringify(item.property_block, null, 2)}</pre>`]
                 }));
             } else if (type === 'lang') {
                 this.tableHeaders = `<tr><th>Lang ID</th><th>English</th><th>Japanese</th></tr>`;
@@ -114,11 +91,8 @@ function curationTool() {
 
         // --- INITIALIZATION ---
         init() {
-            // Load credentials from browser's local storage if they exist
             this.username = localStorage.getItem('herodb_username') || '';
             this.password = localStorage.getItem('herodb_password') || '';
-
-            // Save credentials to local storage whenever they change
             this.$watch('username', value => localStorage.setItem('herodb_username', value));
             this.$watch('password', value => localStorage.setItem('herodb_password', value));
         }

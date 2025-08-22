@@ -17,8 +17,8 @@
         <div class="controls">
             <fieldset>
                 <legend>API Target</legend>
-                <label><input type="radio" x-model="apiTarget" value="local"> Local</label>
-                <label><input type="radio" x-model="apiTarget" value="render"> Render</label>
+                <label><input type="radio" name="api_target_radio" x-model="apiTarget" value="local"> Local</label>
+                <label><input type="radio" name="api_target_radio" x-model="apiTarget" value="render"> Render</label>
             </fieldset>
             <fieldset>
                 <legend>Credentials</legend>
@@ -45,7 +45,7 @@
                 <input type="text" x-model="langSearch.ids[0]" placeholder="ID contains...">
                 <input type="text" x-model="langSearch.ids[1]" placeholder="ID contains...">
                 <input type="text" x-model="langSearch.ids[2]" placeholder="ID contains...">
-                <input type="text" x-model="langSearch.ids[3]" placeholder="ID contains..."><br>
+                <input type="text" x-model="langSearch.ids[3]" placeholder="ID contains...">
 
                 <input type="text" x-model="langSearch.texts[0]" placeholder="EN/JA text contains...">
                 <input type="text" x-model="langSearch.texts[1]" placeholder="EN/JA text contains...">
@@ -72,7 +72,7 @@
                 </div>
 
                 <div x-show="viewMode === 'table'">
-                    <table id="results_table">
+                    <table>
                         <thead x-html="tableHeaders"></thead>
                         <tbody>
                             <template x-for="row in tableRows" :key="row.key">
@@ -93,6 +93,7 @@
         </section>
     </main>
 
+    <!-- Scripts at the end of body for reliability -->
 </body>
 
 </html>

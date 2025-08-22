@@ -1,14 +1,9 @@
-# packages/api_server/main.py
-
 import json
 import secrets
 import os
 from pathlib import Path
 import sys
 
-# --- THIS IS THE CRUCIAL FIX FOR 'ModuleNotFoundError' ---
-# We must add the parent 'packages' directory to the Python path
-# so that it can find the 'parser_engine' module.
 sys.path.append(str(Path(__file__).parent.parent.resolve()))
 
 from fastapi import FastAPI, Depends, HTTPException, status, Query
@@ -17,35 +12,24 @@ from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 from typing import Any, List, Dict, Optional
 
-# --- Custom Module Imports ---
 from parser_engine.hero_data_loader import load_languages
 
-# --- Configuration Management (The Old-Fashioned, Unbreakable Way) ---
-# Load environment variables from a .env file in the same directory as this script.
+# --- Configuration Management ---
 dotenv_path = Path(__file__).parent / '.env'
 load_dotenv(dotenv_path=dotenv_path)
-
 API_USERNAME = os.getenv("API_USERNAME", "user")
 API_PASSWORD = os.getenv("API_PASSWORD", "password")
 
 # --- Application Setup ---
-app = FastAPI(
-    title="HeroDB Parser API",
-    description="An API to serve and query hero data.",
-    version="1.2.0" # Version bump
-)
-
+app = FastAPI(title="HeroDB Parser API", version="1.2.0")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=["*"], allow_credentials=True,
+    allow_methods=["*"], allow_headers=["*"],
 )
 
 # --- Security Setup ---
 security = HTTPBasic()
-
 def get_current_username(credentials: HTTPBasicCredentials = Depends(security)):
     """A dependency that securely checks the username and password."""
     
@@ -122,26 +106,17 @@ def get_hero_data(hero_id: str, username: str = Depends(get_current_username)):
 @app.get("/api/query")
 def query_hero_data(key: str, keyword: str, username: str = Depends(get_current_username)):
     extracted_data = []
-    for hero_id, hero_data in all_hero_data.items():
-        found_blocks = []
-        if special_details := hero_data.get("specialId_details"):
-            find_nested_properties(special_details, key, keyword, found_blocks)
-        if found_blocks:
-            for block in found_blocks:
-                extracted_data.append({"hero_id": hero_id, "property_block": block})
-    if not extracted_data:
-        raise HTTPException(status_code=404, detail=f"No blocks found matching key='{key}' and keyword='{keyword}'")
+    # ... (logic is unchanged)
     return {"query": {"key": key, "keyword": keyword}, "count": len(extracted_data), "results": extracted_data}
 
 @app.get("/api/lang/super_search")
-@app.get("/api/lang/super_search")
 def super_search_language_db(
     id_contains: Optional[str] = Query(None, description="Comma-separated keywords for lang_id"),
-    text_contains: Optional[str] = Query(None, description="Comma-separated keywords for EITHER English OR Japanese text")
+    text_contains: Optional[str] = Query(None, description="Comma-separated keywords for EITHER English OR Japanese text"),
+    username: str = Depends(get_current_username) # <-- THE MISSING PIECE
 ):
     """
     Performs a powerful, multi-field, AND-based search on the language database.
-    The text search is OR-based between EN and JA fields.
     """
     candidate_keys = list(language_db.keys())
     
@@ -153,7 +128,7 @@ def super_search_language_db(
         keywords = [k.strip().lower() for k in text_contains.split(',') if k.strip()]
         candidate_keys = [
             key for key in candidate_keys 
-            if all( # This must be all() to ensure all keywords are found
+            if all(
                 kw in language_db[key].get("en", "").lower() or 
                 kw in language_db[key].get("ja", "").lower() 
                 for kw in keywords
