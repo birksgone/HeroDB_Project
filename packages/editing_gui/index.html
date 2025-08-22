@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeroDB Curation Tool</title>
     <link rel="stylesheet" href="style.css">
-    <!-- STEP 1: Alpine.jsのライブラリを、`defer`を付けて、読み込む -->
+    <!-- Alpine.jsのライブラリを、'defer'を付けて、読み込む -->
     <script src="alpine.min.js" defer></script>
-    <!-- STEP 2: 私たちのアプリケーションのロジックを、読み込む -->
-    <script src="app.js"></script>
+    <!-- 私たちのアプリケーションのロジックも、'defer'を付けて、読み込む -->
+    <script src="app.js" defer></script>
 </head>
 
 <body>
 
-    <!-- STEP 3: `x-data`で、コンポーネントの魂を、呼び出す -->
+    <!-- Alpine.jsが制御する範囲を、このdivで明確に指定する -->
     <div x-data="curationTool">
 
         <header>
@@ -100,7 +100,8 @@
             </section>
         </main>
 
-    </div><!-- End of Alpine component -->
+    </div>
+
 </body>
 
 </html>

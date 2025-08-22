@@ -1,5 +1,4 @@
-// This is the correct and robust way to initialize an Alpine.js component.
-// It waits for Alpine to be ready, then registers our component.
+// This is the official, recommended, and most robust way to initialize an Alpine.js component.
 document.addEventListener('alpine:init', () => {
     Alpine.data('curationTool', () => ({
         // --- STATE ---
