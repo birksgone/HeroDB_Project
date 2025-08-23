@@ -104,31 +104,49 @@ def find_nested_properties(data: Any, key_to_find: str, keyword: str, results: L
 
 # --- Protected API Endpoints ---
 @app.get("/")
-def read_root(username: str = Depends(get_current_username)):
+# def read_root(username: str = Depends(get_current_username)):
+def read_root():
     return {"message": f"Welcome, {username}!"}
 
 @app.get("/api/heroes")
-def get_all_hero_ids(username: str = Depends(get_current_username)):
+# def get_all_hero_ids(username: str = Depends(get_current_username)):
+def get_all_hero_ids():
     return {"hero_ids": sorted(list(all_hero_data.keys()))}
 
 @app.get("/api/hero/{hero_id}")
-def get_hero_data(hero_id: str, username: str = Depends(get_current_username)):
+# def get_hero_data(hero_id: str, username: str = Depends(get_current_username)):
+def get_hero_data(hero_id: str):
     hero_data = all_hero_data.get(hero_id)
     if not hero_data:
         raise HTTPException(status_code=404, detail=f"Hero with ID '{hero_id}' not found.")
     return {"hero_id": hero_id, "data": hero_data}
 
 @app.get("/api/query")
-def query_hero_data(key: str, keyword: str, username: str = Depends(get_current_username)):
+# def query_hero_data(key: str, keyword: str, username: str = Depends(get_current_username)):
+def query_hero_data(key: str, keyword: str):
     extracted_data = []
-    # ... (logic is unchanged)
+    for hero_id, hero_data in all_hero_data.items():
+        found_blocks = []
+        if special_details := hero_data.get("specialId_details"):
+            find_nested_properties(special_details, key, keyword, found_blocks)
+        if found_blocks:
+            for block in found_blocks:
+                extracted_data.append({"hero_id": hero_id, "property_block": block})
+    
+    if not extracted_data:
+        # Return 200 OK with 0 results if nothing is found, as it's a valid search
+        return {"query": {"key": key, "keyword": keyword}, "count": 0, "results": []}
+        
     return {"query": {"key": key, "keyword": keyword}, "count": len(extracted_data), "results": extracted_data}
 
 @app.get("/api/lang/super_search")
 def super_search_language_db(
+    # id_contains: Optional[str] = Query(None, description="Comma-separated keywords for lang_id"),
+    # text_contains: Optional[str] = Query(None, description="Comma-separated keywords for EITHER English OR Japanese text"),
+    # username: str = Depends(get_current_username)
     id_contains: Optional[str] = Query(None, description="Comma-separated keywords for lang_id"),
-    text_contains: Optional[str] = Query(None, description="Comma-separated keywords for EITHER English OR Japanese text"),
-    username: str = Depends(get_current_username) # <-- THE MISSING PIECE
+    text_contains: Optional[str] = Query(None, description="Comma-separated keywords for EITHER English OR Japanese text")
+
 ):
     """
     Performs a powerful, multi-field, AND-based search on the language database.

@@ -15,6 +15,7 @@ document.addEventListener('alpine:init', () => {
         viewMode: 'table',
         tableHeaders: '',
         tableRows: [],
+        lastSuccessfulUrl: '', // To store the URL for sharing
 
         // --- METHODS ---
         getApiBase() {
@@ -22,13 +23,15 @@ document.addEventListener('alpine:init', () => {
                 ? 'https://herodb-project.onrender.com' 
                 : 'http://127.0.0.1:8000';
         },
-        getAuthHeaders() {
-            return new Headers({
-                'Authorization': 'Basic ' + btoa(this.username + ':' + this.password)
-            });
+        // getAuthHeaders is no longer needed if Basic Auth is removed from the API
+        // getAuthHeaders() { ... },
+
+        clearHeroSearch() { 
+            this.heroSearch = { key: '', keyword: '' }; 
         },
-        clearHeroSearch() { this.heroSearch = { key: '', keyword: '' }; },
-        clearLangSearch() { this.langSearch = { ids: ['', '', '', ''], texts: ['', '', '', ''] }; },
+        clearLangSearch() { 
+            this.langSearch = { ids: ['', '', '', ''], texts: ['', '', '', ''] }; 
+        },
         
         async performHeroSearch() {
             if (!this.heroSearch.key || !this.heroSearch.keyword) {
@@ -37,6 +40,7 @@ document.addEventListener('alpine:init', () => {
             const url = `${this.getApiBase()}/api/query?key=${encodeURIComponent(this.heroSearch.key)}&keyword=${encodeURIComponent(this.heroSearch.keyword)}`;
             await this.fetchData(url, 'hero');
         },
+
         async performLangSearch() {
             const params = new URLSearchParams();
             const idKeywords = this.langSearch.ids.filter(val => val.trim() !== '').join(',');
@@ -51,22 +55,24 @@ document.addEventListener('alpine:init', () => {
         },
 
         async fetchData(url, type) {
-            this.loading = true; this.error = null; this.results = null; this.tableRows = []; this.tableHeaders = '';
-            
-            // --- DEBUGGING: Log the exact URL we are fetching ---
+            this.loading = true; 
+            this.error = null; 
+            this.results = null; 
+            this.tableRows = []; 
+            this.tableHeaders = '';
+            this.lastSuccessfulUrl = ''; // Reset on new fetch
+
             console.log(`Fetching from: ${url}`);
-
             try {
-                const response = await fetch(url, { headers: this.getAuthHeaders() });
+                // We fetch without auth headers now
+                const response = await fetch(url); 
                 const data = await response.json();
-
-                // --- DEBUGGING: Log the raw response from the API ---
                 console.log('API Response:', data);
-
                 if (!response.ok) {
                     throw new Error(`API Error (${response.status}): ${data.detail || response.statusText}`);
                 }
                 this.results = data;
+                this.lastSuccessfulUrl = url; // Save the URL on success
                 this.generateTable(type);
             } catch (e) {
                 this.error = e.message;
@@ -75,13 +81,27 @@ document.addEventListener('alpine:init', () => {
             }
         },
         
+        shareWithAI() {
+            if (this.lastSuccessfulUrl) {
+                navigator.clipboard.writeText(this.lastSuccessfulUrl)
+                    .then(() => {
+                        alert('API URL copied to clipboard!');
+                    })
+                    .catch(err => {
+                        alert('Failed to copy URL. See console for error.');
+                        console.error('Clipboard copy failed:', err);
+                    });
+            } else {
+                alert('No successful search result to share yet.');
+            }
+        },
+
         generateTable(type) {
-            // Guard against null or missing results
             if (!this.results || !this.results.results) {
-                this.tableRows = []; this.tableHeaders = ''; 
-                // Don't show "0 items found" if there was an error.
+                this.tableRows = []; 
+                this.tableHeaders = ''; 
                 if (!this.error) {
-                    this.results = { count: 0 }; // Create a dummy results object
+                    this.results = { count: 0 };
                 }
                 return;
             }
@@ -101,10 +121,8 @@ document.addEventListener('alpine:init', () => {
         },
 
         init() {
-            this.username = localStorage.getItem('herodb_username') || '';
-            this.password = localStorage.getItem('herodb_password') || '';
-            this.$watch('username', value => localStorage.setItem('herodb_username', value));
-            this.$watch('password', value => localStorage.setItem('herodb_password', value));
+            // We no longer need to load credentials, but init() is kept for potential future use.
+            console.log('Curation Tool Initialized.');
         }
     }));
 });

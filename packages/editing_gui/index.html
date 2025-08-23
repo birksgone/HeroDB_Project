@@ -12,7 +12,7 @@
 
     <div x-data="curationTool">
 
-        <header>
+        <!-- <header>
             <h1>HeroDB Curation Tool</h1>
             <div class="controls">
                 <fieldset>
@@ -28,7 +28,7 @@
                     <input type="password" x-model="password" placeholder="API Password">
                 </fieldset>
             </div>
-        </header>
+        </header> -->
 
         <main>
             <section class="tool">
@@ -67,7 +67,11 @@
                 <div x-show="error" class="status error" x-text="error"></div>
 
                 <div x-show="results">
-                    <p><strong x-text="results.count"></strong> items found.</p>
+                    <div class="results-header">
+                        <p><strong x-text="results ? results.count : 0"></strong> items found.</p>
+                        <!-- --- NEW: The "Share with AI" button --- -->
+                        <button @click="shareWithAI()" x-show="lastSuccessfulUrl" class="primary">Share with AI</button>
+                    </div>
                     <div class="tabs">
                         <button :class="{ 'active': viewMode === 'table' }" @click="viewMode = 'table'">Table
                             View</button>
