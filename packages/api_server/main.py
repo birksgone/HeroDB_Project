@@ -123,18 +123,39 @@ def get_hero_data(hero_id: str):
 
 @app.get("/api/query")
 # def query_hero_data(key: str, keyword: str, username: str = Depends(get_current_username)):
-def query_hero_data(key: str, keyword: str):
+@app.get("/api/query")
+def query_hero_data(key: str, keyword: str, username: str = Depends(get_current_username)):
+    """
+    Searches all heroes for blocks that match a specific key and keyword.
+    Can search top-level keys like 'id' or nested keys within skills.
+    """
     extracted_data = []
+    
     for hero_id, hero_data in all_hero_data.items():
+        
+        # --- NEW: Check top-level keys of the hero data itself ---
+        if key in hero_data and isinstance(hero_data[key], str) and keyword.lower() in hero_data[key].lower():
+            # If the top-level matches, we return the entire hero block
+            extracted_data.append({
+                "hero_id": hero_id,
+                "property_block": hero_data # Return the whole hero object
+            })
+            # Skip to the next hero to avoid duplicate results
+            continue
+
+        # --- Original logic to search within skill details ---
         found_blocks = []
         if special_details := hero_data.get("specialId_details"):
             find_nested_properties(special_details, key, keyword, found_blocks)
+        
         if found_blocks:
             for block in found_blocks:
-                extracted_data.append({"hero_id": hero_id, "property_block": block})
+                extracted_data.append({
+                    "hero_id": hero_id,
+                    "property_block": block
+                })
     
     if not extracted_data:
-        # Return 200 OK with 0 results if nothing is found, as it's a valid search
         return {"query": {"key": key, "keyword": keyword}, "count": 0, "results": []}
         
     return {"query": {"key": key, "keyword": keyword}, "count": len(extracted_data), "results": extracted_data}
